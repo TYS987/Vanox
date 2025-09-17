@@ -1,11 +1,10 @@
+import 'package:go_router/go_router.dart';
+
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/nature_campfire_companions/serene_starlight_connectionin_friendsh/serene_starlight_connectionin_friendsh_widget.dart';
-import '/index.dart';
+import '../serenestarlightconnectioninfriendsh/serenestarlightconnectioninfriendsh.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'glowing_fireplace_storiese_bon_e_model.dart';
-export 'glowing_fireplace_storiese_bon_e_model.dart';
 
 class GlowingFireplaceStorieseBonEWidget extends StatefulWidget {
   const GlowingFireplaceStorieseBonEWidget({super.key});
@@ -20,20 +19,16 @@ class GlowingFireplaceStorieseBonEWidget extends StatefulWidget {
 
 class _GlowingFireplaceStorieseBonEWidgetState
     extends State<GlowingFireplaceStorieseBonEWidget> {
-  late GlowingFireplaceStorieseBonEModel _model;
-
+  int? evergreenBondndshiprircle = 0;
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => GlowingFireplaceStorieseBonEModel());
   }
 
   @override
   void dispose() {
-    _model.dispose();
-
     super.dispose();
   }
 
@@ -73,26 +68,25 @@ class _GlowingFireplaceStorieseBonEWidgetState
                       hoverColor: Colors.transparent,
                       highlightColor: Colors.transparent,
                       onTap: () async {
-                        await showDialog(
+                        await showModalBottomSheet(
+                          isScrollControlled: true,
+                          backgroundColor: Colors.transparent,
+                          enableDrag: false,
                           context: context,
-                          builder: (dialogContext) {
-                            return Dialog(
-                              elevation: 0,
-                              insetPadding: EdgeInsets.zero,
-                              backgroundColor: Colors.transparent,
-                              alignment: AlignmentDirectional(0.0, 0.0)
-                                  .resolve(Directionality.of(context)),
-                              child: GestureDetector(
-                                onTap: () {
-                                  FocusScope.of(dialogContext).unfocus();
-                                  FocusManager.instance.primaryFocus?.unfocus();
-                                },
+                          builder: (context) {
+                            return GestureDetector(
+                              onTap: () {
+                                FocusScope.of(context).unfocus();
+                                FocusManager.instance.primaryFocus?.unfocus();
+                              },
+                              child: Padding(
+                                padding: MediaQuery.viewInsetsOf(context),
                                 child:
                                     SereneStarlightConnectioninFriendshWidget(),
                               ),
                             );
                           },
-                        );
+                        ).then((value) => safeSetState(() {}));
                       },
                       child: Container(
                         width: 80.0,
@@ -135,8 +129,9 @@ class _GlowingFireplaceStorieseBonEWidgetState
                       hoverColor: Colors.transparent,
                       highlightColor: Colors.transparent,
                       onTap: () async {
-                        context
-                            .pushNamed(EmberFriendshimpanionLWidget.routeName);
+                        // context
+                        //     // .pushNamed(EmberFriendshimpanionLWidget.routeName);
+                        context.pushNamed('emberFriendshimpanionL');
                       },
                       child: Container(
                         width: double.infinity,
@@ -173,15 +168,10 @@ class _GlowingFireplaceStorieseBonEWidgetState
                       hoverColor: Colors.transparent,
                       highlightColor: Colors.transparent,
                       onTap: () async {
-                        context.pushNamed(
-                          WingAshConnectionCompanionFWidget.routeName,
-                          queryParameters: {
-                            'lakesideHarmonyourneyShar': serializeParam(
-                              0,
-                              ParamType.int,
-                            ),
-                          }.withoutNulls,
-                        );
+                  context.pushNamed(
+  'wingAshConnectionCompanionF',
+  extra: {'lakesideHarmonyourneyShar': '1111'},
+);
                       },
                       child: Container(
                         width: double.infinity,
@@ -226,22 +216,50 @@ class _GlowingFireplaceStorieseBonEWidgetState
                   children: [
                     Builder(
                       builder: (context) {
-                        if (_model.evergreenBondndshiprircle == 0) {
-                          return Container(
-                            width: 15.0,
-                            height: 15.0,
-                            decoration: BoxDecoration(),
+                        if (FFAppState().outdoorAdventureDialogues == 0) {
+                          return InkWell(
+                            onTap: () async {
+                              print("选中");
+                              FFAppState().outdoorAdventureDialogues = 1;
+                              FFAppState().update(() {});
+                              setState(() {});
+                            },
+                            child: Container(
+                              width: 15.0,
+                              height: 15.0,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                  border: Border.all(
+                                    color:  Color(0xFF6DA975),
+                                    width: 1.0,
+                                  )),
+                            ),
                           );
                         } else {
-                          return Container(
-                            width: 15.0,
-                            height: 15.0,
-                            decoration: BoxDecoration(
-                              color: Color(0x1A1B1B1B),
-                              borderRadius: BorderRadius.circular(10.0),
-                              border: Border.all(
-                                color: Color(0xFF6DA975),
-                                width: 1.0,
+                          return InkWell(
+                            onTap: () async {
+                              print("取消选中");
+                              FFAppState().outdoorAdventureDialogues = 0;
+                              FFAppState().update(() {});
+                              setState(() {});
+                            },
+                            child: Container(
+                              width: 15.0,
+                              height: 15.0,
+                              decoration: BoxDecoration(
+                                // ✅ 设置背景颜色（如果需要，图片加载失败时会显示这个颜色）
+                                color: Color(0x1A1B1B1B),
+                                borderRadius: BorderRadius.circular(10.0),
+                                border: Border.all(
+                                  color: Color(0xFF6DA975),
+                                  width: 1.0,
+                                ),
+                                // ✅ 设置背景图片
+                                image: DecorationImage(
+                                  image: AssetImage(
+                                      'assets/images/mountainConversationriverside.png'),
+                                  fit: BoxFit.cover, // 图片填充方式：cover = 铺满并保持比例
+                                ),
                               ),
                             ),
                           );

@@ -1,11 +1,25 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/nature_campfire_companions/serene_outdoorurne/serene_outdoorurne_widget.dart';
+import '../sereneoutdoorurne/sereneoutdoorurne.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'rustic_outdoor_friendship_v_model.dart';
-export 'rustic_outdoor_friendship_v_model.dart';
 
+class TopCurveClipper extends CustomClipper<Path> {
+  @override
+  Path getClip(Size size) {
+    Path path = Path();
+    path.lineTo(0, 50); // 左上向下
+    path.quadraticBezierTo(
+        size.width / 2, 70, size.width, 50); // 中间向下凹，100可调节凹度
+    path.lineTo(size.width, size.height); // 右下
+    path.lineTo(0, size.height); // 左下
+    path.close();
+    return path;
+  }
+
+  @override
+  bool shouldReclip(covariant CustomClipper<Path> oldClipper) => false;
+}
 class RusticOutdoorFriendshipVWidget extends StatefulWidget {
   const RusticOutdoorFriendshipVWidget({super.key});
 
@@ -19,19 +33,18 @@ class RusticOutdoorFriendshipVWidget extends StatefulWidget {
 
 class _RusticOutdoorFriendshipVWidgetState
     extends State<RusticOutdoorFriendshipVWidget> {
-  late RusticOutdoorFriendshipVModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => RusticOutdoorFriendshipVModel());
+
   }
 
   @override
   void dispose() {
-    _model.dispose();
+
 
     super.dispose();
   }
@@ -510,164 +523,115 @@ class _RusticOutdoorFriendshipVWidgetState
                                 ],
                               ),
                             ),
-                            Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 20.0, 0.0, 0.0),
+                         Padding(
+        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+        child: ClipPath(
+          clipper: TopCurveClipper(),
+          child: Container(
+            width: double.infinity,
+            height: 351.0,
+            decoration: const BoxDecoration(
+              color: Color(0xFFE4F6E7),
+            ),
+            child: Padding(
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 58.0, 0.0, 32.0),
+              child: Row(
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Container(
+                    width: 145.0,
+                    height: 201.0,
+                    child: Stack(
+                      children: [
+                        Container(
+                          width: 145.0,
+                          height: 201.0,
+                          decoration: BoxDecoration(
+                            image: const DecorationImage(
+                              fit: BoxFit.cover,
+                              image: AssetImage(
+                                'assets/images/natureInspiredConversations.png',
+                              ),
+                            ),
+                            borderRadius: BorderRadius.circular(15.0),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(4.0, 4.0, 0.0, 0.0),
+                          child: Container(
+                            width: 55.0,
+                            height: 22.0,
+                            decoration: BoxDecoration(
+                              color: const Color(0x336DA975),
+                              borderRadius: BorderRadius.circular(12.0),
+                            ),
+                            child: Padding(
+                              padding: const EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 5.0),
                               child: Container(
                                 width: double.infinity,
-                                height: 291.0,
+                                height: double.infinity,
                                 decoration: BoxDecoration(
-                                  color: Color(0xFFE4F6E7),
+                                  color: const Color(0xFF6DA975),
+                                  borderRadius: BorderRadius.circular(8.0),
                                 ),
-                                child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 58.0, 0.0, 32.0),
-                                  child: Row(
-                                    mainAxisSize: MainAxisSize.max,
-                                    children: [
-                                      Container(
-                                        width: 145.0,
-                                        height: 201.0,
-                                        child: Stack(
-                                          children: [
-                                            Container(
-                                              width: 145.0,
-                                              height: 201.0,
-                                              decoration: BoxDecoration(
-                                                image: DecorationImage(
-                                                  fit: BoxFit.cover,
-                                                  image: Image.asset(
-                                                    'assets/images/natureInspiredConversations.png',
-                                                  ).image,
-                                                ),
-                                                borderRadius:
-                                                    BorderRadius.circular(15.0),
-                                              ),
-                                            ),
-                                            Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(4.0, 4.0, 0.0, 0.0),
-                                              child: Container(
-                                                width: 55.0,
-                                                height: 22.0,
-                                                decoration: BoxDecoration(
-                                                  color: Color(0x336DA975),
-                                                  borderRadius:
-                                                      BorderRadius.circular(
-                                                          12.0),
-                                                ),
-                                                child: Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          5.0, 5.0, 5.0, 5.0),
-                                                  child: Container(
-                                                    width: double.infinity,
-                                                    height: double.infinity,
-                                                    decoration: BoxDecoration(
-                                                      color: Color(0xFF6DA975),
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              8.0),
-                                                    ),
-                                                    child: Row(
-                                                      mainAxisSize:
-                                                          MainAxisSize.max,
-                                                      mainAxisAlignment:
-                                                          MainAxisAlignment
-                                                              .center,
-                                                      children: [
-                                                        Container(
-                                                          width: 8.3,
-                                                          height: 10.0,
-                                                          decoration:
-                                                              BoxDecoration(
-                                                            image:
-                                                                DecorationImage(
-                                                              fit: BoxFit.cover,
-                                                              image:
-                                                                  Image.asset(
-                                                                'assets/images/sunriseCampfireHarmony.png',
-                                                              ).image,
-                                                            ),
-                                                          ),
-                                                        ),
-                                                        Padding(
-                                                          padding:
-                                                              EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      5.0,
-                                                                      0.0,
-                                                                      0.0,
-                                                                      0.0),
-                                                          child: Text(
-                                                            '244',
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .bodyMedium
-                                                                .override(
-                                                                  font:
-                                                                      GoogleFonts
-                                                                          .inter(
-                                                                    fontWeight: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyMedium
-                                                                        .fontWeight,
-                                                                    fontStyle: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyMedium
-                                                                        .fontStyle,
-                                                                  ),
-                                                                  color: Colors
-                                                                      .white,
-                                                                  fontSize: 7.0,
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                  fontWeight: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMedium
-                                                                      .fontWeight,
-                                                                  fontStyle: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMedium
-                                                                      .fontStyle,
-                                                                ),
-                                                          ),
-                                                        ),
-                                                      ],
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                            Align(
-                                              alignment: AlignmentDirectional(
-                                                  1.0, 1.0),
-                                              child: Padding(
-                                                padding: EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        0.0, 0.0, 6.0, 5.0),
-                                                child: Container(
-                                                  width: 32.0,
-                                                  height: 32.0,
-                                                  decoration: BoxDecoration(
-                                                    image: DecorationImage(
-                                                      fit: BoxFit.cover,
-                                                      image: Image.asset(
-                                                        'assets/images/glowingEmberFriendship.png',
-                                                      ).image,
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                          ],
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Container(
+                                      width: 8.3,
+                                      height: 10.0,
+                                      decoration: const BoxDecoration(
+                                        image: DecorationImage(
+                                          fit: BoxFit.cover,
+                                          image: AssetImage(
+                                            'assets/images/sunriseCampfireHarmony.png',
+                                          ),
                                         ),
                                       ),
-                                    ].addToStart(SizedBox(width: 16.0)),
+                                    ),
+                                    const SizedBox(width: 5.0),
+                                    Text(
+                                      '244',
+                                      style: GoogleFonts.inter(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 7.0,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Align(
+                          alignment: const AlignmentDirectional(1.0, 1.0),
+                          child: Padding(
+                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 6.0, 5.0),
+                            child: Container(
+                              width: 32.0,
+                              height: 32.0,
+                              decoration: const BoxDecoration(
+                                image: DecorationImage(
+                                  fit: BoxFit.cover,
+                                  image: AssetImage(
+                                    'assets/images/glowingEmberFriendship.png',
                                   ),
                                 ),
                               ),
                             ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ].addToStart(const SizedBox(width: 16.0)),
+              ),
+            ),
+          
+          ),
+        ),),
                             Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 10.0, 0.0, 0.0),
@@ -712,12 +676,10 @@ class _RusticOutdoorFriendshipVWidgetState
               ),
               Align(
                 alignment: AlignmentDirectional(0.0, 1.0),
-                child: wrapWithModel(
-                  model: _model.sereneOutdoorurneModel,
-                  updateCallback: () => safeSetState(() {}),
+               
                   child: SereneOutdoorurneWidget(),
                 ),
-              ),
+              
             ],
           ),
         ),

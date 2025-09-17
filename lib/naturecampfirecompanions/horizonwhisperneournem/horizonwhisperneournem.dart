@@ -1,11 +1,9 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/nature_campfire_companions/serene_outdoorurne/serene_outdoorurne_widget.dart';
+import '../sereneoutdoorurne/sereneoutdoorurne.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'horizon_whisper_neourne_m_model.dart';
-export 'horizon_whisper_neourne_m_model.dart';
 
 class HorizonWhisperNeourneMWidget extends StatefulWidget {
   const HorizonWhisperNeourneMWidget({super.key});
@@ -20,20 +18,16 @@ class HorizonWhisperNeourneMWidget extends StatefulWidget {
 
 class _HorizonWhisperNeourneMWidgetState
     extends State<HorizonWhisperNeourneMWidget> {
-  late HorizonWhisperNeourneMModel _model;
-
+  int? moonriseFriendswilderness = 0;
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => HorizonWhisperNeourneMModel());
   }
 
   @override
   void dispose() {
-    _model.dispose();
-
     super.dispose();
   }
 
@@ -119,7 +113,7 @@ class _HorizonWhisperNeourneMWidgetState
                               0.0, 60.0, 0.0, 0.0),
                           child: Builder(
                             builder: (context) {
-                              if (_model.moonriseFriendswilderness == 0) {
+                              if (moonriseFriendswilderness == 0) {
                                 return Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       20.0, 0.0, 20.0, 0.0),
@@ -1016,11 +1010,7 @@ class _HorizonWhisperNeourneMWidgetState
               ),
               Align(
                 alignment: AlignmentDirectional(0.0, 1.0),
-                child: wrapWithModel(
-                  model: _model.sereneOutdoorurneModel,
-                  updateCallback: () => safeSetState(() {}),
-                  child: SereneOutdoorurneWidget(),
-                ),
+                child: SereneOutdoorurneWidget(),
               ),
             ],
           ),

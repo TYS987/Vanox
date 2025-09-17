@@ -1,6 +1,5 @@
 import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/flutter_flow_util.dart';
-import '/nature_campfire_companions/serene_outdoorurne/serene_outdoorurne_widget.dart';
+import '../sereneoutdoorurne/sereneoutdoorurne.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 

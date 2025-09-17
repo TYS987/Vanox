@@ -1,9 +1,8 @@
+import 'package:vanox/flutter_flow/flutter_flow_util.dart';
+
 import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'serene_starlight_connectionin_friendsh_model.dart';
-export 'serene_starlight_connectionin_friendsh_model.dart';
 
 class SereneStarlightConnectioninFriendshWidget extends StatefulWidget {
   const SereneStarlightConnectioninFriendshWidget({super.key});
@@ -15,25 +14,18 @@ class SereneStarlightConnectioninFriendshWidget extends StatefulWidget {
 
 class _SereneStarlightConnectioninFriendshWidgetState
     extends State<SereneStarlightConnectioninFriendshWidget> {
-  late SereneStarlightConnectioninFriendshModel _model;
-
   @override
   void setState(VoidCallback callback) {
     super.setState(callback);
-    _model.onUpdate();
   }
 
   @override
   void initState() {
     super.initState();
-    _model =
-        createModel(context, () => SereneStarlightConnectioninFriendshModel());
   }
 
   @override
   void dispose() {
-    _model.maybeDispose();
-
     super.dispose();
   }
 
@@ -43,7 +35,7 @@ class _SereneStarlightConnectioninFriendshWidgetState
       width: double.infinity,
       height: 556.0,
       decoration: BoxDecoration(
-        color: FlutterFlowTheme.of(context).secondaryBackground,
+        color: Colors.white,
         borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(0.0),
           bottomRight: Radius.circular(0.0),
@@ -69,6 +61,7 @@ class _SereneStarlightConnectioninFriendshWidgetState
                     fontWeight: FontWeight.w900,
                     fontStyle:
                         FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                    color: Colors.black,
                   ),
             ),
             Padding(
@@ -193,11 +186,9 @@ class _SereneStarlightConnectioninFriendshWidgetState
                     ),
                   ),
                   InkWell(
-                    splashColor: Colors.transparent,
-                    focusColor: Colors.transparent,
-                    hoverColor: Colors.transparent,
-                    highlightColor: Colors.transparent,
                     onTap: () async {
+                      FFAppState().outdoorAdventureDialogues = 1 ;
+                      FFAppState().update((){});
                       Navigator.pop(context);
                     },
                     child: Container(

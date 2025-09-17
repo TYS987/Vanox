@@ -1,10 +1,8 @@
+import 'package:go_router/go_router.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'serene_outdoorurne_model.dart';
-export 'serene_outdoorurne_model.dart';
 
 class SereneOutdoorurneWidget extends StatefulWidget {
   const SereneOutdoorurneWidget({super.key});
@@ -15,24 +13,18 @@ class SereneOutdoorurneWidget extends StatefulWidget {
 }
 
 class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
-  late SereneOutdoorurneModel _model;
-
   @override
   void setState(VoidCallback callback) {
     super.setState(callback);
-    _model.onUpdate();
   }
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => SereneOutdoorurneModel());
   }
 
   @override
   void dispose() {
-    _model.maybeDispose();
-
     super.dispose();
   }
 
@@ -44,7 +36,7 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
       width: double.infinity,
       height: 80.0,
       decoration: BoxDecoration(
-        color: FlutterFlowTheme.of(context).secondaryBackground,
+      color: Colors.white,
       ),
       child: Row(
         mainAxisSize: MainAxisSize.max,
@@ -72,8 +64,7 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
                   hoverColor: Colors.transparent,
                   highlightColor: Colors.transparent,
                   onTap: () async {
-                    context
-                        .pushNamed(OutdoorJourneyCompanionsHWidget.routeName);
+                    context.pushNamed('outdoorJourneyCompanionsH');
 
                     FFAppState().starlightWhisperNetworking = 0;
                     safeSetState(() {});
@@ -116,7 +107,7 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
                   hoverColor: Colors.transparent,
                   highlightColor: Colors.transparent,
                   onTap: () async {
-                    context.pushNamed(RusticOutdoorFriendshipVWidget.routeName);
+                    context.pushNamed('rusticOutdoorFriendshipV');
 
                     FFAppState().starlightWhisperNetworking = 1;
                     safeSetState(() {});
@@ -159,7 +150,7 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
                   hoverColor: Colors.transparent,
                   highlightColor: Colors.transparent,
                   onTap: () async {
-                    context.pushNamed(TwilightWhisperJourneyDWidget.routeName);
+                    context.pushNamed('twilightWhisperJourneyD');
 
                     FFAppState().starlightWhisperNetworking = 3;
                     safeSetState(() {});
@@ -202,7 +193,7 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
                   hoverColor: Colors.transparent,
                   highlightColor: Colors.transparent,
                   onTap: () async {
-                    context.pushNamed(HorizonWhisperNeourneMWidget.routeName);
+                    context.pushNamed('horizonWhisperNeourneM');
 
                     FFAppState().starlightWhisperNetworking = 3;
                     safeSetState(() {});
