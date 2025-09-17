@@ -3,11 +3,11 @@ export '/nature_campfire_companions/outdoor_journey_companions_h/outdoor_journey
     show OutdoorJourneyCompanionsHWidget;
 export '/nature_campfire_companions/rustic_outdoor_friendship_v/rustic_outdoor_friendship_v_widget.dart'
     show RusticOutdoorFriendshipVWidget;
-export '/nature_campfire_companions/twilight_whisper_journey_d/twilight_whisper_journey_d_widget.dart'
+export 'nature_campfire_companions/twilightwhisperjourneyd/twilight_whisper_journey_d_widget.dart'
     show TwilightWhisperJourneyDWidget;
 export '/nature_campfire_companions/horizon_whisper_neourne_m/horizon_whisper_neourne_m_widget.dart'
     show HorizonWhisperNeourneMWidget;
-export '/nature_campfire_companions/wing_ash_connection_companion_f/wing_ash_connection_companion_f_widget.dart'
+export 'nature_campfire_companions/wingashconnectioncompanionf/wingashconnectioncompanionf.dart'
     show WingAshConnectionCompanionFWidget;
 export '/nature_campfire_companions/glowing_fireplace_storiese_bon_e/glowing_fireplace_storiese_bon_e_widget.dart'
     show GlowingFireplaceStorieseBonEWidget;

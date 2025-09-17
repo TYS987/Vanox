@@ -54,7 +54,7 @@ class _GlowingFireplaceStorieseBonEWidgetState
             image: DecorationImage(
               fit: BoxFit.contain,
               image: Image.asset(
-                'assets/images/@3x_(1).png',
+                'assets/images/glowingEmberFriendshiponversation.png',
               ).image,
             ),
           ),

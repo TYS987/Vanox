@@ -1,8 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'wing_ash_connection_companion_f_model.dart';
-export 'wing_ash_connection_companion_f_model.dart';
+
 
 class WingAshConnectionCompanionFWidget extends StatefulWidget {
   const WingAshConnectionCompanionFWidget({
@@ -22,19 +21,18 @@ class WingAshConnectionCompanionFWidget extends StatefulWidget {
 
 class _WingAshConnectionCompanionFWidgetState
     extends State<WingAshConnectionCompanionFWidget> {
-  late WingAshConnectionCompanionFModel _model;
+
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => WingAshConnectionCompanionFModel());
+
   }
 
   @override
   void dispose() {
-    _model.dispose();
 
     super.dispose();
   }

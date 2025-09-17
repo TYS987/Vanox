@@ -3,8 +3,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/nature_campfire_companions/serene_outdoorurne/serene_outdoorurne_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'twilight_whisper_journey_d_model.dart';
-export 'twilight_whisper_journey_d_model.dart';
 
 class TwilightWhisperJourneyDWidget extends StatefulWidget {
   const TwilightWhisperJourneyDWidget({super.key});
@@ -19,20 +17,15 @@ class TwilightWhisperJourneyDWidget extends StatefulWidget {
 
 class _TwilightWhisperJourneyDWidgetState
     extends State<TwilightWhisperJourneyDWidget> {
-  late TwilightWhisperJourneyDModel _model;
-
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => TwilightWhisperJourneyDModel());
   }
 
   @override
   void dispose() {
-    _model.dispose();
-
     super.dispose();
   }
 
@@ -288,11 +281,7 @@ class _TwilightWhisperJourneyDWidgetState
               ),
               Align(
                 alignment: AlignmentDirectional(0.0, 1.0),
-                child: wrapWithModel(
-                  model: _model.sereneOutdoorurneModel,
-                  updateCallback: () => safeSetState(() {}),
-                  child: SereneOutdoorurneWidget(),
-                ),
+                child: SereneOutdoorurneWidget(),
               ),
             ],
           ),

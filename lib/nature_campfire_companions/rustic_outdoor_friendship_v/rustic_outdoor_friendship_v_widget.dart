@@ -586,7 +586,7 @@ class _RusticOutdoorFriendshipVWidgetState
                                                               fit: BoxFit.cover,
                                                               image:
                                                                   Image.asset(
-                                                                'assets/images/Frame@3x.png',
+                                                                'assets/images/sunriseCampfireHarmony.png',
                                                               ).image,
                                                             ),
                                                           ),

@@ -33,12 +33,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       navigatorKey: appNavigatorKey,
-      errorBuilder: (context, state) => OutdoorJourneyCompanionsHWidget(),
+      errorBuilder: (context, state) => GlowingFireplaceStorieseBonEWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) => OutdoorJourneyCompanionsHWidget(),
+          builder: (context, _) => GlowingFireplaceStorieseBonEWidget(),
         ),
         FFRoute(
           name: OutdoorJourneyCompanionsHWidget.routeName,

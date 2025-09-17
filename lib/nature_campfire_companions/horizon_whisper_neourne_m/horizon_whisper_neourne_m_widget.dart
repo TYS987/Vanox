@@ -522,7 +522,7 @@ class _HorizonWhisperNeourneMWidgetState
                                                                           .cover,
                                                                       image: Image
                                                                           .asset(
-                                                                        'assets/images/Frame@3x.png',
+                                                                        'assets/images/sunriseCampfireHarmony.png',
                                                                       ).image,
                                                                     ),
                                                                   ),
