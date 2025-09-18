@@ -1,6 +1,8 @@
 import 'package:dio/dio.dart';
 import 'dart:convert';
 
+import 'package:flutter/material.dart';
+
 // API 配置类，定义基础 URL 和端点
 class MuzoiApiSettings {
   static const String baseUrl =
@@ -13,13 +15,13 @@ class MuzoiApiSettings {
     'signIn': 'widwmkkgopcrz/tohennubpuva', // 登录
     'users': 'uttfrz/dciajcmh', // 用户列表
     'profile': 'kuvbjexwlaz/csqnpfyvkvpfv', // 用户详情
-    'posts': 'mnaibz/ilcnyflpazeponu', // 帖子
-    'like': 'jyllgrvbtz/hcjmdddefrrmqon', // 点赞
-    'follow': 'hipezxojz/ncaycgfqgdjvjcf', // 关注/拉黑
-    'connections': 'deyqtnvvwngz/mefiufsts', // 粉丝/关注
+    'posts': 'cqhegdggayaiejz/rruszcdea', // 帖子
+    'message': 'sbxmqdzoz/qahjvxkhgfcte', // 消息查询
 
     // 混淆
-        'balance': 'xhktnzpozivhmdz/ofbvquxoqtw', // 用户余额
+    'room': 'cjzpgcuxbodz/cveuxrqe', //  虚拟房间
+    'follow': 'hipezxojz/ncaycgfqgdjvjcf', // 关注/拉黑
+    'connections': 'deyqtnvvwngz/mefiufsts', // 粉丝/关注
   };
 }
 
@@ -132,7 +134,6 @@ class MuzoiApiManagerDio {
   /// 获取用户列表
   Future<List<dynamic>?> fetchGlamUsers() async {
     try {
-    
       final response = await _sendApiRequest(
         endpoint: MuzoiApiSettings.endpoints['users']!,
         params: {},
@@ -144,7 +145,6 @@ class MuzoiApiManagerDio {
     }
   }
 
-  
   /// 获取用户详情
   Future<Map<String, dynamic>?> fetchUserSparkle({required int userId}) async {
     try {
@@ -160,26 +160,26 @@ class MuzoiApiManagerDio {
     }
   }
 
-  /// 查询美甲帖子动态
+  /// 查询动态
   Future<Map<String, dynamic>> fetchGlamPosts({
     required int current,
     required int size,
     String? bundleId,
     required int selectVersion,
-    required int dynamicClassify,
+    int? dynamicClassify,
     int? dynamicType,
   }) async {
     try {
-      print('🎨 [Posts] 获取美甲帖子: page=$current, size=$size');
+      print(' page=$current, size=$size');
       final response = await _sendApiRequest(
         endpoint: MuzoiApiSettings.endpoints['posts']!,
         params: {
-          'rareAccessorySpotting': current, // 当前页
-          'collectorTradeMeetup': size, // 每页大小
-          'toyLineHistory': bundleId, // 应用标识
-          'auctionBiddingStrategy': selectVersion, // 选择版本
-          'toyRestorationTechniques': dynamicClassify, // 动态分类
-          'figureArticulationAnalysis': dynamicType, // 动态类型
+          'wildernessConnection': current, // 当前页
+          'trailTales': size, // 每页大小
+          'natureLovers': bundleId, // 应用标识
+          'adventureStories': selectVersion, // 选择版本
+          'outdoorStories': dynamicClassify, // 动态分类
+          'campfireCircle': dynamicType, // 动态类型
         },
       );
       if (response is List) {
@@ -211,18 +211,32 @@ class MuzoiApiManagerDio {
     }
   }
 
-  /// 点赞/取消点赞
-  Future<bool> togglePostGlow({required int dynamicId}) async {
+  ///  消息查询
+  Future<List<Map<String, dynamic>>> togglePostGlow({
+    required int dynamicId,
+    int? receiveUserId,
+  }) async {
     try {
-      print('🎨 [Like] 点赞美甲帖子: $dynamicId');
       final response = await _sendApiRequest(
-        endpoint: MuzoiApiSettings.endpoints['like']!,
-        params: {'storageSolutionInnovation': dynamicId},
+        endpoint: MuzoiApiSettings.endpoints['message']!,
+        params: {
+          'campingAdvisor': dynamicId,
+          'adventureAdvisor': receiveUserId,
+        },
       );
-      return response is bool ? response : false;
+
+      print("消息接口返回内容: $response");
+
+      if (response is List) {
+        return List<Map<String, dynamic>>.from(
+          response.map((e) => Map<String, dynamic>.from(e)),
+        );
+      } else {
+        return [];
+      }
     } catch (e) {
-      print('💔 [Like] 点赞失败: $e');
-      return false;
+      print('消息获取失败: $e');
+      return [];
     }
   }
 
@@ -279,21 +293,56 @@ class MuzoiApiManagerDio {
     }
   }
 
-  /// 获取用户余额
-  Future<dynamic> fetchVibeBalance() async {
+  /// 获去虚拟房间
+  Future<Map<String, dynamic>> fetchroom({
+    required int liveStatus,
+    required int size,
+    String? bundleId,
+    required int selectType,
+    int? current,
+  }) async {
     try {
-      print('🎨 [Balance] 获取用户余额');
+      print(' page=$liveStatus, size=$size');
       final response = await _sendApiRequest(
-        endpoint: MuzoiApiSettings.endpoints['balance']!,
-        params: {},
+        endpoint: MuzoiApiSettings.endpoints['room']!,
+        params: {
+          'campingMaster': liveStatus,
+          'trailExpert': size,
+          'outdoorExpert': bundleId,
+          'wildernessExpert': selectType,
+          'adventureMaster': current,
+        },
       );
-      return response;
+
+      print("虚拟房间的数据${response}");
+      if (response is List) {
+        return {
+          'success': true,
+          'message': '请求成功',
+          'data': response,
+        };
+      }
+      if (response is Map<String, dynamic>) {
+        return {
+          'success': response['code'] == MuzoiApiSettings.successCode,
+          'message': response['message'] ?? '无返回信息',
+          'data': response['data'],
+        };
+      }
+      return {
+        'success': false,
+        'message': '响应格式错误: ${response.runtimeType}',
+        'data': null,
+      };
     } catch (e) {
-      print('💔 [Balance] 获取余额失败: $e');
-      return null;
+      print('💔 [Posts] 获取帖子失败: $e');
+      return {
+        'success': false,
+        'message': '异常: $e',
+        'data': null,
+      };
     }
   }
-
 }
 
 // 异常类

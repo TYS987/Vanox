@@ -1,3 +1,7 @@
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:transparent_image/transparent_image.dart';
+import 'package:vanox/Route/fangfa.dart';
+
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '../sereneoutdoorurne/sereneoutdoorurne.dart';
@@ -7,10 +11,6 @@ import 'package:google_fonts/google_fonts.dart';
 
 class OutdoorJourneyCompanionsHWidget extends StatefulWidget {
   const OutdoorJourneyCompanionsHWidget({super.key});
-
-  static String routeName = 'outdoorJourneyCompanionsH';
-  static String routePath = '/outdoorJourneyCompanionsH';
-
   @override
   State<OutdoorJourneyCompanionsHWidget> createState() =>
       _OutdoorJourneyCompanionsHWidgetState();
@@ -23,6 +23,7 @@ class _OutdoorJourneyCompanionsHWidgetState
   @override
   void initState() {
     super.initState();
+    MuzoiApiHelper.getGlamPostsRoom();
   }
 
   @override
@@ -150,100 +151,180 @@ class _OutdoorJourneyCompanionsHWidgetState
                                       ),
                                     ),
                                     Align(
-                                      alignment: AlignmentDirectional(0.0, 1.0),
+                                      alignment: AlignmentDirectional(0, 1),
                                       child: Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
-                                            12.0, 0.0, 12.0, 0.0),
-                                        child: Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          children: [
-                                            Container(
-                                              width: 75.0,
-                                              height: 93.0,
-                                              decoration: BoxDecoration(
-                                                color: Colors.white,
-                                                boxShadow: [
-                                                  BoxShadow(
-                                                    blurRadius: 9.0,
-                                                    color: Color(0x33000000),
-                                                    offset: Offset(
-                                                      5.0,
-                                                      1.0,
-                                                    ),
-                                                    spreadRadius: 5.0,
-                                                  )
-                                                ],
-                                                borderRadius:
-                                                    BorderRadius.circular(24.0),
-                                              ),
-                                              child: Column(
-                                                mainAxisSize: MainAxisSize.max,
-                                                children: [
-                                                  Padding(
-                                                    padding:
-                                                        EdgeInsetsDirectional
-                                                            .fromSTEB(0.0, 6.0,
-                                                                0.0, 0.0),
+                                            12, 0, 12, 0),
+                                        child: Builder(
+                                          builder: (context) {
+                                            final forestJourneyCompanion =
+                                                FFAppState()
+                                                    .starlightCampfireProfiles
+                                                    .toList();
+
+                                            return Row(
+                                              mainAxisSize: MainAxisSize.max,
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment
+                                                      .spaceBetween,
+                                              children: List.generate(
+                                                  forestJourneyCompanion.length,
+                                                  (forestJourneyCompanionIndex) {
+                                                final forestJourneyCompanionItem =
+                                                    forestJourneyCompanion[
+                                                        forestJourneyCompanionIndex];
+                                                return InkWell(
+                                                    onTap: () async {
+                                                      print(
+                                                          "当前用户的数据${forestJourneyCompanionItem}");
+                                                    },
                                                     child: Container(
-                                                      width: 63.0,
-                                                      height: 60.0,
+                                                      width: 75,
+                                                      height: 93,
                                                       decoration: BoxDecoration(
-                                                        image: DecorationImage(
-                                                          fit: BoxFit.cover,
-                                                          image: Image.asset(
-                                                            'assets/images/natureInspiredConversations.png',
-                                                          ).image,
-                                                        ),
+                                                        color: Colors.white,
+                                                        boxShadow: [
+                                                          BoxShadow(
+                                                            blurRadius: 9,
+                                                            color:
+                                                                Color.fromARGB(
+                                                                    51,
+                                                                    92,
+                                                                    87,
+                                                                    87),
+                                                            offset:
+                                                                Offset(5, 1),
+                                                            spreadRadius: 5,
+                                                          )
+                                                        ],
                                                         borderRadius:
                                                             BorderRadius
-                                                                .circular(12.0),
+                                                                .circular(16),
                                                       ),
-                                                    ),
-                                                  ),
-                                                  Padding(
-                                                    padding:
-                                                        EdgeInsetsDirectional
-                                                            .fromSTEB(0.0, 6.0,
-                                                                0.0, 0.0),
-                                                    child: Text(
-                                                      'Adil',
-                                                      textAlign:
-                                                          TextAlign.center,
-                                                      style: FlutterFlowTheme
-                                                              .of(context)
-                                                          .bodyMedium
-                                                          .override(
-                                                            font: GoogleFonts
-                                                                .inter(
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .w500,
-                                                              fontStyle:
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMedium
-                                                                      .fontStyle,
+                                                      child: Column(
+                                                        mainAxisSize:
+                                                            MainAxisSize.max,
+                                                        children: [
+                                                          Padding(
+                                                            padding:
+                                                                EdgeInsetsDirectional
+                                                                    .fromSTEB(
+                                                                        0,
+                                                                        6,
+                                                                        0,
+                                                                        0),
+                                                            child: Container(
+                                                              width: 63,
+                                                              height: 60,
+                                                              decoration:
+                                                                  BoxDecoration(
+                                                                borderRadius:
+                                                                    BorderRadius
+                                                                        .circular(
+                                                                            12),
+                                                              ),
+                                                              child: ClipRRect(
+                                                                borderRadius:
+                                                                    BorderRadius
+                                                                        .circular(
+                                                                            12),
+                                                                child: FadeInImage
+                                                                    .memoryNetwork(
+                                                                  placeholder:
+                                                                      kTransparentImage,
+                                                                  placeholderErrorBuilder:
+                                                                      (context,
+                                                                          error,
+                                                                          stackTrace) {
+                                                                    return Center(
+                                                                      child:
+                                                                          CircularProgressIndicator(
+                                                                        valueColor:
+                                                                            AlwaysStoppedAnimation<Color>(Colors.blue),
+                                                                      ),
+                                                                    );
+                                                                  },
+                                                                  image: forestJourneyCompanionItem[
+                                                                      'voiceRooms'],
+                                                                  fit: BoxFit
+                                                                      .cover,
+                                                                  width: 63,
+                                                                  height: 60,
+                                                                  imageErrorBuilder:
+                                                                      (context,
+                                                                          error,
+                                                                          stackTrace) {
+                                                                    return Container(
+                                                                      color: const Color
+                                                                          .fromARGB(
+                                                                          255,
+                                                                          235,
+                                                                          113,
+                                                                          113),
+                                                                      child: Center(
+                                                                          child:
+                                                                              Icon(Icons.error)),
+                                                                    );
+                                                                  },
+                                                                ),
+                                                              ),
                                                             ),
-                                                            fontSize: 12.0,
-                                                            letterSpacing: 0.0,
-                                                            fontWeight:
-                                                                FontWeight.w500,
-                                                            fontStyle:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMedium
-                                                                    .fontStyle,
-                                                            color: const Color
-                                                                .fromARGB(
-                                                                255, 0, 0, 0),
                                                           ),
-                                                    ),
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                    
-                                          ].divide(SizedBox(width: 4.0)),
+                                                          Padding(
+                                                            padding:
+                                                                EdgeInsetsDirectional
+                                                                    .fromSTEB(
+                                                                        0,
+                                                                        6,
+                                                                        0,
+                                                                        0),
+                                                            child: Text(
+                                                              forestJourneyCompanionItem[
+                                                                      'digitalCampfire']
+                                                                  .toString(),
+                                                              textAlign:
+                                                                  TextAlign
+                                                                      .center,
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .bodyMedium
+                                                                  .override(
+                                                                    font: GoogleFonts
+                                                                        .inter(
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .w500,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .fontStyle,
+                                                                    ),
+                                                                    fontSize:
+                                                                        10,
+                                                                    letterSpacing:
+                                                                        0.0,
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w500,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontStyle,
+                                                                    color: const Color
+                                                                        .fromARGB(
+                                                                        255,
+                                                                        0,
+                                                                        0,
+                                                                        0),
+                                                                  ),
+                                                            ),
+                                                          ),
+                                                        ],
+                                                      ),
+                                                    ));
+                                              }).divide(SizedBox(width: 4)),
+                                            );
+                                          },
                                         ),
                                       ),
                                     ),
@@ -254,20 +335,33 @@ class _OutdoorJourneyCompanionsHWidgetState
                             Padding(
                               padding:
                                   EdgeInsetsDirectional.fromSTEB(20, 20, 20, 0),
-                              child: MasonryGridView.builder(
-                                gridDelegate:
-                                    SliverSimpleGridDelegateWithFixedCrossAxisCount(
-                                  crossAxisCount: 2,
-                                ),
-                                crossAxisSpacing: 10,
-                                mainAxisSpacing: 10,
-                                itemCount: 1,
-                                shrinkWrap: true,
-                                physics: NeverScrollableScrollPhysics(),
-                                padding: EdgeInsets.zero,
-                                itemBuilder: (context, index) {
-                                  return [
-                                    () => Container(
+                              child: Builder(
+                                builder: (context) {
+                                  final virtualCampfireLounge = FFAppState()
+                                      .starlitCampfireVoiceChats
+                                      .toList();
+                                  return MasonryGridView.builder(
+                                    gridDelegate:
+                                        SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      crossAxisCount: 2,
+                                    ),
+                                    crossAxisSpacing: 10,
+                                    mainAxisSpacing: 10,
+                                    itemCount: virtualCampfireLounge.length,
+                                    shrinkWrap: true,
+                                    physics: NeverScrollableScrollPhysics(),
+                                    padding: EdgeInsets.zero,
+                                    itemBuilder:
+                                        (context, virtualCampfireLoungeIndex) {
+                                      final virtualCampfireLoungeItem =
+                                          virtualCampfireLounge[
+                                              virtualCampfireLoungeIndex];
+                                      return InkWell(
+                                        onTap: () async {
+                                          print(
+                                              "当前虚拟房间的所有信息${virtualCampfireLoungeItem}");
+                                        },
+                                        child: Container(
                                           height: 221,
                                           decoration: BoxDecoration(
                                             borderRadius:
@@ -294,11 +388,51 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                         topRight:
                                                             Radius.circular(16),
                                                       ),
-                                                      child: Image.network(
-                                                        'https://picsum.photos/seed/95/600',
+                                                      child: CachedNetworkImage(
+                                                        imageUrl:
+                                                            virtualCampfireLoungeItem[
+                                                                    'campingExpert']
+                                                                .toString(),
                                                         width: 200,
                                                         height: 172,
                                                         fit: BoxFit.cover,
+                                                        placeholder:
+                                                            (context, url) =>
+                                                                Container(
+                                                          color:
+                                                              Colors.grey[400],
+                                                          width: 200,
+                                                          height: 172,
+                                                          child: Center(
+                                                            child:
+                                                                CircularProgressIndicator(
+                                                              valueColor:
+                                                                  AlwaysStoppedAnimation<
+                                                                          Color>(
+                                                                      const Color
+                                                                          .fromARGB(
+                                                                          255,
+                                                                          231,
+                                                                          189,
+                                                                          151)),
+                                                            ),
+                                                          ),
+                                                        ),
+                                                        errorWidget: (context,
+                                                                url, error) =>
+                                                            Container(
+                                                          color:
+                                                              Colors.grey[300],
+                                                          width: 200,
+                                                          height: 172,
+                                                          child: Center(
+                                                            child: Icon(
+                                                              Icons.error,
+                                                              color: Colors.red,
+                                                              size: 50,
+                                                            ),
+                                                          ),
+                                                        ),
                                                       ),
                                                     ),
                                                     Row(
@@ -323,7 +457,8 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                                       .start,
                                                               children: [
                                                                 Text(
-                                                                  'Ethan Cole',
+                                                                  virtualCampfireLoungeItem[
+                                                                      'campingSpecialist'],
                                                                   style: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
@@ -348,7 +483,8 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                                       ),
                                                                 ),
                                                                 Text(
-                                                                  'Under the Sta',
+                                                                  virtualCampfireLoungeItem[
+                                                                      'adventureExpert'],
                                                                   style: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
@@ -371,6 +507,10 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                                             .bodyMedium
                                                                             .fontStyle,
                                                                       ),
+                                                                  maxLines: 1,
+                                                                  overflow:
+                                                                      TextOverflow
+                                                                          .ellipsis,
                                                                 ),
                                                               ],
                                                             ),
@@ -422,7 +562,9 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                             .fromSTEB(
                                                                 0, 0, 13, 0),
                                                     child: Text(
-                                                      '244',
+                                                      virtualCampfireLoungeItem[
+                                                              'forestSpecialist']
+                                                          .toString(),
                                                       textAlign:
                                                           TextAlign.justify,
                                                       style: FlutterFlowTheme
@@ -463,10 +605,12 @@ class _OutdoorJourneyCompanionsHWidgetState
                                             ),
                                           ),
                                         ),
-                                  ][index]();
+                                      );
+                                    },
+                                  );
                                 },
                               ),
-                            ),
+                            )
                           ].addToEnd(SizedBox(height: 150.0)),
                         ),
                       ),

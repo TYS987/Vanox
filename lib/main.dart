@@ -1,3 +1,5 @@
+import 'package:flutter/services.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +18,7 @@ void main() async {
 
   final appState = FFAppState(); // Initialize FFAppState
   await appState.initializePersistedState();
-
+  configLoading();
   runApp(ChangeNotifierProvider(
     create: (context) => appState,
     child: MyApp(),
@@ -52,9 +54,13 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
+     SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+    ]);
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       title: 'Vanox',
+      builder: EasyLoading.init(),
       localizationsDelegates: [
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
@@ -73,4 +79,13 @@ class _MyAppState extends State<MyApp> {
       routerConfig: muzoiRouter,
     );
   }
+}
+
+
+void configLoading() {
+  EasyLoading.instance
+    ..indicatorType = EasyLoadingIndicatorType.fadingCircle
+    ..loadingStyle = EasyLoadingStyle.dark
+    ..maskType = EasyLoadingMaskType.black
+    ..dismissOnTap = false;
 }

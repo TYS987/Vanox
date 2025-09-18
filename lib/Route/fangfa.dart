@@ -1,8 +1,8 @@
-
-
+import 'package:flutter/material.dart';
 import 'package:vanox/Route/api.dart';
 import 'package:vanox/app_state.dart';
 
+// 用户列表数据
 class MuzoiApiHelper {
   static final MuzoiApiManagerDio _apiManager = MuzoiApiManagerDio();
 
@@ -14,10 +14,9 @@ class MuzoiApiHelper {
       }
 
       final results = await _apiManager.fetchGlamUsers();
-      print('列表: $results');
-     
-      // FFAppState().starlightCampfireProfiles = results;
-      // FFAppState().update(() {});
+      FFAppState().starlightCampfireProfiles = results ?? [];
+      FFAppState().update(() {});
+      print("获取到的用户列表的所有数据;${FFAppState().starlightCampfireProfiles}");
       return results;
     } catch (e) {
       print('失败: $e');
@@ -31,25 +30,176 @@ class MuzoiApiHelper {
       String userToken = FFAppState().campfireJourneyToken;
 
       if (userToken.isEmpty) {
-        print('用户 token 为空');
         return {};
       }
 
-      // 更新 token
       _apiManager.updateVibeToken(userToken);
-
-      // 调用获取用户详情接口
       final results = await _apiManager.fetchUserSparkle(userId: userId);
-      print('🎨 用户详情: $results');
 
-      // 如果 results 为 null，则用空 Map
-      // FFAppState().userDetails = results ?? {};
-      // FFAppState().update(() {});
+      FFAppState().wildernessExpeditionUserProfile = results ?? {};
+      FFAppState().update(() {});
+      print("当前用户的所有数据${FFAppState().wildernessExpeditionUserProfile}");
 
       return results ?? {};
     } catch (e) {
       print('失败: $e');
       return {};
+    }
+  }
+
+// 获取视屏的所有数据
+  static Future<List<dynamic>?> getGlamPosts() async {
+    try {
+      String userToken = FFAppState().campfireJourneyToken;
+
+      if (userToken.isEmpty) {
+        return null;
+      }
+
+      // 更新 token
+      _apiManager.updateVibeToken(userToken);
+
+      // 调用 fetchGlamPosts 获取帖子（参数写死）
+      final response = await _apiManager.fetchGlamPosts(
+        current: 1,
+        size: 10,
+        selectVersion: 4,
+        dynamicType: 3,
+        bundleId: '57624642',
+      );
+
+      if (response['success'] == true && response['data'] != null) {
+        List<dynamic> posts = response['data'];
+
+        FFAppState().virtualWildernessRetreatRooms = posts;
+        FFAppState().update(() {});
+        print("获取视屏的所有数据${FFAppState().virtualWildernessRetreatRooms}");
+
+        return posts;
+      } else {
+        print('失败: ${response['message']}');
+        return null;
+      }
+    } catch (e) {
+      print('异常: $e');
+      return null;
+    }
+  }
+
+  /// 获取动态详情
+  static Future<List<dynamic>?> getChaxuanVideoDetails() async {
+    try {
+      String userToken = FFAppState().campfireJourneyToken;
+
+      if (userToken.isEmpty) {
+        return null;
+      }
+      _apiManager.updateVibeToken(userToken);
+      final response = await _apiManager.fetchGlamPosts(
+        current: 1,
+        size: 10,
+        selectVersion: 4,
+        dynamicClassify: null,
+        dynamicType: 2,
+        bundleId: '57624642',
+      );
+
+      if (response['success'] == true && response['data'] != null) {
+        List<dynamic> Dideos = response['data'];
+        // print("获取到的视频数据 ${Dideos}");
+        print(' ${Dideos.length} ');
+        print("${Dideos}");
+
+        // 存储到 FFAppState
+        FFAppState().starlitCampfireJourneyPosts =
+            Dideos.map((e) => Map<String, dynamic>.from(e as Map)).toList();
+        ;
+
+        FFAppState().update(() {});
+
+        return Dideos;
+      } else {
+        print('失败: ${response['message']}');
+        return null;
+      }
+    } catch (e) {
+      print('异常: $e');
+      return null;
+    }
+  }
+
+  /// 消息数据
+
+  static Future togglePostMessage(int postId, {int? receiveUserId}) async {
+    try {
+      String token = FFAppState().campfireJourneyToken;
+
+      if (token.isEmpty) {
+        return false;
+      }
+
+      // 更新 token
+      _apiManager.updateVibeToken(token);
+
+      // 调用消息接口
+      final result = await _apiManager.togglePostGlow(
+        dynamicId: postId,
+        receiveUserId: receiveUserId,
+      );
+
+      print("接口: $result");
+      if (result.isNotEmpty) {
+        FFAppState().starlightCampfireMessages = result;
+
+        return true;
+      } else {
+        FFAppState().starlightCampfireMessages = [];
+        return false;
+      }
+    } catch (e) {
+      print('异常: $e');
+      return false;
+    }
+  }
+
+// 获取虚拟房间
+
+  static Future<List<dynamic>?> getGlamPostsRoom() async {
+    try {
+      String userToken = FFAppState().campfireJourneyToken;
+
+      if (userToken.isEmpty) {
+        return null;
+      }
+      _apiManager.updateVibeToken(userToken);
+
+
+      final response = await _apiManager.fetchroom(
+        current: 1,
+        size: 10,
+        liveStatus: 0,
+        selectType: 2,
+        bundleId: '57624642',
+      );
+
+      if (response['success'] == true && response['data'] != null) {
+        List<dynamic> posts = response['data'];
+
+
+FFAppState().starlitCampfireVoiceChats = posts ;
+
+    print("虚拟房间的数据${FFAppState().starlitCampfireVoiceChats}");
+    print("虚拟房间数量${posts.length}");
+
+
+        return posts;
+      } else {
+        print('失败: ${response['message']}');
+        return null;
+      }
+    } catch (e) {
+      print('异常: $e');
+      return null;
     }
   }
 
@@ -82,131 +232,6 @@ class MuzoiApiHelper {
   //     return fansList;
   //   } catch (e) {
   //     print('失败: $e');
-  //     return null;
-  //   }
-  // }
-
-  // static Future<List<dynamic>?> getGlamPosts() async {
-  //   try {
-  //     String userToken = FFAppState().userToken;
-
-  //     if (userToken.isEmpty) {
-  //       print('用户 token 为空，');
-  //       return null;
-  //     }
-
-  //     // 更新 token
-  //     _apiManager.updateVibeToken(userToken);
-
-  //     // 调用 fetchGlamPosts 获取帖子（参数写死）
-  //     final response = await _apiManager.fetchGlamPosts(
-  //       current: 1,
-  //       size: 10,
-  //       selectVersion: 2,
-  //       dynamicClassify: 1,
-  //       dynamicType: 5,
-  //       bundleId: null,
-  //     );
-
-  //     if (response['success'] == true && response['data'] != null) {
-  //       List<dynamic> posts = response['data'];
-
-  //       // 根据 rareSeriesCompletion 排序（降序，时间最新的在前）
-  //       posts.sort((a, b) {
-  //         // 确保字段存在，否则返回 0
-  //         final aTime = a['rareSeriesCompletion'] ?? 0;
-  //         final bTime = b['rareSeriesCompletion'] ?? 0;
-  //         return bTime.compareTo(aTime); // 降序
-  //       });
-
-  //       print('${posts.length} ');
-
-  //       // 存储到 FFAppState
-  //       FFAppState().glamPosts = posts;
-  //       FFAppState().update(() {});
-  //       print('${FFAppState().glamPosts}');
-
-  //       return posts;
-  //     } else {
-  //       print('失败: ${response['message']}');
-  //       return null;
-  //     }
-  //   } catch (e) {
-  //     print('异常: $e');
-  //     return null;
-  //   }
-  // }
-
-  // /// 点赞/取消点赞帖子
-  // static Future<bool> togglePostLike(int postId) async {
-  //   try {
-  //     String token = FFAppState().userToken;
-
-  //     if (token.isEmpty) {
-  //       print('用户 token 为空');
-  //       return false;
-  //     }
-
-  //     // 更新 token
-  //     _apiManager.updateVibeToken(token);
-
-  //     // 调用点赞接口
-  //     final result = await _apiManager.togglePostGlow(dynamicId: postId);
-  //     print('结果: $result');
-  //     return result;
-  //   } catch (e) {
-  //     print('异常: $e');
-  //     return false;
-  //   }
-  // }
-
-  // /// 获取茶轩视频详情（固定参数示例）
-  // static Future<List<dynamic>?> getChaxuanVideoDetails() async {
-  //   try {
-  //     String userToken = FFAppState().userToken;
-
-  //     if (userToken.isEmpty) {
-  //       print('token 为空');
-  //       return null;
-  //     }
-
-  //     // 更新 token
-  //     _apiManager.updateVibeToken(userToken);
-
-  //     // 调用 fetchGlamPosts（可改成 fetchVideoPosts 如果后端有专门接口）
-  //     final response = await _apiManager.fetchGlamPosts(
-  //       current: 1, // 固定当前页
-  //       size: 10, // 固定每页数量
-  //       selectVersion: 2, // 固定版本
-  //       dynamicClassify: 2, // 茶轩视频分类（假设 2 为视频）
-  //       dynamicType: null, // 固定类型
-  //       bundleId: null, // 应用标识
-  //     );
-
-  //     if (response['success'] == true && response['data'] != null) {
-  //       List<dynamic> videos = response['data'];
-
-  //       // 根据 rareSeriesCompletion 排序（降序，最新的视频在前）
-  //       videos.sort((a, b) {
-  //         final aTime = a['rareSeriesCompletion'] ?? 0;
-  //         final bTime = b['rareSeriesCompletion'] ?? 0;
-  //         return bTime.compareTo(aTime);
-  //       });
-  //       print("获取到的视频数据 ${videos}");
-  //       print(' ${videos.length} ');
-
-  //       // 存储到 FFAppState
-  //       FFAppState().chaxuanVideos = videos;
-
-  //       FFAppState().update(() {});
-
-  //       return videos;
-  //     } else {
-  //       print('失败: ${response['message']}');
-  //       return null;
-  //     }
-  //   } catch (e) {
-  //     print('异常: $e');
   //     return null;
   //   }
   // }
@@ -339,5 +364,37 @@ class MuzoiApiHelper {
   //     return false;
   //   }
   // }
+}
 
+
+
+
+Widget showLoadingWidget() {
+  // 返回一个可直接放在 Widget 树里的加载框
+  return Stack(
+    children: [
+      // 半透明黑色背景
+      Positioned.fill(
+        child: Container(
+          color: Colors.black.withOpacity(0.7),
+        ),
+      ),
+      // 中心加载动画
+      Center(
+        child: Container(
+          width: 100,
+          height: 100,
+          decoration: BoxDecoration(
+            color: Colors.black.withOpacity(0.7),
+            borderRadius: BorderRadius.circular(12),
+          ),
+          child: const Center(
+            child: CircularProgressIndicator(
+              color: Colors.white,
+            ),
+          ),
+        ),
+      ),
+    ],
+  );
 }

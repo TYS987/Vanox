@@ -1,5 +1,5 @@
 import 'package:go_router/go_router.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
+
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -64,9 +64,10 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
                   hoverColor: Colors.transparent,
                   highlightColor: Colors.transparent,
                   onTap: () async {
+                        FFAppState().starlightWhisperNetworking = 0;
                     context.pushNamed('outdoorJourneyCompanionsH');
 
-                    FFAppState().starlightWhisperNetworking = 0;
+                
                     safeSetState(() {});
                   },
                   child: Container(
@@ -107,9 +108,10 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
                   hoverColor: Colors.transparent,
                   highlightColor: Colors.transparent,
                   onTap: () async {
+                        FFAppState().starlightWhisperNetworking = 1;
                     context.pushNamed('rusticOutdoorFriendshipV');
 
-                    FFAppState().starlightWhisperNetworking = 1;
+                
                     safeSetState(() {});
                   },
                   child: Container(
@@ -150,9 +152,10 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
                   hoverColor: Colors.transparent,
                   highlightColor: Colors.transparent,
                   onTap: () async {
+                    FFAppState().starlightWhisperNetworking = 2;
                     context.pushNamed('twilightWhisperJourneyD');
 
-                    FFAppState().starlightWhisperNetworking = 3;
+                    
                     safeSetState(() {});
                   },
                   child: Container(
@@ -193,9 +196,10 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
                   hoverColor: Colors.transparent,
                   highlightColor: Colors.transparent,
                   onTap: () async {
+                         FFAppState().starlightWhisperNetworking = 3;
                     context.pushNamed('horizonWhisperNeourneM');
 
-                    FFAppState().starlightWhisperNetworking = 3;
+               
                     safeSetState(() {});
                   },
                   child: Container(

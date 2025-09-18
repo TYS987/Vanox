@@ -1,3 +1,4 @@
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:go_router/go_router.dart';
 import 'package:vanox/Route/api.dart';
 import 'package:vanox/Route/fangfa.dart';
@@ -10,10 +11,6 @@ import 'package:provider/provider.dart';
 
 class EmberFriendshimpanionLWidget extends StatefulWidget {
   const EmberFriendshimpanionLWidget({super.key});
-
-  static String routeName = 'emberFriendshimpanionL';
-  static String routePath = '/emberFriendshimpanionL';
-
   @override
   State<EmberFriendshimpanionLWidget> createState() =>
       _EmberFriendshimpanionLWidgetState();
@@ -99,7 +96,7 @@ class _EmberFriendshimpanionLWidgetState
                   children: [
                     InkWell(
                       onTap: () async {
-                  context.pop();
+                        context.pop();
                       },
                       child: Container(
                         width: 24.0,
@@ -528,31 +525,57 @@ class _EmberFriendshimpanionLWidgetState
                           hoverColor: Colors.transparent,
                           highlightColor: Colors.transparent,
                           onTap: () async {
+                            final email = textController1.text.trim();
+                            final password = textController2.text.trim();
 
-                               final email = textController1.text.trim();
-                      final password = textController2.text.trim();
-                      print("输入的账户密为：${email} 密码:$password}");
-                            // context.goNamed('outdoorJourneyCompanionsH');
-                          final apiManager = MuzoiApiManagerDio();
-                        final result = await apiManager.signInWithVibe(
-                          email: email,
-                          password: password,
-                        );
-                             if (result != null) {
-                      print("发送登录请求返回的值:${result}");
-                            FFAppState().campfireJourneyToken = result['campingNavigator'];
-                            FFAppState().starlitCompanionId = result['trailBlazer'];
-                            FFAppState().update((){});
-                     
+                            if (email.isEmpty || password.isEmpty) {
+                            
+                              EasyLoading.showInfo('Please enter your email and password');
+                              return;
+                            }
 
-          print("登录之后的的用户id：${FFAppState().starlitCompanionId} token:${ FFAppState().campfireJourneyToken}");
+                            try {
+                              EasyLoading.show(status: 'Logging in...');
 
-          await MuzoiApiHelper.getGlamUsers();
-          await MuzoiApiHelper.getUserProfile( FFAppState().starlitCompanionId);
+                              final apiManager = MuzoiApiManagerDio();
+                              final result = await apiManager.signInWithVibe(
+                                email: email,
+                                password: password,
+                              );
 
-                        }else{
-                   
-                        }
+                              if (result == null) {
+                                EasyLoading.showError('Login failed. Please check your account and password');
+                                return;
+                              }
+
+                 
+                              FFAppState().campfireJourneyToken =
+                                  result['campingNavigator'];
+                              FFAppState().starlitCompanionId =
+                                  result['trailBlazer'];
+                              FFAppState().update(() {});
+                              await Future.wait([
+                                MuzoiApiHelper.getGlamUsers(),
+                                MuzoiApiHelper.getUserProfile(
+                                    FFAppState().starlitCompanionId),
+                                MuzoiApiHelper.getGlamPosts(),
+                                // MuzoiApiHelper.getGlamPosroom()
+                              ]);
+
+FFAppState().evergreenFriendshipLounge = true;
+FFAppState().starlightWhisperNetworking = 0;
+                              EasyLoading.dismiss();
+
+                          
+                              context.goNamed('outdoorJourneyCompanionsH');
+                            } catch (e) {
+                              EasyLoading.showError('Login exception: $e');
+                            } finally {
+                 
+                              if (EasyLoading.isShow) {
+                                EasyLoading.dismiss();
+                              }
+                            }
                           },
                           child: Container(
                             width: double.infinity,

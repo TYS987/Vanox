@@ -52,6 +52,65 @@ _safeInit(() {
     }
   }
 });
+    _safeInit(() {
+      final profileJson = prefs.getString('ff_wildernessExpeditionUserProfile');
+      if (profileJson != null && profileJson.isNotEmpty) {
+        final decoded = jsonDecode(profileJson);
+        if (decoded is Map<String, dynamic>) {
+          _wildernessExpeditionUserProfile = decoded;
+        }
+      }
+    });
+
+    _safeInit(() {
+      final roomsJson = prefs.getString('ff_virtualWildernessRetreatRooms');
+      if (roomsJson != null && roomsJson.isNotEmpty) {
+        final decoded = jsonDecode(roomsJson);
+        if (decoded is List) {
+          _virtualWildernessRetreatRooms =
+              List<Map<String, dynamic>>.from(decoded.map(
+            (e) => Map<String, dynamic>.from(e),
+          ));
+        }
+      }
+    });
+
+    _safeInit(() {
+  final postsJson = prefs.getString('ff_starlitCampfireJourneyPosts');
+  if (postsJson != null && postsJson.isNotEmpty) {
+    final decoded = jsonDecode(postsJson);
+    if (decoded is List) {
+      _starlitCampfireJourneyPosts = List<Map<String, dynamic>>.from(
+        decoded.map((e) => Map<String, dynamic>.from(e)),
+      );
+    }
+  }
+});
+
+   // 消息列表初始化
+    _safeInit(() {
+      final messagesJson = prefs.getString('ff_starlightCampfireMessages');
+      if (messagesJson != null && messagesJson.isNotEmpty) {
+        final decoded = jsonDecode(messagesJson);
+        if (decoded is List) {
+          _starlightCampfireMessages = List<Map<String, dynamic>>.from(
+            decoded.map((e) => Map<String, dynamic>.from(e)),
+          );
+        }
+      }
+    });
+
+_safeInit(() {
+  final chatDataJson = prefs.getString('ff_starlitCampfireVoiceChats');
+  if (chatDataJson != null && chatDataJson.isNotEmpty) {
+    final decoded = jsonDecode(chatDataJson);
+    if (decoded is List) {
+      _starlitCampfireVoiceChats = decoded
+          .map<Map<String, dynamic>>((e) => Map<String, dynamic>.from(e))
+          .toList();
+    }
+  }
+});
   }
 
   void update(VoidCallback callback) {
@@ -99,12 +158,69 @@ _safeInit(() {
     prefs.setInt('ff_starlitCompanionId', value);
   }
 
-  /// 新增：用户篝火社交档案数据
+  /// 新增：所有用户篝数据
 List<dynamic> _starlightCampfireProfiles = [];
 List<dynamic> get starlightCampfireProfiles => _starlightCampfireProfiles;
 set starlightCampfireProfiles(List<dynamic> value) {
   _starlightCampfireProfiles = value;
   prefs.setString('ff_starlightCampfireProfiles', jsonEncode(value)); // 持久化存储
+  notifyListeners();
+}
+
+  /// 新增：用户详情数据
+  Map<String, dynamic> _wildernessExpeditionUserProfile = {};
+  Map<String, dynamic> get wildernessExpeditionUserProfile => _wildernessExpeditionUserProfile;
+  set wildernessExpeditionUserProfile(Map<String, dynamic> value) {
+    _wildernessExpeditionUserProfile = value;
+    prefs.setString('ff_wildernessExpeditionUserProfile', jsonEncode(value)); // 持久化存储
+    notifyListeners();
+  }
+
+    /// 新增： 视频数据数据
+  List<Map<String, dynamic>> _virtualWildernessRetreatRooms = [];
+  List<Map<String, dynamic>> get virtualWildernessRetreatRooms =>
+      _virtualWildernessRetreatRooms;
+  set virtualWildernessRetreatRooms(List<dynamic> value) {
+    // 在 setter 内自动转换
+    _virtualWildernessRetreatRooms = List<Map<String, dynamic>>.from(
+      value.map((e) => Map<String, dynamic>.from(e)),
+    );
+    prefs.setString('ff_virtualWildernessRetreatRooms',
+        jsonEncode(_virtualWildernessRetreatRooms));
+    notifyListeners();
+  }
+  
+/// 用户虚拟露营动态数据
+List<Map<String, dynamic>> _starlitCampfireJourneyPosts = [];
+List<Map<String, dynamic>> get starlitCampfireJourneyPosts => _starlitCampfireJourneyPosts;
+set starlitCampfireJourneyPosts(List<Map<String, dynamic>> value) {
+  _starlitCampfireJourneyPosts = value;
+  prefs.setString('ff_starlitCampfireJourneyPosts', jsonEncode(value)); // 持久化存储
+  notifyListeners();
+
+
+}
+/// 用户篝火消息数据
+ List<Map<String, dynamic>> _starlightCampfireMessages = [];
+  List<Map<String, dynamic>> get starlightCampfireMessages => _starlightCampfireMessages;
+  set starlightCampfireMessages(List<Map<String, dynamic>> value) {
+    _starlightCampfireMessages = value;
+    prefs.setString('ff_starlightCampfireMessages', jsonEncode(value));
+    notifyListeners();
+  }
+/// 新增：虚拟露营语音聊天数据
+List<Map<String, dynamic>> _starlitCampfireVoiceChats = [];
+List<Map<String, dynamic>> get starlitCampfireVoiceChats => _starlitCampfireVoiceChats;
+set starlitCampfireVoiceChats(List<dynamic> value) {
+  // 将 List<dynamic> 强制转换为 List<Map<String, dynamic>>
+  _starlitCampfireVoiceChats = value
+      .map<Map<String, dynamic>>((e) => Map<String, dynamic>.from(e))
+      .toList();
+
+  // 持久化存储
+  prefs.setString(
+      'ff_starlitCampfireVoiceChats', jsonEncode(_starlitCampfireVoiceChats));
+
   notifyListeners();
 }
 }

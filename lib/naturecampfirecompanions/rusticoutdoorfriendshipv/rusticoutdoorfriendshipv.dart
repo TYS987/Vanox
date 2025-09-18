@@ -1,3 +1,5 @@
+import 'package:cached_network_image/cached_network_image.dart';
+
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '../sereneoutdoorurne/sereneoutdoorurne.dart';
@@ -8,11 +10,10 @@ class TopCurveClipper extends CustomClipper<Path> {
   @override
   Path getClip(Size size) {
     Path path = Path();
-    path.lineTo(0, 50); // 左上向下
-    path.quadraticBezierTo(
-        size.width / 2, 70, size.width, 50); // 中间向下凹，100可调节凹度
-    path.lineTo(size.width, size.height); // 右下
-    path.lineTo(0, size.height); // 左下
+    path.lineTo(0, 50);
+    path.quadraticBezierTo(size.width / 2, 70, size.width, 50);
+    path.lineTo(size.width, size.height);
+    path.lineTo(0, size.height);
     path.close();
     return path;
   }
@@ -20,6 +21,7 @@ class TopCurveClipper extends CustomClipper<Path> {
   @override
   bool shouldReclip(covariant CustomClipper<Path> oldClipper) => false;
 }
+
 class RusticOutdoorFriendshipVWidget extends StatefulWidget {
   const RusticOutdoorFriendshipVWidget({super.key});
 
@@ -33,19 +35,15 @@ class RusticOutdoorFriendshipVWidget extends StatefulWidget {
 
 class _RusticOutdoorFriendshipVWidgetState
     extends State<RusticOutdoorFriendshipVWidget> {
-
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-
   }
 
   @override
   void dispose() {
-
-
     super.dispose();
   }
 
@@ -129,110 +127,45 @@ class _RusticOutdoorFriendshipVWidgetState
                                     MainAxisAlignment.spaceBetween,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Column(
-                                    mainAxisSize: MainAxisSize.max,
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceAround,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Container(
-                                        width: 120.0,
-                                        height: 35.0,
-                                        child: Stack(
-                                          children: [
-                                            Container(
-                                              width: 98.0,
-                                              height: 30.0,
-                                              decoration: BoxDecoration(
-                                                image: DecorationImage(
-                                                  fit: BoxFit.cover,
-                                                  image: Image.asset(
-                                                    'assets/images/evergreenBondingNetwork.png',
-                                                  ).image,
-                                                ),
-                                              ),
-                                            ),
-                                            Align(
-                                              alignment: AlignmentDirectional(
-                                                  1.0, 1.0),
-                                              child: Container(
-                                                width: 25.0,
-                                                height: 12.0,
+                                  Container(
+                                    width: 163,
+                                    height: 163,
+                                    decoration: BoxDecoration(),
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceAround,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Container(
+                                          width: 120,
+                                          height: 35,
+                                          child: Stack(
+                                            children: [
+                                              Container(
+                                                width: 98,
+                                                height: 30,
                                                 decoration: BoxDecoration(
                                                   image: DecorationImage(
-                                                    fit: BoxFit.contain,
+                                                    fit: BoxFit.cover,
                                                     image: Image.asset(
-                                                      'assets/images/twilightCircleDialogues.png',
+                                                      'assets/images/evergreenBondingNetwork.png',
                                                     ).image,
                                                   ),
                                                 ),
                                               ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                      Container(
-                                        width: 163.0,
-                                        height: 36.0,
-                                        decoration: BoxDecoration(
-                                          borderRadius:
-                                              BorderRadius.circular(12.0),
-                                          border: Border.all(
-                                            color: Color(0xFFCFD2E3),
-                                            width: 1.0,
-                                          ),
-                                        ),
-                                        child: Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  10.0, 0.0, 10.0, 0.0),
-                                          child: Row(
-                                            mainAxisSize: MainAxisSize.max,
-                                            children: [
-                                              Expanded(
-                                                child: Text(
-                                                  'The fire was w',
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        font:
-                                                            GoogleFonts.poppins(
-                                                          fontWeight:
-                                                              FontWeight.w500,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMedium
-                                                                  .fontStyle,
-                                                        ),
-                                                        color:
-                                                            Color(0xFF081035),
-                                                        fontSize: 10.0,
-                                                        letterSpacing: 0.0,
-                                                        fontWeight:
-                                                            FontWeight.w500,
-                                                        fontStyle:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyMedium
-                                                                .fontStyle,
-                                                      ),
-                                                ),
-                                              ),
-                                              Padding(
-                                                padding: EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        10.0, 0.0, 0.0, 0.0),
+                                              Align(
+                                                alignment:
+                                                    AlignmentDirectional(1, 1),
                                                 child: Container(
-                                                  width: 24.0,
-                                                  height: 24.0,
+                                                  width: 25,
+                                                  height: 12,
                                                   decoration: BoxDecoration(
                                                     image: DecorationImage(
-                                                      fit: BoxFit.cover,
+                                                      fit: BoxFit.contain,
                                                       image: Image.asset(
-                                                        'assets/images/rusticConnectionCircle.png',
+                                                        'assets/images/twilightCircleDialogues.png',
                                                       ).image,
                                                     ),
                                                   ),
@@ -241,148 +174,133 @@ class _RusticOutdoorFriendshipVWidgetState
                                             ],
                                           ),
                                         ),
-                                      ),
-                                      Container(
-                                        width: 163.0,
-                                        height: 36.0,
-                                        decoration: BoxDecoration(
-                                          borderRadius:
-                                              BorderRadius.circular(12.0),
-                                          border: Border.all(
-                                            color: Color(0xFFCFD2E3),
-                                            width: 1.0,
-                                          ),
-                                        ),
-                                        child: Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  10.0, 0.0, 10.0, 0.0),
-                                          child: Row(
-                                            mainAxisSize: MainAxisSize.max,
-                                            children: [
-                                              Expanded(
-                                                child: Text(
-                                                  'The fire was w',
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        font:
-                                                            GoogleFonts.poppins(
-                                                          fontWeight:
-                                                              FontWeight.w500,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMedium
-                                                                  .fontStyle,
+                                        Expanded(
+                                          child: Builder(
+                                            builder: (context) {
+                                              final digitalMemoryCollector =
+                                                  FFAppState()
+                                                      .starlitCampfireJourneyPosts
+                                                      .toList();
+                                              return ListView.separated(
+                                                padding: EdgeInsets.fromLTRB(
+                                                  0,
+                                                  0,
+                                                  0,
+                                                  30,
+                                                ),
+                                                shrinkWrap: true,
+                                                scrollDirection: Axis.vertical,
+                                                itemCount:
+                                                    digitalMemoryCollector
+                                                        .length,
+                                                separatorBuilder: (_, __) =>
+                                                    SizedBox(height: 5),
+                                                itemBuilder: (context,
+                                                    digitalMemoryCollectorIndex) {
+                                                  final digitalMemoryCollectorItem =
+                                                      digitalMemoryCollector[
+                                                          digitalMemoryCollectorIndex];
+                                                  return InkWell(
+                                                    onTap: () async {
+                                                      print(
+                                                          "当前动态的所有数据${digitalMemoryCollectorItem}");
+                                                    },
+                                                    child: Container(
+                                                      width: 163,
+                                                      height: 36,
+                                                      decoration: BoxDecoration(
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(12),
+                                                        border: Border.all(
+                                                          color:
+                                                              Color(0xFFCFD2E3),
+                                                          width: 1,
                                                         ),
-                                                        color:
-                                                            Color(0xFF081035),
-                                                        fontSize: 10.0,
-                                                        letterSpacing: 0.0,
-                                                        fontWeight:
-                                                            FontWeight.w500,
-                                                        fontStyle:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyMedium
-                                                                .fontStyle,
                                                       ),
-                                                ),
-                                              ),
-                                              Padding(
-                                                padding: EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        10.0, 0.0, 0.0, 0.0),
-                                                child: Container(
-                                                  width: 24.0,
-                                                  height: 24.0,
-                                                  decoration: BoxDecoration(
-                                                    image: DecorationImage(
-                                                      fit: BoxFit.cover,
-                                                      image: Image.asset(
-                                                        'assets/images/rusticConnectionCircle.png',
-                                                      ).image,
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                      ),
-                                      Container(
-                                        width: 163.0,
-                                        height: 36.0,
-                                        decoration: BoxDecoration(
-                                          borderRadius:
-                                              BorderRadius.circular(12.0),
-                                          border: Border.all(
-                                            color: Color(0xFFCFD2E3),
-                                            width: 1.0,
-                                          ),
-                                        ),
-                                        child: Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  10.0, 0.0, 10.0, 0.0),
-                                          child: Row(
-                                            mainAxisSize: MainAxisSize.max,
-                                            children: [
-                                              Expanded(
-                                                child: Text(
-                                                  'The fire was w',
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        font:
-                                                            GoogleFonts.poppins(
-                                                          fontWeight:
-                                                              FontWeight.w500,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMedium
-                                                                  .fontStyle,
+                                                      child: Padding(
+                                                        padding:
+                                                            EdgeInsetsDirectional
+                                                                .fromSTEB(10, 0,
+                                                                    10, 0),
+                                                        child: Row(
+                                                          mainAxisSize:
+                                                              MainAxisSize.max,
+                                                          children: [
+                                                            Expanded(
+                                                              child: Text(
+                                                                digitalMemoryCollectorItem[
+                                                                        'natureSounds']
+                                                                    .toString(),
+                                                                style: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .override(
+                                                                      font: GoogleFonts
+                                                                          .poppins(
+                                                                        fontWeight:
+                                                                            FontWeight.w500,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontStyle,
+                                                                      ),
+                                                                      color: Color(
+                                                                          0xFF081035),
+                                                                      fontSize:
+                                                                          10,
+                                                                      letterSpacing:
+                                                                          0.0,
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .w500,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .fontStyle,
+                                                                    ),
+                                                                maxLines: 1,
+                                                                overflow:
+                                                                    TextOverflow
+                                                                        .ellipsis,
+                                                              ),
+                                                            ),
+                                                            Padding(
+                                                              padding:
+                                                                  EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          10,
+                                                                          0,
+                                                                          0,
+                                                                          0),
+                                                              child: Container(
+                                                                width: 24,
+                                                                height: 24,
+                                                                decoration:
+                                                                    BoxDecoration(
+                                                                  image:
+                                                                      DecorationImage(
+                                                                    fit: BoxFit
+                                                                        .cover,
+                                                                    image: Image
+                                                                        .asset(
+                                                                      'assets/images/rusticConnectionCircle.png',
+                                                                    ).image,
+                                                                  ),
+                                                                ),
+                                                              ),
+                                                            ),
+                                                          ],
                                                         ),
-                                                        color:
-                                                            Color(0xFF081035),
-                                                        fontSize: 10.0,
-                                                        letterSpacing: 0.0,
-                                                        fontWeight:
-                                                            FontWeight.w500,
-                                                        fontStyle:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyMedium
-                                                                .fontStyle,
                                                       ),
-                                                ),
-                                              ),
-                                              Padding(
-                                                padding: EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        10.0, 0.0, 0.0, 0.0),
-                                                child: Container(
-                                                  width: 24.0,
-                                                  height: 24.0,
-                                                  decoration: BoxDecoration(
-                                                    image: DecorationImage(
-                                                      fit: BoxFit.cover,
-                                                      image: Image.asset(
-                                                        'assets/images/rusticConnectionCircle.png',
-                                                      ).image,
                                                     ),
-                                                  ),
-                                                ),
-                                              ),
-                                            ],
+                                                  );
+                                                },
+                                              );
+                                            },
                                           ),
                                         ),
-                                      ),
-                                    ].divide(SizedBox(height: 5.0)),
+                                      ].divide(SizedBox(height: 5)),
+                                    ),
                                   ),
                                   Container(
                                     width: 163.0,
@@ -392,15 +310,50 @@ class _RusticOutdoorFriendshipVWidgetState
                                         Container(
                                           width: 163.0,
                                           height: 160.0,
-                                          decoration: BoxDecoration(
-                                            image: DecorationImage(
-                                              fit: BoxFit.cover,
-                                              image: Image.asset(
-                                                'assets/images/natureInspiredConversations.png',
-                                              ).image,
-                                            ),
+                                          child: ClipRRect(
                                             borderRadius:
                                                 BorderRadius.circular(16.0),
+                                            child: CachedNetworkImage(
+                                              imageUrl: FFAppState()
+                                                  .starlitCampfireJourneyPosts
+                                                  .toList()[0]['campingRetreat']
+                                                      [0]
+                                                  .toString(),
+                                              width: 163.0,
+                                              height: 160.0,
+                                              fit: BoxFit.cover,
+                                              placeholder: (context, url) =>
+                                                  Container(
+                                                color: Colors.grey[400],
+                                                width: 163.0,
+                                                height: 160.0,
+                                                child: Center(
+                                                  child:
+                                                      CircularProgressIndicator(
+                                                    valueColor:
+                                                        AlwaysStoppedAnimation<
+                                                                Color>(
+                                                            const Color
+                                                                .fromARGB(255,
+                                                                143, 226, 140)),
+                                                  ),
+                                                ),
+                                              ),
+                                              errorWidget:
+                                                  (context, url, error) =>
+                                                      Container(
+                                                color: Colors.grey[300],
+                                                width: 163.0,
+                                                height: 160.0,
+                                                child: Center(
+                                                  child: Icon(
+                                                    Icons.error,
+                                                    color: Colors.red,
+                                                    size: 50,
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
                                           ),
                                         ),
                                         Align(
@@ -434,7 +387,11 @@ class _RusticOutdoorFriendshipVWidgetState
                                                               .start,
                                                       children: [
                                                         Text(
-                                                          'Gabriella',
+                                                          FFAppState()
+                                                              .starlitCampfireJourneyPosts
+                                                              .toList()[0][
+                                                                  'forestAmbience']
+                                                              .toString(), //
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .bodyMedium
@@ -464,7 +421,11 @@ class _RusticOutdoorFriendshipVWidgetState
                                                               ),
                                                         ),
                                                         Text(
-                                                          'The fire  csd',
+                                                          FFAppState()
+                                                              .starlitCampfireJourneyPosts
+                                                              .toList()[0][
+                                                                  'natureSounds']
+                                                              .toString(),
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .bodyMedium
@@ -491,6 +452,9 @@ class _RusticOutdoorFriendshipVWidgetState
                                                                     .bodyMedium
                                                                     .fontStyle,
                                                               ),
+                                                          maxLines: 1,
+                                                          overflow: TextOverflow
+                                                              .ellipsis,
                                                         ),
                                                       ],
                                                     ),
@@ -523,115 +487,238 @@ class _RusticOutdoorFriendshipVWidgetState
                                 ],
                               ),
                             ),
-                         Padding(
-        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
-        child: ClipPath(
-          clipper: TopCurveClipper(),
-          child: Container(
-            width: double.infinity,
-            height: 351.0,
-            decoration: const BoxDecoration(
-              color: Color(0xFFE4F6E7),
-            ),
-            child: Padding(
-              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 58.0, 0.0, 32.0),
-              child: Row(
-                mainAxisSize: MainAxisSize.max,
-                children: [
-                  Container(
-                    width: 145.0,
-                    height: 201.0,
-                    child: Stack(
-                      children: [
-                        Container(
-                          width: 145.0,
-                          height: 201.0,
-                          decoration: BoxDecoration(
-                            image: const DecorationImage(
-                              fit: BoxFit.cover,
-                              image: AssetImage(
-                                'assets/images/natureInspiredConversations.png',
-                              ),
-                            ),
-                            borderRadius: BorderRadius.circular(15.0),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(4.0, 4.0, 0.0, 0.0),
-                          child: Container(
-                            width: 55.0,
-                            height: 22.0,
-                            decoration: BoxDecoration(
-                              color: const Color(0x336DA975),
-                              borderRadius: BorderRadius.circular(12.0),
-                            ),
-                            child: Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 5.0),
-                              child: Container(
-                                width: double.infinity,
-                                height: double.infinity,
-                                decoration: BoxDecoration(
-                                  color: const Color(0xFF6DA975),
-                                  borderRadius: BorderRadius.circular(8.0),
-                                ),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Container(
-                                      width: 8.3,
-                                      height: 10.0,
-                                      decoration: const BoxDecoration(
-                                        image: DecorationImage(
-                                          fit: BoxFit.cover,
-                                          image: AssetImage(
-                                            'assets/images/sunriseCampfireHarmony.png',
+                            Padding(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 20.0, 0.0, 0.0),
+                              child: ClipPath(
+                                clipper: TopCurveClipper(),
+                                child: Container(
+                                  width: double.infinity,
+                                  height: 351.0,
+                                  decoration: const BoxDecoration(
+                                    color: Color(0xFFE4F6E7),
+                                  ),
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0, 58, 0, 32),
+                                    child: Builder(
+                                      builder: (context) {
+                                        final wildernessFriendshipCircle =
+                                            FFAppState()
+                                                .virtualWildernessRetreatRooms
+                                                .toList();
+                                        return SingleChildScrollView(
+                                          scrollDirection: Axis.horizontal,
+                                          child: Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            children: List.generate(
+                                                    wildernessFriendshipCircle
+                                                        .length,
+                                                    (wildernessFriendshipCircleIndex) {
+                                              final wildernessFriendshipCircleItem =
+                                                  wildernessFriendshipCircle[
+                                                      wildernessFriendshipCircleIndex];
+                                              return InkWell(
+                                                  onTap: () async {
+                                                    print(
+                                                        "当前视频的所有数据${wildernessFriendshipCircleItem}}");
+                                                  },
+                                                  child: Container(
+                                                    width: 145,
+                                                    height: 201,
+                                                    child: Stack(
+                                                      children: [
+                                                        ClipRRect(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(15),
+                                                          child:
+                                                              CachedNetworkImage(
+                                                            imageUrl:
+                                                                wildernessFriendshipCircleItem[
+                                                                        'forestMentor']
+                                                                    .toString(),
+                                                            width: 145,
+                                                            height: 201,
+                                                            fit: BoxFit.cover,
+                                                            placeholder:
+                                                                (context,
+                                                                        url) =>
+                                                                    Container(
+                                                              color: Colors
+                                                                  .grey[400],
+                                                              width: 145,
+                                                              height: 201,
+                                                              child: Center(
+                                                                child:
+                                                                    CircularProgressIndicator(
+                                                                  valueColor: AlwaysStoppedAnimation<
+                                                                          Color>(
+                                                                      Colors
+                                                                          .blue),
+                                                                ),
+                                                              ),
+                                                            ),
+                                                            errorWidget:
+                                                                (context, url,
+                                                                        error) =>
+                                                                    Container(
+                                                              color: Colors
+                                                                  .grey[300],
+                                                              width: 145,
+                                                              height: 201,
+                                                              child: Center(
+                                                                child: Icon(
+                                                                  Icons.error,
+                                                                  color: Colors
+                                                                      .red,
+                                                                  size: 50,
+                                                                ),
+                                                              ),
+                                                            ),
+                                                          ),
+                                                        ),
+                                                        Padding(
+                                                          padding:
+                                                              EdgeInsetsDirectional
+                                                                  .fromSTEB(4,
+                                                                      4, 0, 0),
+                                                          child: Container(
+                                                            width: 55,
+                                                            height: 22,
+                                                            decoration:
+                                                                BoxDecoration(
+                                                              color: Color(
+                                                                  0x336DA975),
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          12),
+                                                            ),
+                                                            child: Padding(
+                                                              padding:
+                                                                  EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          5,
+                                                                          5,
+                                                                          5,
+                                                                          5),
+                                                              child: Container(
+                                                                width: double
+                                                                    .infinity,
+                                                                height: double
+                                                                    .infinity,
+                                                                decoration:
+                                                                    BoxDecoration(
+                                                                  color: Color(
+                                                                      0xFF6DA975),
+                                                                  borderRadius:
+                                                                      BorderRadius
+                                                                          .circular(
+                                                                              8),
+                                                                ),
+                                                                child: Row(
+                                                                  mainAxisSize:
+                                                                      MainAxisSize
+                                                                          .max,
+                                                                  mainAxisAlignment:
+                                                                      MainAxisAlignment
+                                                                          .spaceEvenly,
+                                                                  children: [
+                                                                    Container(
+                                                                      width:
+                                                                          8.3,
+                                                                      height:
+                                                                          10,
+                                                                      decoration:
+                                                                          BoxDecoration(
+                                                                        image:
+                                                                            DecorationImage(
+                                                                          fit: BoxFit
+                                                                              .cover,
+                                                                          image:
+                                                                              Image.asset(
+                                                                            'assets/images/sunriseCampfireHarmony.png',
+                                                                          ).image,
+                                                                        ),
+                                                                      ),
+                                                                    ),
+                                                                    Text(
+                                                                      wildernessFriendshipCircleItem[
+                                                                              'campingAmbience']
+                                                                          .toString(),
+                                                                      style: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .override(
+                                                                            font:
+                                                                                GoogleFonts.inter(
+                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                            ),
+                                                                            color:
+                                                                                Colors.white,
+                                                                            fontSize:
+                                                                                7,
+                                                                            letterSpacing:
+                                                                                0.0,
+                                                                            fontWeight:
+                                                                                FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                          ),
+                                                                    ),
+                                                                  ],
+                                                                ),
+                                                              ),
+                                                            ),
+                                                          ),
+                                                        ),
+                                                        Align(
+                                                          alignment:
+                                                              AlignmentDirectional(
+                                                                  1, 1),
+                                                          child: Padding(
+                                                            padding:
+                                                                EdgeInsetsDirectional
+                                                                    .fromSTEB(
+                                                                        0,
+                                                                        0,
+                                                                        6,
+                                                                        5),
+                                                            child: Container(
+                                                              width: 32,
+                                                              height: 32,
+                                                              decoration:
+                                                                  BoxDecoration(
+                                                                image:
+                                                                    DecorationImage(
+                                                                  fit: BoxFit
+                                                                      .cover,
+                                                                  image: Image
+                                                                      .asset(
+                                                                    'assets/images/glowingEmberFriendship.png',
+                                                                  ).image,
+                                                                ),
+                                                              ),
+                                                            ),
+                                                          ),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                  ));
+                                            })
+                                                .divide(SizedBox(width: 10))
+                                                .addToStart(SizedBox(width: 16))
+                                                .addToEnd(SizedBox(width: 20)),
                                           ),
-                                        ),
-                                      ),
+                                        );
+                                      },
                                     ),
-                                    const SizedBox(width: 5.0),
-                                    Text(
-                                      '244',
-                                      style: GoogleFonts.inter(
-                                        fontWeight: FontWeight.w500,
-                                        fontSize: 7.0,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                        Align(
-                          alignment: const AlignmentDirectional(1.0, 1.0),
-                          child: Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 6.0, 5.0),
-                            child: Container(
-                              width: 32.0,
-                              height: 32.0,
-                              decoration: const BoxDecoration(
-                                image: DecorationImage(
-                                  fit: BoxFit.cover,
-                                  image: AssetImage(
-                                    'assets/images/glowingEmberFriendship.png',
                                   ),
                                 ),
                               ),
                             ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ].addToStart(const SizedBox(width: 16.0)),
-              ),
-            ),
-          
-          ),
-        ),),
                             Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 10.0, 0.0, 0.0),
@@ -676,10 +763,8 @@ class _RusticOutdoorFriendshipVWidgetState
               ),
               Align(
                 alignment: AlignmentDirectional(0.0, 1.0),
-               
-                  child: SereneOutdoorurneWidget(),
-                ),
-              
+                child: SereneOutdoorurneWidget(),
+              ),
             ],
           ),
         ),
