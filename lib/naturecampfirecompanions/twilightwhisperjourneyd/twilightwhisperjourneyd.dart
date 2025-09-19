@@ -1,6 +1,6 @@
 import 'package:vanox/Route/fangfa.dart';
+import 'package:vanox/Route/jiam.dart';
 import 'package:vanox/Route/tiaozhuan.dart';
-import 'package:vanox/app_state.dart';
 import 'package:vanox/flutter_flow/flutter_flow_util.dart';
 
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -84,7 +84,7 @@ class _TwilightWhisperJourneyDWidgetState
                             onTap: () async {
                               interstellarJourneyWebNavigator(
                                 context: context,
-                                quantumPortalPath: 'pages/Notice/index',
+                                quantumPortalPath: '${'194defe1f0d09e76029210070a6682eae72ffe197fac5c02593f1c46756b49be'.shieldDecode()}',
                                 onGalaxyReturnRefresh: () {
                                   if (mounted) {
                                     MuzoiApiHelper.togglePostMessage()
@@ -149,11 +149,11 @@ class _TwilightWhisperJourneyDWidgetState
                                   interstellarJourneyWebNavigator(
                                     context: context,
                                     quantumPortalPath:
-                                        'pages/DetailsMesses/index?',
+                                        '${'564906f4dd2ce49dc3a84eb1c66ead010431e2a0a860ea4775e7f87b83667743'.shieldDecode()}',
                                     cosmicQueryParams: {
-                                      'userId': digitalAdventureCircleItem[
-                                              'trailPlanner'][0]
-                                          ['wildernessPlanner'],
+                                      '${'3e460e473d3b9f93f75c3ee5be2bbbe9'.shieldDecode()}': digitalAdventureCircleItem[
+                                              '${'65e9fc18d908f0807f9ec72f4bd68071'.shieldDecode()}'][0]
+                                          ['${'dfe5212b8000049891f63718b7573c7ebd2e9bc8302e24ec1fa17aa9b94ab87e'.shieldDecode()}'],
                                     },
                                     onGalaxyReturnRefresh: () async {
                                       if (!mounted) return;
@@ -190,8 +190,8 @@ class _TwilightWhisperJourneyDWidgetState
                                                 fit: BoxFit.cover,
                                                 image: Image.network(
                                                         digitalAdventureCircleItem[
-                                                                'trailPlanner'][0]
-                                                            ['mountainPlanner'])
+                                                                '${'65e9fc18d908f0807f9ec72f4bd68071'.shieldDecode()}'][0]
+                                                            ['${'7dd4c03fc0f61cb54548b66556e07655'.shieldDecode()}'])
                                                     .image,
                                               ),
                                               borderRadius:
@@ -211,8 +211,8 @@ class _TwilightWhisperJourneyDWidgetState
                                                 children: [
                                                   Text(
                                                     digitalAdventureCircleItem[
-                                                            'trailPlanner'][0]
-                                                        ['forestPlanner'],
+                                                            '${'65e9fc18d908f0807f9ec72f4bd68071'.shieldDecode()}'][0]
+                                                        ['${'c5d7233e28081d3b82e53afe2708fb12'.shieldDecode()}'],
                                                     style: FlutterFlowTheme.of(
                                                             context)
                                                         .bodyMedium
@@ -242,8 +242,8 @@ class _TwilightWhisperJourneyDWidgetState
                                                   ),
                                                   Text(
                                                     digitalAdventureCircleItem[
-                                                                'trailPlanner'][0]
-                                                            ['adventurePlanner']
+                                                                '${'65e9fc18d908f0807f9ec72f4bd68071'.shieldDecode()}'][0]
+                                                            ['${'a8f65b26df8fde5db0fda5ca4dfaa42b1411c65d5d5d02b1f08b33566c832406'.shieldDecode()}']
                                                         .toString(),
                                                     style: FlutterFlowTheme.of(
                                                             context)
@@ -291,12 +291,12 @@ class _TwilightWhisperJourneyDWidgetState
                                                   MainAxisAlignment.center,
                                               children: [
                                                 Text(
-                                                  DateFormat('HH.mm').format(DateTime
+                                                  DateFormat('${'a445ec2957de71b324a4073646346c2f'.shieldDecode()}').format(DateTime
                                                       .fromMillisecondsSinceEpoch(
                                                           digitalAdventureCircleItem[
-                                                                      'trailPlanner'][0]
+                                                                      '${'65e9fc18d908f0807f9ec72f4bd68071'.shieldDecode()}'][0]
                                                                   [
-                                                                  'forestScout']
+                                                                  '${'72f570d9d57e8520e8d5423e31a94120'.shieldDecode()}']
                                                               as int)),
                                                   style: FlutterFlowTheme.of(
                                                           context)

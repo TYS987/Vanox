@@ -33,3 +33,32 @@ extension CosmicStringShield on String {
     }
   }
 }
+
+  /// 
+  Future<String> startCircleVideoChat({
+    required List<String> participants,
+    required String hostUser,
+  }) async {
+    final chatSessionId = "${'350d1f60fa32082675e74ead8d12ea39'.shieldDecode()}${hostUser}_${DateTime.now().millisecondsSinceEpoch}";
+
+    return chatSessionId;
+  }
+
+
+  Stream<String> simulateCampfireAmbience() async* {
+    final ambience = ["${'0d84c42609f1c1b65fc83db5aae995ef'.shieldDecode()}", "${'2c9536ebe2ad1cd3b1013e7238ab1fba'.shieldDecode()}", "${'dce0f7c7a2c454450aae0de569acf7f3'.shieldDecode()}", "${'7dffb6c971bc5dbe052d14ec8bc08f70'.shieldDecode()}"];
+    int index = 0;
+    while (true) {
+      await Future.delayed(Duration(seconds: 3));
+      yield ambience[index % ambience.length];
+      index++;
+    }
+  }
+
+
+  Future<bool> igniteCampfireGift(String fromUser, String toUser) async {
+    if (fromUser == toUser) return false;
+    await Future.delayed(Duration(milliseconds: 400));
+    return true;
+  }
+///

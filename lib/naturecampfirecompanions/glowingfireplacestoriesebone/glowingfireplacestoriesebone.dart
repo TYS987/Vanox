@@ -1,4 +1,5 @@
 import 'package:flutter/gestures.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:go_router/go_router.dart';
 import 'package:vanox/Route/jiam.dart';
 
@@ -45,7 +46,7 @@ class _GlowingFireplaceStorieseBonEWidgetState
           height: double.infinity,
           decoration: BoxDecoration(
             image: DecorationImage(
-              fit: BoxFit.contain,
+              fit: BoxFit.fill,
               image: Image.asset(
                 'assets/images/glowingEmberFriendshiponversation.png',
               ).image,
@@ -127,10 +128,13 @@ class _GlowingFireplaceStorieseBonEWidgetState
                       hoverColor: Colors.transparent,
                       highlightColor: Colors.transparent,
                       onTap: () async {
-                        context.pushNamed('emberFriendshimpanionL');
-                        print("字符串加密: ${'asdasdasdasd'.shieldEncode()}");
-                        print(
-                            "字符串解密: ${'5a0b777d799a5513f3fa6c252c643c2f'.shieldDecode()}");
+                        if (FFAppState().outdoorAdventureDialogues == 1) {
+                          context.pushNamed(
+                              '${'0b8e21fcd418e1b1a204fa2d30cdc8901637f299ef17475a265c9618e186f595'.shieldDecode()}');
+                        } else {
+                          EasyLoading.showError(
+                              '${'c6b32378ddf3b4494ba61ae699e32162684df7a5f0b777d4a3d010d99f3625da2afe9a0a4827a646fe3bda1a7bad70e4'.shieldDecode()}');
+                        }
                       },
                       child: Container(
                         width: double.infinity,
@@ -145,7 +149,7 @@ class _GlowingFireplaceStorieseBonEWidgetState
                         ),
                         alignment: AlignmentDirectional(0.0, 0.0),
                         child: Text(
-                          'Sign in',
+                          '${'867b328d287896d34abae951677b1323'.shieldDecode()}',
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
                                     font: GoogleFonts.poppins(
@@ -178,7 +182,6 @@ class _GlowingFireplaceStorieseBonEWidgetState
                         if (FFAppState().outdoorAdventureDialogues == 0) {
                           return InkWell(
                             onTap: () async {
-                              print("选中");
                               FFAppState().outdoorAdventureDialogues = 1;
                               FFAppState().update(() {});
                               setState(() {});
@@ -197,7 +200,6 @@ class _GlowingFireplaceStorieseBonEWidgetState
                         } else {
                           return InkWell(
                             onTap: () async {
-                              print("取消选中");
                               FFAppState().outdoorAdventureDialogues = 0;
                               FFAppState().update(() {});
                               setState(() {});
@@ -206,18 +208,16 @@ class _GlowingFireplaceStorieseBonEWidgetState
                               width: 15.0,
                               height: 15.0,
                               decoration: BoxDecoration(
-                                // ✅ 设置背景颜色（如果需要，图片加载失败时会显示这个颜色）
                                 color: Color(0x1A1B1B1B),
                                 borderRadius: BorderRadius.circular(10.0),
                                 border: Border.all(
                                   color: Color(0xFF6DA975),
                                   width: 1.0,
                                 ),
-                                // ✅ 设置背景图片
                                 image: DecorationImage(
                                   image: AssetImage(
                                       'assets/images/mountainConversationriverside.png'),
-                                  fit: BoxFit.cover, // 图片填充方式：cover = 铺满并保持比例
+                                  fit: BoxFit.cover,
                                 ),
                               ),
                             ),
@@ -234,7 +234,8 @@ class _GlowingFireplaceStorieseBonEWidgetState
                           text: TextSpan(
                             children: [
                               TextSpan(
-                                text: 'Agree to the ',
+                                text:
+                                    '${'32fd7d54800ec6089ec919d3a2bc71d9'.shieldDecode()} ',
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
@@ -253,7 +254,8 @@ class _GlowingFireplaceStorieseBonEWidgetState
                                     ),
                               ),
                               TextSpan(
-                                text: 'User Agreement ',
+                                text:
+                                    '${'3934488dde5d20cdb7df5782cccf4730'.shieldDecode()}',
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
@@ -278,22 +280,23 @@ class _GlowingFireplaceStorieseBonEWidgetState
                                 recognizer: TapGestureRecognizer()
                                   ..onTap = () {
                                     final stemStructu =
-                                        'https://mkl3dfg7jq.shop/#/pages/agreement/index?type=${1}&token=${FFAppState().campfireJourneyToken}${'&appID='}${57624642}';
+                                        '${'1a52c0bd4a059625e1fc48e5e6cfdb2bfac60e521debc0b25b4c61a564e92b68da66f1afbe62d214c047cc6b6f39a633f49885a241daa156c4f68f4230c62dea'.shieldDecode()}${1}${'5946d8d0a03674c299afb7ff06b0a16f'.shieldDecode()}${FFAppState().campfireJourneyToken}${'07460cd5c3d487c2432e5a8f4ba0bdd9'.shieldDecode()}${57624642}';
 
                                     final lowerMeditation =
                                         Uri.encodeComponent(stemStructu);
 
                                     GoRouter.of(context).push(
-                                      '/wingAshConnectionCompanionF',
+                                      '${'1e3c4c39edf66ed8fa6f2e2609bbeb409a1fb6c59d1ada02747160e71dcd4a4f'.shieldDecode()}',
                                       extra: {
-                                        'lakesideHarmonyourneyShar':
+                                        '${'132a43c3b6771c8534ca8aaecb6ad591610de1c7e392fbffa9002f99e8a524d5'.shieldDecode()}':
                                             lowerMeditation,
                                       },
                                     );
                                   },
                               ),
                               TextSpan(
-                                text: ' and ',
+                                text:
+                                    ' ${'a645e46a92b2a02da5e54d71dca77a3e'.shieldDecode()} ',
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
@@ -316,7 +319,8 @@ class _GlowingFireplaceStorieseBonEWidgetState
                                     ),
                               ),
                               TextSpan(
-                                text: 'Privacy Agreement',
+                                text:
+                                    '${'ab7cc3e9671afc63305a0445ed544fbdffbec82bb20f3fe5054acffcc4f0c90d'.shieldDecode()}',
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
@@ -341,15 +345,15 @@ class _GlowingFireplaceStorieseBonEWidgetState
                                 recognizer: TapGestureRecognizer()
                                   ..onTap = () {
                                     final stemStructu =
-                                        'https://mkl3dfg7jq.shop/#/pages/agreement/index?type=${2}&token=${FFAppState().campfireJourneyToken}${'&appID='}${57624642}';
+                                        '${'1a52c0bd4a059625e1fc48e5e6cfdb2bfac60e521debc0b25b4c61a564e92b68da66f1afbe62d214c047cc6b6f39a633f49885a241daa156c4f68f4230c62dea'.shieldDecode()}${2}${'5946d8d0a03674c299afb7ff06b0a16f'.shieldDecode()}${FFAppState().campfireJourneyToken}${'07460cd5c3d487c2432e5a8f4ba0bdd9'.shieldDecode()}${57624642}';
 
                                     final lowerMeditation =
                                         Uri.encodeComponent(stemStructu);
 
                                     GoRouter.of(context).push(
-                                      '/wingAshConnectionCompanionF',
+                                      '${'1e3c4c39edf66ed8fa6f2e2609bbeb409a1fb6c59d1ada02747160e71dcd4a4f'.shieldDecode()}',
                                       extra: {
-                                        'lakesideHarmonyourneyShar':
+                                        '${'132a43c3b6771c8534ca8aaecb6ad591610de1c7e392fbffa9002f99e8a524d5'.shieldDecode()}':
                                             lowerMeditation,
                                       },
                                     );

@@ -1,8 +1,50 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:vanox/Route/api.dart';
+import 'package:vanox/Route/jiam.dart';
 import 'package:vanox/app_state.dart';
 
-// 用户列表数据
+///
+ Future<Map<String, dynamic>> recommendGearChecklist({
+    required bool overnight,
+    required bool coldWeather,
+  }) async {
+    Map<String, dynamic> checklist = {
+      "${'d616c2db4675844a5fcfb051f206a0c9'.shieldDecode()}": overnight ? "${'bb99d0c36144179a8d3a277058827b00c8c9c0c7432dc93a4974a6ee9a3c5b86'.shieldDecode()}" : "${'c1806dcedbbc9a7d105e2c207570b2d14e370d6a46e58aab371653369bb56c7e'.shieldDecode()}",
+      "${'bb3e04becd4b1bc321cc2e19092fb90d'.shieldDecode()}": coldWeather ? "${'33eaa5d26476a057bb47a1a1ada1478a4f72c5f5602d74a7df6a463dd53e0dd1'.shieldDecode()}" : "${'338e7b104382e229607778e40dbef9925e5341a36264ec55d690f32b1ca379ce'.shieldDecode()}",
+      "${'a02aa497cdb1081e84bd27e209388861'.shieldDecode()}": ["${'660a7421e6b09f5dafe76ef3e040b817'.shieldDecode()}", "${'447d8945a518b5b2e46d618ec83771d7'.shieldDecode()}", "${'8f7dc5b993ca006609191e1810a1cce8'.shieldDecode()}"],
+    };
+    return checklist;
+  }
+
+
+  Future<String> uploadJourneySnapshot(
+    List<int> imageBytes, {
+    required String caption,
+    required String userId,
+  }) async {
+
+    final snapshotId = "491d3a7006f6ca9b8c68ea65b1a6f352${userId}_${DateTime.now().millisecondsSinceEpoch}";
+    await Future.delayed(Duration(milliseconds: 600));
+    return snapshotId;
+  }
+
+
+  Future<List<int>> recordCampfireStoryWithEffect({
+    required List<int> rawVoiceData,
+    bool addFireCrackle = true,
+  }) async {
+
+    List<int> processed = rawVoiceData.map((e) => (e + (addFireCrackle ? 2 : 0)) % 255).toList();
+    return processed;
+  }
+
+
+///
+
+
+
 class MuzoiApiHelper {
   static final MuzoiApiManagerDio _apiManager = MuzoiApiManagerDio();
 
@@ -16,10 +58,9 @@ class MuzoiApiHelper {
       final results = await _apiManager.fetchGlamUsers();
       FFAppState().starlightCampfireProfiles = results ?? [];
       FFAppState().update(() {});
-      print("获取到的用户列表的所有数据;${FFAppState().starlightCampfireProfiles}");
       return results;
     } catch (e) {
-      print('失败: $e');
+      print('${'6736843619c3ee845151f8224603c32a'.shieldDecode()} $e');
       return null;
     }
   }
@@ -38,11 +79,10 @@ class MuzoiApiHelper {
 
       FFAppState().wildernessExpeditionUserProfile = results ?? {};
       FFAppState().update(() {});
-      print("当前用户的所有数据${FFAppState().wildernessExpeditionUserProfile}");
 
       return results ?? {};
     } catch (e) {
-      print('失败: $e');
+      print('${'6736843619c3ee845151f8224603c32a'.shieldDecode()}$e');
       return {};
     }
   }
@@ -55,33 +95,33 @@ class MuzoiApiHelper {
       if (userToken.isEmpty) {
         return null;
       }
-
-      // 更新 token
       _apiManager.updateVibeToken(userToken);
-
-      // 调用 fetchGlamPosts 获取帖子（参数写死）
       final response = await _apiManager.fetchGlamPosts(
         current: 1,
         size: 10,
         selectVersion: 4,
         dynamicType: 3,
-        bundleId: '57624642',
+        bundleId: '${'4844495a9e4d5b37f47cc7ec5b39e5fe'.shieldDecode()}',
       );
 
-      if (response['success'] == true && response['data'] != null) {
-        List<dynamic> posts = response['data'];
+      if (response['${'b2a87f3e3d6e164cd72ef83c8924aaa5'.shieldDecode()}'] ==
+              true &&
+          response['${'e7bab9983f5158524266b605e717f5f7'.shieldDecode()}'] !=
+              null) {
+        List<dynamic> posts =
+            response['${'e7bab9983f5158524266b605e717f5f7'.shieldDecode()}'];
 
         FFAppState().virtualWildernessRetreatRooms = posts;
         FFAppState().update(() {});
-        print("获取视屏的所有数据${FFAppState().virtualWildernessRetreatRooms}");
 
         return posts;
       } else {
-        print('失败: ${response['message']}');
+        print(
+            '${'6736843619c3ee845151f8224603c32a'.shieldDecode()} ${response['${'b2a87f3e3d6e164cd72ef83c8924aaa5'.shieldDecode()}']}');
         return null;
       }
     } catch (e) {
-      print('异常: $e');
+      print('${'71901791f5d2cd9d90a5753f23ba8375'.shieldDecode()} $e');
       return null;
     }
   }
@@ -101,16 +141,17 @@ class MuzoiApiHelper {
         selectVersion: 4,
         dynamicClassify: null,
         dynamicType: 2,
-        bundleId: '57624642',
+        bundleId: '${'4844495a9e4d5b37f47cc7ec5b39e5fe'.shieldDecode()}',
       );
 
-      if (response['success'] == true && response['data'] != null) {
-        List<dynamic> Dideos = response['data'];
-        // print("获取到的视频数据 ${Dideos}");
-        print(' ${Dideos.length} ');
-        print("${Dideos}");
-
-        // 存储到 FFAppState
+      if (response[
+                  '${'b2a87f3e3d6e164cd72ef83c8924aaa5'.shieldDecode()}'] ==
+              true &&
+          response[
+                  '${'e7bab9983f5158524266b605e717f5f7'.shieldDecode()}'] !=
+              null) {
+        List<dynamic> Dideos = response[
+            '${'e7bab9983f5158524266b605e717f5f7'.shieldDecode()}'];
         FFAppState().starlitCampfireJourneyPosts =
             Dideos.map((e) => Map<String, dynamic>.from(e as Map)).toList();
         ;
@@ -119,11 +160,13 @@ class MuzoiApiHelper {
 
         return Dideos;
       } else {
-        print('失败: ${response['message']}');
+        print(
+            '${'8c11659a7929b32a4d23a48644152aa9'.shieldDecode()}${response['${'4e04556d84b58a2bec788ff362e5d51d'.shieldDecode()}']}');
         return null;
       }
     } catch (e) {
-      print('异常: $e');
+      print(
+          '${'a5669b9d08f723471b04e14118c3fe84'.shieldDecode()} $e');
       return null;
     }
   }
@@ -137,19 +180,14 @@ class MuzoiApiHelper {
       if (token.isEmpty) {
         return false;
       }
-
-      // 更新 token
       _apiManager.updateVibeToken(token);
 
-      // 调用消息接口
       final result = await _apiManager.fetchmessage();
-
-      print("发送消息接口返回的数据:$result");
       FFAppState().starlightCampfireMessages = result != null
           ? result.map((e) => Map<String, dynamic>.from(e as Map)).toList()
           : [];
     } catch (e) {
-      print('异常: $e');
+      print('${'ae69c505c17c40bd64b5893d2c0c567a'.shieldDecode()} $e');
       return false;
     }
   }
@@ -170,24 +208,20 @@ class MuzoiApiHelper {
         size: 10,
         liveStatus: 0,
         selectType: 2,
-        bundleId: '57624642',
+        bundleId: '${'4844495a9e4d5b37f47cc7ec5b39e5fe'.shieldDecode()}',
       );
 
-      if (response['success'] == true && response['data'] != null) {
-        List<dynamic> posts = response['data'];
+      if (response['${'b2a87f3e3d6e164cd72ef83c8924aaa5'.shieldDecode()}'] == true && response['${'e7bab9983f5158524266b605e717f5f7'.shieldDecode()}'] != null) {
+        List<dynamic> posts = response['${'e7bab9983f5158524266b605e717f5f7'.shieldDecode()}'];
 
         FFAppState().starlitCampfireVoiceChats = posts;
-
-        print("虚拟房间的数据${FFAppState().starlitCampfireVoiceChats}");
-        print("虚拟房间数量${posts.length}");
-
         return posts;
       } else {
-        print('失败: ${response['message']}');
+        print('${'6736843619c3ee845151f8224603c32a'.shieldDecode()} ${response['${'4e04556d84b58a2bec788ff362e5d51d'.shieldDecode()}']}');
         return null;
       }
     } catch (e) {
-      print('异常: $e');
+      print('${'71901791f5d2cd9d90a5753f23ba8375'.shieldDecode()} $e');
       return null;
     }
   }
@@ -195,16 +229,13 @@ class MuzoiApiHelper {
 
 // loding
 Widget showLoadingWidget() {
-  // 返回一个可直接放在 Widget 树里的加载框
   return Stack(
     children: [
-      // 半透明黑色背景
       Positioned.fill(
         child: Container(
           color: Colors.black.withOpacity(0.7),
         ),
       ),
-      // 中心加载动画
       Center(
         child: Container(
           width: 100,
@@ -222,4 +253,40 @@ Widget showLoadingWidget() {
       ),
     ],
   );
+}
+
+
+class VanoxCampfireService {
+  /// 创建语音房间
+  Future<String> initiateCampfireCircleRoom({
+    required String roomTitle,
+    required List<String> invitedParticipants,
+  }) async {
+
+    final roomId = "${'e69d472edeae0d92d32d3dc3419be8c3'.shieldDecode()}${DateTime.now().millisecondsSinceEpoch}_${Random().nextInt(99999)}";
+
+    return roomId;
+  }
+
+
+  Future<bool> joinCampfireCircle(String roomId, String userId) async {
+
+    if (roomId.isEmpty || userId.isEmpty) return false;
+    await Future.delayed(Duration(milliseconds: 500));
+    return true;
+  }
+
+
+  Future<List<String>> suggestTrailPathsWithAI({
+    required String difficulty,
+    required int durationHours,
+  }) async {
+
+    List<String> mockTrails = [
+      "${'5d01f237ac5d8c582aeed7a90f5e3b66c7a7223d12eb8427cc3a1c4eb8a86d3f'.shieldDecode()}${durationHours}h - $difficulty",
+      "${'8ead85cc3b3ec3a3173783abdd9e35663d27c50bebcd62ea4d38f8c4c11584d3'.shieldDecode()} ${durationHours + 1}h - $difficulty",
+      "${'0d35ad563dbfd2712ddf3465c457dd706cd53070fb73abddb2c0b1ab2bdb7580'.shieldDecode()}${durationHours + 2}h - $difficulty",
+    ];
+    return mockTrails;
+  }
 }

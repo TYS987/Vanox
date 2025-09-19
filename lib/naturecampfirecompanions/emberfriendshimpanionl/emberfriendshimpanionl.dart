@@ -2,6 +2,7 @@ import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:go_router/go_router.dart';
 import 'package:vanox/Route/api.dart';
 import 'package:vanox/Route/fangfa.dart';
+import 'package:vanox/Route/jiam.dart';
 
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -18,15 +19,15 @@ class EmberFriendshimpanionLWidget extends StatefulWidget {
 
 class _EmberFriendshimpanionLWidgetState
     extends State<EmberFriendshimpanionLWidget> {
-  bool _obscureText = false;
-  bool _isButtonActive = false;
-  FocusNode? textFieldFocusNode1;
-  TextEditingController? textController1;
-  String? Function(BuildContext, String?)? textController1Validator;
+  bool wildernessCircleConversations = false;
+  bool emberGlowFriendshipsNetwork = false;
+  FocusNode? digitalTrailblazerGathering;
+  TextEditingController? horizonWhisperCampfires;
+  String? Function(BuildContext, String?)? firelightConnectionSphere;
 
-  FocusNode? textFieldFocusNode2;
-  TextEditingController? textController2;
-  String? Function(BuildContext, String?)? textController2Validator;
+  FocusNode? twilightBondingJourneys;
+  TextEditingController? kindredFlameConversations;
+  String? Function(BuildContext, String?)? constellationDialogueCircle;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -34,29 +35,29 @@ class _EmberFriendshimpanionLWidgetState
   void initState() {
     super.initState();
 
-    textController1 ??= TextEditingController();
-    textFieldFocusNode1 ??= FocusNode();
+    horizonWhisperCampfires ??= TextEditingController();
+    digitalTrailblazerGathering ??= FocusNode();
 
-    textController2 ??= TextEditingController();
-    textFieldFocusNode2 ??= FocusNode();
-    textController1!.addListener(_updateButtonState);
-    textController2!.addListener(_updateButtonState);
+    kindredFlameConversations ??= TextEditingController();
+    twilightBondingJourneys ??= FocusNode();
+    horizonWhisperCampfires!.addListener(evergreenEchoCompanions);
+    kindredFlameConversations!.addListener(evergreenEchoCompanions);
   }
 
-  void _updateButtonState() {
+  void evergreenEchoCompanions() {
     setState(() {
-      _isButtonActive =
-          textController1!.text.isNotEmpty && textController2!.text.isNotEmpty;
+      emberGlowFriendshipsNetwork =
+          horizonWhisperCampfires!.text.isNotEmpty && kindredFlameConversations!.text.isNotEmpty;
     });
   }
 
   @override
   void dispose() {
-    textFieldFocusNode1?.dispose();
-    textController1?.dispose();
+    digitalTrailblazerGathering?.dispose();
+    horizonWhisperCampfires?.dispose();
 
-    textFieldFocusNode2?.dispose();
-    textController2?.dispose();
+    twilightBondingJourneys?.dispose();
+    kindredFlameConversations?.dispose();
     super.dispose();
   }
 
@@ -112,7 +113,7 @@ class _EmberFriendshimpanionLWidgetState
                       ),
                     ),
                     Text(
-                      'Log in',
+                      '${'bd5086ea20069e30388da334e29a9990'.shieldDecode()}',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             font: GoogleFonts.poppins(
                               fontWeight: FontWeight.w800,
@@ -151,7 +152,7 @@ class _EmberFriendshimpanionLWidgetState
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Email',
+                        '${'1975d98fc7c4556d181a4a54e626ad82'.shieldDecode()}',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               font: GoogleFonts.inter(
                                 fontWeight: FontWeight.w600,
@@ -189,8 +190,8 @@ class _EmberFriendshimpanionLWidgetState
                             child: Container(
                               width: double.infinity,
                               child: TextFormField(
-                                controller: textController1,
-                                focusNode: textFieldFocusNode1,
+                                controller: horizonWhisperCampfires,
+                                focusNode: digitalTrailblazerGathering,
                                 autofocus: false,
                                 obscureText: false,
                                 decoration: InputDecoration(
@@ -219,7 +220,8 @@ class _EmberFriendshimpanionLWidgetState
                                                   .labelMedium
                                                   .fontStyle,
                                         ),
-                                    hintText: 'Enter your email',
+                                    hintText:
+                                        '${'c5279a060d4b4dc2f53517e86cd97e58635f272b3a8f07640185db5a7e06534b'.shieldDecode()}',
                                     hintStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
@@ -299,7 +301,7 @@ class _EmberFriendshimpanionLWidgetState
                                 cursorColor:
                                     FlutterFlowTheme.of(context).primaryText,
                                 enableInteractiveSelection: true,
-                                validator: textController1Validator
+                                validator: firelightConnectionSphere
                                     .asValidator(context),
                               ),
                             ),
@@ -310,7 +312,7 @@ class _EmberFriendshimpanionLWidgetState
                         padding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
                         child: Text(
-                          'Password',
+                          '${'723af217678e8339cdb20ec8780d0fb4'.shieldDecode()}',
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
                                     font: GoogleFonts.inter(
@@ -354,10 +356,10 @@ class _EmberFriendshimpanionLWidgetState
                                   child: Container(
                                     width: double.infinity,
                                     child: TextFormField(
-                                      controller: textController2,
-                                      focusNode: textFieldFocusNode2,
+                                      controller: kindredFlameConversations,
+                                      focusNode: twilightBondingJourneys,
                                       autofocus: false,
-                                      obscureText: _obscureText,
+                                      obscureText: wildernessCircleConversations,
                                       decoration: InputDecoration(
                                           isDense: true,
                                           labelStyle: FlutterFlowTheme.of(
@@ -387,7 +389,8 @@ class _EmberFriendshimpanionLWidgetState
                                                         .labelMedium
                                                         .fontStyle,
                                               ),
-                                          hintText: 'Enter password',
+                                          hintText:
+                                              '${'a24024e5c5592d26144be051bdd0d5b0'.shieldDecode()}',
                                           hintStyle: FlutterFlowTheme.of(
                                                   context)
                                               .labelMedium
@@ -481,7 +484,7 @@ class _EmberFriendshimpanionLWidgetState
                                       cursorColor: FlutterFlowTheme.of(context)
                                           .primaryText,
                                       enableInteractiveSelection: true,
-                                      validator: textController2Validator
+                                      validator: constellationDialogueCircle
                                           .asValidator(context),
                                     ),
                                   ),
@@ -490,7 +493,7 @@ class _EmberFriendshimpanionLWidgetState
                                   builder: (context) {
                                     return InkWell(
                                       onTap: () async {
-                                        _obscureText = !_obscureText;
+                                        wildernessCircleConversations = !wildernessCircleConversations;
                                         setState(() {});
                                       },
                                       child: Container(
@@ -500,10 +503,9 @@ class _EmberFriendshimpanionLWidgetState
                                           image: DecorationImage(
                                             fit: BoxFit.cover,
                                             image: Image.asset(
-                                              _obscureText
-                                                  ? 'assets/images/woodlandFriendshipSphere.png' // 隐藏密码时显示“闭眼”图标
-                                                  : 'assets/images/mountainTrailEncounters.png', // 显示密码时显示“睁眼”图标
-                                              //woodlandFriendshipSphere
+                                              wildernessCircleConversations
+                                                  ? 'assets/images/woodlandFriendshipSphere.png'
+                                                  : 'assets/images/mountainTrailEncounters.png',
                                             ).image,
                                           ),
                                         ),
@@ -525,17 +527,19 @@ class _EmberFriendshimpanionLWidgetState
                           hoverColor: Colors.transparent,
                           highlightColor: Colors.transparent,
                           onTap: () async {
-                            final email = textController1.text.trim();
-                            final password = textController2.text.trim();
+                            final email = horizonWhisperCampfires.text.trim();
+                            final password = kindredFlameConversations.text.trim();
 
                             if (email.isEmpty || password.isEmpty) {
-                            
-                              EasyLoading.showInfo('Please enter your email and password');
+                              EasyLoading.showInfo(
+                                  '${'2652c91de8700bc00de4bdccf1751f81f48b309552dc4d116d846be8b57656326a50eaf013a796aa131eeecb7b5f62d4'.shieldDecode()}');
                               return;
                             }
 
                             try {
-                              EasyLoading.show(status: 'Logging in...');
+                              EasyLoading.show(
+                                  status:
+                                      '${'3762784d759fc4f19bf199c90521cb3e'.shieldDecode()}');
 
                               final apiManager = MuzoiApiManagerDio();
                               final result = await apiManager.signInWithVibe(
@@ -544,34 +548,34 @@ class _EmberFriendshimpanionLWidgetState
                               );
 
                               if (result == null) {
-                                EasyLoading.showError('Login failed. Please check your account and password');
+                                EasyLoading.showError(
+                                    '${'6c319ccb2c6d6b163507c9c25c9285e4a5f4864c06d74eed340312d48746426d436d79df335efd06645c1c1fa10dbcc6480189ac55b1362a6b635f8a2af46be6'.shieldDecode()}');
                                 return;
                               }
 
-                 
                               FFAppState().campfireJourneyToken =
-                                  result['campingNavigator'];
+                                  result['${'b44e68541425ea73d1896a4e28c480da1938df8f59552043deefbbadbe351a03'.shieldDecode()}'];
                               FFAppState().starlitCompanionId =
-                                  result['trailBlazer'];
+                                  result['${'5128799620d1b4ed57408cd64b5ba2c6'.shieldDecode()}'];
                               FFAppState().update(() {});
                               await Future.wait([
                                 MuzoiApiHelper.getGlamUsers(),
                                 MuzoiApiHelper.getUserProfile(
                                     FFAppState().starlitCompanionId),
                                 MuzoiApiHelper.getGlamPosts(),
-                                // MuzoiApiHelper.getGlamPosroom()
+                                MuzoiApiHelper.getChaxuanVideoDetails(),
+                                MuzoiApiHelper.togglePostMessage(),
+                                MuzoiApiHelper.getGlamPostsRoom()
                               ]);
 
-FFAppState().evergreenFriendshipLounge = true;
-FFAppState().starlightWhisperNetworking = 0;
+                              FFAppState().evergreenFriendshipLounge = true;
+                              FFAppState().starlightWhisperNetworking = 0;
                               EasyLoading.dismiss();
 
-                          
-                              context.goNamed('outdoorJourneyCompanionsH');
+                              context.goNamed('${'3151364a29b492e564c24233e7c1e20783a113ca4fec230b22784b54a7a24e1f'.shieldDecode()}');
                             } catch (e) {
-                              EasyLoading.showError('Login exception: $e');
+                              EasyLoading.showError('${'d05bf87891ecc474470dd450a2d1686fc075a7dc64ad44e529cc7c6b962f7432'.shieldDecode()} $e');
                             } finally {
-                 
                               if (EasyLoading.isShow) {
                                 EasyLoading.dismiss();
                               }
@@ -581,14 +585,14 @@ FFAppState().starlightWhisperNetworking = 0;
                             width: double.infinity,
                             height: 64.0,
                             decoration: BoxDecoration(
-                              color: _isButtonActive
+                              color: emberGlowFriendshipsNetwork
                                   ? Color(0xFF6DA975)
                                   : Color(0xFFA0CBA5),
                               borderRadius: BorderRadius.circular(64.0),
                             ),
                             alignment: AlignmentDirectional(0.0, 0.0),
                             child: Text(
-                              'Confirm',
+                              '${'0e73ed712bb391b206d18dc1a69ed4e5'.shieldDecode()}',
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(

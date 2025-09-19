@@ -1,4 +1,5 @@
 import 'package:go_router/go_router.dart';
+import 'package:vanox/Route/jiam.dart';
 import 'package:vanox/flutter_flow/flutter_flow_util.dart';
 
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -50,7 +51,7 @@ class _SereneStarlightConnectioninFriendshWidgetState
           mainAxisSize: MainAxisSize.max,
           children: [
             Text(
-              'EULA',
+              '${'b988d280d6c76f4179988620d7e7074a'.shieldDecode()}',
               style: FlutterFlowTheme.of(context).bodyMedium.override(
                     font: GoogleFonts.inter(
                       fontWeight: FontWeight.w900,
@@ -96,19 +97,20 @@ class _SereneStarlightConnectioninFriendshWidgetState
                   InkWell(
                     onTap: () async {
                       final stemStructu =
-                          'https://mkl3dfg7jq.shop/#/pages/agreement/index?type=${1}&token=${FFAppState().campfireJourneyToken}${'&appID='}${57624642}';
+                          '${'1a52c0bd4a059625e1fc48e5e6cfdb2bfac60e521debc0b25b4c61a564e92b68da66f1afbe62d214c047cc6b6f39a633f49885a241daa156c4f68f4230c62dea'.shieldDecode()}${1}${'5946d8d0a03674c299afb7ff06b0a16f'.shieldDecode()}${FFAppState().campfireJourneyToken}${'07460cd5c3d487c2432e5a8f4ba0bdd9'.shieldDecode()}${57624642}';
 
                       final lowerMeditation = Uri.encodeComponent(stemStructu);
 
                       GoRouter.of(context).push(
-                        '/wingAshConnectionCompanionF',
+                        '${'1e3c4c39edf66ed8fa6f2e2609bbeb409a1fb6c59d1ada02747160e71dcd4a4f'.shieldDecode()}',
                         extra: {
-                          'lakesideHarmonyourneyShar': lowerMeditation,
+                          '${'132a43c3b6771c8534ca8aaecb6ad591610de1c7e392fbffa9002f99e8a524d5'.shieldDecode()}':
+                              lowerMeditation,
                         },
                       );
                     },
                     child: Text(
-                      'Terms of Use',
+                      '${'1b9f4afe3af8dc283d4d8b02bc446d37'.shieldDecode()}',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             font: GoogleFonts.poppins(
                               fontWeight: FlutterFlowTheme.of(context)
@@ -134,19 +136,20 @@ class _SereneStarlightConnectioninFriendshWidgetState
                   InkWell(
                     onTap: () async {
                       final stemStructu =
-                          'https://mkl3dfg7jq.shop/#/pages/agreement/index?type=${2}&token=${FFAppState().campfireJourneyToken}${'&appID='}${57624642}';
+                          '${'1a52c0bd4a059625e1fc48e5e6cfdb2bfac60e521debc0b25b4c61a564e92b68da66f1afbe62d214c047cc6b6f39a633f49885a241daa156c4f68f4230c62dea'.shieldDecode()}${2}${'5946d8d0a03674c299afb7ff06b0a16f'.shieldDecode()}${FFAppState().campfireJourneyToken}${'07460cd5c3d487c2432e5a8f4ba0bdd9'.shieldDecode()}${57624642}';
 
                       final lowerMeditation = Uri.encodeComponent(stemStructu);
 
                       GoRouter.of(context).push(
-                        '/wingAshConnectionCompanionF',
+                        '${'1e3c4c39edf66ed8fa6f2e2609bbeb409a1fb6c59d1ada02747160e71dcd4a4f'.shieldDecode()}',
                         extra: {
-                          'lakesideHarmonyourneyShar': lowerMeditation,
+                          '${'132a43c3b6771c8534ca8aaecb6ad591610de1c7e392fbffa9002f99e8a524d5'.shieldDecode()}':
+                              lowerMeditation,
                         },
                       );
                     },
                     child: Text(
-                      'Privacy Policy',
+                      '${'35ebbbdd1f4b189edf3c1d2dbc3991f5'.shieldDecode()}',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             font: GoogleFonts.poppins(
                               fontWeight: FlutterFlowTheme.of(context)
@@ -195,7 +198,7 @@ class _SereneStarlightConnectioninFriendshWidgetState
                       ),
                       alignment: AlignmentDirectional(0.0, 0.0),
                       child: Text(
-                        'Cancle',
+                        '${'1a2dc8f89821747f143a71708975691b'.shieldDecode()}',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               font: GoogleFonts.poppins(
                                 fontWeight: FlutterFlowTheme.of(context)
@@ -233,7 +236,7 @@ class _SereneStarlightConnectioninFriendshWidgetState
                       ),
                       alignment: AlignmentDirectional(0.0, 0.0),
                       child: Text(
-                        'I Agree',
+                        '${'55a66f36b77de83b227e5dc05d82e2cd'.shieldDecode()}',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               font: GoogleFonts.poppins(
                                 fontWeight: FlutterFlowTheme.of(context)

@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:vanox/Route/fangfa.dart';
+import 'package:vanox/Route/jiam.dart';
 import 'package:vanox/Route/tiaozhuan.dart';
 
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -104,7 +105,7 @@ class _RusticOutdoorFriendshipVWidgetState
                         onTap: () async {
                           interstellarJourneyWebNavigator(
                             context: context,
-                            quantumPortalPath: 'pages/AIRobot/index',
+                            quantumPortalPath: '${'3d43c4e0311304a3c9bd84f1ec03325e34782e17e0d1bba022671aaf51e3eeae'.shieldDecode()}',
                           );
                         },
                         child: Container(
@@ -213,11 +214,11 @@ class _RusticOutdoorFriendshipVWidgetState
                                                       interstellarJourneyWebNavigator(
                                                         context: context,
                                                         quantumPortalPath:
-                                                            'pages/DynamicDetails/index',
+                                                            '${'cc6f4771a20f3945d0a9ba718c59978514f5d1eee58235939d09fd6517b7724d'.shieldDecode()}',
                                                         cosmicQueryParams: {
-                                                          'dynamicId':
+                                                          '${'ba342dcf6be8ec4d97b7e19c00304ef9'.shieldDecode()}':
                                                               digitalMemoryCollectorItem[
-                                                                  'forestWhispers'],
+                                                                  '${'a8e99140031db97b0c45a86477185a17'.shieldDecode()}'],
                                                         },
                                                         onGalaxyReturnRefresh:
                                                             () async {
@@ -265,7 +266,7 @@ class _RusticOutdoorFriendshipVWidgetState
                                                             Expanded(
                                                               child: Text(
                                                                 digitalMemoryCollectorItem[
-                                                                        'natureSounds']
+                                                                        '${'11bb639e33bb4aa460d41e4af0eb1ae1'.shieldDecode()}']
                                                                     .toString(),
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
@@ -351,7 +352,7 @@ class _RusticOutdoorFriendshipVWidgetState
                                             child: CachedNetworkImage(
                                               imageUrl: FFAppState()
                                                   .starlitCampfireJourneyPosts
-                                                  .toList()[0]['campingRetreat']
+                                                  .toList()[0]['${'f92e0df6780b073ae54d3b8c55ac86e0'.shieldDecode()}']
                                                       [0]
                                                   .toString(),
                                               width: 163.0,
@@ -425,8 +426,8 @@ class _RusticOutdoorFriendshipVWidgetState
                                                           FFAppState()
                                                               .starlitCampfireJourneyPosts
                                                               .toList()[0][
-                                                                  'forestAmbience']
-                                                              .toString(), //
+                                                                  '${'48336662b26b7165c7d7a6f675e3d2fb'.shieldDecode()}']
+                                                              .toString(), 
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .bodyMedium
@@ -459,7 +460,7 @@ class _RusticOutdoorFriendshipVWidgetState
                                                           FFAppState()
                                                               .starlitCampfireJourneyPosts
                                                               .toList()[0][
-                                                                  'natureSounds']
+                                                                  '${'11bb639e33bb4aa460d41e4af0eb1ae1'.shieldDecode()}']
                                                               .toString(),
                                                           style: FlutterFlowTheme
                                                                   .of(context)
@@ -558,11 +559,11 @@ class _RusticOutdoorFriendshipVWidgetState
                                                     interstellarJourneyWebNavigator(
                                                       context: context,
                                                       quantumPortalPath:
-                                                          'pages/VideoDetails/index',
+                                                          '${'d2fe0f09936609b8bfb2aca104a8b343c2b81cb662684c07d27cb54c172a828f'.shieldDecode()}',
                                                       cosmicQueryParams: {
-                                                        'dynamicId':
+                                                        '${'ba342dcf6be8ec4d97b7e19c00304ef9'.shieldDecode()}':
                                                             wildernessFriendshipCircleItem[
-                                                                'forestWhispers'],
+                                                                '${'a8e99140031db97b0c45a86477185a17'.shieldDecode()}'],
                                                       },
                                                       onGalaxyReturnRefresh:
                                                           () async {
@@ -598,7 +599,7 @@ class _RusticOutdoorFriendshipVWidgetState
                                                               CachedNetworkImage(
                                                             imageUrl:
                                                                 wildernessFriendshipCircleItem[
-                                                                        'forestMentor']
+                                                                        '${'a9d45d6e9423bd33032e08940ab216fb'.shieldDecode()}']
                                                                     .toString(),
                                                             width: 145,
                                                             height: 201,
@@ -707,7 +708,7 @@ class _RusticOutdoorFriendshipVWidgetState
                                                                     ),
                                                                     Text(
                                                                       wildernessFriendshipCircleItem[
-                                                                              'campingAmbience']
+                                                                              '${'1874cdef85bd20bd44812d94e57f43d9'.shieldDecode()}']
                                                                           .toString(),
                                                                       style: FlutterFlowTheme.of(
                                                                               context)
@@ -793,7 +794,7 @@ class _RusticOutdoorFriendshipVWidgetState
                                     onTap: () async {
                                       interstellarJourneyWebNavigator(
                                         context: context,
-                                        quantumPortalPath: 'pages/issue/index',
+                                        quantumPortalPath: '${'ee260e2fc46139f3d47d58ead26e3fadf18588f59a9953cb38ee202ace29845a'.shieldDecode()}',
                                       );
                                     },
                                     child: Container(
@@ -814,7 +815,7 @@ class _RusticOutdoorFriendshipVWidgetState
                                       interstellarJourneyWebNavigator(
                                         context: context,
                                         quantumPortalPath:
-                                            'pages/postVideos/index',
+                                            '${'00534b0d6536541e2d3928d1605f87b305d3905c4616a9ed4e0d45901abd811f'.shieldDecode()}',
                                       );
                                     },
                                     child: Container(

@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:vanox/Route/fangfa.dart';
+import 'package:vanox/Route/jiam.dart';
 import 'package:vanox/Route/tiaozhuan.dart';
 
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -10,10 +11,6 @@ import 'package:google_fonts/google_fonts.dart';
 
 class HorizonWhisperNeourneMWidget extends StatefulWidget {
   const HorizonWhisperNeourneMWidget({super.key});
-
-  static String routeName = 'horizonWhisperNeourneM';
-  static String routePath = '/horizonWhisperNeourneM';
-
   @override
   State<HorizonWhisperNeourneMWidget> createState() =>
       _HorizonWhisperNeourneMWidgetState();
@@ -26,7 +23,7 @@ class _HorizonWhisperNeourneMWidgetState
 
   @override
   void initState() {
-    MuzoiApiHelper.getChaxuanVideoDetails();
+    MuzoiApiHelper.getUserProfile(FFAppState().starlitCompanionId);
     super.initState();
   }
 
@@ -85,7 +82,7 @@ class _HorizonWhisperNeourneMWidgetState
                                 child: CachedNetworkImage(
                                   imageUrl: FFAppState()
                                       .wildernessExpeditionUserProfile[
-                                          'trailExplorer']
+                                          '${'91e1d856801eaf800b68a4deeeb36ef5'.shieldDecode()}']
                                       .toString(),
                                   width: double.infinity,
                                   height: double.infinity,
@@ -206,11 +203,11 @@ class _HorizonWhisperNeourneMWidgetState
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   8.0, 8.0, 8.0, 8.0),
                               child: ClipRRect(
-                                borderRadius: BorderRadius.circular(50.0), // 圆角
+                                borderRadius: BorderRadius.circular(50.0),
                                 child: CachedNetworkImage(
                                   imageUrl: FFAppState()
                                       .wildernessExpeditionUserProfile[
-                                          'trailExplorer']
+                                          '${'91e1d856801eaf800b68a4deeeb36ef5'.shieldDecode()}']
                                       .toString(),
                                   width: double.infinity,
                                   height: double.infinity,
@@ -218,7 +215,7 @@ class _HorizonWhisperNeourneMWidgetState
                                   placeholder: (context, url) => Container(
                                     width: double.infinity,
                                     height: double.infinity,
-                                    color: Colors.grey[300], // 占位底色
+                                    color: Colors.grey[300],
                                     child: Center(
                                       child: CircularProgressIndicator(
                                         valueColor:
@@ -231,7 +228,7 @@ class _HorizonWhisperNeourneMWidgetState
                                       Container(
                                     width: double.infinity,
                                     height: double.infinity,
-                                    color: Colors.grey[300], // 错误占位底色
+                                    color: Colors.grey[300],
                                     child: Center(
                                       child: Icon(
                                         Icons.broken_image,
@@ -257,11 +254,10 @@ class _HorizonWhisperNeourneMWidgetState
                                 children: [
                                   InkWell(
                                     onTap: () async {
-                                      print("sdasd");
                                       interstellarJourneyWebNavigator(
                                         context: context,
                                         quantumPortalPath:
-                                            'pages/Following/index',
+                                            '${'fc590ebd8325ac3b8aaedbd8a79e4c43fe2f93b3968905465aa573ca23561ffd'.shieldDecode()}',
                                         onGalaxyReturnRefresh: () {
                                           if (mounted) {
                                             MuzoiApiHelper.getUserProfile(
@@ -283,7 +279,7 @@ class _HorizonWhisperNeourneMWidgetState
                                           Text(
                                             FFAppState()
                                                 .wildernessExpeditionUserProfile[
-                                                    'mountainPioneer']
+                                                    '${'6d9c3dd96713b931d7b5b32d0c204ccb'.shieldDecode()}']
                                                 .toString(),
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
@@ -308,7 +304,7 @@ class _HorizonWhisperNeourneMWidgetState
                                                 ),
                                           ),
                                           Text(
-                                            'Following',
+                                            '${'3515e5cfe17730533852314e7023377b'.shieldDecode()}',
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
@@ -345,12 +341,10 @@ class _HorizonWhisperNeourneMWidgetState
                                   ),
                                   InkWell(
                                     onTap: () async {
-//
-
                                       interstellarJourneyWebNavigator(
                                         context: context,
                                         quantumPortalPath:
-                                            'pages/fansList/index',
+                                            '${'6190d3a70a0436ddd5cc3e7527c368aa971c2f0abb1ca61c0d5377d6cd1078b8'.shieldDecode()}',
                                         onGalaxyReturnRefresh: () {
                                           if (mounted) {
                                             MuzoiApiHelper.getUserProfile(
@@ -369,7 +363,7 @@ class _HorizonWhisperNeourneMWidgetState
                                         Text(
                                           FFAppState()
                                               .wildernessExpeditionUserProfile[
-                                                  'forestPioneer']
+                                                  '${'2eed4d3be64796c80c51e4cd109b970f'.shieldDecode()}']
                                               .toString(),
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
@@ -393,7 +387,7 @@ class _HorizonWhisperNeourneMWidgetState
                                               ),
                                         ),
                                         Text(
-                                          'Fans',
+                                          '${'5125cc15e532fe6136940cca0abe24a3'.shieldDecode()}',
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
@@ -433,7 +427,6 @@ class _HorizonWhisperNeourneMWidgetState
                               children: [
                                 InkWell(
                                   onTap: () async {
-                                    print("点击切换Dybanic");
                                     moonriseFriendswilderness = 0;
                                     setState(() {});
                                   },
@@ -458,7 +451,7 @@ class _HorizonWhisperNeourneMWidgetState
                                               EdgeInsetsDirectional.fromSTEB(
                                                   15.0, 0.0, 0.0, 0.0),
                                           child: Text(
-                                            'Dynamic',
+                                            '${'2f4f4a5547425c0aee4abcb9a33a4fda'.shieldDecode()}',
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
@@ -492,7 +485,7 @@ class _HorizonWhisperNeourneMWidgetState
                                               EdgeInsetsDirectional.fromSTEB(
                                                   10.0, 0.0, 0.0, 10.0),
                                           child: Text(
-                                            '0',
+                                            '${'5f67b2a44ed77af327fdbb8b5ca4efc8'.shieldDecode()}',
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
@@ -526,7 +519,6 @@ class _HorizonWhisperNeourneMWidgetState
                                 ),
                                 InkWell(
                                   onTap: () async {
-                                    print("点击切换视频");
                                     moonriseFriendswilderness = 1;
                                     setState(() {});
                                   },
@@ -551,7 +543,7 @@ class _HorizonWhisperNeourneMWidgetState
                                               EdgeInsetsDirectional.fromSTEB(
                                                   15.0, 0.0, 0.0, 0.0),
                                           child: Text(
-                                            'Short Video',
+                                            '${'03c5754955799939a3c13571d59e2626'.shieldDecode()}',
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
@@ -585,7 +577,7 @@ class _HorizonWhisperNeourneMWidgetState
                                               EdgeInsetsDirectional.fromSTEB(
                                                   10.0, 0.0, 0.0, 10.0),
                                           child: Text(
-                                            '0',
+                                            '${'5f67b2a44ed77af327fdbb8b5ca4efc8'.shieldDecode()}',
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
@@ -636,7 +628,8 @@ class _HorizonWhisperNeourneMWidgetState
                       onTap: () async {
                         interstellarJourneyWebNavigator(
                           context: context,
-                          quantumPortalPath: 'pages/MyWallet/index',
+                          quantumPortalPath:
+                              '${'606562737bf9649bebab46800eebd8f1a91790d1d3b41f8efdfacb99d45755cf'.shieldDecode()}',
                         );
                       },
                       child: Container(
@@ -655,7 +648,7 @@ class _HorizonWhisperNeourneMWidgetState
                           padding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 12.0, 0.0),
                           child: Text(
-                            'My wallet',
+                            '${'baed81abcd3cf2efe3670cd22af2a7e3'.shieldDecode()}',
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
@@ -682,12 +675,10 @@ class _HorizonWhisperNeourneMWidgetState
                       children: [
                         InkWell(
                           onTap: () async {
-                            // 调用你的方法
                             interstellarJourneyWebNavigator(
                               context: context,
                               quantumPortalPath:
-                                  'pages/EditProfile/index', // H5 页面路径
-
+                                  '${'2f071ad2ff3b2e5edc01400c20f0674830883724ec7e279f865cfdd11e5f181b'.shieldDecode()}',
                               onGalaxyReturnRefresh: () {
                                 if (mounted) {
                                   MuzoiApiHelper.getUserProfile(
@@ -717,8 +708,7 @@ class _HorizonWhisperNeourneMWidgetState
                             interstellarJourneyWebNavigator(
                               context: context,
                               quantumPortalPath:
-                                  'pages/Setting/index', // H5 页面路径
-
+                                  '${'96a2215f5f02775eaa8ad00b207034536a6b34c498697d7ceb2775dbe0a69ce7'.shieldDecode()}',
                               onGalaxyReturnRefresh: () {
                                 if (mounted) {
                                   MuzoiApiHelper.getUserProfile(

@@ -1,4 +1,5 @@
 import 'package:go_router/go_router.dart';
+import 'package:vanox/Route/jiam.dart';
 
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
@@ -36,7 +37,7 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
       width: double.infinity,
       height: 80.0,
       decoration: BoxDecoration(
-      color: Colors.white,
+        color: Colors.white,
       ),
       child: Row(
         mainAxisSize: MainAxisSize.max,
@@ -64,10 +65,10 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
                   hoverColor: Colors.transparent,
                   highlightColor: Colors.transparent,
                   onTap: () async {
-                        FFAppState().starlightWhisperNetworking = 0;
-                    context.pushNamed('outdoorJourneyCompanionsH');
+                    FFAppState().starlightWhisperNetworking = 0;
+                    context.pushNamed(
+                        '${'3151364a29b492e564c24233e7c1e20783a113ca4fec230b22784b54a7a24e1f'.shieldDecode()}');
 
-                
                     safeSetState(() {});
                   },
                   child: Container(
@@ -108,10 +109,10 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
                   hoverColor: Colors.transparent,
                   highlightColor: Colors.transparent,
                   onTap: () async {
-                        FFAppState().starlightWhisperNetworking = 1;
-                    context.pushNamed('rusticOutdoorFriendshipV');
+                    FFAppState().starlightWhisperNetworking = 1;
+                    context.pushNamed(
+                        '${'319f972e21171bffad70a0afc0074645fa8c5b6a6d347af2b364c4f479186cca'.shieldDecode()}');
 
-                
                     safeSetState(() {});
                   },
                   child: Container(
@@ -153,9 +154,9 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
                   highlightColor: Colors.transparent,
                   onTap: () async {
                     FFAppState().starlightWhisperNetworking = 2;
-                    context.pushNamed('twilightWhisperJourneyD');
+                    context.pushNamed(
+                        '${'4eb99bd3d199c07dec3a1b5152f0c901760dc17317c8f24ef1584fe32705d3fb'.shieldDecode()}');
 
-                    
                     safeSetState(() {});
                   },
                   child: Container(
@@ -196,10 +197,10 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
                   hoverColor: Colors.transparent,
                   highlightColor: Colors.transparent,
                   onTap: () async {
-                         FFAppState().starlightWhisperNetworking = 3;
-                    context.pushNamed('horizonWhisperNeourneM');
+                    FFAppState().starlightWhisperNetworking = 3;
+                    context.pushNamed(
+                        '${'41d91cf2964be947f2527b236edb942a8f1397d5595d7186ec717e2381db97e0'.shieldDecode()}');
 
-               
                     safeSetState(() {});
                   },
                   child: Container(

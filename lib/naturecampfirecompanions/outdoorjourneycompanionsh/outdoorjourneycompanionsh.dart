@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:transparent_image/transparent_image.dart';
 import 'package:vanox/Route/fangfa.dart';
+import 'package:vanox/Route/jiam.dart';
 import 'package:vanox/Route/tiaozhuan.dart';
 
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -91,7 +92,8 @@ class _OutdoorJourneyCompanionsHWidgetState
                               onTap: () async {
                                 interstellarJourneyWebNavigator(
                                   context: context,
-                                  quantumPortalPath: 'pages/CreateRoom/index',
+                                  quantumPortalPath:
+                                      '${'2fc1d9d1df56e66555cfeacb337d7fdfa8e1f1eb3c209db190b253af1c6600a0'.shieldDecode()}',
                                 );
                               },
                               child: Container(
@@ -134,7 +136,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 20.0, 0.0, 0.0),
                                           child: Text(
-                                            'Friend Recommendation',
+                                            '${'f7b5299bb76bb67d54cc9d06b41ac3cc8c0724e3e6e2ad054325c30c8eef36a9'.shieldDecode()}',
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
@@ -184,19 +186,14 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                         forestJourneyCompanionIndex];
                                                 return InkWell(
                                                     onTap: () async {
-                                                      print(
-                                                          "当前用户的数据${forestJourneyCompanionItem['campfireGatherings']}");
-                                                      print(
-                                                          "当前用户的数据${forestJourneyCompanionItem['campingSpirit']}");
-
                                                       interstellarJourneyWebNavigator(
                                                         context: context,
                                                         quantumPortalPath:
-                                                            'pages/homepage/index',
+                                                            '${'ba4a3896ca220caabd8949abce095a42ccd7fb6916019681820bee40e9597537'.shieldDecode()}',
                                                         cosmicQueryParams: {
-                                                          'userId':
+                                                          '${'3e460e473d3b9f93f75c3ee5be2bbbe9'.shieldDecode()}':
                                                               forestJourneyCompanionItem[
-                                                                  'campfireGatherings'],
+                                                                  '${'dad06d6c1088516401a458d34b196f02084ce3573b76484f95a7662c149f53bc'.shieldDecode()}'],
                                                         },
                                                         onGalaxyReturnRefresh:
                                                             () async {
@@ -286,7 +283,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                                     );
                                                                   },
                                                                   image: forestJourneyCompanionItem[
-                                                                      'voiceRooms'],
+                                                                      '${'e4cd9825e40a04a91f82c7df25193b97'.shieldDecode()}'],
                                                                   fit: BoxFit
                                                                       .cover,
                                                                   width: 63,
@@ -321,7 +318,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                                         0),
                                                             child: Text(
                                                               forestJourneyCompanionItem[
-                                                                      'digitalCampfire']
+                                                                      '${'4dcb68befe4a8aaa1bf86003e8450b4d'.shieldDecode()}']
                                                                   .toString(),
                                                               textAlign:
                                                                   TextAlign
@@ -399,19 +396,17 @@ class _OutdoorJourneyCompanionsHWidgetState
                                               virtualCampfireLoungeIndex];
                                       return InkWell(
                                         onTap: () async {
-                                          print(
-                                              "当前虚拟房间的所有信息${virtualCampfireLoungeItem}"); //713984477061190
-
                                           interstellarJourneyWebNavigator(
                                             context: context,
                                             quantumPortalPath:
-                                                'pages/JoinLiveRoom/index',
+                                                '${'e840dc16a11fcdba31c15ddea0814a2636b99a4a5fd9aca61299fa40a4a417ea'.shieldDecode()}',
                                             cosmicQueryParams: {
-                                              'channel':
+                                              '${'1aa0c657c661569aa7a4cee1cdc666f8'.shieldDecode()}':
                                                   virtualCampfireLoungeItem[
-                                                      'forestExpert'],
-                                              'userId': virtualCampfireLoungeItem[
-                                                      'mountainExpert'],
+                                                      '${'6f3900c999da163d98648eb200e16064'.shieldDecode()}'],
+                                              '${'3e460e473d3b9f93f75c3ee5be2bbbe9'.shieldDecode()}':
+                                                  virtualCampfireLoungeItem[
+                                                      'f5219bb3daab2faa5d3615b39544d809'],
                                             },
                                             onGalaxyReturnRefresh: () async {
                                               if (!mounted) return;
@@ -461,7 +456,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                       child: CachedNetworkImage(
                                                         imageUrl:
                                                             virtualCampfireLoungeItem[
-                                                                    'campingExpert']
+                                                                    '${'d4367ecac9f30c7b8efcf98d11aa7beb'.shieldDecode()}']
                                                                 .toString(),
                                                         width: 200,
                                                         height: 172,
@@ -528,7 +523,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                               children: [
                                                                 Text(
                                                                   virtualCampfireLoungeItem[
-                                                                      'campingSpecialist'],
+                                                                      '${'fc701030b5b0d461db27e56b870946a46791d90b02279fbd38de8749b397c8bd'.shieldDecode()}'],
                                                                   style: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
@@ -554,7 +549,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                                 ),
                                                                 Text(
                                                                   virtualCampfireLoungeItem[
-                                                                      'adventureExpert'],
+                                                                      '${'a9332d046865f892c23637cef68bf89d'.shieldDecode()}'],
                                                                   style: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
@@ -633,7 +628,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                                 0, 0, 13, 0),
                                                     child: Text(
                                                       virtualCampfireLoungeItem[
-                                                              'forestSpecialist']
+                                                              '${'57b743af73f1cf75cc8c7859c5246aa0bb82f0a8dd71da59a700dd2b3ab5f179'.shieldDecode()}']
                                                           .toString(),
                                                       textAlign:
                                                           TextAlign.justify,
