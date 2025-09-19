@@ -88,10 +88,10 @@ class _WingAshConnectionCompanionFWidgetState
         String tiaozhuan;
         if (message.message.contains("?")) {
           tiaozhuan =
-              "${message.message}&${FFAppState().campfireJourneyToken}&appID=${FFAppState().starlitCompanionId}";
+              "${message.message}&${FFAppState().campfireJourneyToken}&appID=${57624642}";
         } else {
           tiaozhuan =
-              "${message.message}?${FFAppState().campfireJourneyToken}&appID=${FFAppState().starlitCompanionId}";
+              "${message.message}?${FFAppState().campfireJourneyToken}&appID=${57624642}";
         }
 
         context.push(

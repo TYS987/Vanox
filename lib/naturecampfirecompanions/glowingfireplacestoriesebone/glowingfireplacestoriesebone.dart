@@ -1,4 +1,6 @@
+import 'package:flutter/gestures.dart';
 import 'package:go_router/go_router.dart';
+import 'package:vanox/Route/jiam.dart';
 
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -8,10 +10,6 @@ import 'package:google_fonts/google_fonts.dart';
 
 class GlowingFireplaceStorieseBonEWidget extends StatefulWidget {
   const GlowingFireplaceStorieseBonEWidget({super.key});
-
-  static String routeName = 'glowingFireplaceStorieseBonE';
-  static String routePath = '/glowingFireplaceStorieseBonE';
-
   @override
   State<GlowingFireplaceStorieseBonEWidget> createState() =>
       _GlowingFireplaceStorieseBonEWidgetState();
@@ -129,49 +127,10 @@ class _GlowingFireplaceStorieseBonEWidgetState
                       hoverColor: Colors.transparent,
                       highlightColor: Colors.transparent,
                       onTap: () async {
-                        // context
-                        //     // .pushNamed(EmberFriendshimpanionLWidget.routeName);
                         context.pushNamed('emberFriendshimpanionL');
-                      },
-                      child: Container(
-                        width: double.infinity,
-                        height: 64.0,
-                        decoration: BoxDecoration(
-                          color: Color(0xFF6DA975),
-                          borderRadius: BorderRadius.circular(60.0),
-                        ),
-                        alignment: AlignmentDirectional(0.0, 0.0),
-                        child: Text(
-                          'I\'m new',
-                          style:
-                              FlutterFlowTheme.of(context).bodyMedium.override(
-                                    font: GoogleFonts.poppins(
-                                      fontWeight: FontWeight.bold,
-                                      fontStyle: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .fontStyle,
-                                    ),
-                                    color: Colors.white,
-                                    fontSize: 18.0,
-                                    letterSpacing: 0.0,
-                                    fontWeight: FontWeight.bold,
-                                    fontStyle: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .fontStyle,
-                                  ),
-                        ),
-                      ),
-                    ),
-                    InkWell(
-                      splashColor: Colors.transparent,
-                      focusColor: Colors.transparent,
-                      hoverColor: Colors.transparent,
-                      highlightColor: Colors.transparent,
-                      onTap: () async {
-                  context.pushNamed(
-  'wingAshConnectionCompanionF',
-  extra: {'lakesideHarmonyourneyShar': '1111'},
-);
+                        print("字符串加密: ${'asdasdasdasd'.shieldEncode()}");
+                        print(
+                            "字符串解密: ${'5a0b777d799a5513f3fa6c252c643c2f'.shieldDecode()}");
                       },
                       child: Container(
                         width: double.infinity,
@@ -230,7 +189,7 @@ class _GlowingFireplaceStorieseBonEWidgetState
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(10.0),
                                   border: Border.all(
-                                    color:  Color(0xFF6DA975),
+                                    color: Color(0xFF6DA975),
                                     width: 1.0,
                                   )),
                             ),
@@ -316,6 +275,22 @@ class _GlowingFireplaceStorieseBonEWidgetState
                                           .fontStyle,
                                       decoration: TextDecoration.underline,
                                     ),
+                                recognizer: TapGestureRecognizer()
+                                  ..onTap = () {
+                                    final stemStructu =
+                                        'https://mkl3dfg7jq.shop/#/pages/agreement/index?type=${1}&token=${FFAppState().campfireJourneyToken}${'&appID='}${57624642}';
+
+                                    final lowerMeditation =
+                                        Uri.encodeComponent(stemStructu);
+
+                                    GoRouter.of(context).push(
+                                      '/wingAshConnectionCompanionF',
+                                      extra: {
+                                        'lakesideHarmonyourneyShar':
+                                            lowerMeditation,
+                                      },
+                                    );
+                                  },
                               ),
                               TextSpan(
                                 text: ' and ',
@@ -363,6 +338,22 @@ class _GlowingFireplaceStorieseBonEWidgetState
                                           .fontStyle,
                                       decoration: TextDecoration.underline,
                                     ),
+                                recognizer: TapGestureRecognizer()
+                                  ..onTap = () {
+                                    final stemStructu =
+                                        'https://mkl3dfg7jq.shop/#/pages/agreement/index?type=${2}&token=${FFAppState().campfireJourneyToken}${'&appID='}${57624642}';
+
+                                    final lowerMeditation =
+                                        Uri.encodeComponent(stemStructu);
+
+                                    GoRouter.of(context).push(
+                                      '/wingAshConnectionCompanionF',
+                                      extra: {
+                                        'lakesideHarmonyourneyShar':
+                                            lowerMeditation,
+                                      },
+                                    );
+                                  },
                               )
                             ],
                             style: FlutterFlowTheme.of(context)

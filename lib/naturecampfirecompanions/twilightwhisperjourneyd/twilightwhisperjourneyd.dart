@@ -1,5 +1,7 @@
 import 'package:vanox/Route/fangfa.dart';
+import 'package:vanox/Route/tiaozhuan.dart';
 import 'package:vanox/app_state.dart';
+import 'package:vanox/flutter_flow/flutter_flow_util.dart';
 
 import '/flutter_flow/flutter_flow_theme.dart';
 import '../sereneoutdoorurne/sereneoutdoorurne.dart';
@@ -8,9 +10,6 @@ import 'package:google_fonts/google_fonts.dart';
 
 class TwilightWhisperJourneyDWidget extends StatefulWidget {
   const TwilightWhisperJourneyDWidget({super.key});
-
-  static String routeName = 'twilightWhisperJourneyD';
-  static String routePath = '/twilightWhisperJourneyD';
 
   @override
   State<TwilightWhisperJourneyDWidget> createState() =>
@@ -24,14 +23,8 @@ class _TwilightWhisperJourneyDWidgetState
   @override
   void initState() {
     super.initState();
-    print(
-        "当前用户详情buildID${FFAppState().wildernessExpeditionUserProfile['natureMentor']}");
-    print("当前用户详情userID${FFAppState().starlitCompanionId}");
 
-    MuzoiApiHelper.togglePostMessage(
-      57624642,
-      receiveUserId: FFAppState().starlitCompanionId,
-    );
+    MuzoiApiHelper.togglePostMessage();
   }
 
   @override
@@ -87,15 +80,31 @@ class _TwilightWhisperJourneyDWidgetState
                               ),
                             ),
                           ),
-                          Container(
-                            width: 36.0,
-                            height: 36.0,
-                            decoration: BoxDecoration(
-                              image: DecorationImage(
-                                fit: BoxFit.cover,
-                                image: Image.asset(
-                                  'assets/images/lakesideConnectionFlow.png',
-                                ).image,
+                          InkWell(
+                            onTap: () async {
+                              interstellarJourneyWebNavigator(
+                                context: context,
+                                quantumPortalPath: 'pages/Notice/index',
+                                onGalaxyReturnRefresh: () {
+                                  if (mounted) {
+                                    MuzoiApiHelper.togglePostMessage()
+                                        .then((_) {
+                                      setState(() {});
+                                    });
+                                  }
+                                },
+                              );
+                            },
+                            child: Container(
+                              width: 36.0,
+                              height: 36.0,
+                              decoration: BoxDecoration(
+                                image: DecorationImage(
+                                  fit: BoxFit.cover,
+                                  image: Image.asset(
+                                    'assets/images/lakesideConnectionFlow.png',
+                                  ).image,
+                                ),
                               ),
                             ),
                           ),
@@ -135,50 +144,93 @@ class _TwilightWhisperJourneyDWidgetState
                               final digitalAdventureCircleItem =
                                   digitalAdventureCircle[
                                       digitalAdventureCircleIndex];
-                              return Container(
-                                width: double.infinity,
-                                height: 78,
-                                decoration: BoxDecoration(),
-                                child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      20, 0, 20, 0),
-                                  child: Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      children: [
-                                        Container(
-                                          width: 60,
-                                          height: 60,
-                                          decoration: BoxDecoration(
-                                            image: DecorationImage(
-                                              fit: BoxFit.cover,
-                                              image: Image.asset(
-                                                'assets/images/natureInspiredConversations.png',
-                                              ).image,
+                              return InkWell(
+                                onTap: () async {
+                                  interstellarJourneyWebNavigator(
+                                    context: context,
+                                    quantumPortalPath:
+                                        'pages/DetailsMesses/index?',
+                                    cosmicQueryParams: {
+                                      'userId': digitalAdventureCircleItem[
+                                              'trailPlanner'][0]
+                                          ['wildernessPlanner'],
+                                    },
+                                    onGalaxyReturnRefresh: () async {
+                                      if (!mounted) return;
+
+                                      try {
+                                        await Future.wait([
+                                          MuzoiApiHelper.togglePostMessage(),
+                                          MuzoiApiHelper.getUserProfile(
+                                              FFAppState().starlitCompanionId),
+                                        ]);
+
+                                        setState(() {});
+                                      } catch (e) {
+                                        debugPrint('$e');
+                                      }
+                                    },
+                                  );
+                                },
+                                child: Container(
+                                  width: double.infinity,
+                                  height: 78,
+                                  decoration: BoxDecoration(),
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        20, 0, 20, 0),
+                                    child: Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        children: [
+                                          Container(
+                                            width: 60,
+                                            height: 60,
+                                            decoration: BoxDecoration(
+                                              image: DecorationImage(
+                                                fit: BoxFit.cover,
+                                                image: Image.network(
+                                                        digitalAdventureCircleItem[
+                                                                'trailPlanner'][0]
+                                                            ['mountainPlanner'])
+                                                    .image,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(50),
                                             ),
-                                            borderRadius:
-                                                BorderRadius.circular(50),
                                           ),
-                                        ),
-                                        Expanded(
-                                          child: Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    11, 0, 0, 0),
-                                            child: Column(
-                                              mainAxisSize: MainAxisSize.max,
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment.center,
-                                              crossAxisAlignment:
-                                                  CrossAxisAlignment.start,
-                                              children: [
-                                                Text(
-                                                  'Martin Randolph',
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        font:
-                                                            GoogleFonts.poppins(
+                                          Expanded(
+                                            child: Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(11, 0, 0, 0),
+                                              child: Column(
+                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                children: [
+                                                  Text(
+                                                    digitalAdventureCircleItem[
+                                                            'trailPlanner'][0]
+                                                        ['forestPlanner'],
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          font: GoogleFonts
+                                                              .poppins(
+                                                            fontWeight:
+                                                                FontWeight.w500,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
+                                                          ),
+                                                          color:
+                                                              Color(0xFF323232),
+                                                          fontSize: 16,
+                                                          letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w500,
                                                           fontStyle:
@@ -187,21 +239,65 @@ class _TwilightWhisperJourneyDWidgetState
                                                                   .bodyMedium
                                                                   .fontStyle,
                                                         ),
-                                                        color:
-                                                            Color(0xFF323232),
-                                                        fontSize: 16,
-                                                        letterSpacing: 0.0,
-                                                        fontWeight:
-                                                            FontWeight.w500,
-                                                        fontStyle:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyMedium
-                                                                .fontStyle,
-                                                      ),
-                                                ),
+                                                  ),
+                                                  Text(
+                                                    digitalAdventureCircleItem[
+                                                                'trailPlanner'][0]
+                                                            ['adventurePlanner']
+                                                        .toString(),
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          font: GoogleFonts
+                                                              .poppins(
+                                                            fontWeight:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontWeight,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
+                                                          ),
+                                                          color:
+                                                              Color(0x80000000),
+                                                          letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
+                                                        ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                          Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    10, 0, 0, 0),
+                                            child: Column(
+                                              mainAxisSize: MainAxisSize.max,
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.center,
+                                              children: [
                                                 Text(
-                                                  'Liked your post ',
+                                                  DateFormat('HH.mm').format(DateTime
+                                                      .fromMillisecondsSinceEpoch(
+                                                          digitalAdventureCircleItem[
+                                                                      'trailPlanner'][0]
+                                                                  [
+                                                                  'forestScout']
+                                                              as int)),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -220,7 +316,7 @@ class _TwilightWhisperJourneyDWidgetState
                                                                   .fontStyle,
                                                         ),
                                                         color:
-                                                            Color(0x80000000),
+                                                            Color(0xFF979797),
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
@@ -237,91 +333,8 @@ class _TwilightWhisperJourneyDWidgetState
                                               ],
                                             ),
                                           ),
-                                        ),
-                                        Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  10, 0, 0, 0),
-                                          child: Column(
-                                            mainAxisSize: MainAxisSize.max,
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.center,
-                                            children: [
-                                              Text(
-                                                '12.50',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .bodyMedium
-                                                    .override(
-                                                      font: GoogleFonts.poppins(
-                                                        fontWeight:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyMedium
-                                                                .fontWeight,
-                                                        fontStyle:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyMedium
-                                                                .fontStyle,
-                                                      ),
-                                                      color: Color(0xFF979797),
-                                                      letterSpacing: 0.0,
-                                                      fontWeight:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyMedium
-                                                              .fontWeight,
-                                                      fontStyle:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyMedium
-                                                              .fontStyle,
-                                                    ),
-                                              ),
-                                              Container(
-                                                decoration: BoxDecoration(
-                                                  color: Color(0xFFFF4D00),
-                                                  borderRadius:
-                                                      BorderRadius.circular(50),
-                                                ),
-                                                child: Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(6, 2, 6, 2),
-                                                  child: Text(
-                                                    '1',
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          font: GoogleFonts
-                                                              .manrope(
-                                                            fontWeight:
-                                                                FontWeight.bold,
-                                                            fontStyle:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMedium
-                                                                    .fontStyle,
-                                                          ),
-                                                          color: Colors.white,
-                                                          fontSize: 10.68,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.bold,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMedium
-                                                                  .fontStyle,
-                                                        ),
-                                                  ),
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                      ]),
+                                        ]),
+                                  ),
                                 ),
                               );
                             },

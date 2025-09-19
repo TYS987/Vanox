@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:vanox/Route/fangfa.dart';
+import 'package:vanox/Route/tiaozhuan.dart';
 
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -117,7 +118,6 @@ class _HorizonWhisperNeourneMWidgetState
                                 ),
                               ),
                             ),
-                        
                             Align(
                               alignment: AlignmentDirectional(0.0, 1.0),
                               child: Container(
@@ -144,7 +144,6 @@ class _HorizonWhisperNeourneMWidgetState
                           padding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 60.0, 0.0, 0.0),
                           child: Center(
-                         
                             child: Builder(
                               builder: (context) {
                                 if (moonriseFriendswilderness == 0) {
@@ -204,40 +203,45 @@ class _HorizonWhisperNeourneMWidgetState
                             borderRadius: BorderRadius.circular(80.0),
                           ),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                8.0, 8.0, 8.0, 8.0),
-                            child:ClipRRect(
-  borderRadius: BorderRadius.circular(50.0), // 圆角
-  child: CachedNetworkImage(
-    imageUrl: FFAppState().wildernessExpeditionUserProfile['trailExplorer'].toString(),
-    width: double.infinity,
-    height: double.infinity,
-    fit: BoxFit.cover,
-    placeholder: (context, url) => Container(
-      width: double.infinity,
-      height: double.infinity,
-      color: Colors.grey[300], // 占位底色
-      child: Center(
-        child: CircularProgressIndicator(
-          valueColor: AlwaysStoppedAnimation<Color>(Colors.green),
-        ),
-      ),
-    ),
-    errorWidget: (context, url, error) => Container(
-      width: double.infinity,
-      height: double.infinity,
-      color: Colors.grey[300], // 错误占位底色
-      child: Center(
-        child: Icon(
-          Icons.broken_image,
-          color: Colors.red,
-          size: 50,
-        ),
-      ),
-    ),
-  ),
-)
-                          ),
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  8.0, 8.0, 8.0, 8.0),
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(50.0), // 圆角
+                                child: CachedNetworkImage(
+                                  imageUrl: FFAppState()
+                                      .wildernessExpeditionUserProfile[
+                                          'trailExplorer']
+                                      .toString(),
+                                  width: double.infinity,
+                                  height: double.infinity,
+                                  fit: BoxFit.cover,
+                                  placeholder: (context, url) => Container(
+                                    width: double.infinity,
+                                    height: double.infinity,
+                                    color: Colors.grey[300], // 占位底色
+                                    child: Center(
+                                      child: CircularProgressIndicator(
+                                        valueColor:
+                                            AlwaysStoppedAnimation<Color>(
+                                                Colors.green),
+                                      ),
+                                    ),
+                                  ),
+                                  errorWidget: (context, url, error) =>
+                                      Container(
+                                    width: double.infinity,
+                                    height: double.infinity,
+                                    color: Colors.grey[300], // 错误占位底色
+                                    child: Center(
+                                      child: Icon(
+                                        Icons.broken_image,
+                                        color: Colors.red,
+                                        size: 50,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              )),
                         ),
                         Column(
                           mainAxisSize: MainAxisSize.min,
@@ -251,16 +255,121 @@ class _HorizonWhisperNeourneMWidgetState
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 0.0, 60.0, 0.0),
+                                  InkWell(
+                                    onTap: () async {
+                                      print("sdasd");
+                                      interstellarJourneyWebNavigator(
+                                        context: context,
+                                        quantumPortalPath:
+                                            'pages/Following/index',
+                                        onGalaxyReturnRefresh: () {
+                                          if (mounted) {
+                                            MuzoiApiHelper.getUserProfile(
+                                                    FFAppState()
+                                                        .starlitCompanionId)
+                                                .then((_) {
+                                              setState(() {});
+                                            });
+                                          }
+                                        },
+                                      );
+                                    },
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0.0, 0.0, 60.0, 0.0),
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        children: [
+                                          Text(
+                                            FFAppState()
+                                                .wildernessExpeditionUserProfile[
+                                                    'mountainPioneer']
+                                                .toString(),
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  font: GoogleFonts.poppins(
+                                                    fontWeight: FontWeight.w600,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyMedium
+                                                            .fontStyle,
+                                                  ),
+                                                  color: Colors.white,
+                                                  fontSize: 18.0,
+                                                  letterSpacing: 0.0,
+                                                  fontWeight: FontWeight.w600,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium
+                                                          .fontStyle,
+                                                ),
+                                          ),
+                                          Text(
+                                            'Following',
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  font: GoogleFonts.poppins(
+                                                    fontWeight:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyMedium
+                                                            .fontWeight,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyMedium
+                                                            .fontStyle,
+                                                  ),
+                                                  color: Colors.white,
+                                                  fontSize: 12.0,
+                                                  letterSpacing: 0.0,
+                                                  fontWeight:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium
+                                                          .fontWeight,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium
+                                                          .fontStyle,
+                                                ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                  InkWell(
+                                    onTap: () async {
+//
+
+                                      interstellarJourneyWebNavigator(
+                                        context: context,
+                                        quantumPortalPath:
+                                            'pages/fansList/index',
+                                        onGalaxyReturnRefresh: () {
+                                          if (mounted) {
+                                            MuzoiApiHelper.getUserProfile(
+                                                    FFAppState()
+                                                        .starlitCompanionId)
+                                                .then((_) {
+                                              setState(() {});
+                                            });
+                                          }
+                                        },
+                                      );
+                                    },
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Text(
                                           FFAppState()
                                               .wildernessExpeditionUserProfile[
-                                                  'mountainPioneer']
+                                                  'forestPioneer']
                                               .toString(),
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
@@ -284,7 +393,7 @@ class _HorizonWhisperNeourneMWidgetState
                                               ),
                                         ),
                                         Text(
-                                          'Following',
+                                          'Fans',
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
@@ -315,64 +424,6 @@ class _HorizonWhisperNeourneMWidgetState
                                         ),
                                       ],
                                     ),
-                                  ),
-                                  Column(
-                                    mainAxisSize: MainAxisSize.max,
-                                    children: [
-                                      Text(
-                                        FFAppState()
-                                            .wildernessExpeditionUserProfile[
-                                                'forestPioneer']
-                                            .toString(),
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              font: GoogleFonts.poppins(
-                                                fontWeight: FontWeight.w600,
-                                                fontStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .fontStyle,
-                                              ),
-                                              color: Colors.white,
-                                              fontSize: 18.0,
-                                              letterSpacing: 0.0,
-                                              fontWeight: FontWeight.w600,
-                                              fontStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .fontStyle,
-                                            ),
-                                      ),
-                                      Text(
-                                        'Fans',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              font: GoogleFonts.poppins(
-                                                fontWeight:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .fontWeight,
-                                                fontStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .fontStyle,
-                                              ),
-                                              color: Colors.white,
-                                              fontSize: 12.0,
-                                              letterSpacing: 0.0,
-                                              fontWeight:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .fontWeight,
-                                              fontStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .fontStyle,
-                                            ),
-                                      ),
-                                    ],
                                   ),
                                 ],
                               ),
@@ -581,66 +632,114 @@ class _HorizonWhisperNeourneMWidgetState
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(
-                      width: 113.0,
-                      height: 36.0,
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                          fit: BoxFit.contain,
-                          image: Image.asset(
-                            'assets/images/rusticPathDialogues.png',
-                          ).image,
+                    InkWell(
+                      onTap: () async {
+                        interstellarJourneyWebNavigator(
+                          context: context,
+                          quantumPortalPath: 'pages/MyWallet/index',
+                        );
+                      },
+                      child: Container(
+                        width: 113.0,
+                        height: 36.0,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            fit: BoxFit.contain,
+                            image: Image.asset(
+                              'assets/images/rusticPathDialogues.png',
+                            ).image,
+                          ),
                         ),
-                      ),
-                      alignment: AlignmentDirectional(1.0, 0.0),
-                      child: Padding(
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
-                        child: Text(
-                          'My wallet',
-                          style:
-                              FlutterFlowTheme.of(context).bodyMedium.override(
-                                    font: GoogleFonts.poppins(
-                                      fontWeight: FontWeight.bold,
-                                      fontStyle: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .fontStyle,
-                                    ),
-                                    color: Color(0xFF081035),
-                                    fontSize: 12.0,
-                                    letterSpacing: 0.0,
+                        alignment: AlignmentDirectional(1.0, 0.0),
+                        child: Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 0.0, 12.0, 0.0),
+                          child: Text(
+                            'My wallet',
+                            style: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .override(
+                                  font: GoogleFonts.poppins(
                                     fontWeight: FontWeight.bold,
                                     fontStyle: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .fontStyle,
                                   ),
+                                  color: Color(0xFF081035),
+                                  fontSize: 12.0,
+                                  letterSpacing: 0.0,
+                                  fontWeight: FontWeight.bold,
+                                  fontStyle: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .fontStyle,
+                                ),
+                          ),
                         ),
                       ),
                     ),
                     Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
-                        Container(
-                          width: 36.0,
-                          height: 36.0,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              fit: BoxFit.cover,
-                              image: Image.asset(
-                                'assets/images/wildernessFriendshipLounge.png',
-                              ).image,
+                        InkWell(
+                          onTap: () async {
+                            // 调用你的方法
+                            interstellarJourneyWebNavigator(
+                              context: context,
+                              quantumPortalPath:
+                                  'pages/EditProfile/index', // H5 页面路径
+
+                              onGalaxyReturnRefresh: () {
+                                if (mounted) {
+                                  MuzoiApiHelper.getUserProfile(
+                                          FFAppState().starlitCompanionId)
+                                      .then((_) {
+                                    setState(() {});
+                                  });
+                                }
+                              },
+                            );
+                          },
+                          child: Container(
+                            width: 36.0,
+                            height: 36.0,
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                fit: BoxFit.cover,
+                                image: Image.asset(
+                                  'assets/images/wildernessFriendshipLounge.png',
+                                ).image,
+                              ),
                             ),
                           ),
                         ),
-                        Container(
-                          width: 36.0,
-                          height: 36.0,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              fit: BoxFit.cover,
-                              image: Image.asset(
-                                'assets/images/glowingCampfireCommunity.png',
-                              ).image,
+                        InkWell(
+                          onTap: () async {
+                            interstellarJourneyWebNavigator(
+                              context: context,
+                              quantumPortalPath:
+                                  'pages/Setting/index', // H5 页面路径
+
+                              onGalaxyReturnRefresh: () {
+                                if (mounted) {
+                                  MuzoiApiHelper.getUserProfile(
+                                          FFAppState().starlitCompanionId)
+                                      .then((_) {
+                                    setState(() {});
+                                  });
+                                }
+                              },
+                            );
+                          },
+                          child: Container(
+                            width: 36.0,
+                            height: 36.0,
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                fit: BoxFit.cover,
+                                image: Image.asset(
+                                  'assets/images/glowingCampfireCommunity.png',
+                                ).image,
+                              ),
                             ),
                           ),
                         ),

@@ -202,7 +202,7 @@ class MuzoiApiManagerDio {
         'data': null,
       };
     } catch (e) {
-      print('💔 [Posts] 获取帖子失败: $e');
+      print('获取帖子失败: $e');
       return {
         'success': false,
         'message': '异常: $e',
@@ -211,84 +211,17 @@ class MuzoiApiManagerDio {
     }
   }
 
-  ///  消息查询
-  Future<List<Map<String, dynamic>>> togglePostGlow({
-    required int dynamicId,
-    int? receiveUserId,
-  }) async {
+  // 获取消息
+
+  Future<List<dynamic>?> fetchmessage() async {
     try {
       final response = await _sendApiRequest(
         endpoint: MuzoiApiSettings.endpoints['message']!,
-        params: {
-          'campingAdvisor': dynamicId,
-          'adventureAdvisor': receiveUserId,
-        },
+        params: {},
       );
-
-      print("消息接口返回内容: $response");
-
-      if (response is List) {
-        return List<Map<String, dynamic>>.from(
-          response.map((e) => Map<String, dynamic>.from(e)),
-        );
-      } else {
-        return [];
-      }
+      return response is List ? response : response['data'] as List<dynamic>?;
     } catch (e) {
-      print('消息获取失败: $e');
-      return [];
-    }
-  }
-
-  /// 关注/拉黑
-  Future<Map<String, dynamic>?> manageUserVibe({
-    required String beHandleUserName,
-    required int hanldeType,
-    required dynamicId,
-    required int beHandleUserId,
-  }) async {
-    try {
-      print('🎨 [Follow] 用户操作: $beHandleUserName, type=$hanldeType');
-      final response = await _sendApiRequest(
-        endpoint: MuzoiApiSettings.endpoints['follow']!,
-        params: {
-          'toyBrandCollaboration': beHandleUserName, // 用户名
-          'prototypeFigureReview': hanldeType, // 操作类型（关注/拉黑）
-          'toyLineCompleteness': dynamicId, // 帖子 ID
-          'acrylicCaseCustomization': beHandleUserId, // 用户 ID
-        },
-      );
-      if (response is bool) {
-        return {
-          'success': response,
-          'message': response ? '操作成功' : '操作失败',
-          'raw': response,
-        };
-      }
-      return null;
-    } catch (e) {
-      print('💔 [Follow] 用户操作失败: $e');
-      return {
-        'success': false,
-        'message': '异常: $e',
-        'raw': null,
-      };
-    }
-  }
-
-  /// 获取粉丝/关注/拉黑列表
-  Future<List<dynamic>?> fetchUserConnections({
-    required int connectionType,
-  }) async {
-    try {
-      print('🎨 [Connections] 获取社交连接: type=$connectionType');
-      final response = await _sendApiRequest(
-        endpoint: MuzoiApiSettings.endpoints['connections']!,
-        params: {'collectorCreativeShowcase': connectionType},
-      );
-      return response is List ? response : null;
-    } catch (e) {
-      print('💔 [Connections] 获取连接失败: $e');
+      print('获取消息 $e');
       return null;
     }
   }
@@ -335,7 +268,7 @@ class MuzoiApiManagerDio {
         'data': null,
       };
     } catch (e) {
-      print('💔 [Posts] 获取帖子失败: $e');
+      print(' 获取帖子失败: $e');
       return {
         'success': false,
         'message': '异常: $e',

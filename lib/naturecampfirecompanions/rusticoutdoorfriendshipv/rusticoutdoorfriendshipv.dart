@@ -1,4 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:vanox/Route/fangfa.dart';
+import 'package:vanox/Route/tiaozhuan.dart';
 
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -24,10 +26,6 @@ class TopCurveClipper extends CustomClipper<Path> {
 
 class RusticOutdoorFriendshipVWidget extends StatefulWidget {
   const RusticOutdoorFriendshipVWidget({super.key});
-
-  static String routeName = 'rusticOutdoorFriendshipV';
-  static String routePath = '/rusticOutdoorFriendshipV';
-
   @override
   State<RusticOutdoorFriendshipVWidget> createState() =>
       _RusticOutdoorFriendshipVWidgetState();
@@ -40,6 +38,8 @@ class _RusticOutdoorFriendshipVWidgetState
   @override
   void initState() {
     super.initState();
+    MuzoiApiHelper.getGlamPosts();
+    MuzoiApiHelper.getChaxuanVideoDetails();
   }
 
   @override
@@ -100,15 +100,23 @@ class _RusticOutdoorFriendshipVWidgetState
                     Padding(
                       padding:
                           EdgeInsetsDirectional.fromSTEB(19.0, 18.0, 18.0, 0.0),
-                      child: Container(
-                        width: double.infinity,
-                        height: 48.0,
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                            fit: BoxFit.cover,
-                            image: Image.asset(
-                              'assets/images/emberSparkNetworking.png',
-                            ).image,
+                      child: InkWell(
+                        onTap: () async {
+                          interstellarJourneyWebNavigator(
+                            context: context,
+                            quantumPortalPath: 'pages/AIRobot/index',
+                          );
+                        },
+                        child: Container(
+                          width: double.infinity,
+                          height: 48.0,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              fit: BoxFit.cover,
+                              image: Image.asset(
+                                'assets/images/emberSparkNetworking.png',
+                              ).image,
+                            ),
                           ),
                         ),
                       ),
@@ -202,8 +210,35 @@ class _RusticOutdoorFriendshipVWidgetState
                                                           digitalMemoryCollectorIndex];
                                                   return InkWell(
                                                     onTap: () async {
-                                                      print(
-                                                          "当前动态的所有数据${digitalMemoryCollectorItem}");
+                                                      interstellarJourneyWebNavigator(
+                                                        context: context,
+                                                        quantumPortalPath:
+                                                            'pages/DynamicDetails/index',
+                                                        cosmicQueryParams: {
+                                                          'dynamicId':
+                                                              digitalMemoryCollectorItem[
+                                                                  'forestWhispers'],
+                                                        },
+                                                        onGalaxyReturnRefresh:
+                                                            () async {
+                                                          if (!mounted) return;
+
+                                                          try {
+                                                            await Future.wait([
+                                                              MuzoiApiHelper
+                                                                  .getChaxuanVideoDetails(),
+                                                              MuzoiApiHelper
+                                                                  .getUserProfile(
+                                                                      FFAppState()
+                                                                          .starlitCompanionId),
+                                                            ]);
+
+                                                            setState(() {});
+                                                          } catch (e) {
+                                                            debugPrint('$e');
+                                                          }
+                                                        },
+                                                      );
                                                     },
                                                     child: Container(
                                                       width: 163,
@@ -520,8 +555,35 @@ class _RusticOutdoorFriendshipVWidgetState
                                                       wildernessFriendshipCircleIndex];
                                               return InkWell(
                                                   onTap: () async {
-                                                    print(
-                                                        "当前视频的所有数据${wildernessFriendshipCircleItem}}");
+                                                    interstellarJourneyWebNavigator(
+                                                      context: context,
+                                                      quantumPortalPath:
+                                                          'pages/VideoDetails/index',
+                                                      cosmicQueryParams: {
+                                                        'dynamicId':
+                                                            wildernessFriendshipCircleItem[
+                                                                'forestWhispers'],
+                                                      },
+                                                      onGalaxyReturnRefresh:
+                                                          () async {
+                                                        if (!mounted) return;
+
+                                                        try {
+                                                          await Future.wait([
+                                                            MuzoiApiHelper
+                                                                .getGlamPosts(),
+                                                            MuzoiApiHelper
+                                                                .getUserProfile(
+                                                                    FFAppState()
+                                                                        .starlitCompanionId),
+                                                          ]);
+
+                                                          setState(() {});
+                                                        } catch (e) {
+                                                          debugPrint('$e');
+                                                        }
+                                                      },
+                                                    );
                                                   },
                                                   child: Container(
                                                     width: 145,
@@ -727,27 +789,44 @@ class _RusticOutdoorFriendshipVWidgetState
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceAround,
                                 children: [
-                                  Container(
-                                    width: 162.0,
-                                    height: 44.0,
-                                    decoration: BoxDecoration(
-                                      image: DecorationImage(
-                                        fit: BoxFit.contain,
-                                        image: Image.asset(
-                                          'assets/images/moonriseFriendshipLounge.png',
-                                        ).image,
+                                  InkWell(
+                                    onTap: () async {
+                                      interstellarJourneyWebNavigator(
+                                        context: context,
+                                        quantumPortalPath: 'pages/issue/index',
+                                      );
+                                    },
+                                    child: Container(
+                                      width: 162.0,
+                                      height: 44.0,
+                                      decoration: BoxDecoration(
+                                        image: DecorationImage(
+                                          fit: BoxFit.contain,
+                                          image: Image.asset(
+                                            'assets/images/moonriseFriendshipLounge.png',
+                                          ).image,
+                                        ),
                                       ),
                                     ),
                                   ),
-                                  Container(
-                                    width: 162.0,
-                                    height: 44.0,
-                                    decoration: BoxDecoration(
-                                      image: DecorationImage(
-                                        fit: BoxFit.contain,
-                                        image: Image.asset(
-                                          'assets/images/lakesideJourneySharing.png',
-                                        ).image,
+                                  InkWell(
+                                    onTap: () async {
+                                      interstellarJourneyWebNavigator(
+                                        context: context,
+                                        quantumPortalPath:
+                                            'pages/postVideos/index',
+                                      );
+                                    },
+                                    child: Container(
+                                      width: 162.0,
+                                      height: 44.0,
+                                      decoration: BoxDecoration(
+                                        image: DecorationImage(
+                                          fit: BoxFit.contain,
+                                          image: Image.asset(
+                                            'assets/images/lakesideJourneySharing.png',
+                                          ).image,
+                                        ),
                                       ),
                                     ),
                                   ),

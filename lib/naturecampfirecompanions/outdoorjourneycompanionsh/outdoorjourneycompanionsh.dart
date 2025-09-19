@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:transparent_image/transparent_image.dart';
 import 'package:vanox/Route/fangfa.dart';
+import 'package:vanox/Route/tiaozhuan.dart';
 
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -86,15 +87,23 @@ class _OutdoorJourneyCompanionsHWidgetState
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
-                            Container(
-                              width: double.infinity,
-                              height: 194.0,
-                              decoration: BoxDecoration(
-                                image: DecorationImage(
-                                  fit: BoxFit.cover,
-                                  image: Image.asset(
-                                    'assets/images/woodlandGlowConversation.png',
-                                  ).image,
+                            InkWell(
+                              onTap: () async {
+                                interstellarJourneyWebNavigator(
+                                  context: context,
+                                  quantumPortalPath: 'pages/CreateRoom/index',
+                                );
+                              },
+                              child: Container(
+                                width: double.infinity,
+                                height: 194.0,
+                                decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                    fit: BoxFit.cover,
+                                    image: Image.asset(
+                                      'assets/images/woodlandGlowConversation.png',
+                                    ).image,
+                                  ),
                                 ),
                               ),
                             ),
@@ -176,7 +185,39 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                 return InkWell(
                                                     onTap: () async {
                                                       print(
-                                                          "当前用户的数据${forestJourneyCompanionItem}");
+                                                          "当前用户的数据${forestJourneyCompanionItem['campfireGatherings']}");
+                                                      print(
+                                                          "当前用户的数据${forestJourneyCompanionItem['campingSpirit']}");
+
+                                                      interstellarJourneyWebNavigator(
+                                                        context: context,
+                                                        quantumPortalPath:
+                                                            'pages/homepage/index',
+                                                        cosmicQueryParams: {
+                                                          'userId':
+                                                              forestJourneyCompanionItem[
+                                                                  'campfireGatherings'],
+                                                        },
+                                                        onGalaxyReturnRefresh:
+                                                            () async {
+                                                          if (!mounted) return;
+
+                                                          try {
+                                                            await Future.wait([
+                                                              MuzoiApiHelper
+                                                                  .getGlamPosts(),
+                                                              MuzoiApiHelper
+                                                                  .getUserProfile(
+                                                                      FFAppState()
+                                                                          .starlitCompanionId),
+                                                            ]);
+
+                                                            setState(() {});
+                                                          } catch (e) {
+                                                            debugPrint('$e');
+                                                          }
+                                                        },
+                                                      );
                                                     },
                                                     child: Container(
                                                       width: 75,
@@ -359,7 +400,36 @@ class _OutdoorJourneyCompanionsHWidgetState
                                       return InkWell(
                                         onTap: () async {
                                           print(
-                                              "当前虚拟房间的所有信息${virtualCampfireLoungeItem}");
+                                              "当前虚拟房间的所有信息${virtualCampfireLoungeItem}"); //713984477061190
+
+                                          interstellarJourneyWebNavigator(
+                                            context: context,
+                                            quantumPortalPath:
+                                                'pages/JoinLiveRoom/index',
+                                            cosmicQueryParams: {
+                                              'channel':
+                                                  virtualCampfireLoungeItem[
+                                                      'forestExpert'],
+                                              'userId': virtualCampfireLoungeItem[
+                                                      'mountainExpert'],
+                                            },
+                                            onGalaxyReturnRefresh: () async {
+                                              if (!mounted) return;
+
+                                              try {
+                                                await Future.wait([
+                                                  MuzoiApiHelper.getGlamPosts(),
+                                                  MuzoiApiHelper.getUserProfile(
+                                                      FFAppState()
+                                                          .starlitCompanionId),
+                                                ]);
+
+                                                setState(() {});
+                                              } catch (e) {
+                                                debugPrint('$e');
+                                              }
+                                            },
+                                          );
                                         },
                                         child: Container(
                                           height: 221,

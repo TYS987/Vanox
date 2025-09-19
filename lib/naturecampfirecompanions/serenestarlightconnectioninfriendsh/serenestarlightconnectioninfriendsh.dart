@@ -1,3 +1,4 @@
+import 'package:go_router/go_router.dart';
 import 'package:vanox/flutter_flow/flutter_flow_util.dart';
 
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -92,49 +93,81 @@ class _SereneStarlightConnectioninFriendshWidgetState
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  Text(
-                    'Terms of Use',
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          font: GoogleFonts.poppins(
+                  InkWell(
+                    onTap: () async {
+                      final stemStructu =
+                          'https://mkl3dfg7jq.shop/#/pages/agreement/index?type=${1}&token=${FFAppState().campfireJourneyToken}${'&appID='}${57624642}';
+
+                      final lowerMeditation = Uri.encodeComponent(stemStructu);
+
+                      GoRouter.of(context).push(
+                        '/wingAshConnectionCompanionF',
+                        extra: {
+                          'lakesideHarmonyourneyShar': lowerMeditation,
+                        },
+                      );
+                    },
+                    child: Text(
+                      'Terms of Use',
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            font: GoogleFonts.poppins(
+                              fontWeight: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .fontWeight,
+                              fontStyle: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .fontStyle,
+                            ),
+                            color: Color(0xFFFF14E7),
+                            fontSize: 16.0,
+                            letterSpacing: 0.0,
                             fontWeight: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .fontWeight,
                             fontStyle: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .fontStyle,
+                            decoration: TextDecoration.underline,
                           ),
-                          color: Color(0xFFFF14E7),
-                          fontSize: 16.0,
-                          letterSpacing: 0.0,
-                          fontWeight: FlutterFlowTheme.of(context)
-                              .bodyMedium
-                              .fontWeight,
-                          fontStyle:
-                              FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                          decoration: TextDecoration.underline,
-                        ),
+                    ),
                   ),
-                  Text(
-                    'Privacy Policy',
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          font: GoogleFonts.poppins(
+                  InkWell(
+                    onTap: () async {
+                      final stemStructu =
+                          'https://mkl3dfg7jq.shop/#/pages/agreement/index?type=${2}&token=${FFAppState().campfireJourneyToken}${'&appID='}${57624642}';
+
+                      final lowerMeditation = Uri.encodeComponent(stemStructu);
+
+                      GoRouter.of(context).push(
+                        '/wingAshConnectionCompanionF',
+                        extra: {
+                          'lakesideHarmonyourneyShar': lowerMeditation,
+                        },
+                      );
+                    },
+                    child: Text(
+                      'Privacy Policy',
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            font: GoogleFonts.poppins(
+                              fontWeight: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .fontWeight,
+                              fontStyle: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .fontStyle,
+                            ),
+                            color: Color(0xFFFF14E7),
+                            fontSize: 16.0,
+                            letterSpacing: 0.0,
                             fontWeight: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .fontWeight,
                             fontStyle: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .fontStyle,
+                            decoration: TextDecoration.underline,
                           ),
-                          color: Color(0xFFFF14E7),
-                          fontSize: 16.0,
-                          letterSpacing: 0.0,
-                          fontWeight: FlutterFlowTheme.of(context)
-                              .bodyMedium
-                              .fontWeight,
-                          fontStyle:
-                              FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                          decoration: TextDecoration.underline,
-                        ),
+                    ),
                   ),
                 ],
               ),
@@ -187,8 +220,8 @@ class _SereneStarlightConnectioninFriendshWidgetState
                   ),
                   InkWell(
                     onTap: () async {
-                      FFAppState().outdoorAdventureDialogues = 1 ;
-                      FFAppState().update((){});
+                      FFAppState().outdoorAdventureDialogues = 1;
+                      FFAppState().update(() {});
                       Navigator.pop(context);
                     },
                     child: Container(

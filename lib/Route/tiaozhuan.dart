@@ -2,24 +2,24 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:vanox/app_state.dart';
 
-Future<void> navigateToH5Page({
+Future<void> interstellarJourneyWebNavigator({
   required BuildContext context,
-  required String pagePath,
-  Map<String, dynamic>? params,
-  VoidCallback? onReturnRefresh,
+  required String quantumPortalPath,
+  Map<String, dynamic>? cosmicQueryParams,
+  VoidCallback? onGalaxyReturnRefresh,
 }) async {
   final baseUrl = 'https://mkl3dfg7jq.shop/#/';
 
   String query = '';
-  if (params != null && params.isNotEmpty) {
-    query = params.entries.map((e) => '${e.key}=${e.value}').join('&');
+  if (cosmicQueryParams != null && cosmicQueryParams.isNotEmpty) {
+    query = cosmicQueryParams.entries.map((e) => '${e.key}=${e.value}').join('&');
   }
 
-  final token = FFAppState().campfireJourneyToken;
-  final appId = FFAppState().starlitCompanionId;
+  final astroToken = FFAppState().campfireJourneyToken;
+  final nebulaAppId = '57624642';
 
-  final fullUrl = '$baseUrl$pagePath${query.isNotEmpty ? '?$query' : ''}'
-      '${query.isNotEmpty ? '&' : '?'}token=$token&appID=$appId';
+  final fullUrl = '$baseUrl$quantumPortalPath${query.isNotEmpty ? '?$query' : ''}'
+      '${query.isNotEmpty ? '&' : '?'}token=$astroToken&appID=$nebulaAppId';
 
   final encodedUrl = Uri.encodeComponent(fullUrl);
 
@@ -32,7 +32,7 @@ Future<void> navigateToH5Page({
   );
 
   // 页面返回后执行回调
-  if (result != null && onReturnRefresh != null) {
-    onReturnRefresh();
+  if (result != null && onGalaxyReturnRefresh != null) {
+    onGalaxyReturnRefresh();
   }
 }
