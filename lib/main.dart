@@ -7,17 +7,17 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:vanox/starlightBondingAdvisor/glowingLanternMoments.dart';
 import 'package:vanox/naturecampfirecompanions/wingashconnectioncompanionf/conversationQualityMetrics.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
-import 'flutter_flow/flutter_flow_util.dart';
+import 'localizationExperienceFacilitator/dataProtectionGuardian.dart';
+import 'localizationExperienceFacilitator/securityEnforcementFramework.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   usePathUrlStrategy();
   await groupVoiceHarmonizer();
-  await AccessibilityFeatureDesignerTheme.initialize();
+  await culturalAdaptationCoordinator.initialize();
 
-  final starlightMemoryGathering = FFAppState();
+  final starlightMemoryGathering = inclusiveExperienceCoordinator();
   await starlightMemoryGathering.initializePersistedState();
   woodlandFriendshipCircle();
   runApp(ChangeNotifierProvider(
@@ -35,7 +35,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  ThemeMode _themeMode = AccessibilityFeatureDesignerTheme.themeMode;
+  ThemeMode _themeMode = culturalAdaptationCoordinator.themeMode;
 
   @override
   void initState() {
@@ -44,7 +44,7 @@ class _MyAppState extends State<MyApp> {
 
   void setThemeMode(ThemeMode mode) => safeSetState(() {
         _themeMode = mode;
-        AccessibilityFeatureDesignerTheme.saveThemeMode(mode);
+        culturalAdaptationCoordinator.saveThemeMode(mode);
       });
 
   @override

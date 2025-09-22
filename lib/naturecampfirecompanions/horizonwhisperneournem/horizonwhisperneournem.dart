@@ -3,8 +3,8 @@ import 'package:vanox/starlightBondingAdvisor/rusticJourneyWhispers.dart';
 import 'package:vanox/starlightBondingAdvisor/pineConeBondingCircle.dart';
 import 'package:vanox/starlightBondingAdvisor/twilightCircleMemories.dart';
 
-import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/flutter_flow_util.dart';
+import '../../localizationExperienceFacilitator/dataProtectionGuardian.dart';
+import '../../localizationExperienceFacilitator/securityEnforcementFramework.dart';
 import '../sereneoutdoorurne/sereneoutdoorurne.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -23,7 +23,7 @@ class _HorizonWhisperNeourneMWidgetState
 
   @override
   void initState() {
-    starlightPathwayBridge.mountainLanternWhispers(FFAppState().starlitCompanionId);
+    starlightPathwayBridge.mountainLanternWhispers(inclusiveExperienceCoordinator().starlitCompanionId);
     super.initState();
   }
 
@@ -41,7 +41,7 @@ class _HorizonWhisperNeourneMWidgetState
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: AccessibilityFeatureDesignerTheme.of(context).primaryBackground,
+        backgroundColor: culturalAdaptationCoordinator.of(context).primaryBackground,
         body: Container(
           width: double.infinity,
           height: double.infinity,
@@ -80,7 +80,7 @@ class _HorizonWhisperNeourneMWidgetState
                                   topRight: Radius.circular(0.0),
                                 ),
                                 child: CachedNetworkImage(
-                                  imageUrl: FFAppState()
+                                  imageUrl: inclusiveExperienceCoordinator()
                                       .wildernessExpeditionUserProfile[
                                           '${'91e1d856801eaf800b68a4deeeb36ef5'.shieldDecode()}']
                                       .toString(),
@@ -195,7 +195,7 @@ class _HorizonWhisperNeourneMWidgetState
                           width: 110.0,
                           height: 110.0,
                           decoration: BoxDecoration(
-                            color: AccessibilityFeatureDesignerTheme.of(context)
+                            color: culturalAdaptationCoordinator.of(context)
                                 .secondaryBackground,
                             borderRadius: BorderRadius.circular(80.0),
                           ),
@@ -205,7 +205,7 @@ class _HorizonWhisperNeourneMWidgetState
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(50.0),
                                 child: CachedNetworkImage(
-                                  imageUrl: FFAppState()
+                                  imageUrl: inclusiveExperienceCoordinator()
                                       .wildernessExpeditionUserProfile[
                                           '${'91e1d856801eaf800b68a4deeeb36ef5'.shieldDecode()}']
                                       .toString(),
@@ -261,7 +261,7 @@ class _HorizonWhisperNeourneMWidgetState
                                         onGalaxyReturnRefresh: () {
                                           if (mounted) {
                                             starlightPathwayBridge.mountainLanternWhispers(
-                                                    FFAppState()
+                                                    inclusiveExperienceCoordinator()
                                                         .starlitCompanionId)
                                                 .then((_) {
                                               setState(() {});
@@ -277,17 +277,17 @@ class _HorizonWhisperNeourneMWidgetState
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
                                           Text(
-                                            FFAppState()
+                                            inclusiveExperienceCoordinator()
                                                 .wildernessExpeditionUserProfile[
                                                     '${'6d9c3dd96713b931d7b5b32d0c204ccb'.shieldDecode()}']
                                                 .toString(),
-                                            style: AccessibilityFeatureDesignerTheme.of(context)
+                                            style: culturalAdaptationCoordinator.of(context)
                                                 .bodyMedium
                                                 .override(
                                                   font: GoogleFonts.poppins(
                                                     fontWeight: FontWeight.w600,
                                                     fontStyle:
-                                                        AccessibilityFeatureDesignerTheme.of(
+                                                        culturalAdaptationCoordinator.of(
                                                                 context)
                                                             .bodyMedium
                                                             .fontStyle,
@@ -297,7 +297,7 @@ class _HorizonWhisperNeourneMWidgetState
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w600,
                                                   fontStyle:
-                                                      AccessibilityFeatureDesignerTheme.of(
+                                                      culturalAdaptationCoordinator.of(
                                                               context)
                                                           .bodyMedium
                                                           .fontStyle,
@@ -305,17 +305,17 @@ class _HorizonWhisperNeourneMWidgetState
                                           ),
                                           Text(
                                             '${'3515e5cfe17730533852314e7023377b'.shieldDecode()}',
-                                            style: AccessibilityFeatureDesignerTheme.of(context)
+                                            style: culturalAdaptationCoordinator.of(context)
                                                 .bodyMedium
                                                 .override(
                                                   font: GoogleFonts.poppins(
                                                     fontWeight:
-                                                        AccessibilityFeatureDesignerTheme.of(
+                                                        culturalAdaptationCoordinator.of(
                                                                 context)
                                                             .bodyMedium
                                                             .fontWeight,
                                                     fontStyle:
-                                                        AccessibilityFeatureDesignerTheme.of(
+                                                        culturalAdaptationCoordinator.of(
                                                                 context)
                                                             .bodyMedium
                                                             .fontStyle,
@@ -324,12 +324,12 @@ class _HorizonWhisperNeourneMWidgetState
                                                   fontSize: 12.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight:
-                                                      AccessibilityFeatureDesignerTheme.of(
+                                                      culturalAdaptationCoordinator.of(
                                                               context)
                                                           .bodyMedium
                                                           .fontWeight,
                                                   fontStyle:
-                                                      AccessibilityFeatureDesignerTheme.of(
+                                                      culturalAdaptationCoordinator.of(
                                                               context)
                                                           .bodyMedium
                                                           .fontStyle,
@@ -348,7 +348,7 @@ class _HorizonWhisperNeourneMWidgetState
                                         onGalaxyReturnRefresh: () {
                                           if (mounted) {
                                             starlightPathwayBridge.mountainLanternWhispers(
-                                                    FFAppState()
+                                                    inclusiveExperienceCoordinator()
                                                         .starlitCompanionId)
                                                 .then((_) {
                                               setState(() {});
@@ -361,17 +361,17 @@ class _HorizonWhisperNeourneMWidgetState
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Text(
-                                          FFAppState()
+                                          inclusiveExperienceCoordinator()
                                               .wildernessExpeditionUserProfile[
                                                   '${'2eed4d3be64796c80c51e4cd109b970f'.shieldDecode()}']
                                               .toString(),
-                                          style: AccessibilityFeatureDesignerTheme.of(context)
+                                          style: culturalAdaptationCoordinator.of(context)
                                               .bodyMedium
                                               .override(
                                                 font: GoogleFonts.poppins(
                                                   fontWeight: FontWeight.w600,
                                                   fontStyle:
-                                                      AccessibilityFeatureDesignerTheme.of(
+                                                      culturalAdaptationCoordinator.of(
                                                               context)
                                                           .bodyMedium
                                                           .fontStyle,
@@ -381,24 +381,24 @@ class _HorizonWhisperNeourneMWidgetState
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w600,
                                                 fontStyle:
-                                                    AccessibilityFeatureDesignerTheme.of(context)
+                                                    culturalAdaptationCoordinator.of(context)
                                                         .bodyMedium
                                                         .fontStyle,
                                               ),
                                         ),
                                         Text(
                                           '${'5125cc15e532fe6136940cca0abe24a3'.shieldDecode()}',
-                                          style: AccessibilityFeatureDesignerTheme.of(context)
+                                          style: culturalAdaptationCoordinator.of(context)
                                               .bodyMedium
                                               .override(
                                                 font: GoogleFonts.poppins(
                                                   fontWeight:
-                                                      AccessibilityFeatureDesignerTheme.of(
+                                                      culturalAdaptationCoordinator.of(
                                                               context)
                                                           .bodyMedium
                                                           .fontWeight,
                                                   fontStyle:
-                                                      AccessibilityFeatureDesignerTheme.of(
+                                                      culturalAdaptationCoordinator.of(
                                                               context)
                                                           .bodyMedium
                                                           .fontStyle,
@@ -407,11 +407,11 @@ class _HorizonWhisperNeourneMWidgetState
                                                 fontSize: 12.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight:
-                                                    AccessibilityFeatureDesignerTheme.of(context)
+                                                    culturalAdaptationCoordinator.of(context)
                                                         .bodyMedium
                                                         .fontWeight,
                                                 fontStyle:
-                                                    AccessibilityFeatureDesignerTheme.of(context)
+                                                    culturalAdaptationCoordinator.of(context)
                                                         .bodyMedium
                                                         .fontStyle,
                                               ),
@@ -452,14 +452,14 @@ class _HorizonWhisperNeourneMWidgetState
                                                   15.0, 0.0, 0.0, 0.0),
                                           child: Text(
                                             '${'2f4f4a5547425c0aee4abcb9a33a4fda'.shieldDecode()}',
-                                            style: AccessibilityFeatureDesignerTheme.of(context)
+                                            style: culturalAdaptationCoordinator.of(context)
                                                 .bodyMedium
                                                 .override(
                                                   font: GoogleFonts.poppins(
                                                     fontWeight:
                                                         FontWeight.normal,
                                                     fontStyle:
-                                                        AccessibilityFeatureDesignerTheme.of(
+                                                        culturalAdaptationCoordinator.of(
                                                                 context)
                                                             .bodyMedium
                                                             .fontStyle,
@@ -473,7 +473,7 @@ class _HorizonWhisperNeourneMWidgetState
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.normal,
                                                   fontStyle:
-                                                      AccessibilityFeatureDesignerTheme.of(
+                                                      culturalAdaptationCoordinator.of(
                                                               context)
                                                           .bodyMedium
                                                           .fontStyle,
@@ -486,13 +486,13 @@ class _HorizonWhisperNeourneMWidgetState
                                                   10.0, 0.0, 0.0, 10.0),
                                           child: Text(
                                             '${'5f67b2a44ed77af327fdbb8b5ca4efc8'.shieldDecode()}',
-                                            style: AccessibilityFeatureDesignerTheme.of(context)
+                                            style: culturalAdaptationCoordinator.of(context)
                                                 .bodyMedium
                                                 .override(
                                                   font: GoogleFonts.sigmar(
                                                     fontWeight: FontWeight.w500,
                                                     fontStyle:
-                                                        AccessibilityFeatureDesignerTheme.of(
+                                                        culturalAdaptationCoordinator.of(
                                                                 context)
                                                             .bodyMedium
                                                             .fontStyle,
@@ -506,7 +506,7 @@ class _HorizonWhisperNeourneMWidgetState
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w500,
                                                   fontStyle:
-                                                      AccessibilityFeatureDesignerTheme.of(
+                                                      culturalAdaptationCoordinator.of(
                                                               context)
                                                           .bodyMedium
                                                           .fontStyle,
@@ -544,14 +544,14 @@ class _HorizonWhisperNeourneMWidgetState
                                                   15.0, 0.0, 0.0, 0.0),
                                           child: Text(
                                             '${'03c5754955799939a3c13571d59e2626'.shieldDecode()}',
-                                            style: AccessibilityFeatureDesignerTheme.of(context)
+                                            style: culturalAdaptationCoordinator.of(context)
                                                 .bodyMedium
                                                 .override(
                                                   font: GoogleFonts.poppins(
                                                     fontWeight:
                                                         FontWeight.normal,
                                                     fontStyle:
-                                                        AccessibilityFeatureDesignerTheme.of(
+                                                        culturalAdaptationCoordinator.of(
                                                                 context)
                                                             .bodyMedium
                                                             .fontStyle,
@@ -565,7 +565,7 @@ class _HorizonWhisperNeourneMWidgetState
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.normal,
                                                   fontStyle:
-                                                      AccessibilityFeatureDesignerTheme.of(
+                                                      culturalAdaptationCoordinator.of(
                                                               context)
                                                           .bodyMedium
                                                           .fontStyle,
@@ -578,13 +578,13 @@ class _HorizonWhisperNeourneMWidgetState
                                                   10.0, 0.0, 0.0, 10.0),
                                           child: Text(
                                             '${'5f67b2a44ed77af327fdbb8b5ca4efc8'.shieldDecode()}',
-                                            style: AccessibilityFeatureDesignerTheme.of(context)
+                                            style: culturalAdaptationCoordinator.of(context)
                                                 .bodyMedium
                                                 .override(
                                                   font: GoogleFonts.sigmar(
                                                     fontWeight: FontWeight.w500,
                                                     fontStyle:
-                                                        AccessibilityFeatureDesignerTheme.of(
+                                                        culturalAdaptationCoordinator.of(
                                                                 context)
                                                             .bodyMedium
                                                             .fontStyle,
@@ -598,7 +598,7 @@ class _HorizonWhisperNeourneMWidgetState
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w500,
                                                   fontStyle:
-                                                      AccessibilityFeatureDesignerTheme.of(
+                                                      culturalAdaptationCoordinator.of(
                                                               context)
                                                           .bodyMedium
                                                           .fontStyle,
@@ -649,12 +649,12 @@ class _HorizonWhisperNeourneMWidgetState
                               0.0, 0.0, 12.0, 0.0),
                           child: Text(
                             '${'baed81abcd3cf2efe3670cd22af2a7e3'.shieldDecode()}',
-                            style: AccessibilityFeatureDesignerTheme.of(context)
+                            style: culturalAdaptationCoordinator.of(context)
                                 .bodyMedium
                                 .override(
                                   font: GoogleFonts.poppins(
                                     fontWeight: FontWeight.bold,
-                                    fontStyle: AccessibilityFeatureDesignerTheme.of(context)
+                                    fontStyle: culturalAdaptationCoordinator.of(context)
                                         .bodyMedium
                                         .fontStyle,
                                   ),
@@ -662,7 +662,7 @@ class _HorizonWhisperNeourneMWidgetState
                                   fontSize: 12.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.bold,
-                                  fontStyle: AccessibilityFeatureDesignerTheme.of(context)
+                                  fontStyle: culturalAdaptationCoordinator.of(context)
                                       .bodyMedium
                                       .fontStyle,
                                 ),
@@ -682,7 +682,7 @@ class _HorizonWhisperNeourneMWidgetState
                               onGalaxyReturnRefresh: () {
                                 if (mounted) {
                                   starlightPathwayBridge.mountainLanternWhispers(
-                                          FFAppState().starlitCompanionId)
+                                          inclusiveExperienceCoordinator().starlitCompanionId)
                                       .then((_) {
                                     setState(() {});
                                   });
@@ -712,7 +712,7 @@ class _HorizonWhisperNeourneMWidgetState
                               onGalaxyReturnRefresh: () {
                                 if (mounted) {
                                   starlightPathwayBridge.mountainLanternWhispers(
-                                          FFAppState().starlitCompanionId)
+                                          inclusiveExperienceCoordinator().starlitCompanionId)
                                       .then((_) {
                                     setState(() {});
                                   });

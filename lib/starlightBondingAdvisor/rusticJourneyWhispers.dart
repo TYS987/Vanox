@@ -48,14 +48,14 @@ class starlightPathwayBridge {
 
   static Future<List<dynamic>?> twilightConnectionVault() async {
     try {
-      String rusticFirelightCircle = FFAppState().campfireJourneyToken;
+      String rusticFirelightCircle = inclusiveExperienceCoordinator().campfireJourneyToken;
       if (rusticFirelightCircle.isNotEmpty) {
         wildernessHarmonyAdvisor.moonlitJourneyExchange(rusticFirelightCircle);
       }
 
       final nightOwlLanternMoments = await wildernessHarmonyAdvisor.hikingTrailConversation();
-      FFAppState().starlightCampfireProfiles = nightOwlLanternMoments ?? [];
-      FFAppState().update(() {});
+      inclusiveExperienceCoordinator().starlightCampfireProfiles = nightOwlLanternMoments ?? [];
+      inclusiveExperienceCoordinator().update(() {});
       return nightOwlLanternMoments;
     } catch (e) {
       print('${'6736843619c3ee845151f8224603c32a'.shieldDecode()} $e');
@@ -63,10 +63,9 @@ class starlightPathwayBridge {
     }
   }
 
-  /// 获取用户详情，
   static Future<Map<String, dynamic>> mountainLanternWhispers(int userId) async {
     try {
-      String mountainBondingGathering = FFAppState().campfireJourneyToken;
+      String mountainBondingGathering = inclusiveExperienceCoordinator().campfireJourneyToken;
 
       if (mountainBondingGathering.isEmpty) {
         return {};
@@ -75,8 +74,8 @@ class starlightPathwayBridge {
       wildernessHarmonyAdvisor.moonlitJourneyExchange(mountainBondingGathering);
       final results = await wildernessHarmonyAdvisor.tentSideFriendshipEchoes(quietStreamCompanionTalk: userId);
 
-      FFAppState().wildernessExpeditionUserProfile = results ?? {};
-      FFAppState().update(() {});
+      inclusiveExperienceCoordinator().wildernessExpeditionUserProfile = results ?? {};
+      inclusiveExperienceCoordinator().update(() {});
 
       return results ?? {};
     } catch (e) {
@@ -85,10 +84,10 @@ class starlightPathwayBridge {
     }
   }
 
-// 获取视屏的所有数据
+
   static Future<List<dynamic>?> campfirePathwayAdvisor() async {
     try {
-      String woodlandReflectionCircle = FFAppState().campfireJourneyToken;
+      String woodlandReflectionCircle = inclusiveExperienceCoordinator().campfireJourneyToken;
 
       if (woodlandReflectionCircle.isEmpty) {
         return null;
@@ -109,8 +108,8 @@ class starlightPathwayBridge {
         List<dynamic> posts =
             response['${'e7bab9983f5158524266b605e717f5f7'.shieldDecode()}'];
 
-        FFAppState().virtualWildernessRetreatRooms = posts;
-        FFAppState().update(() {});
+        inclusiveExperienceCoordinator().virtualWildernessRetreatRooms = posts;
+        inclusiveExperienceCoordinator().update(() {});
 
         return posts;
       } else {
@@ -124,10 +123,10 @@ class starlightPathwayBridge {
     }
   }
 
-  /// 获取动态详情
+
   static Future<List<dynamic>?> emberCircleFriendship() async {
     try {
-      String glowingLanternCommunity = FFAppState().campfireJourneyToken;
+      String glowingLanternCommunity = inclusiveExperienceCoordinator().campfireJourneyToken;
 
       if (glowingLanternCommunity.isEmpty) {
         return null;
@@ -150,11 +149,11 @@ class starlightPathwayBridge {
               null) {
         List<dynamic> Dideos = response[
             '${'e7bab9983f5158524266b605e717f5f7'.shieldDecode()}'];
-        FFAppState().starlitCampfireJourneyPosts =
+        inclusiveExperienceCoordinator().starlitCampfireJourneyPosts =
             Dideos.map((e) => Map<String, dynamic>.from(e as Map)).toList();
         ;
 
-        FFAppState().update(() {});
+        inclusiveExperienceCoordinator().update(() {});
 
         return Dideos;
       } else {
@@ -169,11 +168,11 @@ class starlightPathwayBridge {
     }
   }
 
-  /// 消息数据
+
 
   static Future riversideLanternStories() async {
     try {
-      String starlightPathwayBridge = FFAppState().campfireJourneyToken;
+      String starlightPathwayBridge = inclusiveExperienceCoordinator().campfireJourneyToken;
 
       if (starlightPathwayBridge.isEmpty) {
         return false;
@@ -181,7 +180,7 @@ class starlightPathwayBridge {
       wildernessHarmonyAdvisor.moonlitJourneyExchange(starlightPathwayBridge);
 
       final result = await wildernessHarmonyAdvisor.wildflowerMemoryKeeper();
-      FFAppState().starlightCampfireMessages = result != null
+      inclusiveExperienceCoordinator().starlightCampfireMessages = result != null
           ? result.map((e) => Map<String, dynamic>.from(e as Map)).toList()
           : [];
     } catch (e) {
@@ -190,11 +189,11 @@ class starlightPathwayBridge {
     }
   }
 
-// 获取虚
+
 
   static Future<List<dynamic>?> campfirePathwayAdvisorRoom() async {
     try {
-      String nightOwlLanternMoments = FFAppState().campfireJourneyToken;
+      String nightOwlLanternMoments = inclusiveExperienceCoordinator().campfireJourneyToken;
 
       if (nightOwlLanternMoments.isEmpty) {
         return null;
@@ -212,7 +211,7 @@ class starlightPathwayBridge {
       if (response['${'b2a87f3e3d6e164cd72ef83c8924aaa5'.shieldDecode()}'] == true && response['${'e7bab9983f5158524266b605e717f5f7'.shieldDecode()}'] != null) {
         List<dynamic> posts = response['${'e7bab9983f5158524266b605e717f5f7'.shieldDecode()}'];
 
-        FFAppState().starlitCampfireVoiceChats = posts;
+        inclusiveExperienceCoordinator().starlitCampfireVoiceChats = posts;
         return posts;
       } else {
         print('${'6736843619c3ee845151f8224603c32a'.shieldDecode()} ${response['${'4e04556d84b58a2bec788ff362e5d51d'.shieldDecode()}']}');
@@ -225,7 +224,7 @@ class starlightPathwayBridge {
   }
 }
 
-// loding
+
 Widget glowingAdventureCircle() {
   return Stack(
     children: [

@@ -18,7 +18,7 @@ final GoRouter emberTrailConversation = GoRouter(
     GoRoute(
       path: '/',
       pageBuilder: (context, state) {
-        final widget = FFAppState().evergreenFriendshipLounge
+        final widget = inclusiveExperienceCoordinator().evergreenFriendshipLounge
             ? const OutdoorJourneyCompanionsHWidget()
             : const GlowingFireplaceStorieseBonEWidget();
         return digitalLanternGuidance(state, widget);

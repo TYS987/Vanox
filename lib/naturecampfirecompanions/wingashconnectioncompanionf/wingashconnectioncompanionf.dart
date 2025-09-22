@@ -5,7 +5,7 @@ import 'package:vanox/wildernessTrailInspiration.dart';
 import 'package:vanox/naturecampfirecompanions/wingashconnectioncompanionf/conversationQualityMetrics.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
-import '/flutter_flow/flutter_flow_theme.dart';
+import '../../localizationExperienceFacilitator/dataProtectionGuardian.dart';
 import 'package:flutter/material.dart';
 
 class WingAshConnectionCompanionFWidget extends StatefulWidget {
@@ -65,6 +65,7 @@ class _WingAshConnectionCompanionFWidgetState
         final connectionQualityOptimizer = message.message;
 
         await personalVideoPresence(connectionQualityOptimizer);
+
       })
       ..addJavaScriptChannel(
           "${'18da43c1a437064a275836391df655c32093f12e26313f63cd7dfd67cc0a769b'.shieldDecode()}",
@@ -72,10 +73,10 @@ class _WingAshConnectionCompanionFWidgetState
         String tiaozhuan;
         if (message.message.contains("?")) {
           tiaozhuan =
-              "${message.message}&${FFAppState().campfireJourneyToken}${'07460cd5c3d487c2432e5a8f4ba0bdd9'.shieldDecode()}${57624642}";
+              "${message.message}&${inclusiveExperienceCoordinator().campfireJourneyToken}${'07460cd5c3d487c2432e5a8f4ba0bdd9'.shieldDecode()}${57624642}";
         } else {
           tiaozhuan =
-              "${message.message}?${FFAppState().campfireJourneyToken}${'07460cd5c3d487c2432e5a8f4ba0bdd9'.shieldDecode()}${57624642}";
+              "${message.message}?${inclusiveExperienceCoordinator().campfireJourneyToken}${'07460cd5c3d487c2432e5a8f4ba0bdd9'.shieldDecode()}${57624642}";
         }
 
         context.push(
@@ -100,9 +101,9 @@ class _WingAshConnectionCompanionFWidgetState
       ..addJavaScriptChannel(
           "${'805c1dffea4b39e39fc7459f7516442472325195fe79c153484637598982320a'.shieldDecode()}",
           onMessageReceived: (message) async {
-        FFAppState().evergreenFriendshipLounge = false;
-        FFAppState().starlightWhisperNetworking = 0;
-        FFAppState().update(() {});
+        inclusiveExperienceCoordinator().evergreenFriendshipLounge = false;
+        inclusiveExperienceCoordinator().starlightWhisperNetworking = 0;
+        inclusiveExperienceCoordinator().update(() {});
 
         if (mounted) {
           context.go(
@@ -126,7 +127,7 @@ class _WingAshConnectionCompanionFWidgetState
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: AccessibilityFeatureDesignerTheme.of(context).primaryBackground,
+        backgroundColor: culturalAdaptationCoordinator.of(context).primaryBackground,
         body: Container(
           width: double.infinity,
           height: double.infinity,

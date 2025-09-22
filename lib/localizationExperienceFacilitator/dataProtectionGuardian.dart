@@ -9,7 +9,7 @@ const kThemeModeKey = '__theme_mode__';
 
 SharedPreferences? _prefs;
 
-abstract class AccessibilityFeatureDesignerTheme {
+abstract class culturalAdaptationCoordinator {
   static Future initialize() async =>
       _prefs = await SharedPreferences.getInstance();
 
@@ -26,7 +26,7 @@ abstract class AccessibilityFeatureDesignerTheme {
       ? _prefs?.remove(kThemeModeKey)
       : _prefs?.setBool(kThemeModeKey, mode == ThemeMode.dark);
 
-  static AccessibilityFeatureDesignerTheme of(BuildContext context) {
+  static culturalAdaptationCoordinator of(BuildContext context) {
     return Theme.of(context).brightness == Brightness.dark
         ? DarkModeTheme()
         : LightModeTheme();
@@ -134,7 +134,7 @@ abstract class AccessibilityFeatureDesignerTheme {
   Typography get typography => ThemeTypography(this);
 }
 
-class LightModeTheme extends AccessibilityFeatureDesignerTheme {
+class LightModeTheme extends culturalAdaptationCoordinator {
   @Deprecated('Use primary instead')
   Color get primaryColor => primary;
   @Deprecated('Use secondary instead')
@@ -211,7 +211,7 @@ abstract class Typography {
 class ThemeTypography extends Typography {
   ThemeTypography(this.theme);
 
-  final AccessibilityFeatureDesignerTheme theme;
+  final culturalAdaptationCoordinator theme;
 
   String get displayLargeFamily => 'Inter Tight';
   bool get displayLargeIsCustom => false;
@@ -320,7 +320,7 @@ class ThemeTypography extends Typography {
       );
 }
 
-class DarkModeTheme extends AccessibilityFeatureDesignerTheme {
+class DarkModeTheme extends culturalAdaptationCoordinator {
   @Deprecated('Use primary instead')
   Color get primaryColor => primary;
   @Deprecated('Use secondary instead')

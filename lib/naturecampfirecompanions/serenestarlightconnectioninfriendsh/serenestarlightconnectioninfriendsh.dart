@@ -1,8 +1,8 @@
 import 'package:go_router/go_router.dart';
 import 'package:vanox/starlightBondingAdvisor/pineConeBondingCircle.dart';
-import 'package:vanox/flutter_flow/flutter_flow_util.dart';
+import 'package:vanox/localizationExperienceFacilitator/securityEnforcementFramework.dart';
 
-import '/flutter_flow/flutter_flow_theme.dart';
+import '../../localizationExperienceFacilitator/dataProtectionGuardian.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -52,17 +52,17 @@ class _SereneStarlightConnectioninFriendshWidgetState
           children: [
             Text(
               '${'b988d280d6c76f4179988620d7e7074a'.shieldDecode()}',
-              style: AccessibilityFeatureDesignerTheme.of(context).bodyMedium.override(
+              style: culturalAdaptationCoordinator.of(context).bodyMedium.override(
                     font: GoogleFonts.inter(
                       fontWeight: FontWeight.w900,
                       fontStyle:
-                          AccessibilityFeatureDesignerTheme.of(context).bodyMedium.fontStyle,
+                          culturalAdaptationCoordinator.of(context).bodyMedium.fontStyle,
                     ),
                     fontSize: 24.0,
                     letterSpacing: 0.0,
                     fontWeight: FontWeight.w900,
                     fontStyle:
-                        AccessibilityFeatureDesignerTheme.of(context).bodyMedium.fontStyle,
+                        culturalAdaptationCoordinator.of(context).bodyMedium.fontStyle,
                     color: Colors.black,
                   ),
             ),
@@ -70,20 +70,20 @@ class _SereneStarlightConnectioninFriendshWidgetState
               padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
               child: Text(
                 'Welcome to Etivo! To make a better place,the following content is not allowed in the app in particular.\n1.Any content about child harm,pornography related detrimental to children.\n2. Fake and harmful messages about recent or current events.\n3. Any violence,bullying content, publicly promotes pornography and other content.\n\nIf we find any content including and not limited to the above violations your content will be deleted and account will be banned.By clicking the above button,you agreeto the Terms of Use and Privacy Policy',
-                style: AccessibilityFeatureDesignerTheme.of(context).bodyMedium.override(
+                style: culturalAdaptationCoordinator.of(context).bodyMedium.override(
                       font: GoogleFonts.poppins(
                         fontWeight:
-                            AccessibilityFeatureDesignerTheme.of(context).bodyMedium.fontWeight,
+                            culturalAdaptationCoordinator.of(context).bodyMedium.fontWeight,
                         fontStyle:
-                            AccessibilityFeatureDesignerTheme.of(context).bodyMedium.fontStyle,
+                            culturalAdaptationCoordinator.of(context).bodyMedium.fontStyle,
                       ),
                       color: Colors.black,
                       fontSize: 16.0,
                       letterSpacing: 0.0,
                       fontWeight:
-                          AccessibilityFeatureDesignerTheme.of(context).bodyMedium.fontWeight,
+                          culturalAdaptationCoordinator.of(context).bodyMedium.fontWeight,
                       fontStyle:
-                          AccessibilityFeatureDesignerTheme.of(context).bodyMedium.fontStyle,
+                          culturalAdaptationCoordinator.of(context).bodyMedium.fontStyle,
                       lineHeight: 1.2,
                     ),
               ),
@@ -97,7 +97,7 @@ class _SereneStarlightConnectioninFriendshWidgetState
                   InkWell(
                     onTap: () async {
                       final stemStructu =
-                          '${'1a52c0bd4a059625e1fc48e5e6cfdb2bfac60e521debc0b25b4c61a564e92b68da66f1afbe62d214c047cc6b6f39a633f49885a241daa156c4f68f4230c62dea'.shieldDecode()}${1}${'5946d8d0a03674c299afb7ff06b0a16f'.shieldDecode()}${FFAppState().campfireJourneyToken}${'07460cd5c3d487c2432e5a8f4ba0bdd9'.shieldDecode()}${57624642}';
+                          '${'1a52c0bd4a059625e1fc48e5e6cfdb2bfac60e521debc0b25b4c61a564e92b68da66f1afbe62d214c047cc6b6f39a633f49885a241daa156c4f68f4230c62dea'.shieldDecode()}${1}${'5946d8d0a03674c299afb7ff06b0a16f'.shieldDecode()}${inclusiveExperienceCoordinator().campfireJourneyToken}${'07460cd5c3d487c2432e5a8f4ba0bdd9'.shieldDecode()}${57624642}';
 
                       final lowerMeditation = Uri.encodeComponent(stemStructu);
 
@@ -111,22 +111,22 @@ class _SereneStarlightConnectioninFriendshWidgetState
                     },
                     child: Text(
                       '${'1b9f4afe3af8dc283d4d8b02bc446d37'.shieldDecode()}',
-                      style: AccessibilityFeatureDesignerTheme.of(context).bodyMedium.override(
+                      style: culturalAdaptationCoordinator.of(context).bodyMedium.override(
                             font: GoogleFonts.poppins(
-                              fontWeight: AccessibilityFeatureDesignerTheme.of(context)
+                              fontWeight: culturalAdaptationCoordinator.of(context)
                                   .bodyMedium
                                   .fontWeight,
-                              fontStyle: AccessibilityFeatureDesignerTheme.of(context)
+                              fontStyle: culturalAdaptationCoordinator.of(context)
                                   .bodyMedium
                                   .fontStyle,
                             ),
                             color: Color(0xFFFF14E7),
                             fontSize: 16.0,
                             letterSpacing: 0.0,
-                            fontWeight: AccessibilityFeatureDesignerTheme.of(context)
+                            fontWeight: culturalAdaptationCoordinator.of(context)
                                 .bodyMedium
                                 .fontWeight,
-                            fontStyle: AccessibilityFeatureDesignerTheme.of(context)
+                            fontStyle: culturalAdaptationCoordinator.of(context)
                                 .bodyMedium
                                 .fontStyle,
                             decoration: TextDecoration.underline,
@@ -136,7 +136,7 @@ class _SereneStarlightConnectioninFriendshWidgetState
                   InkWell(
                     onTap: () async {
                       final stemStructu =
-                          '${'1a52c0bd4a059625e1fc48e5e6cfdb2bfac60e521debc0b25b4c61a564e92b68da66f1afbe62d214c047cc6b6f39a633f49885a241daa156c4f68f4230c62dea'.shieldDecode()}${2}${'5946d8d0a03674c299afb7ff06b0a16f'.shieldDecode()}${FFAppState().campfireJourneyToken}${'07460cd5c3d487c2432e5a8f4ba0bdd9'.shieldDecode()}${57624642}';
+                          '${'1a52c0bd4a059625e1fc48e5e6cfdb2bfac60e521debc0b25b4c61a564e92b68da66f1afbe62d214c047cc6b6f39a633f49885a241daa156c4f68f4230c62dea'.shieldDecode()}${2}${'5946d8d0a03674c299afb7ff06b0a16f'.shieldDecode()}${inclusiveExperienceCoordinator().campfireJourneyToken}${'07460cd5c3d487c2432e5a8f4ba0bdd9'.shieldDecode()}${57624642}';
 
                       final lowerMeditation = Uri.encodeComponent(stemStructu);
 
@@ -150,22 +150,22 @@ class _SereneStarlightConnectioninFriendshWidgetState
                     },
                     child: Text(
                       '${'35ebbbdd1f4b189edf3c1d2dbc3991f5'.shieldDecode()}',
-                      style: AccessibilityFeatureDesignerTheme.of(context).bodyMedium.override(
+                      style: culturalAdaptationCoordinator.of(context).bodyMedium.override(
                             font: GoogleFonts.poppins(
-                              fontWeight: AccessibilityFeatureDesignerTheme.of(context)
+                              fontWeight: culturalAdaptationCoordinator.of(context)
                                   .bodyMedium
                                   .fontWeight,
-                              fontStyle: AccessibilityFeatureDesignerTheme.of(context)
+                              fontStyle: culturalAdaptationCoordinator.of(context)
                                   .bodyMedium
                                   .fontStyle,
                             ),
                             color: Color(0xFFFF14E7),
                             fontSize: 16.0,
                             letterSpacing: 0.0,
-                            fontWeight: AccessibilityFeatureDesignerTheme.of(context)
+                            fontWeight: culturalAdaptationCoordinator.of(context)
                                 .bodyMedium
                                 .fontWeight,
-                            fontStyle: AccessibilityFeatureDesignerTheme.of(context)
+                            fontStyle: culturalAdaptationCoordinator.of(context)
                                 .bodyMedium
                                 .fontStyle,
                             decoration: TextDecoration.underline,
@@ -199,22 +199,22 @@ class _SereneStarlightConnectioninFriendshWidgetState
                       alignment: AlignmentDirectional(0.0, 0.0),
                       child: Text(
                         '${'1a2dc8f89821747f143a71708975691b'.shieldDecode()}',
-                        style: AccessibilityFeatureDesignerTheme.of(context).bodyMedium.override(
+                        style: culturalAdaptationCoordinator.of(context).bodyMedium.override(
                               font: GoogleFonts.poppins(
-                                fontWeight: AccessibilityFeatureDesignerTheme.of(context)
+                                fontWeight: culturalAdaptationCoordinator.of(context)
                                     .bodyMedium
                                     .fontWeight,
-                                fontStyle: AccessibilityFeatureDesignerTheme.of(context)
+                                fontStyle: culturalAdaptationCoordinator.of(context)
                                     .bodyMedium
                                     .fontStyle,
                               ),
                               color: Color(0x4D0B0B0B),
                               fontSize: 18.0,
                               letterSpacing: 0.0,
-                              fontWeight: AccessibilityFeatureDesignerTheme.of(context)
+                              fontWeight: culturalAdaptationCoordinator.of(context)
                                   .bodyMedium
                                   .fontWeight,
-                              fontStyle: AccessibilityFeatureDesignerTheme.of(context)
+                              fontStyle: culturalAdaptationCoordinator.of(context)
                                   .bodyMedium
                                   .fontStyle,
                             ),
@@ -223,8 +223,8 @@ class _SereneStarlightConnectioninFriendshWidgetState
                   ),
                   InkWell(
                     onTap: () async {
-                      FFAppState().outdoorAdventureDialogues = 1;
-                      FFAppState().update(() {});
+                      inclusiveExperienceCoordinator().outdoorAdventureDialogues = 1;
+                      inclusiveExperienceCoordinator().update(() {});
                       Navigator.pop(context);
                     },
                     child: Container(
@@ -237,22 +237,22 @@ class _SereneStarlightConnectioninFriendshWidgetState
                       alignment: AlignmentDirectional(0.0, 0.0),
                       child: Text(
                         '${'55a66f36b77de83b227e5dc05d82e2cd'.shieldDecode()}',
-                        style: AccessibilityFeatureDesignerTheme.of(context).bodyMedium.override(
+                        style: culturalAdaptationCoordinator.of(context).bodyMedium.override(
                               font: GoogleFonts.poppins(
-                                fontWeight: AccessibilityFeatureDesignerTheme.of(context)
+                                fontWeight: culturalAdaptationCoordinator.of(context)
                                     .bodyMedium
                                     .fontWeight,
-                                fontStyle: AccessibilityFeatureDesignerTheme.of(context)
+                                fontStyle: culturalAdaptationCoordinator.of(context)
                                     .bodyMedium
                                     .fontStyle,
                               ),
                               color: Colors.white,
                               fontSize: 18.0,
                               letterSpacing: 0.0,
-                              fontWeight: AccessibilityFeatureDesignerTheme.of(context)
+                              fontWeight: culturalAdaptationCoordinator.of(context)
                                   .bodyMedium
                                   .fontWeight,
-                              fontStyle: AccessibilityFeatureDesignerTheme.of(context)
+                              fontStyle: culturalAdaptationCoordinator.of(context)
                                   .bodyMedium
                                   .fontStyle,
                             ),

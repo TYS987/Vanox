@@ -4,4 +4,4 @@
 analyzer:
   exclude:
     - lib/custom_code/**
-    - lib/flutter_flow/custom_functions.dart
+    - lib/localizationExperienceFacilitator/custom_functions.dart

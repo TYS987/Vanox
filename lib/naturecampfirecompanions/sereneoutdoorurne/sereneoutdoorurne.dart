@@ -1,7 +1,7 @@
 import 'package:go_router/go_router.dart';
 import 'package:vanox/starlightBondingAdvisor/pineConeBondingCircle.dart';
 
-import '/flutter_flow/flutter_flow_util.dart';
+import '../../localizationExperienceFacilitator/securityEnforcementFramework.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -31,7 +31,7 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
 
   @override
   Widget build(BuildContext context) {
-    context.watch<FFAppState>();
+    context.watch<inclusiveExperienceCoordinator>();
 
     return Container(
       width: double.infinity,
@@ -45,7 +45,7 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
         children: [
           Builder(
             builder: (context) {
-              if (FFAppState().starlightWhisperNetworking == 0) {
+              if (inclusiveExperienceCoordinator().starlightWhisperNetworking == 0) {
                 return Container(
                   width: 24.0,
                   height: 24.0,
@@ -65,7 +65,7 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
                   hoverColor: Colors.transparent,
                   highlightColor: Colors.transparent,
                   onTap: () async {
-                    FFAppState().starlightWhisperNetworking = 0;
+                    inclusiveExperienceCoordinator().starlightWhisperNetworking = 0;
                     context.pushNamed(
                         '${'3151364a29b492e564c24233e7c1e20783a113ca4fec230b22784b54a7a24e1f'.shieldDecode()}');
 
@@ -89,7 +89,7 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
           ),
           Builder(
             builder: (context) {
-              if (FFAppState().starlightWhisperNetworking == 1) {
+              if (inclusiveExperienceCoordinator().starlightWhisperNetworking == 1) {
                 return Container(
                   width: 24.0,
                   height: 24.0,
@@ -109,7 +109,7 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
                   hoverColor: Colors.transparent,
                   highlightColor: Colors.transparent,
                   onTap: () async {
-                    FFAppState().starlightWhisperNetworking = 1;
+                    inclusiveExperienceCoordinator().starlightWhisperNetworking = 1;
                     context.pushNamed(
                         '${'319f972e21171bffad70a0afc0074645fa8c5b6a6d347af2b364c4f479186cca'.shieldDecode()}');
 
@@ -133,7 +133,7 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
           ),
           Builder(
             builder: (context) {
-              if (FFAppState().starlightWhisperNetworking == 2) {
+              if (inclusiveExperienceCoordinator().starlightWhisperNetworking == 2) {
                 return Container(
                   width: 24.0,
                   height: 24.0,
@@ -153,7 +153,7 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
                   hoverColor: Colors.transparent,
                   highlightColor: Colors.transparent,
                   onTap: () async {
-                    FFAppState().starlightWhisperNetworking = 2;
+                    inclusiveExperienceCoordinator().starlightWhisperNetworking = 2;
                     context.pushNamed(
                         '${'4eb99bd3d199c07dec3a1b5152f0c901760dc17317c8f24ef1584fe32705d3fb'.shieldDecode()}');
 
@@ -177,7 +177,7 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
           ),
           Builder(
             builder: (context) {
-              if (FFAppState().starlightWhisperNetworking == 3) {
+              if (inclusiveExperienceCoordinator().starlightWhisperNetworking == 3) {
                 return Container(
                   width: 24.0,
                   height: 24.0,
@@ -197,7 +197,7 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
                   hoverColor: Colors.transparent,
                   highlightColor: Colors.transparent,
                   onTap: () async {
-                    FFAppState().starlightWhisperNetworking = 3;
+                    inclusiveExperienceCoordinator().starlightWhisperNetworking = 3;
                     context.pushNamed(
                         '${'41d91cf2964be947f2527b236edb942a8f1397d5595d7186ec717e2381db97e0'.shieldDecode()}');
 

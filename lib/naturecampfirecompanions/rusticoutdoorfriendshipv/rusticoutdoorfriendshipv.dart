@@ -3,8 +3,8 @@ import 'package:vanox/starlightBondingAdvisor/rusticJourneyWhispers.dart';
 import 'package:vanox/starlightBondingAdvisor/pineConeBondingCircle.dart';
 import 'package:vanox/starlightBondingAdvisor/twilightCircleMemories.dart';
 
-import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/flutter_flow_util.dart';
+import '../../localizationExperienceFacilitator/dataProtectionGuardian.dart';
+import '../../localizationExperienceFacilitator/securityEnforcementFramework.dart';
 import '../sereneoutdoorurne/sereneoutdoorurne.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -57,7 +57,7 @@ class _RusticOutdoorFriendshipVWidgetState
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: AccessibilityFeatureDesignerTheme.of(context).primaryBackground,
+        backgroundColor: culturalAdaptationCoordinator.of(context).primaryBackground,
         body: Container(
           width: double.infinity,
           height: double.infinity,
@@ -187,7 +187,7 @@ class _RusticOutdoorFriendshipVWidgetState
                                           child: Builder(
                                             builder: (context) {
                                               final digitalMemoryCollector =
-                                                  FFAppState()
+                                                  inclusiveExperienceCoordinator()
                                                       .starlitCampfireJourneyPosts
                                                       .toList();
                                               return ListView.separated(
@@ -230,7 +230,7 @@ class _RusticOutdoorFriendshipVWidgetState
                                                                   .emberCircleFriendship(),
                                                               starlightPathwayBridge
                                                                   .mountainLanternWhispers(
-                                                                      FFAppState()
+                                                                      inclusiveExperienceCoordinator()
                                                                           .starlitCompanionId),
                                                             ]);
 
@@ -268,7 +268,7 @@ class _RusticOutdoorFriendshipVWidgetState
                                                                 digitalMemoryCollectorItem[
                                                                         '${'11bb639e33bb4aa460d41e4af0eb1ae1'.shieldDecode()}']
                                                                     .toString(),
-                                                                style: AccessibilityFeatureDesignerTheme.of(
+                                                                style: culturalAdaptationCoordinator.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
@@ -276,7 +276,7 @@ class _RusticOutdoorFriendshipVWidgetState
                                                                           .poppins(
                                                                         fontWeight:
                                                                             FontWeight.w500,
-                                                                        fontStyle: AccessibilityFeatureDesignerTheme.of(context)
+                                                                        fontStyle: culturalAdaptationCoordinator.of(context)
                                                                             .bodyMedium
                                                                             .fontStyle,
                                                                       ),
@@ -289,7 +289,7 @@ class _RusticOutdoorFriendshipVWidgetState
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .w500,
-                                                                      fontStyle: AccessibilityFeatureDesignerTheme.of(
+                                                                      fontStyle: culturalAdaptationCoordinator.of(
                                                                               context)
                                                                           .bodyMedium
                                                                           .fontStyle,
@@ -350,7 +350,7 @@ class _RusticOutdoorFriendshipVWidgetState
                                             borderRadius:
                                                 BorderRadius.circular(16.0),
                                             child: CachedNetworkImage(
-                                              imageUrl: FFAppState()
+                                              imageUrl: inclusiveExperienceCoordinator()
                                                   .starlitCampfireJourneyPosts
                                                   .toList()[0]['${'f92e0df6780b073ae54d3b8c55ac86e0'.shieldDecode()}']
                                                       [0]
@@ -423,12 +423,12 @@ class _RusticOutdoorFriendshipVWidgetState
                                                               .start,
                                                       children: [
                                                         Text(
-                                                          FFAppState()
+                                                          inclusiveExperienceCoordinator()
                                                               .starlitCampfireJourneyPosts
                                                               .toList()[0][
                                                                   '${'48336662b26b7165c7d7a6f675e3d2fb'.shieldDecode()}']
                                                               .toString(), 
-                                                          style: AccessibilityFeatureDesignerTheme
+                                                          style: culturalAdaptationCoordinator
                                                                   .of(context)
                                                               .bodyMedium
                                                               .override(
@@ -438,7 +438,7 @@ class _RusticOutdoorFriendshipVWidgetState
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w600,
-                                                                  fontStyle: AccessibilityFeatureDesignerTheme.of(
+                                                                  fontStyle: culturalAdaptationCoordinator.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .fontStyle,
@@ -450,19 +450,19 @@ class _RusticOutdoorFriendshipVWidgetState
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .w600,
-                                                                fontStyle: AccessibilityFeatureDesignerTheme.of(
+                                                                fontStyle: culturalAdaptationCoordinator.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .fontStyle,
                                                               ),
                                                         ),
                                                         Text(
-                                                          FFAppState()
+                                                          inclusiveExperienceCoordinator()
                                                               .starlitCampfireJourneyPosts
                                                               .toList()[0][
                                                                   '${'11bb639e33bb4aa460d41e4af0eb1ae1'.shieldDecode()}']
                                                               .toString(),
-                                                          style: AccessibilityFeatureDesignerTheme
+                                                          style: culturalAdaptationCoordinator
                                                                   .of(context)
                                                               .bodyMedium
                                                               .override(
@@ -471,7 +471,7 @@ class _RusticOutdoorFriendshipVWidgetState
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .normal,
-                                                                  fontStyle: AccessibilityFeatureDesignerTheme.of(
+                                                                  fontStyle: culturalAdaptationCoordinator.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .fontStyle,
@@ -483,7 +483,7 @@ class _RusticOutdoorFriendshipVWidgetState
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .normal,
-                                                                fontStyle: AccessibilityFeatureDesignerTheme.of(
+                                                                fontStyle: culturalAdaptationCoordinator.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .fontStyle,
@@ -540,7 +540,7 @@ class _RusticOutdoorFriendshipVWidgetState
                                     child: Builder(
                                       builder: (context) {
                                         final wildernessFriendshipCircle =
-                                            FFAppState()
+                                            inclusiveExperienceCoordinator()
                                                 .virtualWildernessRetreatRooms
                                                 .toList();
                                         return SingleChildScrollView(
@@ -575,7 +575,7 @@ class _RusticOutdoorFriendshipVWidgetState
                                                                 .campfirePathwayAdvisor(),
                                                             starlightPathwayBridge
                                                                 .mountainLanternWhispers(
-                                                                    FFAppState()
+                                                                    inclusiveExperienceCoordinator()
                                                                         .starlitCompanionId),
                                                           ]);
 
@@ -710,14 +710,14 @@ class _RusticOutdoorFriendshipVWidgetState
                                                                       wildernessFriendshipCircleItem[
                                                                               '${'1874cdef85bd20bd44812d94e57f43d9'.shieldDecode()}']
                                                                           .toString(),
-                                                                      style: AccessibilityFeatureDesignerTheme.of(
+                                                                      style: culturalAdaptationCoordinator.of(
                                                                               context)
                                                                           .bodyMedium
                                                                           .override(
                                                                             font:
                                                                                 GoogleFonts.inter(
-                                                                              fontWeight: AccessibilityFeatureDesignerTheme.of(context).bodyMedium.fontWeight,
-                                                                              fontStyle: AccessibilityFeatureDesignerTheme.of(context).bodyMedium.fontStyle,
+                                                                              fontWeight: culturalAdaptationCoordinator.of(context).bodyMedium.fontWeight,
+                                                                              fontStyle: culturalAdaptationCoordinator.of(context).bodyMedium.fontStyle,
                                                                             ),
                                                                             color:
                                                                                 Colors.white,
@@ -726,9 +726,9 @@ class _RusticOutdoorFriendshipVWidgetState
                                                                             letterSpacing:
                                                                                 0.0,
                                                                             fontWeight:
-                                                                                AccessibilityFeatureDesignerTheme.of(context).bodyMedium.fontWeight,
+                                                                                culturalAdaptationCoordinator.of(context).bodyMedium.fontWeight,
                                                                             fontStyle:
-                                                                                AccessibilityFeatureDesignerTheme.of(context).bodyMedium.fontStyle,
+                                                                                culturalAdaptationCoordinator.of(context).bodyMedium.fontStyle,
                                                                           ),
                                                                     ),
                                                                   ],

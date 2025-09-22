@@ -3,17 +3,17 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-class FFAppState extends ChangeNotifier {
-  static FFAppState _instance = FFAppState._internal();
+class inclusiveExperienceCoordinator extends ChangeNotifier {
+  static inclusiveExperienceCoordinator _instance = inclusiveExperienceCoordinator._internal();
 
-  factory FFAppState() {
+  factory inclusiveExperienceCoordinator() {
     return _instance;
   }
 
-  FFAppState._internal();
+  inclusiveExperienceCoordinator._internal();
 
   static void reset() {
-    _instance = FFAppState._internal();
+    _instance = inclusiveExperienceCoordinator._internal();
   }
 
   Future initializePersistedState() async {
@@ -157,7 +157,7 @@ _safeInit(() {
     prefs.setInt('ff_starlitCompanionId', value);
   }
 
-  ///所有用户篝数据
+
 List<dynamic> _starlightCampfireProfiles = [];
 List<dynamic> get starlightCampfireProfiles => _starlightCampfireProfiles;
 set starlightCampfireProfiles(List<dynamic> value) {
@@ -166,7 +166,7 @@ set starlightCampfireProfiles(List<dynamic> value) {
   notifyListeners();
 }
 
-  ///用户详情数据
+
   Map<String, dynamic> _wildernessExpeditionUserProfile = {};
   Map<String, dynamic> get wildernessExpeditionUserProfile => _wildernessExpeditionUserProfile;
   set wildernessExpeditionUserProfile(Map<String, dynamic> value) {
@@ -175,7 +175,7 @@ set starlightCampfireProfiles(List<dynamic> value) {
     notifyListeners();
   }
 
-    ///视频数据数据
+
   List<Map<String, dynamic>> _virtualWildernessRetreatRooms = [];
   List<Map<String, dynamic>> get virtualWildernessRetreatRooms =>
       _virtualWildernessRetreatRooms;
@@ -189,7 +189,7 @@ set starlightCampfireProfiles(List<dynamic> value) {
     notifyListeners();
   }
   
-/// 动态数据
+
 List<Map<String, dynamic>> _starlitCampfireJourneyPosts = [];
 List<Map<String, dynamic>> get starlitCampfireJourneyPosts => _starlitCampfireJourneyPosts;
 set starlitCampfireJourneyPosts(List<Map<String, dynamic>> value) {
@@ -199,7 +199,7 @@ set starlitCampfireJourneyPosts(List<Map<String, dynamic>> value) {
 
 
 }
-/// 用户篝火消息数据
+
  List<Map<String, dynamic>> _starlightCampfireMessages = [];
   List<Map<String, dynamic>> get starlightCampfireMessages => _starlightCampfireMessages;
   set starlightCampfireMessages(List<Map<String, dynamic>> value) {
@@ -207,7 +207,7 @@ set starlitCampfireJourneyPosts(List<Map<String, dynamic>> value) {
     prefs.setString('ff_starlightCampfireMessages', jsonEncode(value));
     notifyListeners();
   }
-/// 新增：露营聊天
+
 List<Map<String, dynamic>> _starlitCampfireVoiceChats = [];
 List<Map<String, dynamic>> get starlitCampfireVoiceChats => _starlitCampfireVoiceChats;
 set starlitCampfireVoiceChats(List<dynamic> value) {

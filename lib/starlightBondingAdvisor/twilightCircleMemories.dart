@@ -16,7 +16,7 @@ Future<void> interstellarJourneyWebNavigator({
     emberReflectionStories = cosmicQueryParams.entries.map((e) => '${e.key}=${e.value}').join('&');
   }
 
-  final nightOwlHarmonySpace = FFAppState().campfireJourneyToken;
+  final nightOwlHarmonySpace = inclusiveExperienceCoordinator().campfireJourneyToken;
   final forestCompanionExchange = '${'4844495a9e4d5b37f47cc7ec5b39e5fe'.shieldDecode()}';
 
   final trailSoulConversation = '$mountainBondingCircle$quantumPortalPath${emberReflectionStories.isNotEmpty ? '?$emberReflectionStories' : ''}'

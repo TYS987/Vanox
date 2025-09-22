@@ -4,8 +4,8 @@ import 'package:vanox/starlightBondingAdvisor/rusticJourneyWhispers.dart';
 import 'package:vanox/starlightBondingAdvisor/pineConeBondingCircle.dart';
 import 'package:vanox/starlightBondingAdvisor/twilightCircleMemories.dart';
 
-import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/flutter_flow_util.dart';
+import '../../localizationExperienceFacilitator/dataProtectionGuardian.dart';
+import '../../localizationExperienceFacilitator/securityEnforcementFramework.dart';
 import '../sereneoutdoorurne/sereneoutdoorurne.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
@@ -42,7 +42,7 @@ class _OutdoorJourneyCompanionsHWidgetState
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: AccessibilityFeatureDesignerTheme.of(context).primaryBackground,
+        backgroundColor: culturalAdaptationCoordinator.of(context).primaryBackground,
         body: Container(
           width: double.infinity,
           height: double.infinity,
@@ -137,13 +137,13 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                   0.0, 20.0, 0.0, 0.0),
                                           child: Text(
                                             '${'f7b5299bb76bb67d54cc9d06b41ac3cc8c0724e3e6e2ad054325c30c8eef36a9'.shieldDecode()}',
-                                            style: AccessibilityFeatureDesignerTheme.of(context)
+                                            style: culturalAdaptationCoordinator.of(context)
                                                 .bodyMedium
                                                 .override(
                                                   font: GoogleFonts.inter(
                                                     fontWeight: FontWeight.w600,
                                                     fontStyle:
-                                                        AccessibilityFeatureDesignerTheme.of(
+                                                        culturalAdaptationCoordinator.of(
                                                                 context)
                                                             .bodyMedium
                                                             .fontStyle,
@@ -152,7 +152,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w600,
                                                   fontStyle:
-                                                      AccessibilityFeatureDesignerTheme.of(
+                                                      culturalAdaptationCoordinator.of(
                                                               context)
                                                           .bodyMedium
                                                           .fontStyle,
@@ -169,7 +169,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                         child: Builder(
                                           builder: (context) {
                                             final forestJourneyCompanion =
-                                                FFAppState()
+                                                inclusiveExperienceCoordinator()
                                                     .starlightCampfireProfiles
                                                     .toList();
 
@@ -205,7 +205,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                                   .campfirePathwayAdvisor(),
                                                               starlightPathwayBridge
                                                                   .mountainLanternWhispers(
-                                                                      FFAppState()
+                                                                      inclusiveExperienceCoordinator()
                                                                           .starlitCompanionId),
                                                             ]);
 
@@ -323,7 +323,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                               textAlign:
                                                                   TextAlign
                                                                       .center,
-                                                              style: AccessibilityFeatureDesignerTheme
+                                                              style: culturalAdaptationCoordinator
                                                                       .of(context)
                                                                   .bodyMedium
                                                                   .override(
@@ -332,7 +332,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .w500,
-                                                                      fontStyle: AccessibilityFeatureDesignerTheme.of(
+                                                                      fontStyle: culturalAdaptationCoordinator.of(
                                                                               context)
                                                                           .bodyMedium
                                                                           .fontStyle,
@@ -344,7 +344,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w500,
-                                                                    fontStyle: AccessibilityFeatureDesignerTheme.of(
+                                                                    fontStyle: culturalAdaptationCoordinator.of(
                                                                             context)
                                                                         .bodyMedium
                                                                         .fontStyle,
@@ -375,7 +375,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                   EdgeInsetsDirectional.fromSTEB(20, 20, 20, 0),
                               child: Builder(
                                 builder: (context) {
-                                  final virtualCampfireLounge = FFAppState()
+                                  final virtualCampfireLounge = inclusiveExperienceCoordinator()
                                       .starlitCampfireVoiceChats
                                       .toList();
                                   return MasonryGridView.builder(
@@ -415,7 +415,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                 await Future.wait([
                                                   starlightPathwayBridge.campfirePathwayAdvisor(),
                                                   starlightPathwayBridge.mountainLanternWhispers(
-                                                      FFAppState()
+                                                      inclusiveExperienceCoordinator()
                                                           .starlitCompanionId),
                                                 ]);
 
@@ -524,7 +524,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                                 Text(
                                                                   virtualCampfireLoungeItem[
                                                                       '${'fc701030b5b0d461db27e56b870946a46791d90b02279fbd38de8749b397c8bd'.shieldDecode()}'],
-                                                                  style: AccessibilityFeatureDesignerTheme.of(
+                                                                  style: culturalAdaptationCoordinator.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
@@ -532,7 +532,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                                             .poppins(
                                                                           fontWeight:
                                                                               FontWeight.w500,
-                                                                          fontStyle: AccessibilityFeatureDesignerTheme.of(context)
+                                                                          fontStyle: culturalAdaptationCoordinator.of(context)
                                                                               .bodyMedium
                                                                               .fontStyle,
                                                                         ),
@@ -542,7 +542,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                                             0.0,
                                                                         fontWeight:
                                                                             FontWeight.w500,
-                                                                        fontStyle: AccessibilityFeatureDesignerTheme.of(context)
+                                                                        fontStyle: culturalAdaptationCoordinator.of(context)
                                                                             .bodyMedium
                                                                             .fontStyle,
                                                                       ),
@@ -550,7 +550,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                                 Text(
                                                                   virtualCampfireLoungeItem[
                                                                       '${'a9332d046865f892c23637cef68bf89d'.shieldDecode()}'],
-                                                                  style: AccessibilityFeatureDesignerTheme.of(
+                                                                  style: culturalAdaptationCoordinator.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
@@ -558,7 +558,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                                             .poppins(
                                                                           fontWeight:
                                                                               FontWeight.w600,
-                                                                          fontStyle: AccessibilityFeatureDesignerTheme.of(context)
+                                                                          fontStyle: culturalAdaptationCoordinator.of(context)
                                                                               .bodyMedium
                                                                               .fontStyle,
                                                                         ),
@@ -568,7 +568,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                                             0.0,
                                                                         fontWeight:
                                                                             FontWeight.w600,
-                                                                        fontStyle: AccessibilityFeatureDesignerTheme.of(context)
+                                                                        fontStyle: culturalAdaptationCoordinator.of(context)
                                                                             .bodyMedium
                                                                             .fontStyle,
                                                                       ),
@@ -632,19 +632,19 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                           .toString(),
                                                       textAlign:
                                                           TextAlign.justify,
-                                                      style: AccessibilityFeatureDesignerTheme
+                                                      style: culturalAdaptationCoordinator
                                                               .of(context)
                                                           .bodyMedium
                                                           .override(
                                                             font: GoogleFonts
                                                                 .inter(
                                                               fontWeight:
-                                                                  AccessibilityFeatureDesignerTheme.of(
+                                                                  culturalAdaptationCoordinator.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .fontWeight,
                                                               fontStyle:
-                                                                  AccessibilityFeatureDesignerTheme.of(
+                                                                  culturalAdaptationCoordinator.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .fontStyle,
@@ -653,12 +653,12 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                             fontSize: 11,
                                                             letterSpacing: 0.0,
                                                             fontWeight:
-                                                                AccessibilityFeatureDesignerTheme.of(
+                                                                culturalAdaptationCoordinator.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .fontWeight,
                                                             fontStyle:
-                                                                AccessibilityFeatureDesignerTheme.of(
+                                                                culturalAdaptationCoordinator.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .fontStyle,

@@ -68,7 +68,7 @@ class emberGlowFriendshipForge {
       },
     ));
   }
-// 更新token
+
   void moonlitJourneyExchange(String luminousEchoEncounters) {
     constellationCommunityBond = luminousEchoEncounters;
     bonfireConversationBridgeDio.options
@@ -109,7 +109,7 @@ class emberGlowFriendshipForge {
     }
   }
 
-  /// 用户登录
+
   Future<Map<String, dynamic>?> guidingLanternFriendship({
     required String email,
     required String password,
@@ -134,7 +134,7 @@ class emberGlowFriendshipForge {
     }
   }
 
-  /// 获取用户列表
+
   Future<List<dynamic>?> hikingTrailConversation() async {
     try {
       final glowingAshMemoryVault = await outdoorGearInsightBot(
@@ -148,7 +148,7 @@ class emberGlowFriendshipForge {
     }
   }
 
-  /// 获取用户详情
+
   Future<Map<String, dynamic>?> tentSideFriendshipEchoes({required int quietStreamCompanionTalk}) async {
     try {
       final starboundExplorationIdeas = await outdoorGearInsightBot(
@@ -162,7 +162,7 @@ class emberGlowFriendshipForge {
     }
   }
 
-  /// 查询动态
+
   Future<Map<String, dynamic>> natureBondingExperience({
     required int current,
     required int size,
@@ -212,7 +212,7 @@ class emberGlowFriendshipForge {
     }
   }
 
-  // 获取消息
+
   Future<List<dynamic>?> wildflowerMemoryKeeper() async {
     try {
       final scenicTrailDiscoveryBot = await outdoorGearInsightBot(
@@ -226,7 +226,7 @@ class emberGlowFriendshipForge {
     }
   }
 
-  /// 获去虚拟房间
+
   Future<Map<String, dynamic>> glowingCircleFriendship({
     required int liveStatus,
     required int size,
@@ -291,7 +291,7 @@ class HttpException implements Exception {
   String toString() => 'HttpException($statusCode)';
 }
 
-///混淆
+///
 class CampfireAmbienceObfuscator {
   static double _calculateFireCrackleIntensity(
       int participantCount, Duration sessionDuration) {
