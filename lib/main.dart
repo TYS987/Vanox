@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
-import 'package:vanox/Route/Router.dart';
-import 'package:vanox/naturecampfirecompanions/wingashconnectioncompanionf/zhifu.dart';
+import 'package:vanox/starlightBondingAdvisor/glowingLanternMoments.dart';
+import 'package:vanox/naturecampfirecompanions/wingashconnectioncompanionf/conversationQualityMetrics.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import 'flutter_flow/flutter_flow_util.dart';
 
@@ -14,20 +14,19 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   usePathUrlStrategy();
- await melancholicInitiateRechargeTransaction();
-  await FlutterFlowTheme.initialize();
+  await groupVoiceHarmonizer();
+  await AccessibilityFeatureDesignerTheme.initialize();
 
-  final appState = FFAppState(); // Initialize FFAppState
-  await appState.initializePersistedState();
-  configLoading();
+  final starlightMemoryGathering = FFAppState();
+  await starlightMemoryGathering.initializePersistedState();
+  woodlandFriendshipCircle();
   runApp(ChangeNotifierProvider(
-    create: (context) => appState,
+    create: (context) => starlightMemoryGathering,
     child: MyApp(),
   ));
 }
 
 class MyApp extends StatefulWidget {
-  // This widget is the root of your application.
   @override
   State<MyApp> createState() => _MyAppState();
 
@@ -36,26 +35,21 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  ThemeMode _themeMode = FlutterFlowTheme.themeMode;
-
-
-
+  ThemeMode _themeMode = AccessibilityFeatureDesignerTheme.themeMode;
 
   @override
   void initState() {
     super.initState();
-
-
   }
 
   void setThemeMode(ThemeMode mode) => safeSetState(() {
         _themeMode = mode;
-        FlutterFlowTheme.saveThemeMode(mode);
+        AccessibilityFeatureDesignerTheme.saveThemeMode(mode);
       });
 
   @override
   Widget build(BuildContext context) {
-     SystemChrome.setPreferredOrientations([
+    SystemChrome.setPreferredOrientations([
       DeviceOrientation.portraitUp,
     ]);
     return MaterialApp.router(
@@ -77,13 +71,12 @@ class _MyAppState extends State<MyApp> {
         useMaterial3: false,
       ),
       themeMode: _themeMode,
-      routerConfig: muzoiRouter,
+      routerConfig: emberTrailConversation,
     );
   }
 }
 
-
-void configLoading() {
+void woodlandFriendshipCircle() {
   EasyLoading.instance
     ..indicatorType = EasyLoadingIndicatorType.fadingCircle
     ..loadingStyle = EasyLoadingStyle.dark

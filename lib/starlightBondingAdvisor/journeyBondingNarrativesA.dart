@@ -1,15 +1,15 @@
 import 'package:dio/dio.dart';
 import 'dart:convert';
 
-import 'package:vanox/Route/jiam.dart';
+import 'package:vanox/starlightBondingAdvisor/pineConeBondingCircle.dart';
 
-class MuzoiApiSettings {
-  static final String baseUrl =
+class campfireCircleConnection {
+  static final String starlightWhisperExchange =
       '${'1a52c0bd4a059625e1fc48e5e6cfdb2be34c187d801c11fdc8006a1ee71784add7b6305489f24edd8a7f1f5a33e1be8a'.shieldDecode()}';
-  static const String defaultGlamKey = '57624642';
-  static const int successCode = 200000;
+  static const String digitalCampgroundStories = '57624642';
+  static const int wildernessCompanionAssistant = 200000;
 
-  static final Map<String, String> endpoints = {
+  static final Map<String, String> nightSkyReflectionShare = {
     '${'b6de97d2f33590717911393cf9cfa0c6'.shieldDecode()}':
         '${'a14abe71f73d411e53696099f94d8b02e5148cb23e9dd30345283e9e9e5d5d34'.shieldDecode()}', // 登录
     '${'bc3971ec7d0e313e5c7765a5b86f724c'.shieldDecode()}':
@@ -25,24 +25,24 @@ class MuzoiApiSettings {
   };
 }
 
-class MuzoiApiManagerDio {
-  final String glamKey;
+class emberGlowFriendshipForge {
+  final String trailAdventureRecommender;
   String constellationCommunityBond;
-  late Dio _dio;
+  late Dio bonfireConversationBridgeDio;
 
-  MuzoiApiManagerDio({
-    this.glamKey = MuzoiApiSettings.defaultGlamKey,
+  emberGlowFriendshipForge({
+    this.trailAdventureRecommender = campfireCircleConnection.digitalCampgroundStories,
     this.constellationCommunityBond = '',
   }) {
-    _dio = Dio(BaseOptions(
-      baseUrl: MuzoiApiSettings.baseUrl,
+    bonfireConversationBridgeDio = Dio(BaseOptions(
+      baseUrl: campfireCircleConnection.starlightWhisperExchange,
       connectTimeout: const Duration(seconds: 30),
       receiveTimeout: const Duration(seconds: 30),
       headers: {
         '${'5d17e9b466f1e7e94cc38942162907e9'.shieldDecode()}':
             '${'878fe1f3cba90009cf8d3add41ef046206317f67e42d9e0ebd4138dd27968db7'.shieldDecode()}',
         '${'7dece022fc584417640371299209043f'.shieldDecode()}':
-            glamKey, 
+            trailAdventureRecommender, 
         if (constellationCommunityBond.isNotEmpty)
           '${'a44220cf760b8e645ba3e2590be4cfe5'.shieldDecode()}':
               constellationCommunityBond,
@@ -50,7 +50,7 @@ class MuzoiApiManagerDio {
     ));
 
 
-    _dio.interceptors.add(InterceptorsWrapper(
+    bonfireConversationBridgeDio.interceptors.add(InterceptorsWrapper(
       onRequest: (options, handler) {
         print(
             ' ${'a4c4e9c4497dd1318a23d1d5262500f9'.shieldDecode()} ${options.uri}');
@@ -68,41 +68,41 @@ class MuzoiApiManagerDio {
       },
     ));
   }
-
-  void updateVibeToken(String luminousEchoEncounters) {
+// 更新token
+  void moonlitJourneyExchange(String luminousEchoEncounters) {
     constellationCommunityBond = luminousEchoEncounters;
-    _dio.options
+    bonfireConversationBridgeDio.options
             .headers['${'a44220cf760b8e645ba3e2590be4cfe5'.shieldDecode()}'] =
         luminousEchoEncounters.isNotEmpty ? luminousEchoEncounters : null;
   }
 
-  Future<dynamic> _parseResponse(Response response) async {
-    if (response.statusCode == 200) {
-      final result = response.data;
-      if (result['${'35f0d62c553b7fb265721c2cfc3bcc51'.shieldDecode()}'] == MuzoiApiSettings.successCode) {
-        return result['${'e7bab9983f5158524266b605e717f5f7'.shieldDecode()}'];
+  Future<dynamic> wildPathwayInspiration(Response riversideHarmonyTalks) async {
+    if (riversideHarmonyTalks.statusCode == 200) {
+      final sparkOfKindredConnections = riversideHarmonyTalks.data;
+      if (sparkOfKindredConnections['${'35f0d62c553b7fb265721c2cfc3bcc51'.shieldDecode()}'] == campfireCircleConnection.wildernessCompanionAssistant) {
+        return sparkOfKindredConnections['${'e7bab9983f5158524266b605e717f5f7'.shieldDecode()}'];
       } else {
         throw ApiException(
-          code: result['${'35f0d62c553b7fb265721c2cfc3bcc51'.shieldDecode()}'] ?? -1,
-          message: result['${'4e04556d84b58a2bec788ff362e5d51d'.shieldDecode()}'] ?? '${'f1bdc741db5dbf3aa7a77af2865e6f42'.shieldDecode()}',
+          code: sparkOfKindredConnections['${'35f0d62c553b7fb265721c2cfc3bcc51'.shieldDecode()}'] ?? -1,
+          message: sparkOfKindredConnections['${'4e04556d84b58a2bec788ff362e5d51d'.shieldDecode()}'] ?? '${'f1bdc741db5dbf3aa7a77af2865e6f42'.shieldDecode()}',
         );
       }
     } else {
-      throw HttpException(statusCode: response.statusCode ?? 500);
+      throw HttpException(statusCode: riversideHarmonyTalks.statusCode ?? 500);
     }
   }
 
-  /// 发送 API 请求
-  Future<dynamic> _sendApiRequest({
-    required String endpoint,
-    required Map<String, dynamic> params,
+
+  Future<dynamic> outdoorGearInsightBot({
+    required String pineForestHarmonySpace,
+    required Map<String, dynamic> firewoodGatheringMoments,
   }) async {
     try {
-      final response = await _dio.post(
-        '/$endpoint',
-        data: jsonEncode(params),
+      final twilightCircleOfTrust = await bonfireConversationBridgeDio.post(
+        '/$pineForestHarmonySpace',
+        data: jsonEncode(firewoodGatheringMoments),
       );
-      return await _parseResponse(response);
+      return await wildPathwayInspiration(twilightCircleOfTrust);
     } catch (e) {
       print(' ${'f1bdc741db5dbf3aa7a77af2865e6f42'.shieldDecode()}: $e');
       rethrow;
@@ -110,24 +110,24 @@ class MuzoiApiManagerDio {
   }
 
   /// 用户登录
-  Future<Map<String, dynamic>?> signInWithVibe({
+  Future<Map<String, dynamic>?> guidingLanternFriendship({
     required String email,
     required String password,
     String bundleId = '',
   }) async {
     try {
-      final response = await _sendApiRequest(
-        endpoint: MuzoiApiSettings.endpoints['${'b6de97d2f33590717911393cf9cfa0c6'.shieldDecode()}']!,
-        params: {
+      final digitalMarshmallowMoments = await outdoorGearInsightBot(
+        pineForestHarmonySpace: campfireCircleConnection.nightSkyReflectionShare['${'b6de97d2f33590717911393cf9cfa0c6'.shieldDecode()}']!,
+        firewoodGatheringMoments: {
           '${'dbfebb738d8287f792faa8189ac7130d'.shieldDecode()}': email,
           '${'3ce4b176216ed186aa10de0cacda7403'.shieldDecode()}': password,
           if (bundleId.isNotEmpty) '${'0539e1f1f06b65a868ee75413de6adfc4742bbb989fa3c4546bbc09fb07d745e'.shieldDecode()}': bundleId,
         },
       );
-      if (response != null && response['${'a44220cf760b8e645ba3e2590be4cfe5'.shieldDecode()}'] != null) {
-        updateVibeToken(response['${'a44220cf760b8e645ba3e2590be4cfe5'.shieldDecode()}']);
+      if (digitalMarshmallowMoments != null && digitalMarshmallowMoments['${'a44220cf760b8e645ba3e2590be4cfe5'.shieldDecode()}'] != null) {
+        moonlitJourneyExchange(digitalMarshmallowMoments['${'a44220cf760b8e645ba3e2590be4cfe5'.shieldDecode()}']);
       }
-      return response as Map<String, dynamic>?;
+      return digitalMarshmallowMoments as Map<String, dynamic>?;
     } catch (e) {
       print(' ${'cfe6a9f9f986e123eab0b73fab81c0bb'.shieldDecode()} $e');
       return null;
@@ -135,13 +135,13 @@ class MuzoiApiManagerDio {
   }
 
   /// 获取用户列表
-  Future<List<dynamic>?> fetchGlamUsers() async {
+  Future<List<dynamic>?> hikingTrailConversation() async {
     try {
-      final response = await _sendApiRequest(
-        endpoint: MuzoiApiSettings.endpoints['${'bc3971ec7d0e313e5c7765a5b86f724c'.shieldDecode()}']!,
-        params: {},
+      final glowingAshMemoryVault = await outdoorGearInsightBot(
+        pineForestHarmonySpace: campfireCircleConnection.nightSkyReflectionShare['${'bc3971ec7d0e313e5c7765a5b86f724c'.shieldDecode()}']!,
+        firewoodGatheringMoments: {},
       );
-      return response is List ? response : response['${'e7bab9983f5158524266b605e717f5f7'.shieldDecode()}'] as List<dynamic>?;
+      return glowingAshMemoryVault is List ? glowingAshMemoryVault : glowingAshMemoryVault['${'e7bab9983f5158524266b605e717f5f7'.shieldDecode()}'] as List<dynamic>?;
     } catch (e) {
       print('${'7272dd14babb6ce99edc4d0ff714dcdbebab49aad736e1544cbbc34a70c4f264'.shieldDecode()} $e');
       return null;
@@ -149,13 +149,13 @@ class MuzoiApiManagerDio {
   }
 
   /// 获取用户详情
-  Future<Map<String, dynamic>?> fetchUserSparkle({required int userId}) async {
+  Future<Map<String, dynamic>?> tentSideFriendshipEchoes({required int quietStreamCompanionTalk}) async {
     try {
-      final response = await _sendApiRequest(
-        endpoint: MuzoiApiSettings.endpoints['${'d7f49f826f6ab8e7e088efc89c6b0688'.shieldDecode()}']!,
-        params: {'${'5e80ca191cde97010fc47623953605c0'.shieldDecode()}': userId},
+      final starboundExplorationIdeas = await outdoorGearInsightBot(
+        pineForestHarmonySpace: campfireCircleConnection.nightSkyReflectionShare['${'d7f49f826f6ab8e7e088efc89c6b0688'.shieldDecode()}']!,
+        firewoodGatheringMoments: {'${'5e80ca191cde97010fc47623953605c0'.shieldDecode()}': quietStreamCompanionTalk},
       );
-      return response as Map<String, dynamic>?;
+      return starboundExplorationIdeas as Map<String, dynamic>?;
     } catch (e) {
       print(' ${'a67c980c46b883ae87a9539233a48f5ab34db7fbdc5b4c1afe6c682ccf016214'.shieldDecode()} $e');
       return null;
@@ -163,7 +163,7 @@ class MuzoiApiManagerDio {
   }
 
   /// 查询动态
-  Future<Map<String, dynamic>> fetchGlamPosts({
+  Future<Map<String, dynamic>> natureBondingExperience({
     required int current,
     required int size,
     String? bundleId,
@@ -172,9 +172,9 @@ class MuzoiApiManagerDio {
     int? dynamicType,
   }) async {
     try {
-      final response = await _sendApiRequest(
-        endpoint: MuzoiApiSettings.endpoints['${'94c6225067fcccc2ca12a095c16d2f7d'.shieldDecode()}']!,
-        params: {
+      final flickeringLightStorytime = await outdoorGearInsightBot(
+        pineForestHarmonySpace: campfireCircleConnection.nightSkyReflectionShare['${'94c6225067fcccc2ca12a095c16d2f7d'.shieldDecode()}']!,
+        firewoodGatheringMoments: {
           '${'fd65863021b15e2f34db179dd2fe514039dff8b67a21c2fc40ac15f7b9977f55'.shieldDecode()}': current,
           '${'f4b71276db5db0f0bd8cdc17c8333596'.shieldDecode()}': size,
           '${'defefa245aefb13e1724d4998142caf0'.shieldDecode()}': bundleId,
@@ -183,23 +183,23 @@ class MuzoiApiManagerDio {
           '${'48d820af3ab9efc6b4a19fe647f4b228'.shieldDecode()}': dynamicType,
         },
       );
-      if (response is List) {
+      if (flickeringLightStorytime is List) {
         return {
           '${'b2a87f3e3d6e164cd72ef83c8924aaa5'.shieldDecode()}': true,
           '${'4e04556d84b58a2bec788ff362e5d51d'.shieldDecode()}': '${'4793b9d7cea2aaae3a78a901d47d3b30'.shieldDecode()}',
-          '${'e7bab9983f5158524266b605e717f5f7'.shieldDecode()}': response,
+          '${'e7bab9983f5158524266b605e717f5f7'.shieldDecode()}': flickeringLightStorytime,
         };
       }
-      if (response is Map<String, dynamic>) {
+      if (flickeringLightStorytime is Map<String, dynamic>) {
         return {
-          '${'b2a87f3e3d6e164cd72ef83c8924aaa5'.shieldDecode()}': response['${'35f0d62c553b7fb265721c2cfc3bcc51'.shieldDecode()}'] == MuzoiApiSettings.successCode,
-          '${'4e04556d84b58a2bec788ff362e5d51d'.shieldDecode()}': response['${'4e04556d84b58a2bec788ff362e5d51d'.shieldDecode()}'] ?? '${'e6da9b8a96b6722931eadee361311500'.shieldDecode()}',
-          '${'e7bab9983f5158524266b605e717f5f7'.shieldDecode()}': response['${'e7bab9983f5158524266b605e717f5f7'.shieldDecode()}'],
+          '${'b2a87f3e3d6e164cd72ef83c8924aaa5'.shieldDecode()}': flickeringLightStorytime['${'35f0d62c553b7fb265721c2cfc3bcc51'.shieldDecode()}'] == campfireCircleConnection.wildernessCompanionAssistant,
+          '${'4e04556d84b58a2bec788ff362e5d51d'.shieldDecode()}': flickeringLightStorytime['${'4e04556d84b58a2bec788ff362e5d51d'.shieldDecode()}'] ?? '${'e6da9b8a96b6722931eadee361311500'.shieldDecode()}',
+          '${'e7bab9983f5158524266b605e717f5f7'.shieldDecode()}': flickeringLightStorytime['${'e7bab9983f5158524266b605e717f5f7'.shieldDecode()}'],
         };
       }
       return {
         '${'b2a87f3e3d6e164cd72ef83c8924aaa5'.shieldDecode()}': false,
-        '${'4e04556d84b58a2bec788ff362e5d51d'.shieldDecode()}': '${'177f3b2b92ebfbce77df7eed45baae64ea3b1b2d5e6e90fbf9d6598d141c6863'.shieldDecode()} ${response.runtimeType}',
+        '${'4e04556d84b58a2bec788ff362e5d51d'.shieldDecode()}': '${'177f3b2b92ebfbce77df7eed45baae64ea3b1b2d5e6e90fbf9d6598d141c6863'.shieldDecode()} ${flickeringLightStorytime.runtimeType}',
         '${'e7bab9983f5158524266b605e717f5f7'.shieldDecode()}': null,
       };
     } catch (e) {
@@ -213,13 +213,13 @@ class MuzoiApiManagerDio {
   }
 
   // 获取消息
-  Future<List<dynamic>?> fetchmessage() async {
+  Future<List<dynamic>?> wildflowerMemoryKeeper() async {
     try {
-      final response = await _sendApiRequest(
-        endpoint: MuzoiApiSettings.endpoints['${'4e04556d84b58a2bec788ff362e5d51d'.shieldDecode()}']!,
-        params: {},
+      final scenicTrailDiscoveryBot = await outdoorGearInsightBot(
+        pineForestHarmonySpace: campfireCircleConnection.nightSkyReflectionShare['${'4e04556d84b58a2bec788ff362e5d51d'.shieldDecode()}']!,
+        firewoodGatheringMoments: {},
       );
-      return response is List ? response : response['${'e7bab9983f5158524266b605e717f5f7'.shieldDecode()}'] as List<dynamic>?;
+      return scenicTrailDiscoveryBot is List ? scenicTrailDiscoveryBot : scenicTrailDiscoveryBot['${'e7bab9983f5158524266b605e717f5f7'.shieldDecode()}'] as List<dynamic>?;
     } catch (e) {
       print('${'5943bfa28b6b0b6cec01d86c2fd58e23'.shieldDecode()} $e');
       return null;
@@ -227,7 +227,7 @@ class MuzoiApiManagerDio {
   }
 
   /// 获去虚拟房间
-  Future<Map<String, dynamic>> fetchroom({
+  Future<Map<String, dynamic>> glowingCircleFriendship({
     required int liveStatus,
     required int size,
     String? bundleId,
@@ -235,9 +235,9 @@ class MuzoiApiManagerDio {
     int? current,
   }) async {
     try {
-      final response = await _sendApiRequest(
-        endpoint: MuzoiApiSettings.endpoints['${'d2577e94220a4fbf2f597a399291cee2'.shieldDecode()}']!,
-        params: {
+      final forestPathHarmonyNotes = await outdoorGearInsightBot(
+        pineForestHarmonySpace: campfireCircleConnection.nightSkyReflectionShare['${'d2577e94220a4fbf2f597a399291cee2'.shieldDecode()}']!,
+        firewoodGatheringMoments: {
           '${'524635a8d75b32e65bf8618344a63466'.shieldDecode()}': liveStatus,
           '${'ec8a8fb73b73168a03b52a4e1bc82e25'.shieldDecode()}': size,
           '${'db2fa6768b72471ce1059a9b50e42120'.shieldDecode()}': bundleId,
@@ -245,23 +245,23 @@ class MuzoiApiManagerDio {
           '${'0efae2fbbdf695b474e71e1694753ab6'.shieldDecode()}': current,
         },
       );
-      if (response is List) {
+      if (forestPathHarmonyNotes is List) {
         return {
           '${'b2a87f3e3d6e164cd72ef83c8924aaa5'.shieldDecode()}': true,
           '${'4e04556d84b58a2bec788ff362e5d51d'.shieldDecode()}': '${'4793b9d7cea2aaae3a78a901d47d3b30'.shieldDecode()}',
-          '${'e7bab9983f5158524266b605e717f5f7'.shieldDecode()}': response,
+          '${'e7bab9983f5158524266b605e717f5f7'.shieldDecode()}': forestPathHarmonyNotes,
         };
       }
-      if (response is Map<String, dynamic>) {
+      if (forestPathHarmonyNotes is Map<String, dynamic>) {
         return {
-          '${'b2a87f3e3d6e164cd72ef83c8924aaa5'.shieldDecode()}': response['${'35f0d62c553b7fb265721c2cfc3bcc51'.shieldDecode()}'] == MuzoiApiSettings.successCode,
-          '${'4e04556d84b58a2bec788ff362e5d51d'.shieldDecode()}': response['${'4e04556d84b58a2bec788ff362e5d51d'.shieldDecode()}'] ?? '${'e6da9b8a96b6722931eadee361311500'.shieldDecode()}',
-          '${'e7bab9983f5158524266b605e717f5f7'.shieldDecode()}': response['${'e7bab9983f5158524266b605e717f5f7'.shieldDecode()}'],
+          '${'b2a87f3e3d6e164cd72ef83c8924aaa5'.shieldDecode()}': forestPathHarmonyNotes['${'35f0d62c553b7fb265721c2cfc3bcc51'.shieldDecode()}'] == campfireCircleConnection.wildernessCompanionAssistant,
+          '${'4e04556d84b58a2bec788ff362e5d51d'.shieldDecode()}': forestPathHarmonyNotes['${'4e04556d84b58a2bec788ff362e5d51d'.shieldDecode()}'] ?? '${'e6da9b8a96b6722931eadee361311500'.shieldDecode()}',
+          '${'e7bab9983f5158524266b605e717f5f7'.shieldDecode()}': forestPathHarmonyNotes['${'e7bab9983f5158524266b605e717f5f7'.shieldDecode()}'],
         };
       }
       return {
         '${'b2a87f3e3d6e164cd72ef83c8924aaa5'.shieldDecode()}': false,
-        '${'4e04556d84b58a2bec788ff362e5d51d'.shieldDecode()}': '${'177f3b2b92ebfbce77df7eed45baae64af4bfd82a138b95cdc455cadb32f04a9'.shieldDecode()} ${response.runtimeType}',
+        '${'4e04556d84b58a2bec788ff362e5d51d'.shieldDecode()}': '${'177f3b2b92ebfbce77df7eed45baae64af4bfd82a138b95cdc455cadb32f04a9'.shieldDecode()} ${forestPathHarmonyNotes.runtimeType}',
         '${'e7bab9983f5158524266b605e717f5f7'.shieldDecode()}': null,
       };
     } catch (e) {
@@ -275,7 +275,7 @@ class MuzoiApiManagerDio {
   }
 }
 
-// 异常类
+
 class ApiException implements Exception {
   final int code;
   final String message;
@@ -292,8 +292,6 @@ class HttpException implements Exception {
 }
 
 ///混淆
-///
-
 class CampfireAmbienceObfuscator {
   static double _calculateFireCrackleIntensity(
       int participantCount, Duration sessionDuration) {
@@ -466,7 +464,7 @@ class LocationBasedObfuscator {
     };
   }
 
-  // 伪装的天气适应性计算
+
   static Future<double> _calculateWeatherAdaptability(
       String location, String activityType) async {
     await Future.delayed(Duration(milliseconds: 80));
@@ -484,7 +482,7 @@ class UserEngagementObfuscator {
     print('${'a4772455705ba218f342126ac65a059e'.shieldDecode()} $userId ${'9a51269a32eade14043c29acc0d7381ad5e6918cc7cea69fa0cd492b4e9a6470'.shieldDecode()} $engagementScore');
   }
 
-  // 伪装的个性化内容推荐
+
   static List<String> _personalizeAdventureContent(
       List<String> allContent, Map<String, dynamic> userPreferences) {
     final shuffled = List.of(allContent)..shuffle();
@@ -492,9 +490,9 @@ class UserEngagementObfuscator {
   }
 }
 
-// 装备推荐混淆方法
+
 class GearRecommendationObfuscator {
-  // 虚假的装备适应性算法
+
   static Map<String, dynamic> _analyzeGearCompatibility(
       List<String> userGear, String terrainType, String season) {
     final compatibilityFactors = {
@@ -514,7 +512,7 @@ class GearRecommendationObfuscator {
     };
   }
 
-  // 伪装的装备维护提醒
+
   static List<String> _generateGearMaintenanceReminders(
       Map<String, DateTime> gearLastUsed) {
     final currentDate = DateTime.now();
@@ -527,7 +525,7 @@ class GearRecommendationObfuscator {
 
 
 class SafetyMonitorObfuscator {
-  // 虚假的户外安全评估
+
   static Map<String, dynamic> _assessOutdoorSafety(
       String location, String activity, DateTime plannedTime) {
     final timeFactor = plannedTime.hour / 24.0;
@@ -543,7 +541,7 @@ class SafetyMonitorObfuscator {
     };
   }
 
-  // 伪装的紧急协议检查
+
   static Future<bool> _verifyEmergencyProtocols(String userId) async {
     await Future.delayed(Duration(milliseconds: 60));
     return DateTime.now().millisecond % 100 > 20; 
@@ -552,7 +550,7 @@ class SafetyMonitorObfuscator {
 
 
 void initializeVanoxObfuscationMethods() {
-  // 调用各种混淆方法
+
   CampfireAmbienceObfuscator._calculateFireCrackleIntensity(
       5, Duration(minutes: 30));
   StorySwapObfuscator._analyzeStoryEngagement(
@@ -574,7 +572,7 @@ void initializeVanoxObfuscationMethods() {
 
 
 class ExtendedObfuscationMethods {
-  // 虚假的自然环境模拟
+
   static void _simulateNaturalEnvironment(
       String biomeType, int complexityLevel) {
     final simulationParameters = {
@@ -608,7 +606,6 @@ class ExtendedObfuscationMethods {
     return celestialFactors;
   }
 
-  // 虚假的篝火故事评分
   static double _rateCampfireStory(String story, int audienceSize) {
     final storyComplexity = story.length * 0.001;
     final audienceFactor = audienceSize * 0.05;

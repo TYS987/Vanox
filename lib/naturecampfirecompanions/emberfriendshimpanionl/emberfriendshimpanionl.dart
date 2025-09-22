@@ -1,8 +1,8 @@
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:go_router/go_router.dart';
-import 'package:vanox/Route/api.dart';
-import 'package:vanox/Route/fangfa.dart';
-import 'package:vanox/Route/jiam.dart';
+import 'package:vanox/starlightBondingAdvisor/journeyBondingNarrativesA.dart';
+import 'package:vanox/starlightBondingAdvisor/rusticJourneyWhispers.dart';
+import 'package:vanox/starlightBondingAdvisor/pineConeBondingCircle.dart';
 
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -72,7 +72,7 @@ class _EmberFriendshimpanionLWidgetState
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: AccessibilityFeatureDesignerTheme.of(context).primaryBackground,
         body: Stack(
           children: [
             Container(
@@ -114,10 +114,10 @@ class _EmberFriendshimpanionLWidgetState
                     ),
                     Text(
                       '${'bd5086ea20069e30388da334e29a9990'.shieldDecode()}',
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                      style: AccessibilityFeatureDesignerTheme.of(context).bodyMedium.override(
                             font: GoogleFonts.poppins(
                               fontWeight: FontWeight.w800,
-                              fontStyle: FlutterFlowTheme.of(context)
+                              fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                   .bodyMedium
                                   .fontStyle,
                             ),
@@ -125,7 +125,7 @@ class _EmberFriendshimpanionLWidgetState
                             fontSize: 20.0,
                             letterSpacing: 0.0,
                             fontWeight: FontWeight.w800,
-                            fontStyle: FlutterFlowTheme.of(context)
+                            fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                 .bodyMedium
                                 .fontStyle,
                           ),
@@ -153,10 +153,10 @@ class _EmberFriendshimpanionLWidgetState
                     children: [
                       Text(
                         '${'1975d98fc7c4556d181a4a54e626ad82'.shieldDecode()}',
-                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        style: AccessibilityFeatureDesignerTheme.of(context).bodyMedium.override(
                               font: GoogleFonts.inter(
                                 fontWeight: FontWeight.w600,
-                                fontStyle: FlutterFlowTheme.of(context)
+                                fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                     .bodyMedium
                                     .fontStyle,
                               ),
@@ -164,7 +164,7 @@ class _EmberFriendshimpanionLWidgetState
                               fontSize: 16.0,
                               letterSpacing: 0.0,
                               fontWeight: FontWeight.w600,
-                              fontStyle: FlutterFlowTheme.of(context)
+                              fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                   .bodyMedium
                                   .fontStyle,
                             ),
@@ -196,53 +196,53 @@ class _EmberFriendshimpanionLWidgetState
                                 obscureText: false,
                                 decoration: InputDecoration(
                                     isDense: true,
-                                    labelStyle: FlutterFlowTheme.of(context)
+                                    labelStyle: AccessibilityFeatureDesignerTheme.of(context)
                                         .labelMedium
                                         .override(
                                           font: GoogleFonts.inter(
                                             fontWeight:
-                                                FlutterFlowTheme.of(context)
+                                                AccessibilityFeatureDesignerTheme.of(context)
                                                     .labelMedium
                                                     .fontWeight,
                                             fontStyle:
-                                                FlutterFlowTheme.of(context)
+                                                AccessibilityFeatureDesignerTheme.of(context)
                                                     .labelMedium
                                                     .fontStyle,
                                           ),
                                           color: Colors.black,
                                           letterSpacing: 0.0,
                                           fontWeight:
-                                              FlutterFlowTheme.of(context)
+                                              AccessibilityFeatureDesignerTheme.of(context)
                                                   .labelMedium
                                                   .fontWeight,
                                           fontStyle:
-                                              FlutterFlowTheme.of(context)
+                                              AccessibilityFeatureDesignerTheme.of(context)
                                                   .labelMedium
                                                   .fontStyle,
                                         ),
                                     hintText:
                                         '${'c5279a060d4b4dc2f53517e86cd97e58635f272b3a8f07640185db5a7e06534b'.shieldDecode()}',
-                                    hintStyle: FlutterFlowTheme.of(context)
+                                    hintStyle: AccessibilityFeatureDesignerTheme.of(context)
                                         .labelMedium
                                         .override(
                                           font: GoogleFonts.poppins(
                                             fontWeight:
-                                                FlutterFlowTheme.of(context)
+                                                AccessibilityFeatureDesignerTheme.of(context)
                                                     .labelMedium
                                                     .fontWeight,
                                             fontStyle:
-                                                FlutterFlowTheme.of(context)
+                                                AccessibilityFeatureDesignerTheme.of(context)
                                                     .labelMedium
                                                     .fontStyle,
                                           ),
                                           color: Color(0x33000000),
                                           letterSpacing: 0.0,
                                           fontWeight:
-                                              FlutterFlowTheme.of(context)
+                                              AccessibilityFeatureDesignerTheme.of(context)
                                                   .labelMedium
                                                   .fontWeight,
                                           fontStyle:
-                                              FlutterFlowTheme.of(context)
+                                              AccessibilityFeatureDesignerTheme.of(context)
                                                   .labelMedium
                                                   .fontStyle,
                                         ),
@@ -263,7 +263,7 @@ class _EmberFriendshimpanionLWidgetState
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color:
-                                            FlutterFlowTheme.of(context).error,
+                                            AccessibilityFeatureDesignerTheme.of(context).error,
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(8.0),
@@ -271,35 +271,35 @@ class _EmberFriendshimpanionLWidgetState
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color:
-                                            FlutterFlowTheme.of(context).error,
+                                            AccessibilityFeatureDesignerTheme.of(context).error,
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(8.0),
                                     ),
                                     filled: true,
                                     fillColor: Colors.transparent),
-                                style: FlutterFlowTheme.of(context)
+                                style: AccessibilityFeatureDesignerTheme.of(context)
                                     .bodyMedium
                                     .override(
                                       font: GoogleFonts.inter(
-                                        fontWeight: FlutterFlowTheme.of(context)
+                                        fontWeight: AccessibilityFeatureDesignerTheme.of(context)
                                             .bodyMedium
                                             .fontWeight,
-                                        fontStyle: FlutterFlowTheme.of(context)
+                                        fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                             .bodyMedium
                                             .fontStyle,
                                       ),
                                       color: Colors.black,
                                       letterSpacing: 0.0,
-                                      fontWeight: FlutterFlowTheme.of(context)
+                                      fontWeight: AccessibilityFeatureDesignerTheme.of(context)
                                           .bodyMedium
                                           .fontWeight,
-                                      fontStyle: FlutterFlowTheme.of(context)
+                                      fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                           .bodyMedium
                                           .fontStyle,
                                     ),
                                 cursorColor:
-                                    FlutterFlowTheme.of(context).primaryText,
+                                    AccessibilityFeatureDesignerTheme.of(context).primaryText,
                                 enableInteractiveSelection: true,
                                 validator: firelightConnectionSphere
                                     .asValidator(context),
@@ -314,10 +314,10 @@ class _EmberFriendshimpanionLWidgetState
                         child: Text(
                           '${'723af217678e8339cdb20ec8780d0fb4'.shieldDecode()}',
                           style:
-                              FlutterFlowTheme.of(context).bodyMedium.override(
+                              AccessibilityFeatureDesignerTheme.of(context).bodyMedium.override(
                                     font: GoogleFonts.inter(
                                       fontWeight: FontWeight.w600,
-                                      fontStyle: FlutterFlowTheme.of(context)
+                                      fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                           .bodyMedium
                                           .fontStyle,
                                     ),
@@ -325,7 +325,7 @@ class _EmberFriendshimpanionLWidgetState
                                     fontSize: 16.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
-                                    fontStyle: FlutterFlowTheme.of(context)
+                                    fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                         .bodyMedium
                                         .fontStyle,
                                   ),
@@ -362,18 +362,18 @@ class _EmberFriendshimpanionLWidgetState
                                       obscureText: wildernessCircleConversations,
                                       decoration: InputDecoration(
                                           isDense: true,
-                                          labelStyle: FlutterFlowTheme.of(
+                                          labelStyle: AccessibilityFeatureDesignerTheme.of(
                                                   context)
                                               .labelMedium
                                               .override(
                                                 font: GoogleFonts.inter(
                                                   fontWeight:
-                                                      FlutterFlowTheme.of(
+                                                      AccessibilityFeatureDesignerTheme.of(
                                                               context)
                                                           .labelMedium
                                                           .fontWeight,
                                                   fontStyle:
-                                                      FlutterFlowTheme.of(
+                                                      AccessibilityFeatureDesignerTheme.of(
                                                               context)
                                                           .labelMedium
                                                           .fontStyle,
@@ -381,28 +381,28 @@ class _EmberFriendshimpanionLWidgetState
                                                 color: Colors.black,
                                                 letterSpacing: 0.0,
                                                 fontWeight:
-                                                    FlutterFlowTheme.of(context)
+                                                    AccessibilityFeatureDesignerTheme.of(context)
                                                         .labelMedium
                                                         .fontWeight,
                                                 fontStyle:
-                                                    FlutterFlowTheme.of(context)
+                                                    AccessibilityFeatureDesignerTheme.of(context)
                                                         .labelMedium
                                                         .fontStyle,
                                               ),
                                           hintText:
                                               '${'a24024e5c5592d26144be051bdd0d5b0'.shieldDecode()}',
-                                          hintStyle: FlutterFlowTheme.of(
+                                          hintStyle: AccessibilityFeatureDesignerTheme.of(
                                                   context)
                                               .labelMedium
                                               .override(
                                                 font: GoogleFonts.inter(
                                                   fontWeight:
-                                                      FlutterFlowTheme.of(
+                                                      AccessibilityFeatureDesignerTheme.of(
                                                               context)
                                                           .labelMedium
                                                           .fontWeight,
                                                   fontStyle:
-                                                      FlutterFlowTheme.of(
+                                                      AccessibilityFeatureDesignerTheme.of(
                                                               context)
                                                           .labelMedium
                                                           .fontStyle,
@@ -410,11 +410,11 @@ class _EmberFriendshimpanionLWidgetState
                                                 color: Color(0x33000000),
                                                 letterSpacing: 0.0,
                                                 fontWeight:
-                                                    FlutterFlowTheme.of(context)
+                                                    AccessibilityFeatureDesignerTheme.of(context)
                                                         .labelMedium
                                                         .fontWeight,
                                                 fontStyle:
-                                                    FlutterFlowTheme.of(context)
+                                                    AccessibilityFeatureDesignerTheme.of(context)
                                                         .labelMedium
                                                         .fontStyle,
                                               ),
@@ -437,7 +437,7 @@ class _EmberFriendshimpanionLWidgetState
                                           errorBorder: OutlineInputBorder(
                                             borderSide: BorderSide(
                                               color:
-                                                  FlutterFlowTheme.of(context)
+                                                  AccessibilityFeatureDesignerTheme.of(context)
                                                       .error,
                                               width: 1.0,
                                             ),
@@ -448,7 +448,7 @@ class _EmberFriendshimpanionLWidgetState
                                               OutlineInputBorder(
                                             borderSide: BorderSide(
                                               color:
-                                                  FlutterFlowTheme.of(context)
+                                                  AccessibilityFeatureDesignerTheme.of(context)
                                                       .error,
                                               width: 1.0,
                                             ),
@@ -457,31 +457,31 @@ class _EmberFriendshimpanionLWidgetState
                                           ),
                                           filled: true,
                                           fillColor: Colors.transparent),
-                                      style: FlutterFlowTheme.of(context)
+                                      style: AccessibilityFeatureDesignerTheme.of(context)
                                           .bodyMedium
                                           .override(
                                             font: GoogleFonts.inter(
                                               fontWeight:
-                                                  FlutterFlowTheme.of(context)
+                                                  AccessibilityFeatureDesignerTheme.of(context)
                                                       .bodyMedium
                                                       .fontWeight,
                                               fontStyle:
-                                                  FlutterFlowTheme.of(context)
+                                                  AccessibilityFeatureDesignerTheme.of(context)
                                                       .bodyMedium
                                                       .fontStyle,
                                             ),
                                             color: Colors.black,
                                             letterSpacing: 0.0,
                                             fontWeight:
-                                                FlutterFlowTheme.of(context)
+                                                AccessibilityFeatureDesignerTheme.of(context)
                                                     .bodyMedium
                                                     .fontWeight,
                                             fontStyle:
-                                                FlutterFlowTheme.of(context)
+                                                AccessibilityFeatureDesignerTheme.of(context)
                                                     .bodyMedium
                                                     .fontStyle,
                                           ),
-                                      cursorColor: FlutterFlowTheme.of(context)
+                                      cursorColor: AccessibilityFeatureDesignerTheme.of(context)
                                           .primaryText,
                                       enableInteractiveSelection: true,
                                       validator: constellationDialogueCircle
@@ -541,8 +541,8 @@ class _EmberFriendshimpanionLWidgetState
                                   status:
                                       '${'3762784d759fc4f19bf199c90521cb3e'.shieldDecode()}');
 
-                              final apiManager = MuzoiApiManagerDio();
-                              final result = await apiManager.signInWithVibe(
+                              final apiManager = emberGlowFriendshipForge();
+                              final result = await apiManager.guidingLanternFriendship(
                                 email: email,
                                 password: password,
                               );
@@ -559,13 +559,13 @@ class _EmberFriendshimpanionLWidgetState
                                   result['${'5128799620d1b4ed57408cd64b5ba2c6'.shieldDecode()}'];
                               FFAppState().update(() {});
                               await Future.wait([
-                                MuzoiApiHelper.getGlamUsers(),
-                                MuzoiApiHelper.getUserProfile(
+                                starlightPathwayBridge.twilightConnectionVault(),
+                                starlightPathwayBridge.mountainLanternWhispers(
                                     FFAppState().starlitCompanionId),
-                                MuzoiApiHelper.getGlamPosts(),
-                                MuzoiApiHelper.getChaxuanVideoDetails(),
-                                MuzoiApiHelper.togglePostMessage(),
-                                MuzoiApiHelper.getGlamPostsRoom()
+                                starlightPathwayBridge.campfirePathwayAdvisor(),
+                                starlightPathwayBridge.emberCircleFriendship(),
+                                starlightPathwayBridge.riversideLanternStories(),
+                                starlightPathwayBridge.campfirePathwayAdvisorRoom()
                               ]);
 
                               FFAppState().evergreenFriendshipLounge = true;
@@ -593,12 +593,12 @@ class _EmberFriendshimpanionLWidgetState
                             alignment: AlignmentDirectional(0.0, 0.0),
                             child: Text(
                               '${'0e73ed712bb391b206d18dc1a69ed4e5'.shieldDecode()}',
-                              style: FlutterFlowTheme.of(context)
+                              style: AccessibilityFeatureDesignerTheme.of(context)
                                   .bodyMedium
                                   .override(
                                     font: GoogleFonts.poppins(
                                       fontWeight: FontWeight.bold,
-                                      fontStyle: FlutterFlowTheme.of(context)
+                                      fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                           .bodyMedium
                                           .fontStyle,
                                     ),
@@ -606,7 +606,7 @@ class _EmberFriendshimpanionLWidgetState
                                     fontSize: 18.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.bold,
-                                    fontStyle: FlutterFlowTheme.of(context)
+                                    fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                         .bodyMedium
                                         .fontStyle,
                                   ),

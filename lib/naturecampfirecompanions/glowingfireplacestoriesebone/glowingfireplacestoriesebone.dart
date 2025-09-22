@@ -1,7 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:go_router/go_router.dart';
-import 'package:vanox/Route/jiam.dart';
+import 'package:vanox/starlightBondingAdvisor/pineConeBondingCircle.dart';
 
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -40,7 +40,7 @@ class _GlowingFireplaceStorieseBonEWidgetState
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: AccessibilityFeatureDesignerTheme.of(context).primaryBackground,
         body: Container(
           width: double.infinity,
           height: double.infinity,
@@ -151,10 +151,10 @@ class _GlowingFireplaceStorieseBonEWidgetState
                         child: Text(
                           '${'867b328d287896d34abae951677b1323'.shieldDecode()}',
                           style:
-                              FlutterFlowTheme.of(context).bodyMedium.override(
+                              AccessibilityFeatureDesignerTheme.of(context).bodyMedium.override(
                                     font: GoogleFonts.poppins(
                                       fontWeight: FontWeight.bold,
-                                      fontStyle: FlutterFlowTheme.of(context)
+                                      fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                           .bodyMedium
                                           .fontStyle,
                                     ),
@@ -162,7 +162,7 @@ class _GlowingFireplaceStorieseBonEWidgetState
                                     fontSize: 18.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.bold,
-                                    fontStyle: FlutterFlowTheme.of(context)
+                                    fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                         .bodyMedium
                                         .fontStyle,
                                   ),
@@ -236,19 +236,19 @@ class _GlowingFireplaceStorieseBonEWidgetState
                               TextSpan(
                                 text:
                                     '${'32fd7d54800ec6089ec919d3a2bc71d9'.shieldDecode()} ',
-                                style: FlutterFlowTheme.of(context)
+                                style: AccessibilityFeatureDesignerTheme.of(context)
                                     .bodyMedium
                                     .override(
                                       font: GoogleFonts.poppins(
                                         fontWeight: FontWeight.normal,
-                                        fontStyle: FlutterFlowTheme.of(context)
+                                        fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                             .bodyMedium
                                             .fontStyle,
                                       ),
                                       color: Color(0xFF9A9A9A),
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.normal,
-                                      fontStyle: FlutterFlowTheme.of(context)
+                                      fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                           .bodyMedium
                                           .fontStyle,
                                     ),
@@ -256,23 +256,23 @@ class _GlowingFireplaceStorieseBonEWidgetState
                               TextSpan(
                                 text:
                                     '${'3934488dde5d20cdb7df5782cccf4730'.shieldDecode()}',
-                                style: FlutterFlowTheme.of(context)
+                                style: AccessibilityFeatureDesignerTheme.of(context)
                                     .bodyMedium
                                     .override(
                                       font: GoogleFonts.poppins(
-                                        fontWeight: FlutterFlowTheme.of(context)
+                                        fontWeight: AccessibilityFeatureDesignerTheme.of(context)
                                             .bodyMedium
                                             .fontWeight,
-                                        fontStyle: FlutterFlowTheme.of(context)
+                                        fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                             .bodyMedium
                                             .fontStyle,
                                       ),
                                       color: Color(0xFF9A9A9A),
                                       letterSpacing: 0.0,
-                                      fontWeight: FlutterFlowTheme.of(context)
+                                      fontWeight: AccessibilityFeatureDesignerTheme.of(context)
                                           .bodyMedium
                                           .fontWeight,
-                                      fontStyle: FlutterFlowTheme.of(context)
+                                      fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                           .bodyMedium
                                           .fontStyle,
                                       decoration: TextDecoration.underline,
@@ -297,23 +297,23 @@ class _GlowingFireplaceStorieseBonEWidgetState
                               TextSpan(
                                 text:
                                     ' ${'a645e46a92b2a02da5e54d71dca77a3e'.shieldDecode()} ',
-                                style: FlutterFlowTheme.of(context)
+                                style: AccessibilityFeatureDesignerTheme.of(context)
                                     .bodyMedium
                                     .override(
                                       font: GoogleFonts.poppins(
-                                        fontWeight: FlutterFlowTheme.of(context)
+                                        fontWeight: AccessibilityFeatureDesignerTheme.of(context)
                                             .bodyMedium
                                             .fontWeight,
-                                        fontStyle: FlutterFlowTheme.of(context)
+                                        fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                             .bodyMedium
                                             .fontStyle,
                                       ),
                                       color: Color(0xFF9A9A9A),
                                       letterSpacing: 0.0,
-                                      fontWeight: FlutterFlowTheme.of(context)
+                                      fontWeight: AccessibilityFeatureDesignerTheme.of(context)
                                           .bodyMedium
                                           .fontWeight,
-                                      fontStyle: FlutterFlowTheme.of(context)
+                                      fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                           .bodyMedium
                                           .fontStyle,
                                     ),
@@ -321,23 +321,23 @@ class _GlowingFireplaceStorieseBonEWidgetState
                               TextSpan(
                                 text:
                                     '${'ab7cc3e9671afc63305a0445ed544fbdffbec82bb20f3fe5054acffcc4f0c90d'.shieldDecode()}',
-                                style: FlutterFlowTheme.of(context)
+                                style: AccessibilityFeatureDesignerTheme.of(context)
                                     .bodyMedium
                                     .override(
                                       font: GoogleFonts.poppins(
-                                        fontWeight: FlutterFlowTheme.of(context)
+                                        fontWeight: AccessibilityFeatureDesignerTheme.of(context)
                                             .bodyMedium
                                             .fontWeight,
-                                        fontStyle: FlutterFlowTheme.of(context)
+                                        fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                             .bodyMedium
                                             .fontStyle,
                                       ),
                                       color: Color(0xFF9A9A9A),
                                       letterSpacing: 0.0,
-                                      fontWeight: FlutterFlowTheme.of(context)
+                                      fontWeight: AccessibilityFeatureDesignerTheme.of(context)
                                           .bodyMedium
                                           .fontWeight,
-                                      fontStyle: FlutterFlowTheme.of(context)
+                                      fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                           .bodyMedium
                                           .fontStyle,
                                       decoration: TextDecoration.underline,
@@ -360,19 +360,19 @@ class _GlowingFireplaceStorieseBonEWidgetState
                                   },
                               )
                             ],
-                            style: FlutterFlowTheme.of(context)
+                            style: AccessibilityFeatureDesignerTheme.of(context)
                                 .bodyMedium
                                 .override(
                                   font: GoogleFonts.poppins(
                                     fontWeight: FontWeight.w500,
-                                    fontStyle: FlutterFlowTheme.of(context)
+                                    fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                         .bodyMedium
                                         .fontStyle,
                                   ),
                                   color: Color(0xFF9A9A9A),
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w500,
-                                  fontStyle: FlutterFlowTheme.of(context)
+                                  fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                       .bodyMedium
                                       .fontStyle,
                                 ),

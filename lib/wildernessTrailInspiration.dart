@@ -34,7 +34,7 @@ class FFAppState extends ChangeNotifier {
               _evergreenFriendshipLounge;
     });
 
-    // 新增的两个字段初始化
+
     _safeInit(() {
       _campfireJourneyToken =
           prefs.getString('ff_campfireJourneyToken') ?? _campfireJourneyToken;
@@ -87,7 +87,7 @@ _safeInit(() {
   }
 });
 
-   // 消息列表初始化
+
     _safeInit(() {
       final messagesJson = prefs.getString('ff_starlightCampfireMessages');
       if (messagesJson != null && messagesJson.isNotEmpty) {
@@ -142,7 +142,6 @@ _safeInit(() {
   }
 
 
-  // 新增的用户 token
     String _campfireJourneyToken = '';
   String get campfireJourneyToken => _campfireJourneyToken;
   set campfireJourneyToken(String value) {
@@ -150,7 +149,7 @@ _safeInit(() {
     prefs.setString('ff_campfireJourneyToken', value);
   }
 
-  // 新增的用户 id
+
   int _starlitCompanionId = 0;
   int get starlitCompanionId => _starlitCompanionId;
   set starlitCompanionId(int value) {
@@ -158,7 +157,7 @@ _safeInit(() {
     prefs.setInt('ff_starlitCompanionId', value);
   }
 
-  /// 新增：所有用户篝数据
+  ///所有用户篝数据
 List<dynamic> _starlightCampfireProfiles = [];
 List<dynamic> get starlightCampfireProfiles => _starlightCampfireProfiles;
 set starlightCampfireProfiles(List<dynamic> value) {
@@ -167,7 +166,7 @@ set starlightCampfireProfiles(List<dynamic> value) {
   notifyListeners();
 }
 
-  /// 新增：用户详情数据
+  ///用户详情数据
   Map<String, dynamic> _wildernessExpeditionUserProfile = {};
   Map<String, dynamic> get wildernessExpeditionUserProfile => _wildernessExpeditionUserProfile;
   set wildernessExpeditionUserProfile(Map<String, dynamic> value) {
@@ -176,12 +175,12 @@ set starlightCampfireProfiles(List<dynamic> value) {
     notifyListeners();
   }
 
-    /// 新增： 视频数据数据
+    ///视频数据数据
   List<Map<String, dynamic>> _virtualWildernessRetreatRooms = [];
   List<Map<String, dynamic>> get virtualWildernessRetreatRooms =>
       _virtualWildernessRetreatRooms;
   set virtualWildernessRetreatRooms(List<dynamic> value) {
-    // 在 setter 内自动转换
+
     _virtualWildernessRetreatRooms = List<Map<String, dynamic>>.from(
       value.map((e) => Map<String, dynamic>.from(e)),
     );
@@ -190,12 +189,12 @@ set starlightCampfireProfiles(List<dynamic> value) {
     notifyListeners();
   }
   
-/// 用户虚拟露营动态数据
+/// 动态数据
 List<Map<String, dynamic>> _starlitCampfireJourneyPosts = [];
 List<Map<String, dynamic>> get starlitCampfireJourneyPosts => _starlitCampfireJourneyPosts;
 set starlitCampfireJourneyPosts(List<Map<String, dynamic>> value) {
   _starlitCampfireJourneyPosts = value;
-  prefs.setString('ff_starlitCampfireJourneyPosts', jsonEncode(value)); // 持久化存储
+  prefs.setString('ff_starlitCampfireJourneyPosts', jsonEncode(value)); 
   notifyListeners();
 
 
@@ -208,16 +207,16 @@ set starlitCampfireJourneyPosts(List<Map<String, dynamic>> value) {
     prefs.setString('ff_starlightCampfireMessages', jsonEncode(value));
     notifyListeners();
   }
-/// 新增：虚拟露营语音聊天数据
+/// 新增：露营聊天
 List<Map<String, dynamic>> _starlitCampfireVoiceChats = [];
 List<Map<String, dynamic>> get starlitCampfireVoiceChats => _starlitCampfireVoiceChats;
 set starlitCampfireVoiceChats(List<dynamic> value) {
-  // 将 List<dynamic> 强制转换为 List<Map<String, dynamic>>
+
   _starlitCampfireVoiceChats = value
       .map<Map<String, dynamic>>((e) => Map<String, dynamic>.from(e))
       .toList();
 
-  // 持久化存储
+
   prefs.setString(
       'ff_starlitCampfireVoiceChats', jsonEncode(_starlitCampfireVoiceChats));
 

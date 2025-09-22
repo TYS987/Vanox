@@ -14,7 +14,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../main.dart';
 
 
-export '../app_state.dart';
+export '../wildernessTrailInspiration.dart';
 export 'flutter_flow_model.dart';
 export 'dart:math' show min, max;
 export 'dart:typed_data' show Uint8List;

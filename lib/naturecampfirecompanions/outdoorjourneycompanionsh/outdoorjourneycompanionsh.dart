@@ -1,8 +1,8 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:transparent_image/transparent_image.dart';
-import 'package:vanox/Route/fangfa.dart';
-import 'package:vanox/Route/jiam.dart';
-import 'package:vanox/Route/tiaozhuan.dart';
+import 'package:vanox/starlightBondingAdvisor/rusticJourneyWhispers.dart';
+import 'package:vanox/starlightBondingAdvisor/pineConeBondingCircle.dart';
+import 'package:vanox/starlightBondingAdvisor/twilightCircleMemories.dart';
 
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -25,7 +25,7 @@ class _OutdoorJourneyCompanionsHWidgetState
   @override
   void initState() {
     super.initState();
-    MuzoiApiHelper.getGlamPostsRoom();
+    starlightPathwayBridge.campfirePathwayAdvisorRoom();
   }
 
   @override
@@ -42,7 +42,7 @@ class _OutdoorJourneyCompanionsHWidgetState
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: AccessibilityFeatureDesignerTheme.of(context).primaryBackground,
         body: Container(
           width: double.infinity,
           height: double.infinity,
@@ -137,13 +137,13 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                   0.0, 20.0, 0.0, 0.0),
                                           child: Text(
                                             '${'f7b5299bb76bb67d54cc9d06b41ac3cc8c0724e3e6e2ad054325c30c8eef36a9'.shieldDecode()}',
-                                            style: FlutterFlowTheme.of(context)
+                                            style: AccessibilityFeatureDesignerTheme.of(context)
                                                 .bodyMedium
                                                 .override(
                                                   font: GoogleFonts.inter(
                                                     fontWeight: FontWeight.w600,
                                                     fontStyle:
-                                                        FlutterFlowTheme.of(
+                                                        AccessibilityFeatureDesignerTheme.of(
                                                                 context)
                                                             .bodyMedium
                                                             .fontStyle,
@@ -152,7 +152,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w600,
                                                   fontStyle:
-                                                      FlutterFlowTheme.of(
+                                                      AccessibilityFeatureDesignerTheme.of(
                                                               context)
                                                           .bodyMedium
                                                           .fontStyle,
@@ -201,10 +201,10 @@ class _OutdoorJourneyCompanionsHWidgetState
 
                                                           try {
                                                             await Future.wait([
-                                                              MuzoiApiHelper
-                                                                  .getGlamPosts(),
-                                                              MuzoiApiHelper
-                                                                  .getUserProfile(
+                                                              starlightPathwayBridge
+                                                                  .campfirePathwayAdvisor(),
+                                                              starlightPathwayBridge
+                                                                  .mountainLanternWhispers(
                                                                       FFAppState()
                                                                           .starlitCompanionId),
                                                             ]);
@@ -323,7 +323,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                               textAlign:
                                                                   TextAlign
                                                                       .center,
-                                                              style: FlutterFlowTheme
+                                                              style: AccessibilityFeatureDesignerTheme
                                                                       .of(context)
                                                                   .bodyMedium
                                                                   .override(
@@ -332,7 +332,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .w500,
-                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                      fontStyle: AccessibilityFeatureDesignerTheme.of(
                                                                               context)
                                                                           .bodyMedium
                                                                           .fontStyle,
@@ -344,7 +344,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w500,
-                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                    fontStyle: AccessibilityFeatureDesignerTheme.of(
                                                                             context)
                                                                         .bodyMedium
                                                                         .fontStyle,
@@ -413,8 +413,8 @@ class _OutdoorJourneyCompanionsHWidgetState
 
                                               try {
                                                 await Future.wait([
-                                                  MuzoiApiHelper.getGlamPosts(),
-                                                  MuzoiApiHelper.getUserProfile(
+                                                  starlightPathwayBridge.campfirePathwayAdvisor(),
+                                                  starlightPathwayBridge.mountainLanternWhispers(
                                                       FFAppState()
                                                           .starlitCompanionId),
                                                 ]);
@@ -524,7 +524,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                                 Text(
                                                                   virtualCampfireLoungeItem[
                                                                       '${'fc701030b5b0d461db27e56b870946a46791d90b02279fbd38de8749b397c8bd'.shieldDecode()}'],
-                                                                  style: FlutterFlowTheme.of(
+                                                                  style: AccessibilityFeatureDesignerTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
@@ -532,7 +532,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                                             .poppins(
                                                                           fontWeight:
                                                                               FontWeight.w500,
-                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                          fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                                                               .bodyMedium
                                                                               .fontStyle,
                                                                         ),
@@ -542,7 +542,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                                             0.0,
                                                                         fontWeight:
                                                                             FontWeight.w500,
-                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                        fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                                                             .bodyMedium
                                                                             .fontStyle,
                                                                       ),
@@ -550,7 +550,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                                 Text(
                                                                   virtualCampfireLoungeItem[
                                                                       '${'a9332d046865f892c23637cef68bf89d'.shieldDecode()}'],
-                                                                  style: FlutterFlowTheme.of(
+                                                                  style: AccessibilityFeatureDesignerTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
@@ -558,7 +558,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                                             .poppins(
                                                                           fontWeight:
                                                                               FontWeight.w600,
-                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                          fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                                                               .bodyMedium
                                                                               .fontStyle,
                                                                         ),
@@ -568,7 +568,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                                             0.0,
                                                                         fontWeight:
                                                                             FontWeight.w600,
-                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                        fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                                                             .bodyMedium
                                                                             .fontStyle,
                                                                       ),
@@ -632,19 +632,19 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                           .toString(),
                                                       textAlign:
                                                           TextAlign.justify,
-                                                      style: FlutterFlowTheme
+                                                      style: AccessibilityFeatureDesignerTheme
                                                               .of(context)
                                                           .bodyMedium
                                                           .override(
                                                             font: GoogleFonts
                                                                 .inter(
                                                               fontWeight:
-                                                                  FlutterFlowTheme.of(
+                                                                  AccessibilityFeatureDesignerTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .fontWeight,
                                                               fontStyle:
-                                                                  FlutterFlowTheme.of(
+                                                                  AccessibilityFeatureDesignerTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .fontStyle,
@@ -653,12 +653,12 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                             fontSize: 11,
                                                             letterSpacing: 0.0,
                                                             fontWeight:
-                                                                FlutterFlowTheme.of(
+                                                                AccessibilityFeatureDesignerTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .fontWeight,
                                                             fontStyle:
-                                                                FlutterFlowTheme.of(
+                                                                AccessibilityFeatureDesignerTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .fontStyle,

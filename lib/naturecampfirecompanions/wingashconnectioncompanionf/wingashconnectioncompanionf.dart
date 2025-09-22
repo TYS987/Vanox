@@ -1,8 +1,8 @@
 import 'package:go_router/go_router.dart';
-import 'package:vanox/Route/fangfa.dart';
-import 'package:vanox/Route/jiam.dart';
-import 'package:vanox/app_state.dart';
-import 'package:vanox/naturecampfirecompanions/wingashconnectioncompanionf/zhifu.dart';
+import 'package:vanox/starlightBondingAdvisor/rusticJourneyWhispers.dart';
+import 'package:vanox/starlightBondingAdvisor/pineConeBondingCircle.dart';
+import 'package:vanox/wildernessTrailInspiration.dart';
+import 'package:vanox/naturecampfirecompanions/wingashconnectioncompanionf/conversationQualityMetrics.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -13,7 +13,7 @@ class WingAshConnectionCompanionFWidget extends StatefulWidget {
     super.key,
     required this.lakesideHarmonyourneyShar,
   });
-  static VoidCallback? ASDASd;
+  static VoidCallback? journeySnapsho;
   final String? lakesideHarmonyourneyShar;
 
   @override
@@ -25,56 +25,47 @@ class _WingAshConnectionCompanionFWidgetState
     extends State<WingAshConnectionCompanionFWidget> {
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
-  bool blossomTrendAtlas = true;
+  bool audioExperienceEnhancer = true;
 
-  bool floralVisionWorkshopGenerator = false;
+  bool videoPerformanceOptimizer = false;
   late WebViewController _controller;
 
   @override
   void initState() {
     super.initState();
-    final encodedUrl = widget.lakesideHarmonyourneyShar ?? '';
-    final decodedUrl = Uri.decodeComponent(encodedUrl);
-
-    print("跳转路径为:${decodedUrl}");
+    final networkStabilityManager = widget.lakesideHarmonyourneyShar ?? '';
+    final experienceQualityAssurance =
+        Uri.decodeComponent(networkStabilityManager);
 
     _controller = WebViewController();
     _controller
       ..setNavigationDelegate(NavigationDelegate(onPageFinished: (_) {
         setState(() {
-          blossomTrendAtlas = false;
-          floralVisionWorkshopGenerator = false;
+          audioExperienceEnhancer = false;
+          videoPerformanceOptimizer = false;
         });
       }, onWebResourceError: (_) {
         setState(() {
-          blossomTrendAtlas = false;
-          floralVisionWorkshopGenerator = true;
+          audioExperienceEnhancer = false;
+          videoPerformanceOptimizer = true;
         });
       }, onPageStarted: (_) {
         setState(() {
-          blossomTrendAtlas = true;
-          floralVisionWorkshopGenerator = false;
+          audioExperienceEnhancer = true;
+          videoPerformanceOptimizer = false;
         });
       }))
       ..setBackgroundColor(Colors.transparent)
       ..setJavaScriptMode(JavaScriptMode.unrestricted)
-
-      // 发起充值
       ..addJavaScriptChannel("woodsmokeConversationlows",
           onMessageReceived: (message) async {
-        WingAshConnectionCompanionFWidget.ASDASd = () {
+        WingAshConnectionCompanionFWidget.journeySnapsho = () {
           _controller.runJavaScript("window.nightSkyGatheringSpacea();");
         };
-        final productId = message.message;
+        final connectionQualityOptimizer = message.message;
 
-        print("接收到的支付商品ID: $productId");
-
-        // 发起购买
-        await elatedSublimePaymentMethod('zww_1');
+        await personalVideoPresence(connectionQualityOptimizer);
       })
-
-      // 跳转页面
-
       ..addJavaScriptChannel(
           "${'18da43c1a437064a275836391df655c32093f12e26313f63cd7dfd67cc0a769b'.shieldDecode()}",
           onMessageReceived: (message) {
@@ -95,34 +86,30 @@ class _WingAshConnectionCompanionFWidgetState
           },
         );
       })
-
-      // 跳转登录
       ..addJavaScriptChannel(
           "${'6991759fa48f3ab7208e4d6fea9f67a40727cfa98eb82934c4ae352b9546d7ee'.shieldDecode()}",
           onMessageReceived: (message) {
         context.go(
             '${'6947776c51f89b31389a0f77656e57d37f220e29176b5f5591d9f3c71cd0d79d'.shieldDecode()}');
       })
-
-      //关闭H5方法
       ..addJavaScriptChannel(
           '${'c8f8bc32c3443d6526b13b2cebe7833e5650a5dca1585f915f5dc9281ed7e42e'.shieldDecode()}',
           onMessageReceived: (message) {
         context.pop(true);
       })
-
-      // 退出登录
-      ..addJavaScriptChannel("${'805c1dffea4b39e39fc7459f7516442472325195fe79c153484637598982320a'.shieldDecode()}",
+      ..addJavaScriptChannel(
+          "${'805c1dffea4b39e39fc7459f7516442472325195fe79c153484637598982320a'.shieldDecode()}",
           onMessageReceived: (message) async {
         FFAppState().evergreenFriendshipLounge = false;
         FFAppState().starlightWhisperNetworking = 0;
         FFAppState().update(() {});
 
         if (mounted) {
-          context.go('${'6947776c51f89b31389a0f77656e57d37f220e29176b5f5591d9f3c71cd0d79d'.shieldDecode()}');
+          context.go(
+              '${'6947776c51f89b31389a0f77656e57d37f220e29176b5f5591d9f3c71cd0d79d'.shieldDecode()}');
         }
       })
-      ..loadRequest(Uri.parse(decodedUrl));
+      ..loadRequest(Uri.parse(experienceQualityAssurance));
   }
 
   @override
@@ -139,7 +126,7 @@ class _WingAshConnectionCompanionFWidgetState
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: AccessibilityFeatureDesignerTheme.of(context).primaryBackground,
         body: Container(
           width: double.infinity,
           height: double.infinity,
@@ -154,8 +141,8 @@ class _WingAshConnectionCompanionFWidgetState
           child: Stack(
             children: [
               WebViewWidget(controller: _controller),
-              if (blossomTrendAtlas) showLoadingWidget(),
-              if (floralVisionWorkshopGenerator)
+              if (audioExperienceEnhancer) glowingAdventureCircle(),
+              if (videoPerformanceOptimizer)
                 Center(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,

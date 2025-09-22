@@ -1,5 +1,5 @@
 import 'package:go_router/go_router.dart';
-import 'package:vanox/Route/jiam.dart';
+import 'package:vanox/starlightBondingAdvisor/pineConeBondingCircle.dart';
 import 'package:vanox/flutter_flow/flutter_flow_util.dart';
 
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -52,17 +52,17 @@ class _SereneStarlightConnectioninFriendshWidgetState
           children: [
             Text(
               '${'b988d280d6c76f4179988620d7e7074a'.shieldDecode()}',
-              style: FlutterFlowTheme.of(context).bodyMedium.override(
+              style: AccessibilityFeatureDesignerTheme.of(context).bodyMedium.override(
                     font: GoogleFonts.inter(
                       fontWeight: FontWeight.w900,
                       fontStyle:
-                          FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                          AccessibilityFeatureDesignerTheme.of(context).bodyMedium.fontStyle,
                     ),
                     fontSize: 24.0,
                     letterSpacing: 0.0,
                     fontWeight: FontWeight.w900,
                     fontStyle:
-                        FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                        AccessibilityFeatureDesignerTheme.of(context).bodyMedium.fontStyle,
                     color: Colors.black,
                   ),
             ),
@@ -70,20 +70,20 @@ class _SereneStarlightConnectioninFriendshWidgetState
               padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
               child: Text(
                 'Welcome to Etivo! To make a better place,the following content is not allowed in the app in particular.\n1.Any content about child harm,pornography related detrimental to children.\n2. Fake and harmful messages about recent or current events.\n3. Any violence,bullying content, publicly promotes pornography and other content.\n\nIf we find any content including and not limited to the above violations your content will be deleted and account will be banned.By clicking the above button,you agreeto the Terms of Use and Privacy Policy',
-                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                style: AccessibilityFeatureDesignerTheme.of(context).bodyMedium.override(
                       font: GoogleFonts.poppins(
                         fontWeight:
-                            FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                            AccessibilityFeatureDesignerTheme.of(context).bodyMedium.fontWeight,
                         fontStyle:
-                            FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                            AccessibilityFeatureDesignerTheme.of(context).bodyMedium.fontStyle,
                       ),
                       color: Colors.black,
                       fontSize: 16.0,
                       letterSpacing: 0.0,
                       fontWeight:
-                          FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                          AccessibilityFeatureDesignerTheme.of(context).bodyMedium.fontWeight,
                       fontStyle:
-                          FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                          AccessibilityFeatureDesignerTheme.of(context).bodyMedium.fontStyle,
                       lineHeight: 1.2,
                     ),
               ),
@@ -111,22 +111,22 @@ class _SereneStarlightConnectioninFriendshWidgetState
                     },
                     child: Text(
                       '${'1b9f4afe3af8dc283d4d8b02bc446d37'.shieldDecode()}',
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                      style: AccessibilityFeatureDesignerTheme.of(context).bodyMedium.override(
                             font: GoogleFonts.poppins(
-                              fontWeight: FlutterFlowTheme.of(context)
+                              fontWeight: AccessibilityFeatureDesignerTheme.of(context)
                                   .bodyMedium
                                   .fontWeight,
-                              fontStyle: FlutterFlowTheme.of(context)
+                              fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                   .bodyMedium
                                   .fontStyle,
                             ),
                             color: Color(0xFFFF14E7),
                             fontSize: 16.0,
                             letterSpacing: 0.0,
-                            fontWeight: FlutterFlowTheme.of(context)
+                            fontWeight: AccessibilityFeatureDesignerTheme.of(context)
                                 .bodyMedium
                                 .fontWeight,
-                            fontStyle: FlutterFlowTheme.of(context)
+                            fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                 .bodyMedium
                                 .fontStyle,
                             decoration: TextDecoration.underline,
@@ -150,22 +150,22 @@ class _SereneStarlightConnectioninFriendshWidgetState
                     },
                     child: Text(
                       '${'35ebbbdd1f4b189edf3c1d2dbc3991f5'.shieldDecode()}',
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                      style: AccessibilityFeatureDesignerTheme.of(context).bodyMedium.override(
                             font: GoogleFonts.poppins(
-                              fontWeight: FlutterFlowTheme.of(context)
+                              fontWeight: AccessibilityFeatureDesignerTheme.of(context)
                                   .bodyMedium
                                   .fontWeight,
-                              fontStyle: FlutterFlowTheme.of(context)
+                              fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                   .bodyMedium
                                   .fontStyle,
                             ),
                             color: Color(0xFFFF14E7),
                             fontSize: 16.0,
                             letterSpacing: 0.0,
-                            fontWeight: FlutterFlowTheme.of(context)
+                            fontWeight: AccessibilityFeatureDesignerTheme.of(context)
                                 .bodyMedium
                                 .fontWeight,
-                            fontStyle: FlutterFlowTheme.of(context)
+                            fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                 .bodyMedium
                                 .fontStyle,
                             decoration: TextDecoration.underline,
@@ -199,22 +199,22 @@ class _SereneStarlightConnectioninFriendshWidgetState
                       alignment: AlignmentDirectional(0.0, 0.0),
                       child: Text(
                         '${'1a2dc8f89821747f143a71708975691b'.shieldDecode()}',
-                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        style: AccessibilityFeatureDesignerTheme.of(context).bodyMedium.override(
                               font: GoogleFonts.poppins(
-                                fontWeight: FlutterFlowTheme.of(context)
+                                fontWeight: AccessibilityFeatureDesignerTheme.of(context)
                                     .bodyMedium
                                     .fontWeight,
-                                fontStyle: FlutterFlowTheme.of(context)
+                                fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                     .bodyMedium
                                     .fontStyle,
                               ),
                               color: Color(0x4D0B0B0B),
                               fontSize: 18.0,
                               letterSpacing: 0.0,
-                              fontWeight: FlutterFlowTheme.of(context)
+                              fontWeight: AccessibilityFeatureDesignerTheme.of(context)
                                   .bodyMedium
                                   .fontWeight,
-                              fontStyle: FlutterFlowTheme.of(context)
+                              fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                   .bodyMedium
                                   .fontStyle,
                             ),
@@ -237,22 +237,22 @@ class _SereneStarlightConnectioninFriendshWidgetState
                       alignment: AlignmentDirectional(0.0, 0.0),
                       child: Text(
                         '${'55a66f36b77de83b227e5dc05d82e2cd'.shieldDecode()}',
-                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        style: AccessibilityFeatureDesignerTheme.of(context).bodyMedium.override(
                               font: GoogleFonts.poppins(
-                                fontWeight: FlutterFlowTheme.of(context)
+                                fontWeight: AccessibilityFeatureDesignerTheme.of(context)
                                     .bodyMedium
                                     .fontWeight,
-                                fontStyle: FlutterFlowTheme.of(context)
+                                fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                     .bodyMedium
                                     .fontStyle,
                               ),
                               color: Colors.white,
                               fontSize: 18.0,
                               letterSpacing: 0.0,
-                              fontWeight: FlutterFlowTheme.of(context)
+                              fontWeight: AccessibilityFeatureDesignerTheme.of(context)
                                   .bodyMedium
                                   .fontWeight,
-                              fontStyle: FlutterFlowTheme.of(context)
+                              fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                   .bodyMedium
                                   .fontStyle,
                             ),

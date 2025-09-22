@@ -1,7 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:vanox/Route/fangfa.dart';
-import 'package:vanox/Route/jiam.dart';
-import 'package:vanox/Route/tiaozhuan.dart';
+import 'package:vanox/starlightBondingAdvisor/rusticJourneyWhispers.dart';
+import 'package:vanox/starlightBondingAdvisor/pineConeBondingCircle.dart';
+import 'package:vanox/starlightBondingAdvisor/twilightCircleMemories.dart';
 
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -23,7 +23,7 @@ class _HorizonWhisperNeourneMWidgetState
 
   @override
   void initState() {
-    MuzoiApiHelper.getUserProfile(FFAppState().starlitCompanionId);
+    starlightPathwayBridge.mountainLanternWhispers(FFAppState().starlitCompanionId);
     super.initState();
   }
 
@@ -41,7 +41,7 @@ class _HorizonWhisperNeourneMWidgetState
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: AccessibilityFeatureDesignerTheme.of(context).primaryBackground,
         body: Container(
           width: double.infinity,
           height: double.infinity,
@@ -195,7 +195,7 @@ class _HorizonWhisperNeourneMWidgetState
                           width: 110.0,
                           height: 110.0,
                           decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context)
+                            color: AccessibilityFeatureDesignerTheme.of(context)
                                 .secondaryBackground,
                             borderRadius: BorderRadius.circular(80.0),
                           ),
@@ -260,7 +260,7 @@ class _HorizonWhisperNeourneMWidgetState
                                             '${'fc590ebd8325ac3b8aaedbd8a79e4c43fe2f93b3968905465aa573ca23561ffd'.shieldDecode()}',
                                         onGalaxyReturnRefresh: () {
                                           if (mounted) {
-                                            MuzoiApiHelper.getUserProfile(
+                                            starlightPathwayBridge.mountainLanternWhispers(
                                                     FFAppState()
                                                         .starlitCompanionId)
                                                 .then((_) {
@@ -281,13 +281,13 @@ class _HorizonWhisperNeourneMWidgetState
                                                 .wildernessExpeditionUserProfile[
                                                     '${'6d9c3dd96713b931d7b5b32d0c204ccb'.shieldDecode()}']
                                                 .toString(),
-                                            style: FlutterFlowTheme.of(context)
+                                            style: AccessibilityFeatureDesignerTheme.of(context)
                                                 .bodyMedium
                                                 .override(
                                                   font: GoogleFonts.poppins(
                                                     fontWeight: FontWeight.w600,
                                                     fontStyle:
-                                                        FlutterFlowTheme.of(
+                                                        AccessibilityFeatureDesignerTheme.of(
                                                                 context)
                                                             .bodyMedium
                                                             .fontStyle,
@@ -297,7 +297,7 @@ class _HorizonWhisperNeourneMWidgetState
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w600,
                                                   fontStyle:
-                                                      FlutterFlowTheme.of(
+                                                      AccessibilityFeatureDesignerTheme.of(
                                                               context)
                                                           .bodyMedium
                                                           .fontStyle,
@@ -305,17 +305,17 @@ class _HorizonWhisperNeourneMWidgetState
                                           ),
                                           Text(
                                             '${'3515e5cfe17730533852314e7023377b'.shieldDecode()}',
-                                            style: FlutterFlowTheme.of(context)
+                                            style: AccessibilityFeatureDesignerTheme.of(context)
                                                 .bodyMedium
                                                 .override(
                                                   font: GoogleFonts.poppins(
                                                     fontWeight:
-                                                        FlutterFlowTheme.of(
+                                                        AccessibilityFeatureDesignerTheme.of(
                                                                 context)
                                                             .bodyMedium
                                                             .fontWeight,
                                                     fontStyle:
-                                                        FlutterFlowTheme.of(
+                                                        AccessibilityFeatureDesignerTheme.of(
                                                                 context)
                                                             .bodyMedium
                                                             .fontStyle,
@@ -324,12 +324,12 @@ class _HorizonWhisperNeourneMWidgetState
                                                   fontSize: 12.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight:
-                                                      FlutterFlowTheme.of(
+                                                      AccessibilityFeatureDesignerTheme.of(
                                                               context)
                                                           .bodyMedium
                                                           .fontWeight,
                                                   fontStyle:
-                                                      FlutterFlowTheme.of(
+                                                      AccessibilityFeatureDesignerTheme.of(
                                                               context)
                                                           .bodyMedium
                                                           .fontStyle,
@@ -347,7 +347,7 @@ class _HorizonWhisperNeourneMWidgetState
                                             '${'6190d3a70a0436ddd5cc3e7527c368aa971c2f0abb1ca61c0d5377d6cd1078b8'.shieldDecode()}',
                                         onGalaxyReturnRefresh: () {
                                           if (mounted) {
-                                            MuzoiApiHelper.getUserProfile(
+                                            starlightPathwayBridge.mountainLanternWhispers(
                                                     FFAppState()
                                                         .starlitCompanionId)
                                                 .then((_) {
@@ -365,13 +365,13 @@ class _HorizonWhisperNeourneMWidgetState
                                               .wildernessExpeditionUserProfile[
                                                   '${'2eed4d3be64796c80c51e4cd109b970f'.shieldDecode()}']
                                               .toString(),
-                                          style: FlutterFlowTheme.of(context)
+                                          style: AccessibilityFeatureDesignerTheme.of(context)
                                               .bodyMedium
                                               .override(
                                                 font: GoogleFonts.poppins(
                                                   fontWeight: FontWeight.w600,
                                                   fontStyle:
-                                                      FlutterFlowTheme.of(
+                                                      AccessibilityFeatureDesignerTheme.of(
                                                               context)
                                                           .bodyMedium
                                                           .fontStyle,
@@ -381,24 +381,24 @@ class _HorizonWhisperNeourneMWidgetState
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w600,
                                                 fontStyle:
-                                                    FlutterFlowTheme.of(context)
+                                                    AccessibilityFeatureDesignerTheme.of(context)
                                                         .bodyMedium
                                                         .fontStyle,
                                               ),
                                         ),
                                         Text(
                                           '${'5125cc15e532fe6136940cca0abe24a3'.shieldDecode()}',
-                                          style: FlutterFlowTheme.of(context)
+                                          style: AccessibilityFeatureDesignerTheme.of(context)
                                               .bodyMedium
                                               .override(
                                                 font: GoogleFonts.poppins(
                                                   fontWeight:
-                                                      FlutterFlowTheme.of(
+                                                      AccessibilityFeatureDesignerTheme.of(
                                                               context)
                                                           .bodyMedium
                                                           .fontWeight,
                                                   fontStyle:
-                                                      FlutterFlowTheme.of(
+                                                      AccessibilityFeatureDesignerTheme.of(
                                                               context)
                                                           .bodyMedium
                                                           .fontStyle,
@@ -407,11 +407,11 @@ class _HorizonWhisperNeourneMWidgetState
                                                 fontSize: 12.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight:
-                                                    FlutterFlowTheme.of(context)
+                                                    AccessibilityFeatureDesignerTheme.of(context)
                                                         .bodyMedium
                                                         .fontWeight,
                                                 fontStyle:
-                                                    FlutterFlowTheme.of(context)
+                                                    AccessibilityFeatureDesignerTheme.of(context)
                                                         .bodyMedium
                                                         .fontStyle,
                                               ),
@@ -452,14 +452,14 @@ class _HorizonWhisperNeourneMWidgetState
                                                   15.0, 0.0, 0.0, 0.0),
                                           child: Text(
                                             '${'2f4f4a5547425c0aee4abcb9a33a4fda'.shieldDecode()}',
-                                            style: FlutterFlowTheme.of(context)
+                                            style: AccessibilityFeatureDesignerTheme.of(context)
                                                 .bodyMedium
                                                 .override(
                                                   font: GoogleFonts.poppins(
                                                     fontWeight:
                                                         FontWeight.normal,
                                                     fontStyle:
-                                                        FlutterFlowTheme.of(
+                                                        AccessibilityFeatureDesignerTheme.of(
                                                                 context)
                                                             .bodyMedium
                                                             .fontStyle,
@@ -473,7 +473,7 @@ class _HorizonWhisperNeourneMWidgetState
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.normal,
                                                   fontStyle:
-                                                      FlutterFlowTheme.of(
+                                                      AccessibilityFeatureDesignerTheme.of(
                                                               context)
                                                           .bodyMedium
                                                           .fontStyle,
@@ -486,13 +486,13 @@ class _HorizonWhisperNeourneMWidgetState
                                                   10.0, 0.0, 0.0, 10.0),
                                           child: Text(
                                             '${'5f67b2a44ed77af327fdbb8b5ca4efc8'.shieldDecode()}',
-                                            style: FlutterFlowTheme.of(context)
+                                            style: AccessibilityFeatureDesignerTheme.of(context)
                                                 .bodyMedium
                                                 .override(
                                                   font: GoogleFonts.sigmar(
                                                     fontWeight: FontWeight.w500,
                                                     fontStyle:
-                                                        FlutterFlowTheme.of(
+                                                        AccessibilityFeatureDesignerTheme.of(
                                                                 context)
                                                             .bodyMedium
                                                             .fontStyle,
@@ -506,7 +506,7 @@ class _HorizonWhisperNeourneMWidgetState
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w500,
                                                   fontStyle:
-                                                      FlutterFlowTheme.of(
+                                                      AccessibilityFeatureDesignerTheme.of(
                                                               context)
                                                           .bodyMedium
                                                           .fontStyle,
@@ -544,14 +544,14 @@ class _HorizonWhisperNeourneMWidgetState
                                                   15.0, 0.0, 0.0, 0.0),
                                           child: Text(
                                             '${'03c5754955799939a3c13571d59e2626'.shieldDecode()}',
-                                            style: FlutterFlowTheme.of(context)
+                                            style: AccessibilityFeatureDesignerTheme.of(context)
                                                 .bodyMedium
                                                 .override(
                                                   font: GoogleFonts.poppins(
                                                     fontWeight:
                                                         FontWeight.normal,
                                                     fontStyle:
-                                                        FlutterFlowTheme.of(
+                                                        AccessibilityFeatureDesignerTheme.of(
                                                                 context)
                                                             .bodyMedium
                                                             .fontStyle,
@@ -565,7 +565,7 @@ class _HorizonWhisperNeourneMWidgetState
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.normal,
                                                   fontStyle:
-                                                      FlutterFlowTheme.of(
+                                                      AccessibilityFeatureDesignerTheme.of(
                                                               context)
                                                           .bodyMedium
                                                           .fontStyle,
@@ -578,13 +578,13 @@ class _HorizonWhisperNeourneMWidgetState
                                                   10.0, 0.0, 0.0, 10.0),
                                           child: Text(
                                             '${'5f67b2a44ed77af327fdbb8b5ca4efc8'.shieldDecode()}',
-                                            style: FlutterFlowTheme.of(context)
+                                            style: AccessibilityFeatureDesignerTheme.of(context)
                                                 .bodyMedium
                                                 .override(
                                                   font: GoogleFonts.sigmar(
                                                     fontWeight: FontWeight.w500,
                                                     fontStyle:
-                                                        FlutterFlowTheme.of(
+                                                        AccessibilityFeatureDesignerTheme.of(
                                                                 context)
                                                             .bodyMedium
                                                             .fontStyle,
@@ -598,7 +598,7 @@ class _HorizonWhisperNeourneMWidgetState
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w500,
                                                   fontStyle:
-                                                      FlutterFlowTheme.of(
+                                                      AccessibilityFeatureDesignerTheme.of(
                                                               context)
                                                           .bodyMedium
                                                           .fontStyle,
@@ -649,12 +649,12 @@ class _HorizonWhisperNeourneMWidgetState
                               0.0, 0.0, 12.0, 0.0),
                           child: Text(
                             '${'baed81abcd3cf2efe3670cd22af2a7e3'.shieldDecode()}',
-                            style: FlutterFlowTheme.of(context)
+                            style: AccessibilityFeatureDesignerTheme.of(context)
                                 .bodyMedium
                                 .override(
                                   font: GoogleFonts.poppins(
                                     fontWeight: FontWeight.bold,
-                                    fontStyle: FlutterFlowTheme.of(context)
+                                    fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                         .bodyMedium
                                         .fontStyle,
                                   ),
@@ -662,7 +662,7 @@ class _HorizonWhisperNeourneMWidgetState
                                   fontSize: 12.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.bold,
-                                  fontStyle: FlutterFlowTheme.of(context)
+                                  fontStyle: AccessibilityFeatureDesignerTheme.of(context)
                                       .bodyMedium
                                       .fontStyle,
                                 ),
@@ -681,7 +681,7 @@ class _HorizonWhisperNeourneMWidgetState
                                   '${'2f071ad2ff3b2e5edc01400c20f0674830883724ec7e279f865cfdd11e5f181b'.shieldDecode()}',
                               onGalaxyReturnRefresh: () {
                                 if (mounted) {
-                                  MuzoiApiHelper.getUserProfile(
+                                  starlightPathwayBridge.mountainLanternWhispers(
                                           FFAppState().starlitCompanionId)
                                       .then((_) {
                                     setState(() {});
@@ -711,7 +711,7 @@ class _HorizonWhisperNeourneMWidgetState
                                   '${'96a2215f5f02775eaa8ad00b207034536a6b34c498697d7ceb2775dbe0a69ce7'.shieldDecode()}',
                               onGalaxyReturnRefresh: () {
                                 if (mounted) {
-                                  MuzoiApiHelper.getUserProfile(
+                                  starlightPathwayBridge.mountainLanternWhispers(
                                           FFAppState().starlitCompanionId)
                                       .then((_) {
                                     setState(() {});
