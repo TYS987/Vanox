@@ -162,7 +162,7 @@ List<dynamic> _starlightCampfireProfiles = [];
 List<dynamic> get starlightCampfireProfiles => _starlightCampfireProfiles;
 set starlightCampfireProfiles(List<dynamic> value) {
   _starlightCampfireProfiles = value;
-  prefs.setString('ff_starlightCampfireProfiles', jsonEncode(value)); // 持久化存储
+  prefs.setString('ff_starlightCampfireProfiles', jsonEncode(value)); 
   notifyListeners();
 }
 
@@ -171,7 +171,7 @@ set starlightCampfireProfiles(List<dynamic> value) {
   Map<String, dynamic> get wildernessExpeditionUserProfile => _wildernessExpeditionUserProfile;
   set wildernessExpeditionUserProfile(Map<String, dynamic> value) {
     _wildernessExpeditionUserProfile = value;
-    prefs.setString('ff_wildernessExpeditionUserProfile', jsonEncode(value)); // 持久化存储
+    prefs.setString('ff_wildernessExpeditionUserProfile', jsonEncode(value)); 
     notifyListeners();
   }
 

@@ -1,13 +1,12 @@
+import 'dart:io';
+
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:go_router/go_router.dart';
 import 'package:vanox/starlightBondingAdvisor/journeyBondingNarrativesA.dart';
 import 'package:vanox/starlightBondingAdvisor/rusticJourneyWhispers.dart';
 import 'package:vanox/starlightBondingAdvisor/pineConeBondingCircle.dart';
-
-import '../../localizationExperienceFacilitator/dataProtectionGuardian.dart';
-import '../../localizationExperienceFacilitator/securityEnforcementFramework.dart';
+import 'package:vanox/wildernessTrailInspiration.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
 class EmberFriendshimpanionLWidget extends StatefulWidget {
@@ -72,7 +71,7 @@ class _EmberFriendshimpanionLWidgetState
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: culturalAdaptationCoordinator.of(context).primaryBackground,
+        backgroundColor: Colors.black,
         body: Stack(
           children: [
             Container(
@@ -99,35 +98,32 @@ class _EmberFriendshimpanionLWidgetState
                       onTap: () async {
                         context.pop();
                       },
-                      child: Container(
-                        width: 24.0,
-                        height: 24.0,
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                            fit: BoxFit.cover,
-                            image: Image.asset(
-                              'assets/images/outdoorSpiritChatroomlogue.png',
-                            ).image,
-                          ),
-                        ),
+                      child: FutureBuilder(
+                         future: wildEchoVoiceCluster.campBondVoiceJourney('outdoorSpiritChatroomlogue.png'), 
+                        builder: (context, asyncSnapshot) {
+                           if (!asyncSnapshot.hasData) return const SizedBox(); 
+                          return Container(
+                            width: 24.0,
+                            height: 24.0,
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                fit: BoxFit.cover,
+                                 image: FileImage(File(asyncSnapshot.data!)),
+                              ),
+                            ),
+                          );
+                        }
                       ),
                     ),
                     Text(
                       '${'bd5086ea20069e30388da334e29a9990'.shieldDecode()}',
-                      style: culturalAdaptationCoordinator.of(context).bodyMedium.override(
-                            font: GoogleFonts.poppins(
-                              fontWeight: FontWeight.w800,
-                              fontStyle: culturalAdaptationCoordinator.of(context)
-                                  .bodyMedium
-                                  .fontStyle,
-                            ),
+                      style:TextStyle (
+                        
                             color: Colors.black,
                             fontSize: 20.0,
                             letterSpacing: 0.0,
                             fontWeight: FontWeight.w800,
-                            fontStyle: culturalAdaptationCoordinator.of(context)
-                                .bodyMedium
-                                .fontStyle,
+                         
                           ),
                     ),
                     Container(
@@ -153,20 +149,13 @@ class _EmberFriendshimpanionLWidgetState
                     children: [
                       Text(
                         '${'1975d98fc7c4556d181a4a54e626ad82'.shieldDecode()}',
-                        style: culturalAdaptationCoordinator.of(context).bodyMedium.override(
-                              font: GoogleFonts.inter(
-                                fontWeight: FontWeight.w600,
-                                fontStyle: culturalAdaptationCoordinator.of(context)
-                                    .bodyMedium
-                                    .fontStyle,
-                              ),
+                        style: TextStyle(
+                               
                               color: Color(0xBF000000),
                               fontSize: 16.0,
                               letterSpacing: 0.0,
                               fontWeight: FontWeight.w600,
-                              fontStyle: culturalAdaptationCoordinator.of(context)
-                                  .bodyMedium
-                                  .fontStyle,
+                           
                             ),
                       ),
                       Padding(
@@ -196,55 +185,20 @@ class _EmberFriendshimpanionLWidgetState
                                 obscureText: false,
                                 decoration: InputDecoration(
                                     isDense: true,
-                                    labelStyle: culturalAdaptationCoordinator.of(context)
-                                        .labelMedium
-                                        .override(
-                                          font: GoogleFonts.inter(
-                                            fontWeight:
-                                                culturalAdaptationCoordinator.of(context)
-                                                    .labelMedium
-                                                    .fontWeight,
-                                            fontStyle:
-                                                culturalAdaptationCoordinator.of(context)
-                                                    .labelMedium
-                                                    .fontStyle,
-                                          ),
+                                    labelStyle: TextStyle(
+                                        
+                                            
                                           color: Colors.black,
                                           letterSpacing: 0.0,
-                                          fontWeight:
-                                              culturalAdaptationCoordinator.of(context)
-                                                  .labelMedium
-                                                  .fontWeight,
-                                          fontStyle:
-                                              culturalAdaptationCoordinator.of(context)
-                                                  .labelMedium
-                                                  .fontStyle,
+                                          
                                         ),
                                     hintText:
                                         '${'c5279a060d4b4dc2f53517e86cd97e58635f272b3a8f07640185db5a7e06534b'.shieldDecode()}',
-                                    hintStyle: culturalAdaptationCoordinator.of(context)
-                                        .labelMedium
-                                        .override(
-                                          font: GoogleFonts.poppins(
-                                            fontWeight:
-                                                culturalAdaptationCoordinator.of(context)
-                                                    .labelMedium
-                                                    .fontWeight,
-                                            fontStyle:
-                                                culturalAdaptationCoordinator.of(context)
-                                                    .labelMedium
-                                                    .fontStyle,
-                                          ),
+                                    hintStyle:TextStyle(
+                                        
                                           color: Color(0x33000000),
                                           letterSpacing: 0.0,
-                                          fontWeight:
-                                              culturalAdaptationCoordinator.of(context)
-                                                  .labelMedium
-                                                  .fontWeight,
-                                          fontStyle:
-                                              culturalAdaptationCoordinator.of(context)
-                                                  .labelMedium
-                                                  .fontStyle,
+                                        
                                         ),
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -263,7 +217,7 @@ class _EmberFriendshimpanionLWidgetState
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color:
-                                            culturalAdaptationCoordinator.of(context).error,
+                                            Color(0xFFFF5963),
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(8.0),
@@ -271,38 +225,23 @@ class _EmberFriendshimpanionLWidgetState
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color:
-                                            culturalAdaptationCoordinator.of(context).error,
+                                           Color(0xFFFF5963),
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(8.0),
                                     ),
                                     filled: true,
                                     fillColor: Colors.transparent),
-                                style: culturalAdaptationCoordinator.of(context)
-                                    .bodyMedium
-                                    .override(
-                                      font: GoogleFonts.inter(
-                                        fontWeight: culturalAdaptationCoordinator.of(context)
-                                            .bodyMedium
-                                            .fontWeight,
-                                        fontStyle: culturalAdaptationCoordinator.of(context)
-                                            .bodyMedium
-                                            .fontStyle,
-                                      ),
+                                style:TextStyle(
+                                      
                                       color: Colors.black,
                                       letterSpacing: 0.0,
-                                      fontWeight: culturalAdaptationCoordinator.of(context)
-                                          .bodyMedium
-                                          .fontWeight,
-                                      fontStyle: culturalAdaptationCoordinator.of(context)
-                                          .bodyMedium
-                                          .fontStyle,
+                                     
                                     ),
                                 cursorColor:
-                                    culturalAdaptationCoordinator.of(context).primaryText,
+                                    Color(0xFF14181B),
                                 enableInteractiveSelection: true,
-                                validator: firelightConnectionSphere
-                                    .asValidator(context),
+                              
                               ),
                             ),
                           ),
@@ -314,20 +253,13 @@ class _EmberFriendshimpanionLWidgetState
                         child: Text(
                           '${'723af217678e8339cdb20ec8780d0fb4'.shieldDecode()}',
                           style:
-                              culturalAdaptationCoordinator.of(context).bodyMedium.override(
-                                    font: GoogleFonts.inter(
-                                      fontWeight: FontWeight.w600,
-                                      fontStyle: culturalAdaptationCoordinator.of(context)
-                                          .bodyMedium
-                                          .fontStyle,
-                                    ),
+                              TextStyle(
+                                  
                                     color: Color(0xBF000000),
                                     fontSize: 16.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
-                                    fontStyle: culturalAdaptationCoordinator.of(context)
-                                        .bodyMedium
-                                        .fontStyle,
+                                
                                   ),
                         ),
                       ),
@@ -362,61 +294,19 @@ class _EmberFriendshimpanionLWidgetState
                                       obscureText: wildernessCircleConversations,
                                       decoration: InputDecoration(
                                           isDense: true,
-                                          labelStyle: culturalAdaptationCoordinator.of(
-                                                  context)
-                                              .labelMedium
-                                              .override(
-                                                font: GoogleFonts.inter(
-                                                  fontWeight:
-                                                      culturalAdaptationCoordinator.of(
-                                                              context)
-                                                          .labelMedium
-                                                          .fontWeight,
-                                                  fontStyle:
-                                                      culturalAdaptationCoordinator.of(
-                                                              context)
-                                                          .labelMedium
-                                                          .fontStyle,
-                                                ),
+                                          labelStyle:TextStyle(
+                                               
                                                 color: Colors.black,
                                                 letterSpacing: 0.0,
-                                                fontWeight:
-                                                    culturalAdaptationCoordinator.of(context)
-                                                        .labelMedium
-                                                        .fontWeight,
-                                                fontStyle:
-                                                    culturalAdaptationCoordinator.of(context)
-                                                        .labelMedium
-                                                        .fontStyle,
+                                              
                                               ),
                                           hintText:
                                               '${'a24024e5c5592d26144be051bdd0d5b0'.shieldDecode()}',
-                                          hintStyle: culturalAdaptationCoordinator.of(
-                                                  context)
-                                              .labelMedium
-                                              .override(
-                                                font: GoogleFonts.inter(
-                                                  fontWeight:
-                                                      culturalAdaptationCoordinator.of(
-                                                              context)
-                                                          .labelMedium
-                                                          .fontWeight,
-                                                  fontStyle:
-                                                      culturalAdaptationCoordinator.of(
-                                                              context)
-                                                          .labelMedium
-                                                          .fontStyle,
-                                                ),
+                                          hintStyle: TextStyle(
+                                               
                                                 color: Color(0x33000000),
                                                 letterSpacing: 0.0,
-                                                fontWeight:
-                                                    culturalAdaptationCoordinator.of(context)
-                                                        .labelMedium
-                                                        .fontWeight,
-                                                fontStyle:
-                                                    culturalAdaptationCoordinator.of(context)
-                                                        .labelMedium
-                                                        .fontStyle,
+                                               
                                               ),
                                           enabledBorder: OutlineInputBorder(
                                             borderSide: BorderSide(
@@ -437,8 +327,7 @@ class _EmberFriendshimpanionLWidgetState
                                           errorBorder: OutlineInputBorder(
                                             borderSide: BorderSide(
                                               color:
-                                                  culturalAdaptationCoordinator.of(context)
-                                                      .error,
+                                                  Color(0xFFFF5963),
                                               width: 1.0,
                                             ),
                                             borderRadius:
@@ -447,9 +336,8 @@ class _EmberFriendshimpanionLWidgetState
                                           focusedErrorBorder:
                                               OutlineInputBorder(
                                             borderSide: BorderSide(
-                                              color:
-                                                  culturalAdaptationCoordinator.of(context)
-                                                      .error,
+                                               color:
+                                                  Color(0xFFFF5963),
                                               width: 1.0,
                                             ),
                                             borderRadius:
@@ -457,35 +345,15 @@ class _EmberFriendshimpanionLWidgetState
                                           ),
                                           filled: true,
                                           fillColor: Colors.transparent),
-                                      style: culturalAdaptationCoordinator.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            font: GoogleFonts.inter(
-                                              fontWeight:
-                                                  culturalAdaptationCoordinator.of(context)
-                                                      .bodyMedium
-                                                      .fontWeight,
-                                              fontStyle:
-                                                  culturalAdaptationCoordinator.of(context)
-                                                      .bodyMedium
-                                                      .fontStyle,
-                                            ),
+                                      style: TextStyle(
+                                          
                                             color: Colors.black,
                                             letterSpacing: 0.0,
-                                            fontWeight:
-                                                culturalAdaptationCoordinator.of(context)
-                                                    .bodyMedium
-                                                    .fontWeight,
-                                            fontStyle:
-                                                culturalAdaptationCoordinator.of(context)
-                                                    .bodyMedium
-                                                    .fontStyle,
+                                           
                                           ),
-                                      cursorColor: culturalAdaptationCoordinator.of(context)
-                                          .primaryText,
+                                      cursorColor: Color(0xFF14181B),
                                       enableInteractiveSelection: true,
-                                      validator: constellationDialogueCircle
-                                          .asValidator(context),
+                                    
                                     ),
                                   ),
                                 ),
@@ -527,10 +395,10 @@ class _EmberFriendshimpanionLWidgetState
                           hoverColor: Colors.transparent,
                           highlightColor: Colors.transparent,
                           onTap: () async {
-                            final email = horizonWhisperCampfires.text.trim();
-                            final password = kindredFlameConversations.text.trim();
+                            final email = horizonWhisperCampfires?.text.trim();
+                            final password = kindredFlameConversations?.text.trim();
 
-                            if (email.isEmpty || password.isEmpty) {
+                            if (email!.isEmpty || password!.isEmpty) {
                               EasyLoading.showInfo(
                                   '${'2652c91de8700bc00de4bdccf1751f81f48b309552dc4d116d846be8b57656326a50eaf013a796aa131eeecb7b5f62d4'.shieldDecode()}');
                               return;
@@ -593,22 +461,13 @@ class _EmberFriendshimpanionLWidgetState
                             alignment: AlignmentDirectional(0.0, 0.0),
                             child: Text(
                               '${'0e73ed712bb391b206d18dc1a69ed4e5'.shieldDecode()}',
-                              style: culturalAdaptationCoordinator.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    font: GoogleFonts.poppins(
-                                      fontWeight: FontWeight.bold,
-                                      fontStyle: culturalAdaptationCoordinator.of(context)
-                                          .bodyMedium
-                                          .fontStyle,
-                                    ),
+                              style: TextStyle(
+                                 
                                     color: Colors.white,
                                     fontSize: 18.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.bold,
-                                    fontStyle: culturalAdaptationCoordinator.of(context)
-                                        .bodyMedium
-                                        .fontStyle,
+                                  
                                   ),
                             ),
                           ),

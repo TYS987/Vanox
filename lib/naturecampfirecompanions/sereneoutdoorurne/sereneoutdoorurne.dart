@@ -1,7 +1,6 @@
 import 'package:go_router/go_router.dart';
 import 'package:vanox/starlightBondingAdvisor/pineConeBondingCircle.dart';
-
-import '../../localizationExperienceFacilitator/securityEnforcementFramework.dart';
+import 'package:vanox/wildernessTrailInspiration.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -69,7 +68,7 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
                     context.pushNamed(
                         '${'3151364a29b492e564c24233e7c1e20783a113ca4fec230b22784b54a7a24e1f'.shieldDecode()}');
 
-                    safeSetState(() {});
+                    setState(() {});
                   },
                   child: Container(
                     width: 24.0,
@@ -113,7 +112,7 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
                     context.pushNamed(
                         '${'319f972e21171bffad70a0afc0074645fa8c5b6a6d347af2b364c4f479186cca'.shieldDecode()}');
 
-                    safeSetState(() {});
+                    setState(() {});
                   },
                   child: Container(
                     width: 24.0,
@@ -157,7 +156,7 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
                     context.pushNamed(
                         '${'4eb99bd3d199c07dec3a1b5152f0c901760dc17317c8f24ef1584fe32705d3fb'.shieldDecode()}');
 
-                    safeSetState(() {});
+                    setState(() {});
                   },
                   child: Container(
                     width: 24.0,
@@ -201,7 +200,7 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
                     context.pushNamed(
                         '${'41d91cf2964be947f2527b236edb942a8f1397d5595d7186ec717e2381db97e0'.shieldDecode()}');
 
-                    safeSetState(() {});
+                    setState(() {});
                   },
                   child: Container(
                     width: 24.0,

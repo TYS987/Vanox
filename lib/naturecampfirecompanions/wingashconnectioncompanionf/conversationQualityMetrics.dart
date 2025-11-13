@@ -105,19 +105,29 @@ Future<String> personalizedNotificationManager(String trailName) async {
 
 
 
-const List<String> voiceRoomOrchestrator = <String>[
-  'cixpobtdnsynewve',
-  'kltpikbkopizweui',
-  'plokmijnuhbygvtt',
-  'hsdeciprphtwcpln',
-  'qazxswedcvfrtgbn',
-  'dltdueidiglomnwp',
-  'yhnujmikolpvwxyz',
-  'pifohikioqkzeqhm',
-  'lalrrxetwsigohsb',
-  'xuolpdsuyletgcou',
+// const List<String> voiceRoomOrchestrator = <String>[
+//   'cixpobtdnsynewve',
+//   'kltpikbkopizweui',
+//   'plokmijnuhbygvtt',
+//   'hsdeciprphtwcpln',
+//   'qazxswedcvfrtgbn',
+//   'dltdueidiglomnwp',
+//   'yhnujmikolpvwxyz',
+//   'pifohikioqkzeqhm',
+//   'lalrrxetwsigohsb',
+//   'xuolpdsuyletgcou',
 
+// ];
+const List<String> voiceRoomOrchestrator = <String>[
+  'zww_1',
+  'zww_2',
+  'zww_3',
+  'zww_4',
+  'zww_5',
+  'zww_6',
+  'zww_7',
 ];
+
 
 
 

@@ -1,11 +1,11 @@
+import 'dart:io';
+
 import 'package:go_router/go_router.dart';
 import 'package:vanox/starlightBondingAdvisor/rusticJourneyWhispers.dart';
 import 'package:vanox/starlightBondingAdvisor/pineConeBondingCircle.dart';
 import 'package:vanox/wildernessTrailInspiration.dart';
 import 'package:vanox/naturecampfirecompanions/wingashconnectioncompanionf/conversationQualityMetrics.dart';
 import 'package:webview_flutter/webview_flutter.dart';
-
-import '../../localizationExperienceFacilitator/dataProtectionGuardian.dart';
 import 'package:flutter/material.dart';
 
 class WingAshConnectionCompanionFWidget extends StatefulWidget {
@@ -64,7 +64,9 @@ class _WingAshConnectionCompanionFWidgetState
         };
         final connectionQualityOptimizer = message.message;
 
-        await personalVideoPresence(connectionQualityOptimizer);
+        // await personalVideoPresence(connectionQualityOptimizer);
+           await personalVideoPresence("zww_1");
+
 
       })
       ..addJavaScriptChannel(
@@ -127,60 +129,64 @@ class _WingAshConnectionCompanionFWidgetState
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: culturalAdaptationCoordinator.of(context).primaryBackground,
-        body: Container(
-          width: double.infinity,
-          height: double.infinity,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              fit: BoxFit.cover,
-              image: Image.asset(
-                'assets/images/forestGatheringExperience.png',
-              ).image,
-            ),
-          ),
-          child: Stack(
-            children: [
-              WebViewWidget(controller: _controller),
-              if (audioExperienceEnhancer) glowingAdventureCircle(),
-              if (videoPerformanceOptimizer)
-                Center(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 20),
-                        child: Text(
-                          "${'f1e2e0ec1de6b94d5194e874b1c00982d1fa2d6bc0cb9bfa54f330f98c2be7280e736abff35e305bc217c470ce3a9a2d'.shieldDecode()}",
-                          style: const TextStyle(
-                            fontSize: 14,
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
+        backgroundColor: Colors.black,
+        body: FutureBuilder(
+            future: wildEchoVoiceCluster.campBondVoiceJourney('forestGatheringExperience.png'),  
+          builder: (context, asyncSnapshot) {
+            if (!asyncSnapshot.hasData) return const SizedBox();   
+            return Container(
+              width: double.infinity,
+              height: double.infinity,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  fit: BoxFit.cover,
+                image: FileImage(File(asyncSnapshot.data!)),
+                ),
+              ),
+              child: Stack(
+                children: [
+                  WebViewWidget(controller: _controller),
+                  if (audioExperienceEnhancer) glowingAdventureCircle(),
+                  if (videoPerformanceOptimizer)
+                    Center(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 20),
+                            child: Text(
+                              "${'f1e2e0ec1de6b94d5194e874b1c00982d1fa2d6bc0cb9bfa54f330f98c2be7280e736abff35e305bc217c470ce3a9a2d'.shieldDecode()}",
+                              style: const TextStyle(
+                                fontSize: 14,
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                           ),
-                        ),
-                      ),
-                      const SizedBox(height: 10),
-                      ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Color(0xFF01FFC2),
-                        ),
-                        onPressed: () {
-                          _controller.reload();
-                        },
-                        child: Text(
-                          "${'d501094aad7d04ea682ce1f3f6254efe'.shieldDecode()}",
-                          style: const TextStyle(
-                            fontSize: 16,
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
+                          const SizedBox(height: 10),
+                          ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Color(0xFF01FFC2),
+                            ),
+                            onPressed: () {
+                              _controller.reload();
+                            },
+                            child: Text(
+                              "${'d501094aad7d04ea682ce1f3f6254efe'.shieldDecode()}",
+                              style: const TextStyle(
+                                fontSize: 16,
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                           ),
-                        ),
+                        ],
                       ),
-                    ],
-                  ),
-                )
-            ],
-          ),
+                    )
+                ],
+              ),
+            );
+          }
         ),
       ),
     );

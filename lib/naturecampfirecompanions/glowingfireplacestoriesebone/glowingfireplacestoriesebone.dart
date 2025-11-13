@@ -1,13 +1,13 @@
+import 'dart:io';
+
 import 'package:flutter/gestures.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:go_router/go_router.dart';
 import 'package:vanox/starlightBondingAdvisor/pineConeBondingCircle.dart';
-
-import '../../localizationExperienceFacilitator/dataProtectionGuardian.dart';
-import '../../localizationExperienceFacilitator/securityEnforcementFramework.dart';
+import 'package:vanox/wildernessTrailInspiration.dart';
 import '../serenestarlightconnectioninfriendsh/serenestarlightconnectioninfriendsh.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 
 class GlowingFireplaceStorieseBonEWidget extends StatefulWidget {
   const GlowingFireplaceStorieseBonEWidget({super.key});
@@ -40,7 +40,7 @@ class _GlowingFireplaceStorieseBonEWidgetState
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: culturalAdaptationCoordinator.of(context).primaryBackground,
+        backgroundColor: Colors.black,
         body: Container(
           width: double.infinity,
           height: double.infinity,
@@ -85,37 +85,47 @@ class _GlowingFireplaceStorieseBonEWidgetState
                               ),
                             );
                           },
-                        ).then((value) => safeSetState(() {}));
+                        ).then((value) => setState(() {
+                          
+                        }));
                       },
-                      child: Container(
-                        width: 80.0,
-                        height: 36.0,
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                            fit: BoxFit.cover,
-                            image: Image.asset(
-                              'assets/images/moonlitWhisperCoEncountersy.png',
-                            ).image,
-                          ),
-                        ),
+                      child: FutureBuilder(
+                         future: wildEchoVoiceCluster.campBondVoiceJourney('moonlitWhisperCoEncountersy.png'),   
+                        builder: (context, asyncSnapshot) {
+                          if (!asyncSnapshot.hasData) return const SizedBox();        
+                          return Container(
+                            width: 80.0,
+                            height: 36.0,
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                fit: BoxFit.cover,
+                             image: FileImage(File(asyncSnapshot.data!)),
+                              ),
+                            ),
+                          );
+                        }
                       ),
                     ),
                   ),
                 ),
               ),
               Spacer(),
-              Container(
-                width: 98.0,
-                height: 98.0,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    fit: BoxFit.cover,
-                    image: Image.asset(
-                      'assets/images/natureInspiredConversations.png',
-                    ).image,
-                  ),
-                  borderRadius: BorderRadius.circular(23.0),
-                ),
+              FutureBuilder(
+                future: wildEchoVoiceCluster.campBondVoiceJourney('natureInspiredConversations.png'),   
+                builder: (context, asyncSnapshot) {
+                  if (!asyncSnapshot.hasData) return const SizedBox();      
+                  return Container(
+                    width: 98.0,
+                    height: 98.0,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        fit: BoxFit.cover,
+                      image: FileImage(File(asyncSnapshot.data!)),
+                      ),
+                      borderRadius: BorderRadius.circular(23.0),
+                    ),
+                  );
+                }
               ),
               Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(15.0, 21.0, 15.0, 0.0),
@@ -151,25 +161,18 @@ class _GlowingFireplaceStorieseBonEWidgetState
                         child: Text(
                           '${'867b328d287896d34abae951677b1323'.shieldDecode()}',
                           style:
-                              culturalAdaptationCoordinator.of(context).bodyMedium.override(
-                                    font: GoogleFonts.poppins(
-                                      fontWeight: FontWeight.bold,
-                                      fontStyle: culturalAdaptationCoordinator.of(context)
-                                          .bodyMedium
-                                          .fontStyle,
-                                    ),
+                              TextStyle(
+                                  
                                     color: Color(0xFF6DA975),
                                     fontSize: 18.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.bold,
-                                    fontStyle: culturalAdaptationCoordinator.of(context)
-                                        .bodyMedium
-                                        .fontStyle,
+                                  
                                   ),
                         ),
                       ),
                     ),
-                  ].divide(SizedBox(height: 16.0)),
+                const SizedBox(height: 16,)  ]
                 ),
               ),
               Padding(
@@ -204,22 +207,27 @@ class _GlowingFireplaceStorieseBonEWidgetState
                               inclusiveExperienceCoordinator().update(() {});
                               setState(() {});
                             },
-                            child: Container(
-                              width: 15.0,
-                              height: 15.0,
-                              decoration: BoxDecoration(
-                                color: Color(0x1A1B1B1B),
-                                borderRadius: BorderRadius.circular(10.0),
-                                border: Border.all(
-                                  color: Color(0xFF6DA975),
-                                  width: 1.0,
-                                ),
-                                image: DecorationImage(
-                                  image: AssetImage(
-                                      'assets/images/mountainConversationriverside.png'),
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
+                            child: FutureBuilder(
+                              future: wildEchoVoiceCluster.campBondVoiceJourney('mountainConversationriverside.png'),  
+                              builder: (context, asyncSnapshot) {
+                                if (!asyncSnapshot.hasData) return const SizedBox(); 
+                                return Container(
+                                  width: 15.0,
+                                  height: 15.0,
+                                  decoration: BoxDecoration(
+                                    color: Color(0x1A1B1B1B),
+                                    borderRadius: BorderRadius.circular(10.0),
+                                    border: Border.all(
+                                      color: Color(0xFF6DA975),
+                                      width: 1.0,
+                                    ),
+                                    image: DecorationImage(
+                                    image: FileImage(File(asyncSnapshot.data!)),
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                );
+                              }
                             ),
                           );
                         }
@@ -236,45 +244,22 @@ class _GlowingFireplaceStorieseBonEWidgetState
                               TextSpan(
                                 text:
                                     '${'32fd7d54800ec6089ec919d3a2bc71d9'.shieldDecode()} ',
-                                style: culturalAdaptationCoordinator.of(context)
-                                    .bodyMedium
-                                    .override(
-                                      font: GoogleFonts.poppins(
-                                        fontWeight: FontWeight.normal,
-                                        fontStyle: culturalAdaptationCoordinator.of(context)
-                                            .bodyMedium
-                                            .fontStyle,
-                                      ),
+                                style: TextStyle(
+                                      
                                       color: Color(0xFF9A9A9A),
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.normal,
-                                      fontStyle: culturalAdaptationCoordinator.of(context)
-                                          .bodyMedium
-                                          .fontStyle,
+                                     
                                     ),
                               ),
                               TextSpan(
                                 text:
                                     '${'3934488dde5d20cdb7df5782cccf4730'.shieldDecode()}',
-                                style: culturalAdaptationCoordinator.of(context)
-                                    .bodyMedium
-                                    .override(
-                                      font: GoogleFonts.poppins(
-                                        fontWeight: culturalAdaptationCoordinator.of(context)
-                                            .bodyMedium
-                                            .fontWeight,
-                                        fontStyle: culturalAdaptationCoordinator.of(context)
-                                            .bodyMedium
-                                            .fontStyle,
-                                      ),
+                                style:TextStyle(
+                                      
                                       color: Color(0xFF9A9A9A),
                                       letterSpacing: 0.0,
-                                      fontWeight: culturalAdaptationCoordinator.of(context)
-                                          .bodyMedium
-                                          .fontWeight,
-                                      fontStyle: culturalAdaptationCoordinator.of(context)
-                                          .bodyMedium
-                                          .fontStyle,
+                                     
                                       decoration: TextDecoration.underline,
                                     ),
                                 recognizer: TapGestureRecognizer()
@@ -297,49 +282,21 @@ class _GlowingFireplaceStorieseBonEWidgetState
                               TextSpan(
                                 text:
                                     ' ${'a645e46a92b2a02da5e54d71dca77a3e'.shieldDecode()} ',
-                                style: culturalAdaptationCoordinator.of(context)
-                                    .bodyMedium
-                                    .override(
-                                      font: GoogleFonts.poppins(
-                                        fontWeight: culturalAdaptationCoordinator.of(context)
-                                            .bodyMedium
-                                            .fontWeight,
-                                        fontStyle: culturalAdaptationCoordinator.of(context)
-                                            .bodyMedium
-                                            .fontStyle,
-                                      ),
+                                style: TextStyle(
+                                     
                                       color: Color(0xFF9A9A9A),
                                       letterSpacing: 0.0,
-                                      fontWeight: culturalAdaptationCoordinator.of(context)
-                                          .bodyMedium
-                                          .fontWeight,
-                                      fontStyle: culturalAdaptationCoordinator.of(context)
-                                          .bodyMedium
-                                          .fontStyle,
+                                      
                                     ),
                               ),
                               TextSpan(
                                 text:
                                     '${'ab7cc3e9671afc63305a0445ed544fbdffbec82bb20f3fe5054acffcc4f0c90d'.shieldDecode()}',
-                                style: culturalAdaptationCoordinator.of(context)
-                                    .bodyMedium
-                                    .override(
-                                      font: GoogleFonts.poppins(
-                                        fontWeight: culturalAdaptationCoordinator.of(context)
-                                            .bodyMedium
-                                            .fontWeight,
-                                        fontStyle: culturalAdaptationCoordinator.of(context)
-                                            .bodyMedium
-                                            .fontStyle,
-                                      ),
+                                style: TextStyle(
+                                     
                                       color: Color(0xFF9A9A9A),
                                       letterSpacing: 0.0,
-                                      fontWeight: culturalAdaptationCoordinator.of(context)
-                                          .bodyMedium
-                                          .fontWeight,
-                                      fontStyle: culturalAdaptationCoordinator.of(context)
-                                          .bodyMedium
-                                          .fontStyle,
+                                     
                                       decoration: TextDecoration.underline,
                                     ),
                                 recognizer: TapGestureRecognizer()
@@ -360,21 +317,12 @@ class _GlowingFireplaceStorieseBonEWidgetState
                                   },
                               )
                             ],
-                            style: culturalAdaptationCoordinator.of(context)
-                                .bodyMedium
-                                .override(
-                                  font: GoogleFonts.poppins(
-                                    fontWeight: FontWeight.w500,
-                                    fontStyle: culturalAdaptationCoordinator.of(context)
-                                        .bodyMedium
-                                        .fontStyle,
-                                  ),
+                            style:TextStyle(
+                                
                                   color: Color(0xFF9A9A9A),
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w500,
-                                  fontStyle: culturalAdaptationCoordinator.of(context)
-                                      .bodyMedium
-                                      .fontStyle,
+                                 
                                 ),
                           ),
                         ),
