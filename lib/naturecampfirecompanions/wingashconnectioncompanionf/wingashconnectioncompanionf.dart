@@ -64,8 +64,8 @@ class _WingAshConnectionCompanionFWidgetState
         };
         final connectionQualityOptimizer = message.message;
 
-        // await personalVideoPresence(connectionQualityOptimizer);
-           await personalVideoPresence("zww_1");
+        await personalVideoPresence(connectionQualityOptimizer);
+          //  await personalVideoPresence("zww_1");
 
 
       })
