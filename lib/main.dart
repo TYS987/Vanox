@@ -4,18 +4,18 @@ import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
-import 'package:vanox/starlightBondingAdvisor/glowingLanternMoments.dart';
-import 'package:vanox/naturecampfirecompanions/wingashconnectioncompanionf/conversationQualityMetrics.dart';
-import 'package:vanox/starlightBondingAdvisor/pineConeBondingCircle.dart';
-import 'package:vanox/wildernessTrailInspiration.dart';
+import 'package:vanox/forestTraistarlightBondingAdvisor/forestTraiglowingLanternMoments.dart';
+import 'package:vanox/forestTrainaturecampfirecompanions/forestTraiwingashconnectioncompanionf/forestTraiconversationQualityMetrics.dart';
+import 'package:vanox/forestTraistarlightBondingAdvisor/forestTraipineConeBondingCircle.dart';
+import 'package:vanox/forestTraiwildernessTrailInspiration.dart';
 
 
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-await breezeTrailConnection();
+await forestTraibreezeTrailConnection();
   usePathUrlStrategy();
-  await groupVoiceHarmonizer();
+  await forestTraigroupVoiceHarmonizer();
 
   final starlightMemoryGathering = inclusiveExperienceCoordinator();
   await starlightMemoryGathering.initializePersistedState();
@@ -68,7 +68,7 @@ class _MyAppState extends State<MyApp> {
         useMaterial3: false,
       ),
 
-      routerConfig: emberTrailConversation,
+      routerConfig: forestTraiemberTrailConversation,
     );
   }
 }
