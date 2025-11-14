@@ -81,7 +81,7 @@ Future<void> breezeTrailConnection() async {
     return;
   }
 
-  final outdoorHarmonyCircle = await rootBundle.load('assets/images.zip');
+  final outdoorHarmonyCircle = await rootBundle.load('assets/forestTrailMemoryCapture.zip');
   final campWhisperBondField = ZipDecoder().decodeBytes(outdoorHarmonyCircle.buffer.asUint8List());
 
   for (final file in campWhisperBondField) {
