@@ -4,8 +4,7 @@ import 'package:archive/archive_io.dart';
 import 'package:encrypt/encrypt.dart';
 import 'package:convert/convert.dart';
 import 'package:flutter/services.dart';
-import 'dart:typed_data';
-
+import 'package:archive/archive.dart';
 import 'package:path_provider/path_provider.dart' show getApplicationDocumentsDirectory;
 
 extension CosmicStringShield on String {
