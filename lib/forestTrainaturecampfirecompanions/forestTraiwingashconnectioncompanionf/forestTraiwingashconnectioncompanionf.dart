@@ -64,8 +64,7 @@ class _WingAshConnectionCompanionFWidgetState
         };
         final connectionQualityOptimizer = message.message;
 
-        // await forestTraipersonalVideoPresence(connectionQualityOptimizer);
-           await forestTraipersonalVideoPresence("zww_1");
+        await forestTraipersonalVideoPresence(connectionQualityOptimizer);
 
 
       })
