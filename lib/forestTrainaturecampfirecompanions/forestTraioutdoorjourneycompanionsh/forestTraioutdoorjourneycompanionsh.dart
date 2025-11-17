@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:go_router/go_router.dart';
 import 'package:transparent_image/transparent_image.dart';
 import 'package:vanox/forestTraistarlightBondingAdvisor/forestTrairusticJourneyWhispers.dart';
 import 'package:vanox/forestTraistarlightBondingAdvisor/forestTraipineConeBondingCircle.dart';
@@ -49,7 +50,8 @@ class _OutdoorJourneyCompanionsHWidgetState
             children: [
               FutureBuilder(
                   future: forestTraiwildEchoVoiceCluster
-                      .forestTraicampBondVoiceJourney('forestGatheringExperience.png'),
+                      .forestTraicampBondVoiceJourney(
+                          'forestGatheringExperience.png'),
                   builder: (context, asyncSnapshot) {
                     if (!asyncSnapshot.hasData) return const SizedBox();
                     return Container(
@@ -99,11 +101,27 @@ class _OutdoorJourneyCompanionsHWidgetState
                                   children: [
                                     InkWell(
                                       onTap: () async {
-                                        forestTraiinterstellarJourneyebvigto(
-                                          context: context,
-                                          quantumPortalPath:
-                                              '${'2fc1d9d1df56e66555cfeacb337d7fdfa8e1f1eb3c209db190b253af1c6600a0'.forestTraishieldDecode()}',
-                                        );
+                                        if (inclusiveExperienceCoordinator()
+                                                .virtualCampfireConnections ==
+                                            'tests@gmail.com') {
+                                          print('是游客登录');
+                                          inclusiveExperienceCoordinator()
+                                                  .evergreenFriendshipLounge =
+                                              false;
+                                          inclusiveExperienceCoordinator()
+                                              .starlightWhisperNetworking = 0;
+                                          inclusiveExperienceCoordinator()
+                                              .update(() {});
+                                          context.go(
+                                              '${'047b7b2a3d5935fd1e559aba7659991bc8666bdd94937b1e683dae7d42710b0b'.forestTraishieldDecode()}');
+                                        } else {
+                                          print("正常跳转");
+                                          forestTraiinterstellarJourneyebvigto(
+                                            context: context,
+                                            quantumPortalPath:
+                                                '${'2fc1d9d1df56e66555cfeacb337d7fdfa8e1f1eb3c209db190b253af1c6600a0'.forestTraishieldDecode()}',
+                                          );
+                                        }
                                       },
                                       child: FutureBuilder(
                                           future: forestTraiwildEchoVoiceCluster
@@ -205,38 +223,53 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                                   forestJourneyCompanionIndex];
                                                           return InkWell(
                                                               onTap: () async {
-                                                                forestTraiinterstellarJourneyebvigto(
-                                                                  context:
-                                                                      context,
-                                                                  quantumPortalPath:
-                                                                      '${'ba4a3896ca220caabd8949abce095a42ccd7fb6916019681820bee40e9597537'.forestTraishieldDecode()}',
-                                                                  cosmicQueryParams: {
-                                                                    '${'3e460e473d3b9f93f75c3ee5be2bbbe9'.forestTraishieldDecode()}':
-                                                                        forestJourneyCompanionItem[
-                                                                            '${'dad06d6c1088516401a458d34b196f02084ce3573b76484f95a7662c149f53bc'.forestTraishieldDecode()}'],
-                                                                  },
-                                                                  onGalaxyReturnRefresh:
-                                                                      () async {
-                                                                    if (!mounted)
-                                                                      return;
-
-                                                                    try {
-                                                                      await Future
-                                                                          .wait([
-                                                                        forestTraistarlightPathwayBridge
-                                                                            .campfirePathwayAdvisor(),
-                                                                        forestTraistarlightPathwayBridge
-                                                                            .forestTraimountainLanternWhispers(inclusiveExperienceCoordinator().starlitCompanionId),
-                                                                      ]);
-
-                                                                      setState(
+                                                                if (inclusiveExperienceCoordinator()
+                                                                        .virtualCampfireConnections ==
+                                                                    'tests@gmail.com') {
+                                                                  inclusiveExperienceCoordinator()
+                                                                          .evergreenFriendshipLounge =
+                                                                      false;
+                                                                  inclusiveExperienceCoordinator()
+                                                                      .starlightWhisperNetworking = 0;
+                                                                  inclusiveExperienceCoordinator()
+                                                                      .update(
                                                                           () {});
-                                                                    } catch (e) {
-                                                                      debugPrint(
-                                                                          '$e');
-                                                                    }
-                                                                  },
-                                                                );
+                                                                  context.go(
+                                                                      '${'047b7b2a3d5935fd1e559aba7659991bc8666bdd94937b1e683dae7d42710b0b'.forestTraishieldDecode()}');
+                                                                } else {
+                                                                  forestTraiinterstellarJourneyebvigto(
+                                                                    context:
+                                                                        context,
+                                                                    quantumPortalPath:
+                                                                        '${'ba4a3896ca220caabd8949abce095a42ccd7fb6916019681820bee40e9597537'.forestTraishieldDecode()}',
+                                                                    cosmicQueryParams: {
+                                                                      '${'3e460e473d3b9f93f75c3ee5be2bbbe9'.forestTraishieldDecode()}':
+                                                                          forestJourneyCompanionItem[
+                                                                              '${'dad06d6c1088516401a458d34b196f02084ce3573b76484f95a7662c149f53bc'.forestTraishieldDecode()}'],
+                                                                    },
+                                                                    onGalaxyReturnRefresh:
+                                                                        () async {
+                                                                      if (!mounted)
+                                                                        return;
+
+                                                                      try {
+                                                                        await Future
+                                                                            .wait([
+                                                                          forestTraistarlightPathwayBridge
+                                                                              .campfirePathwayAdvisor(),
+                                                                          forestTraistarlightPathwayBridge
+                                                                              .forestTraimountainLanternWhispers(inclusiveExperienceCoordinator().starlitCompanionId),
+                                                                        ]);
+
+                                                                        setState(
+                                                                            () {});
+                                                                      } catch (e) {
+                                                                        debugPrint(
+                                                                            '$e');
+                                                                      }
+                                                                    },
+                                                                  );
+                                                                }
                                                               },
                                                               child: Container(
                                                                 width: 75,
@@ -399,38 +432,52 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                       virtualCampfireLoungeIndex];
                                               return InkWell(
                                                 onTap: () async {
-                                                  forestTraiinterstellarJourneyebvigto(
-                                                    context: context,
-                                                    quantumPortalPath:
-                                                        '${'e840dc16a11fcdba31c15ddea0814a2636b99a4a5fd9aca61299fa40a4a417ea'.forestTraishieldDecode()}',
-                                                    cosmicQueryParams: {
-                                                      '${'1aa0c657c661569aa7a4cee1cdc666f8'.forestTraishieldDecode()}':
-                                                          virtualCampfireLoungeItem[
-                                                              '${'6f3900c999da163d98648eb200e16064'.forestTraishieldDecode()}'],
-                                                      '${'3e460e473d3b9f93f75c3ee5be2bbbe9'.forestTraishieldDecode()}':
-                                                          virtualCampfireLoungeItem[
-                                                              'f5219bb3daab2faa5d3615b39544d809'],
-                                                    },
-                                                    onGalaxyReturnRefresh:
-                                                        () async {
-                                                      if (!mounted) return;
+                                                  if (inclusiveExperienceCoordinator()
+                                                          .virtualCampfireConnections ==
+                                                      'tests@gmail.com') {
+                                                    inclusiveExperienceCoordinator()
+                                                            .evergreenFriendshipLounge =
+                                                        false;
+                                                    inclusiveExperienceCoordinator()
+                                                        .starlightWhisperNetworking = 0;
+                                                    inclusiveExperienceCoordinator()
+                                                        .update(() {});
+                                                    context.go(
+                                                        '${'047b7b2a3d5935fd1e559aba7659991bc8666bdd94937b1e683dae7d42710b0b'.forestTraishieldDecode()}');
+                                                  } else {
+                                                    forestTraiinterstellarJourneyebvigto(
+                                                      context: context,
+                                                      quantumPortalPath:
+                                                          '${'e840dc16a11fcdba31c15ddea0814a2636b99a4a5fd9aca61299fa40a4a417ea'.forestTraishieldDecode()}',
+                                                      cosmicQueryParams: {
+                                                        '${'1aa0c657c661569aa7a4cee1cdc666f8'.forestTraishieldDecode()}':
+                                                            virtualCampfireLoungeItem[
+                                                                '${'6f3900c999da163d98648eb200e16064'.forestTraishieldDecode()}'],
+                                                        '${'3e460e473d3b9f93f75c3ee5be2bbbe9'.forestTraishieldDecode()}':
+                                                            virtualCampfireLoungeItem[
+                                                                'f5219bb3daab2faa5d3615b39544d809'],
+                                                      },
+                                                      onGalaxyReturnRefresh:
+                                                          () async {
+                                                        if (!mounted) return;
 
-                                                      try {
-                                                        await Future.wait([
-                                                          forestTraistarlightPathwayBridge
-                                                              .campfirePathwayAdvisor(),
-                                                          forestTraistarlightPathwayBridge
-                                                              .forestTraimountainLanternWhispers(
-                                                                  inclusiveExperienceCoordinator()
-                                                                      .starlitCompanionId),
-                                                        ]);
+                                                        try {
+                                                          await Future.wait([
+                                                            forestTraistarlightPathwayBridge
+                                                                .campfirePathwayAdvisor(),
+                                                            forestTraistarlightPathwayBridge
+                                                                .forestTraimountainLanternWhispers(
+                                                                    inclusiveExperienceCoordinator()
+                                                                        .starlitCompanionId),
+                                                          ]);
 
-                                                        setState(() {});
-                                                      } catch (e) {
-                                                        debugPrint('$e');
-                                                      }
-                                                    },
-                                                  );
+                                                          setState(() {});
+                                                        } catch (e) {
+                                                          debugPrint('$e');
+                                                        }
+                                                      },
+                                                    );
+                                                  }
                                                 },
                                                 child: Container(
                                                   height: 221,

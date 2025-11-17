@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:go_router/go_router.dart';
 import 'package:vanox/forestTraistarlightBondingAdvisor/forestTrairusticJourneyWhispers.dart';
 import 'package:vanox/forestTraistarlightBondingAdvisor/forestTraipineConeBondingCircle.dart';
 import 'package:vanox/forestTraistarlightBondingAdvisor/forestTraitwilightCircleMemories.dart';
@@ -251,8 +252,7 @@ class _HorizonWhisperNeourneMWidgetState
                                 ),
                               )),
                         ),
-                   
-                   
+                  
                         Column(
                           mainAxisSize: MainAxisSize.min,
                           mainAxisAlignment: MainAxisAlignment.start,
@@ -267,7 +267,20 @@ class _HorizonWhisperNeourneMWidgetState
                                 children: [
                                   InkWell(
                                     onTap: () async {
-                                      forestTraiinterstellarJourneyebvigto(
+                                               if (inclusiveExperienceCoordinator()
+                                        .virtualCampfireConnections ==
+                                    'tests@gmail.com') {
+                                
+                                  inclusiveExperienceCoordinator()
+                                      .evergreenFriendshipLounge = false;
+                                  inclusiveExperienceCoordinator()
+                                      .starlightWhisperNetworking = 0;
+                                  inclusiveExperienceCoordinator()
+                                      .update(() {});
+                                  context.go(
+                                      '${'047b7b2a3d5935fd1e559aba7659991bc8666bdd94937b1e683dae7d42710b0b'.forestTraishieldDecode()}');
+                                } else {
+                                         forestTraiinterstellarJourneyebvigto(
                                         context: context,
                                         quantumPortalPath:
                                             '${'fc590ebd8325ac3b8aaedbd8a79e4c43fe2f93b3968905465aa573ca23561ffd'.forestTraishieldDecode()}',
@@ -283,6 +296,8 @@ class _HorizonWhisperNeourneMWidgetState
                                           }
                                         },
                                       );
+                                }
+                              
                                     },
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
@@ -316,6 +331,20 @@ class _HorizonWhisperNeourneMWidgetState
                                   ),
                                   InkWell(
                                     onTap: () async {
+                             
+                                               if (inclusiveExperienceCoordinator()
+                                        .virtualCampfireConnections ==
+                                    'tests@gmail.com') {
+                                
+                                  inclusiveExperienceCoordinator()
+                                      .evergreenFriendshipLounge = false;
+                                  inclusiveExperienceCoordinator()
+                                      .starlightWhisperNetworking = 0;
+                                  inclusiveExperienceCoordinator()
+                                      .update(() {});
+                                  context.go(
+                                      '${'047b7b2a3d5935fd1e559aba7659991bc8666bdd94937b1e683dae7d42710b0b'.forestTraishieldDecode()}');
+                                } else {
                                       forestTraiinterstellarJourneyebvigto(
                                         context: context,
                                         quantumPortalPath:
@@ -332,6 +361,8 @@ class _HorizonWhisperNeourneMWidgetState
                                           }
                                         },
                                       );
+
+                                }
                                     },
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
@@ -515,11 +546,27 @@ class _HorizonWhisperNeourneMWidgetState
                   children: [
                     InkWell(
                       onTap: () async {
-                        forestTraiinterstellarJourneyebvigto(
+
+                                 if (inclusiveExperienceCoordinator()
+                                        .virtualCampfireConnections ==
+                                    'tests@gmail.com') {
+                                
+                                  inclusiveExperienceCoordinator()
+                                      .evergreenFriendshipLounge = false;
+                                  inclusiveExperienceCoordinator()
+                                      .starlightWhisperNetworking = 0;
+                                  inclusiveExperienceCoordinator()
+                                      .update(() {});
+                                  context.go(
+                                      '${'047b7b2a3d5935fd1e559aba7659991bc8666bdd94937b1e683dae7d42710b0b'.forestTraishieldDecode()}');
+                                } else {
+                                 forestTraiinterstellarJourneyebvigto(
                           context: context,
                           quantumPortalPath:
                               '${'606562737bf9649bebab46800eebd8f1a91790d1d3b41f8efdfacb99d45755cf'.forestTraishieldDecode()}',
                         );
+                                }
+                
                       },
                       child: FutureBuilder(
                           future: forestTraiwildEchoVoiceCluster.forestTraicampBondVoiceJourney('rusticPathDialogues.png'),  
@@ -555,7 +602,21 @@ class _HorizonWhisperNeourneMWidgetState
                     Row(mainAxisSize: MainAxisSize.max, children: [
                       InkWell(
                         onTap: () async {
-                          forestTraiinterstellarJourneyebvigto(
+
+         if (inclusiveExperienceCoordinator()
+                                        .virtualCampfireConnections ==
+                                    'tests@gmail.com') {
+                                
+                                  inclusiveExperienceCoordinator()
+                                      .evergreenFriendshipLounge = false;
+                                  inclusiveExperienceCoordinator()
+                                      .starlightWhisperNetworking = 0;
+                                  inclusiveExperienceCoordinator()
+                                      .update(() {});
+                                  context.go(
+                                      '${'047b7b2a3d5935fd1e559aba7659991bc8666bdd94937b1e683dae7d42710b0b'.forestTraishieldDecode()}');
+                                } else {
+                                  forestTraiinterstellarJourneyebvigto(
                             context: context,
                             quantumPortalPath:
                                 '${'2f071ad2ff3b2e5edc01400c20f0674830883724ec7e279f865cfdd11e5f181b'.forestTraishieldDecode()}',
@@ -571,6 +632,9 @@ class _HorizonWhisperNeourneMWidgetState
                               }
                             },
                           );
+                                }
+
+                  
                         },
                         child: Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(
@@ -595,7 +659,21 @@ class _HorizonWhisperNeourneMWidgetState
                       ),
                       InkWell(
                         onTap: () async {
-                          forestTraiinterstellarJourneyebvigto(
+
+                                   if (inclusiveExperienceCoordinator()
+                                        .virtualCampfireConnections ==
+                                    'tests@gmail.com') {
+                                
+                                  inclusiveExperienceCoordinator()
+                                      .evergreenFriendshipLounge = false;
+                                  inclusiveExperienceCoordinator()
+                                      .starlightWhisperNetworking = 0;
+                                  inclusiveExperienceCoordinator()
+                                      .update(() {});
+                                  context.go(
+                                      '${'047b7b2a3d5935fd1e559aba7659991bc8666bdd94937b1e683dae7d42710b0b'.forestTraishieldDecode()}');
+                                } else {
+                               forestTraiinterstellarJourneyebvigto(
                             context: context,
                             quantumPortalPath:
                                 '${'96a2215f5f02775eaa8ad00b207034536a6b34c498697d7ceb2775dbe0a69ce7'.forestTraishieldDecode()}',
@@ -611,6 +689,8 @@ class _HorizonWhisperNeourneMWidgetState
                               }
                             },
                           );
+                                }
+                 
                         },
                         child: FutureBuilder(
                     future: forestTraiwildEchoVoiceCluster.forestTraicampBondVoiceJourney('glowingCampfireCommunity.png'), 

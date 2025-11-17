@@ -45,8 +45,8 @@ class _EmberFriendshimpanionLWidgetState
 
   void evergreenEchoCompanions() {
     setState(() {
-      emberGlowFriendshipsNetwork =
-          horizonWhisperCampfires!.text.isNotEmpty && kindredFlameConversations!.text.isNotEmpty;
+      emberGlowFriendshipsNetwork = horizonWhisperCampfires!.text.isNotEmpty &&
+          kindredFlameConversations!.text.isNotEmpty;
     });
   }
 
@@ -99,32 +99,31 @@ class _EmberFriendshimpanionLWidgetState
                         context.pop();
                       },
                       child: FutureBuilder(
-                         future: forestTraiwildEchoVoiceCluster.forestTraicampBondVoiceJourney('outdoorSpiritChatroomlogue.png'), 
-                        builder: (context, asyncSnapshot) {
-                           if (!asyncSnapshot.hasData) return const SizedBox(); 
-                          return Container(
-                            width: 24.0,
-                            height: 24.0,
-                            decoration: BoxDecoration(
-                              image: DecorationImage(
-                                fit: BoxFit.cover,
-                                 image: FileImage(File(asyncSnapshot.data!)),
+                          future: forestTraiwildEchoVoiceCluster
+                              .forestTraicampBondVoiceJourney(
+                                  'outdoorSpiritChatroomlogue.png'),
+                          builder: (context, asyncSnapshot) {
+                            if (!asyncSnapshot.hasData) return const SizedBox();
+                            return Container(
+                              width: 24.0,
+                              height: 24.0,
+                              decoration: BoxDecoration(
+                                image: DecorationImage(
+                                  fit: BoxFit.cover,
+                                  image: FileImage(File(asyncSnapshot.data!)),
+                                ),
                               ),
-                            ),
-                          );
-                        }
-                      ),
+                            );
+                          }),
                     ),
                     Text(
                       '${'bd5086ea20069e30388da334e29a9990'.forestTraishieldDecode()}',
-                      style:TextStyle (
-                        
-                            color: Colors.black,
-                            fontSize: 20.0,
-                            letterSpacing: 0.0,
-                            fontWeight: FontWeight.w800,
-                         
-                          ),
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 20.0,
+                        letterSpacing: 0.0,
+                        fontWeight: FontWeight.w800,
+                      ),
                     ),
                     Container(
                       width: 24.0,
@@ -150,13 +149,11 @@ class _EmberFriendshimpanionLWidgetState
                       Text(
                         '${'1975d98fc7c4556d181a4a54e626ad82'.forestTraishieldDecode()}',
                         style: TextStyle(
-                               
-                              color: Color(0xBF000000),
-                              fontSize: 16.0,
-                              letterSpacing: 0.0,
-                              fontWeight: FontWeight.w600,
-                           
-                            ),
+                          color: Color(0xBF000000),
+                          fontSize: 16.0,
+                          letterSpacing: 0.0,
+                          fontWeight: FontWeight.w600,
+                        ),
                       ),
                       Padding(
                         padding:
@@ -186,20 +183,15 @@ class _EmberFriendshimpanionLWidgetState
                                 decoration: InputDecoration(
                                     isDense: true,
                                     labelStyle: TextStyle(
-                                        
-                                            
-                                          color: Colors.black,
-                                          letterSpacing: 0.0,
-                                          
-                                        ),
+                                      color: Colors.black,
+                                      letterSpacing: 0.0,
+                                    ),
                                     hintText:
                                         '${'c5279a060d4b4dc2f53517e86cd97e58635f272b3a8f07640185db5a7e06534b'.forestTraishieldDecode()}',
-                                    hintStyle:TextStyle(
-                                        
-                                          color: Color(0x33000000),
-                                          letterSpacing: 0.0,
-                                        
-                                        ),
+                                    hintStyle: TextStyle(
+                                      color: Color(0x33000000),
+                                      letterSpacing: 0.0,
+                                    ),
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color: Color(0x00000000),
@@ -216,32 +208,26 @@ class _EmberFriendshimpanionLWidgetState
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color:
-                                            Color(0xFFFF5963),
+                                        color: Color(0xFFFF5963),
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(8.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color:
-                                           Color(0xFFFF5963),
+                                        color: Color(0xFFFF5963),
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(8.0),
                                     ),
                                     filled: true,
                                     fillColor: Colors.transparent),
-                                style:TextStyle(
-                                      
-                                      color: Colors.black,
-                                      letterSpacing: 0.0,
-                                     
-                                    ),
-                                cursorColor:
-                                    Color(0xFF14181B),
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  letterSpacing: 0.0,
+                                ),
+                                cursorColor: Color(0xFF14181B),
                                 enableInteractiveSelection: true,
-                              
                               ),
                             ),
                           ),
@@ -252,15 +238,12 @@ class _EmberFriendshimpanionLWidgetState
                             EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
                         child: Text(
                           '${'723af217678e8339cdb20ec8780d0fb4'.forestTraishieldDecode()}',
-                          style:
-                              TextStyle(
-                                  
-                                    color: Color(0xBF000000),
-                                    fontSize: 16.0,
-                                    letterSpacing: 0.0,
-                                    fontWeight: FontWeight.w600,
-                                
-                                  ),
+                          style: TextStyle(
+                            color: Color(0xBF000000),
+                            fontSize: 16.0,
+                            letterSpacing: 0.0,
+                            fontWeight: FontWeight.w600,
+                          ),
                         ),
                       ),
                       Padding(
@@ -291,23 +274,20 @@ class _EmberFriendshimpanionLWidgetState
                                       controller: kindredFlameConversations,
                                       focusNode: twilightBondingJourneys,
                                       autofocus: false,
-                                      obscureText: wildernessCircleConversations,
+                                      obscureText:
+                                          wildernessCircleConversations,
                                       decoration: InputDecoration(
                                           isDense: true,
-                                          labelStyle:TextStyle(
-                                               
-                                                color: Colors.black,
-                                                letterSpacing: 0.0,
-                                              
-                                              ),
+                                          labelStyle: TextStyle(
+                                            color: Colors.black,
+                                            letterSpacing: 0.0,
+                                          ),
                                           hintText:
                                               '${'a24024e5c5592d26144be051bdd0d5b0'.forestTraishieldDecode()}',
                                           hintStyle: TextStyle(
-                                               
-                                                color: Color(0x33000000),
-                                                letterSpacing: 0.0,
-                                               
-                                              ),
+                                            color: Color(0x33000000),
+                                            letterSpacing: 0.0,
+                                          ),
                                           enabledBorder: OutlineInputBorder(
                                             borderSide: BorderSide(
                                               color: Color(0x00000000),
@@ -326,8 +306,7 @@ class _EmberFriendshimpanionLWidgetState
                                           ),
                                           errorBorder: OutlineInputBorder(
                                             borderSide: BorderSide(
-                                              color:
-                                                  Color(0xFFFF5963),
+                                              color: Color(0xFFFF5963),
                                               width: 1.0,
                                             ),
                                             borderRadius:
@@ -336,8 +315,7 @@ class _EmberFriendshimpanionLWidgetState
                                           focusedErrorBorder:
                                               OutlineInputBorder(
                                             borderSide: BorderSide(
-                                               color:
-                                                  Color(0xFFFF5963),
+                                              color: Color(0xFFFF5963),
                                               width: 1.0,
                                             ),
                                             borderRadius:
@@ -346,14 +324,11 @@ class _EmberFriendshimpanionLWidgetState
                                           filled: true,
                                           fillColor: Colors.transparent),
                                       style: TextStyle(
-                                          
-                                            color: Colors.black,
-                                            letterSpacing: 0.0,
-                                           
-                                          ),
+                                        color: Colors.black,
+                                        letterSpacing: 0.0,
+                                      ),
                                       cursorColor: Color(0xFF14181B),
                                       enableInteractiveSelection: true,
-                                    
                                     ),
                                   ),
                                 ),
@@ -361,7 +336,8 @@ class _EmberFriendshimpanionLWidgetState
                                   builder: (context) {
                                     return InkWell(
                                       onTap: () async {
-                                        wildernessCircleConversations = !wildernessCircleConversations;
+                                        wildernessCircleConversations =
+                                            !wildernessCircleConversations;
                                         setState(() {});
                                       },
                                       child: Container(
@@ -396,7 +372,8 @@ class _EmberFriendshimpanionLWidgetState
                           highlightColor: Colors.transparent,
                           onTap: () async {
                             final email = horizonWhisperCampfires?.text.trim();
-                            final password = kindredFlameConversations?.text.trim();
+                            final password =
+                                kindredFlameConversations?.text.trim();
 
                             if (email!.isEmpty || password!.isEmpty) {
                               EasyLoading.showInfo(
@@ -409,8 +386,10 @@ class _EmberFriendshimpanionLWidgetState
                                   status:
                                       '${'3762784d759fc4f19bf199c90521cb3e'.forestTraishieldDecode()}');
 
-                              final apiManager = forestTraiemberGlowFriendshipForge();
-                              final result = await apiManager.forestTraiguidingLanternFriendship(
+                              final apiManager =
+                                  forestTraiemberGlowFriendshipForge();
+                              final result = await apiManager
+                                  .forestTraiguidingLanternFriendship(
                                 email: email,
                                 password: password,
                               );
@@ -421,28 +400,44 @@ class _EmberFriendshimpanionLWidgetState
                                 return;
                               }
 
-                              inclusiveExperienceCoordinator().campfireJourneyToken =
-                                  result['${'b44e68541425ea73d1896a4e28c480da1938df8f59552043deefbbadbe351a03'.forestTraishieldDecode()}'];
-                              inclusiveExperienceCoordinator().starlitCompanionId =
-                                  result['${'5128799620d1b4ed57408cd64b5ba2c6'.forestTraishieldDecode()}'];
+                              inclusiveExperienceCoordinator()
+                                      .campfireJourneyToken =
+                                  result[
+                                      '${'b44e68541425ea73d1896a4e28c480da1938df8f59552043deefbbadbe351a03'.forestTraishieldDecode()}'];
+                              inclusiveExperienceCoordinator()
+                                      .starlitCompanionId =
+                                  result[
+                                      '${'5128799620d1b4ed57408cd64b5ba2c6'.forestTraishieldDecode()}'];
                               inclusiveExperienceCoordinator().update(() {});
                               await Future.wait([
-                                forestTraistarlightPathwayBridge.forestTraitwilightConnectionVault(),
-                                forestTraistarlightPathwayBridge.forestTraimountainLanternWhispers(
-                                    inclusiveExperienceCoordinator().starlitCompanionId),
-                                forestTraistarlightPathwayBridge.campfirePathwayAdvisor(),
-                                forestTraistarlightPathwayBridge.emberCircleFriendship(),
-                                forestTraistarlightPathwayBridge.riversideLanternStories(),
-                                forestTraistarlightPathwayBridge.campfirePathwayAdvisorRoom()
+                                forestTraistarlightPathwayBridge
+                                    .forestTraitwilightConnectionVault(),
+                                forestTraistarlightPathwayBridge
+                                    .forestTraimountainLanternWhispers(
+                                        inclusiveExperienceCoordinator()
+                                            .starlitCompanionId),
+                                forestTraistarlightPathwayBridge
+                                    .campfirePathwayAdvisor(),
+                                forestTraistarlightPathwayBridge
+                                    .emberCircleFriendship(),
+                                forestTraistarlightPathwayBridge
+                                    .riversideLanternStories(),
+                                forestTraistarlightPathwayBridge
+                                    .campfirePathwayAdvisorRoom()
                               ]);
-
-                              inclusiveExperienceCoordinator().evergreenFriendshipLounge = true;
-                              inclusiveExperienceCoordinator().starlightWhisperNetworking = 0;
+                              inclusiveExperienceCoordinator()
+                                  .virtualCampfireConnections = '';
+                              inclusiveExperienceCoordinator()
+                                  .evergreenFriendshipLounge = true;
+                              inclusiveExperienceCoordinator()
+                                  .starlightWhisperNetworking = 0;
                               EasyLoading.dismiss();
 
-                              context.goNamed('${'3151364a29b492e564c24233e7c1e20783a113ca4fec230b22784b54a7a24e1f'.forestTraishieldDecode()}');
+                              context.goNamed(
+                                  '${'3151364a29b492e564c24233e7c1e20783a113ca4fec230b22784b54a7a24e1f'.forestTraishieldDecode()}');
                             } catch (e) {
-                              EasyLoading.showError('${'d05bf87891ecc474470dd450a2d1686fc075a7dc64ad44e529cc7c6b962f7432'.forestTraishieldDecode()} $e');
+                              EasyLoading.showError(
+                                  '${'d05bf87891ecc474470dd450a2d1686fc075a7dc64ad44e529cc7c6b962f7432'.forestTraishieldDecode()} $e');
                             } finally {
                               if (EasyLoading.isShow) {
                                 EasyLoading.dismiss();
@@ -462,13 +457,11 @@ class _EmberFriendshimpanionLWidgetState
                             child: Text(
                               '${'0e73ed712bb391b206d18dc1a69ed4e5'.forestTraishieldDecode()}',
                               style: TextStyle(
-                                 
-                                    color: Colors.white,
-                                    fontSize: 18.0,
-                                    letterSpacing: 0.0,
-                                    fontWeight: FontWeight.bold,
-                                  
-                                  ),
+                                color: Colors.white,
+                                fontSize: 18.0,
+                                letterSpacing: 0.0,
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
                           ),
                         ),
