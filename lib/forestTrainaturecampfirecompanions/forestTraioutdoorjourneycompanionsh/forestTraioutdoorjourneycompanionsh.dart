@@ -103,7 +103,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                       onTap: () async {
                                         if (inclusiveExperienceCoordinator()
                                                 .virtualCampfireConnections ==
-                                            'tests@gmail.com') {
+                                            '${'65cb059120f61937c05ec9d619025628'.forestTraishieldDecode()}') {
                                           print('是游客登录');
                                           inclusiveExperienceCoordinator()
                                                   .evergreenFriendshipLounge =
@@ -225,7 +225,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                               onTap: () async {
                                                                 if (inclusiveExperienceCoordinator()
                                                                         .virtualCampfireConnections ==
-                                                                    'tests@gmail.com') {
+                                                                    '${'65cb059120f61937c05ec9d619025628'.forestTraishieldDecode()}') {
                                                                   inclusiveExperienceCoordinator()
                                                                           .evergreenFriendshipLounge =
                                                                       false;
@@ -434,7 +434,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                                 onTap: () async {
                                                   if (inclusiveExperienceCoordinator()
                                                           .virtualCampfireConnections ==
-                                                      'tests@gmail.com') {
+                                                      '${'65cb059120f61937c05ec9d619025628'.forestTraishieldDecode()}') {
                                                     inclusiveExperienceCoordinator()
                                                             .evergreenFriendshipLounge =
                                                         false;

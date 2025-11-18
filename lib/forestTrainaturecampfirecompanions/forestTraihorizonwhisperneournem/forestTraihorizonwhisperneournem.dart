@@ -269,7 +269,7 @@ class _HorizonWhisperNeourneMWidgetState
                                     onTap: () async {
                                                if (inclusiveExperienceCoordinator()
                                         .virtualCampfireConnections ==
-                                    'tests@gmail.com') {
+                                    '${'65cb059120f61937c05ec9d619025628'.forestTraishieldDecode()}') {
                                 
                                   inclusiveExperienceCoordinator()
                                       .evergreenFriendshipLounge = false;
@@ -334,7 +334,7 @@ class _HorizonWhisperNeourneMWidgetState
                              
                                                if (inclusiveExperienceCoordinator()
                                         .virtualCampfireConnections ==
-                                    'tests@gmail.com') {
+                                    '${'65cb059120f61937c05ec9d619025628'.forestTraishieldDecode()}') {
                                 
                                   inclusiveExperienceCoordinator()
                                       .evergreenFriendshipLounge = false;
@@ -549,7 +549,7 @@ class _HorizonWhisperNeourneMWidgetState
 
                                  if (inclusiveExperienceCoordinator()
                                         .virtualCampfireConnections ==
-                                    'tests@gmail.com') {
+                                    '${'65cb059120f61937c05ec9d619025628'.forestTraishieldDecode()}') {
                                 
                                   inclusiveExperienceCoordinator()
                                       .evergreenFriendshipLounge = false;
@@ -605,7 +605,7 @@ class _HorizonWhisperNeourneMWidgetState
 
          if (inclusiveExperienceCoordinator()
                                         .virtualCampfireConnections ==
-                                    'tests@gmail.com') {
+                                    '${'65cb059120f61937c05ec9d619025628'.forestTraishieldDecode()}') {
                                 
                                   inclusiveExperienceCoordinator()
                                       .evergreenFriendshipLounge = false;
@@ -662,7 +662,7 @@ class _HorizonWhisperNeourneMWidgetState
 
                                    if (inclusiveExperienceCoordinator()
                                         .virtualCampfireConnections ==
-                                    'tests@gmail.com') {
+                                    '${'65cb059120f61937c05ec9d619025628'.forestTraishieldDecode()}') {
                                 
                                   inclusiveExperienceCoordinator()
                                       .evergreenFriendshipLounge = false;

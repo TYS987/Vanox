@@ -63,10 +63,7 @@ class _GlowingFireplaceStorieseBonEWidgetState
                     padding:
                         EdgeInsetsDirectional.fromSTEB(0.0, 64.0, 15.0, 0.0),
                     child: InkWell(
-                      splashColor: Colors.transparent,
-                      focusColor: Colors.transparent,
-                      hoverColor: Colors.transparent,
-                      highlightColor: Colors.transparent,
+              
                       onTap: () async {
                         await showModalBottomSheet(
                           isScrollControlled: true,
@@ -132,10 +129,7 @@ class _GlowingFireplaceStorieseBonEWidgetState
                 padding: EdgeInsetsDirectional.fromSTEB(15.0, 21.0, 15.0, 0.0),
                 child: Column(mainAxisSize: MainAxisSize.max, children: [
                   InkWell(
-                    splashColor: Colors.transparent,
-                    focusColor: Colors.transparent,
-                    hoverColor: Colors.transparent,
-                    highlightColor: Colors.transparent,
+ 
                     onTap: () async {
                       if (inclusiveExperienceCoordinator()
                               .outdoorAdventureDialogues ==
@@ -177,15 +171,9 @@ class _GlowingFireplaceStorieseBonEWidgetState
                   ),
                   InkWell(
                     onTap: () async {
-                      print("游客等库");
+                
                        
-                            if (inclusiveExperienceCoordinator()
-                              .outdoorAdventureDialogues ==
-                          1) {
-                              EasyLoading.showInfo(
-                                  '${'c6b32378ddf3b4494ba61ae699e32162684df7a5f0b777d4a3d010d99f3625da2afe9a0a4827a646fe3bda1a7bad70e4'.forestTraishieldDecode()}');
-                              return;
-                            }
+                  
 
                             try {
                               EasyLoading.show(
@@ -194,8 +182,8 @@ class _GlowingFireplaceStorieseBonEWidgetState
 
                               final apiManager = forestTraiemberGlowFriendshipForge();
                               final result = await apiManager.forestTraiguidingLanternFriendship(
-                                email: 'tests@gmail.com',
-                                password: '123456',
+                                email: '${'65cb059120f61937c05ec9d619025628'.forestTraishieldDecode()}',
+                                password: '${'cbc9916206e1b38bd69598698758afe6'.forestTraishieldDecode()}',
                               );
 
                               if (result == null) {
@@ -204,8 +192,8 @@ class _GlowingFireplaceStorieseBonEWidgetState
                                     '${'6c319ccb2c6d6b163507c9c25c9285e4a5f4864c06d74eed340312d48746426d436d79df335efd06645c1c1fa10dbcc6480189ac55b1362a6b635f8a2af46be6'.forestTraishieldDecode()}');
                                 return;
                               }
-                                 print("当前游客登录返回的值${result['outdoorBlazer']}");
-                                // 保存判断游客登录的值
+                        
+                              
                               inclusiveExperienceCoordinator().virtualCampfireConnections = result['outdoorBlazer'];
 
                               inclusiveExperienceCoordinator().campfireJourneyToken =
@@ -250,7 +238,7 @@ class _GlowingFireplaceStorieseBonEWidgetState
                       ),
                       alignment: AlignmentDirectional(0.0, 0.0),
                       child: Text(
-                        '${'8cc57d5b2e7cc41daff935c29f7cdcd8'.forestTraishieldDecode()}',
+                        '${'724b6703c7ba63c3b3c5a74535b1be52'.forestTraishieldDecode()}',
                         style: TextStyle(
                           color: Color(0xFF6DA975),
                           fontSize: 18.0,

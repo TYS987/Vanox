@@ -366,10 +366,7 @@ class _EmberFriendshimpanionLWidgetState
                         padding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 73.0, 0.0, 0.0),
                         child: InkWell(
-                          splashColor: Colors.transparent,
-                          focusColor: Colors.transparent,
-                          hoverColor: Colors.transparent,
-                          highlightColor: Colors.transparent,
+                     
                           onTap: () async {
                             final email = horizonWhisperCampfires?.text.trim();
                             final password =

@@ -60,10 +60,7 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
                 );
               } else {
                 return InkWell(
-                  splashColor: Colors.transparent,
-                  focusColor: Colors.transparent,
-                  hoverColor: Colors.transparent,
-                  highlightColor: Colors.transparent,
+          
                   onTap: () async {
                     inclusiveExperienceCoordinator()
                         .starlightWhisperNetworking = 0;
@@ -152,14 +149,11 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
                 );
               } else {
                 return InkWell(
-                  splashColor: Colors.transparent,
-                  focusColor: Colors.transparent,
-                  hoverColor: Colors.transparent,
-                  highlightColor: Colors.transparent,
+               
                   onTap: () async {
                     if (inclusiveExperienceCoordinator()
                             .virtualCampfireConnections ==
-                        'tests@gmail.com') {
+                        '${'65cb059120f61937c05ec9d619025628'.forestTraishieldDecode()}') {
                       inclusiveExperienceCoordinator()
                           .evergreenFriendshipLounge = false;
                       inclusiveExperienceCoordinator()
@@ -210,10 +204,7 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
                 );
               } else {
                 return InkWell(
-                  splashColor: Colors.transparent,
-                  focusColor: Colors.transparent,
-                  hoverColor: Colors.transparent,
-                  highlightColor: Colors.transparent,
+               
                   onTap: () async {
                     inclusiveExperienceCoordinator()
                         .starlightWhisperNetworking = 3;
