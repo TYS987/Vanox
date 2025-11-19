@@ -120,7 +120,7 @@ _safeInit(() {
 
   late SharedPreferences prefs;
 
-//定义一个变量判断是否是游客登录
+
  String virtualCampfireConnections = '';
 
   int _starlightWhisperNetworking = 0;
