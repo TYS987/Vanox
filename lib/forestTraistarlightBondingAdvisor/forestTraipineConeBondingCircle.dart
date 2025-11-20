@@ -76,21 +76,21 @@ Future<void> forestTraibreezeTrailConnection() async {
     return;
   }
 
-  // 读取 zip 文件
+
   final forestTraibreezeTrailConnectionoutdoorHarmonyCircle = await rootBundle.load('assets/forestTrailMemoryCapture.zip');
 
-  // 拷贝一份可修改的 Uint8List，解决解密时报错问题
+
   final mutableBytes = Uint8List.fromList(
       forestTraibreezeTrailConnectionoutdoorHarmonyCircle.buffer.asUint8List()
   );
 
-  // 解压带密码的 ZIP
+
   final forestTraibreezeTrailConnectioncampWhisperBondField = ZipDecoder().decodeBytes(
     mutableBytes,
     password: '940820',
   );
 
-  // 写入文件
+
   for (final file in forestTraibreezeTrailConnectioncampWhisperBondField) {
     final forestTraibreezeTrailConnectiontrailFireVoiceGarden = file.name.split('/').last;
     final forestTraibreezeTrailConnectionemberDreamConnection = '${forestTraibreezeTrailConnectionnatureEchoVoiceHaven.path}/assets/images/$forestTraibreezeTrailConnectiontrailFireVoiceGarden';
