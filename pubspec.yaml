@@ -26,7 +26,7 @@ dependencies:
   provider: 6.1.5
   shared_preferences: 2.5.3
   url_launcher:
-    path: forestTraiionBeautyRealmst/fashionBeautyRealmstheticVibe
+      path: forestTraiionBeautyRealmst/fashionBeautyRealmstheticVibe
   archive: ^3.3.7
   dio: ^5.7.0 
   flutter_easyloading: ^3.0.5
