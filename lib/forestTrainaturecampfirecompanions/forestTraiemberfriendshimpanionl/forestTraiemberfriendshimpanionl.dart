@@ -18,15 +18,15 @@ class EmberFriendshimpanionLWidget extends StatefulWidget {
 
 class _EmberFriendshimpanionLWidgetState
     extends State<EmberFriendshimpanionLWidget> {
-  bool wildernessCircleConversations = false;
-  bool emberGlowFriendshipsNetwork = false;
-  FocusNode? digitalTrailblazerGathering;
-  TextEditingController? horizonWhisperCampfires;
-  String? Function(BuildContext, String?)? firelightConnectionSphere;
+  bool forestTraiwildernessCircleConversations = false;
+  bool forestTraiemberGlowFriendshipsNetwork = false;
+  FocusNode? forestTraidigitalTrailblazerGathering;
+  TextEditingController? forestTraihorizonWhisperCampfires;
+  String? Function(BuildContext, String?)? forestTraifirelightConnectionSphere;
 
-  FocusNode? twilightBondingJourneys;
-  TextEditingController? kindredFlameConversations;
-  String? Function(BuildContext, String?)? constellationDialogueCircle;
+  FocusNode? forestTraitwilightBondingJourneys;
+  TextEditingController? forestTraikindredFlameConversations;
+  String? Function(BuildContext, String?)? forestTraiconstellationDialogueCircle;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -34,29 +34,29 @@ class _EmberFriendshimpanionLWidgetState
   void initState() {
     super.initState();
 
-    horizonWhisperCampfires ??= TextEditingController();
-    digitalTrailblazerGathering ??= FocusNode();
+    forestTraihorizonWhisperCampfires ??= TextEditingController();
+    forestTraidigitalTrailblazerGathering ??= FocusNode();
 
-    kindredFlameConversations ??= TextEditingController();
-    twilightBondingJourneys ??= FocusNode();
-    horizonWhisperCampfires!.addListener(evergreenEchoCompanions);
-    kindredFlameConversations!.addListener(evergreenEchoCompanions);
+    forestTraikindredFlameConversations ??= TextEditingController();
+    forestTraitwilightBondingJourneys ??= FocusNode();
+    forestTraihorizonWhisperCampfires!.addListener(evergreenEchoCompanions);
+    forestTraikindredFlameConversations!.addListener(evergreenEchoCompanions);
   }
 
   void evergreenEchoCompanions() {
     setState(() {
-      emberGlowFriendshipsNetwork = horizonWhisperCampfires!.text.isNotEmpty &&
-          kindredFlameConversations!.text.isNotEmpty;
+      forestTraiemberGlowFriendshipsNetwork = forestTraihorizonWhisperCampfires!.text.isNotEmpty &&
+          forestTraikindredFlameConversations!.text.isNotEmpty;
     });
   }
 
   @override
   void dispose() {
-    digitalTrailblazerGathering?.dispose();
-    horizonWhisperCampfires?.dispose();
+    forestTraidigitalTrailblazerGathering?.dispose();
+    forestTraihorizonWhisperCampfires?.dispose();
 
-    twilightBondingJourneys?.dispose();
-    kindredFlameConversations?.dispose();
+    forestTraitwilightBondingJourneys?.dispose();
+    forestTraikindredFlameConversations?.dispose();
     super.dispose();
   }
 
@@ -74,18 +74,23 @@ class _EmberFriendshimpanionLWidgetState
         backgroundColor: Colors.black,
         body: Stack(
           children: [
-            Container(
-              width: double.infinity,
-              height: double.infinity,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  fit: BoxFit.cover,
-                  image: Image.asset(
-                    'assets/images/glowingEmberFriendshiponversation.png',
-                  ).image,
-                ),
-              ),
-            ),
+            FutureBuilder(
+                future: forestTraiwildEchoVoiceCluster
+                    .forestTraicampBondVoiceJourney(
+                        'glowingEmberFriendshiponversation.png'),
+                builder: (context, asyncSnapshot) {
+                  if (!asyncSnapshot.hasData) return const SizedBox();
+                  return Container(
+                    width: double.infinity,
+                    height: double.infinity,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        fit: BoxFit.cover,
+                        image: FileImage(File(asyncSnapshot.data!)),
+                      ),
+                    ),
+                  );
+                }),
             Align(
               alignment: AlignmentDirectional(0.0, -1.0),
               child: Padding(
@@ -176,8 +181,8 @@ class _EmberFriendshimpanionLWidgetState
                             child: Container(
                               width: double.infinity,
                               child: TextFormField(
-                                controller: horizonWhisperCampfires,
-                                focusNode: digitalTrailblazerGathering,
+                                controller: forestTraihorizonWhisperCampfires,
+                                focusNode: forestTraidigitalTrailblazerGathering,
                                 autofocus: false,
                                 obscureText: false,
                                 decoration: InputDecoration(
@@ -261,6 +266,7 @@ class _EmberFriendshimpanionLWidgetState
                             ),
                           ),
                           alignment: AlignmentDirectional(-1.0, 0.0),
+                          
                           child: Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
@@ -271,11 +277,11 @@ class _EmberFriendshimpanionLWidgetState
                                   child: Container(
                                     width: double.infinity,
                                     child: TextFormField(
-                                      controller: kindredFlameConversations,
-                                      focusNode: twilightBondingJourneys,
+                                      controller: forestTraikindredFlameConversations,
+                                      focusNode: forestTraitwilightBondingJourneys,
                                       autofocus: false,
                                       obscureText:
-                                          wildernessCircleConversations,
+                                          forestTraiwildernessCircleConversations,
                                       decoration: InputDecoration(
                                           isDense: true,
                                           labelStyle: TextStyle(
@@ -336,24 +342,39 @@ class _EmberFriendshimpanionLWidgetState
                                   builder: (context) {
                                     return InkWell(
                                       onTap: () async {
-                                        wildernessCircleConversations =
-                                            !wildernessCircleConversations;
+                                        forestTraiwildernessCircleConversations =
+                                            !forestTraiwildernessCircleConversations;
                                         setState(() {});
                                       },
-                                      child: Container(
-                                        width: 18.0,
-                                        height: 13.0,
-                                        decoration: BoxDecoration(
-                                          image: DecorationImage(
-                                            fit: BoxFit.cover,
-                                            image: Image.asset(
-                                              wildernessCircleConversations
-                                                  ? 'assets/images/woodlandFriendshipSphere.png'
-                                                  : 'assets/images/mountainTrailEncounters.png',
-                                            ).image,
-                                          ),
-                                        ),
-                                      ),
+                                      child: FutureBuilder(
+                                          future: forestTraiwildernessCircleConversations
+                                              ? forestTraiwildEchoVoiceCluster
+                                                  .forestTraicampBondVoiceJourney(
+                                                      'woodlandFriendshipSphere.png')
+                                              : forestTraiwildEchoVoiceCluster
+                                                  .forestTraicampBondVoiceJourney(
+                                                      'mountainTrailEncounters.png'),
+                                          builder: (context, asyncSnapshot) {
+                                            if (!asyncSnapshot.hasData)
+                                              return const SizedBox();
+                                            return Container(
+                                              width: 18.0,
+                                              height: 13.0,
+                                              decoration: BoxDecoration(
+                                                image: DecorationImage(
+                                                  fit: BoxFit.cover,
+                                                  image:
+                                                      forestTraiwildernessCircleConversations
+                                                          ? FileImage(File(
+                                                              asyncSnapshot
+                                                                  .data!))
+                                                          : FileImage(File(
+                                                              asyncSnapshot
+                                                                  .data!)),
+                                                ),
+                                              ),
+                                            );
+                                          }),
                                     );
                                   },
                                 ),
@@ -366,11 +387,10 @@ class _EmberFriendshimpanionLWidgetState
                         padding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 73.0, 0.0, 0.0),
                         child: InkWell(
-                     
                           onTap: () async {
-                            final email = horizonWhisperCampfires?.text.trim();
+                            final email = forestTraihorizonWhisperCampfires?.text.trim();
                             final password =
-                                kindredFlameConversations?.text.trim();
+                                forestTraikindredFlameConversations?.text.trim();
 
                             if (email!.isEmpty || password!.isEmpty) {
                               EasyLoading.showInfo(
@@ -445,7 +465,7 @@ class _EmberFriendshimpanionLWidgetState
                             width: double.infinity,
                             height: 64.0,
                             decoration: BoxDecoration(
-                              color: emberGlowFriendshipsNetwork
+                              color: forestTraiemberGlowFriendshipsNetwork
                                   ? Color(0xFF6DA975)
                                   : Color(0xFFA0CBA5),
                               borderRadius: BorderRadius.circular(64.0),

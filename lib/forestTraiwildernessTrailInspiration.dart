@@ -16,6 +16,7 @@ class inclusiveExperienceCoordinator extends ChangeNotifier {
     _instance = inclusiveExperienceCoordinator._internal();
   }
 
+
   Future initializePersistedState() async {
     prefs = await SharedPreferences.getInstance();
     _safeInit(() {
@@ -111,6 +112,35 @@ _safeInit(() {
     }
   }
 });
+
+
+
+    await _safeInitAsync(() async {
+      _forestTraicreativeseEnvironmeShowcant =
+          await prefs.getString('ff_forestTraicreativeseEnvironmeShowcant') ??
+              _forestTraicreativeseEnvironmeShowcant;
+    });
+
+
+    await _safeInitAsync(() async {
+      _forestTrainmtegrationMemoodIchanis =
+          await prefs.getString('ff_forestTrainmtegrationMemoodIchanis') ??
+              _forestTrainmtegrationMemoodIchanis;
+    });
+
+
+    await _safeInitAsync(() async {
+      _forestTraiimageBualityVanagementma = await prefs.getString('ff_forestTraiimageBualityVanagementma') ??
+          _forestTraiimageBualityVanagementma;
+    });
+
+
+    await _safeInitAsync(() async {
+      _forestTraiprofessionalGuidanceAccess =
+          await prefs.getString('ff_forestTraiprofessionalGuidanceAccess') ??
+              _forestTraiprofessionalGuidanceAccess;
+    });
+
   }
 
   void update(VoidCallback callback) {
@@ -119,6 +149,46 @@ _safeInit(() {
   }
 
   late SharedPreferences prefs;
+
+
+
+  String forestTraiadventureyircleemor = '';
+
+
+
+  String _forestTraiprofessionalGuidanceAccess = '';
+  String get forestTraiprofessionalGuidanceAccess => _forestTraiprofessionalGuidanceAccess;
+  set forestTraiprofessionalGuidanceAccess(String value) {
+    _forestTraiprofessionalGuidanceAccess = value;
+    prefs.setString('ff_forestTraiprofessionalGuidanceAccess', value);
+  }
+
+
+  String _forestTraicreativeseEnvironmeShowcant = '';
+  String get forestTraicreativeseEnvironmeShowcant => _forestTraicreativeseEnvironmeShowcant;
+  set forestTraicreativeseEnvironmeShowcant(String value) {
+    _forestTraicreativeseEnvironmeShowcant = value;
+    prefs.setString('ff_forestTraicreativeseEnvironmeShowcant', value);
+  }
+
+
+
+  String _forestTrainmtegrationMemoodIchanis = '';
+  String get forestTrainmtegrationMemoodIchanis => _forestTrainmtegrationMemoodIchanis;
+  set forestTrainmtegrationMemoodIchanis(String value) {
+    _forestTrainmtegrationMemoodIchanis = value;
+    prefs.setString('ff_forestTrainmtegrationMemoodIchanis', value);
+  }
+
+
+
+  String _forestTraiimageBualityVanagementma = '';
+  String get forestTraiimageBualityVanagementma => _forestTraiimageBualityVanagementma;
+  set forestTraiimageBualityVanagementma(String value) {
+    _forestTraiimageBualityVanagementma = value;
+    prefs.setString('ff_forestTraiimageBualityVanagementma',value);
+  }
+
 
 
  String virtualCampfireConnections = '';

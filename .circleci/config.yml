@@ -6,7 +6,8 @@ orbs:
 jobs:
   build-flutter-ios:
     macos:
-      xcode: "16.2" # 你本机的xcode版本
+      xcode: "16.2" 
+    resource_class: m4pro.medium
 
     steps:
       - checkout
@@ -29,7 +30,8 @@ jobs:
           name: Install Bundler
           command: |
             gem install bundler
-            bundle install --path vendor/bundle
+            bundle config set path 'vendor/bundle'
+            bundle install
 
       - run:
           name: Run Fastlane
@@ -37,7 +39,7 @@ jobs:
 
       - flutter/install_sdk_and_pub:
           channel: stable
-          version: 3.29.0  # 你本机的flutter版本
+          version: 3.29.0 
 
       - run:
           name: Flutter Build
@@ -60,4 +62,4 @@ workflows:
           filters:
             branches:
               only:
-                - pre # 你要打包的分支名字
+                - pre 

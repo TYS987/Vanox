@@ -8,7 +8,7 @@ import 'package:vanox/forestTraiwildernessTrailInspiration.dart';
 import '../forestTraisereneoutdoorurne/forestTraisereneoutdoorurne.dart';
 import 'package:flutter/material.dart';
 
-class TopCurveClipper extends CustomClipper<Path> {
+class forestTraiTopCurveClipper extends CustomClipper<Path> {
   @override
   Path getClip(Size size) {
     Path path = Path();
@@ -610,7 +610,7 @@ class _RusticOutdoorFriendshipVWidgetState
                                         const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 20.0, 0.0, 0.0),
                                     child: ClipPath(
-                                      clipper: TopCurveClipper(),
+                                      clipper: forestTraiTopCurveClipper(),
                                       child: Container(
                                         width: double.infinity,
                                         height: 351.0,

@@ -25,9 +25,9 @@ class _WingAshConnectionCompanionFWidgetState
     extends State<WingAshConnectionCompanionFWidget> {
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
-  bool audioExperienceEnhancer = true;
+  bool forestTraiaudioExperienceEnhancer = true;
 
-  bool videoPerformanceOptimizer = false;
+  bool forestTraivideoPerformanceOptimizer = false;
   late WebViewController _controller;
 
   @override
@@ -41,18 +41,18 @@ class _WingAshConnectionCompanionFWidgetState
     _controller
       ..setNavigationDelegate(NavigationDelegate(onPageFinished: (_) {
         setState(() {
-          audioExperienceEnhancer = false;
-          videoPerformanceOptimizer = false;
+          forestTraiaudioExperienceEnhancer = false;
+          forestTraivideoPerformanceOptimizer = false;
         });
       }, onWebResourceError: (_) {
         setState(() {
-          audioExperienceEnhancer = false;
-          videoPerformanceOptimizer = true;
+          forestTraiaudioExperienceEnhancer = false;
+          forestTraivideoPerformanceOptimizer = true;
         });
       }, onPageStarted: (_) {
         setState(() {
-          audioExperienceEnhancer = true;
-          videoPerformanceOptimizer = false;
+          forestTraiaudioExperienceEnhancer = true;
+          forestTraivideoPerformanceOptimizer = false;
         });
       }))
       ..setBackgroundColor(Colors.transparent)
@@ -64,9 +64,9 @@ class _WingAshConnectionCompanionFWidgetState
         };
         final connectionQualityOptimizer = message.message;
 
-        // await forestTraipersonalVideoPresence(connectionQualityOptimizer);
-        
-        await forestTraipersonalVideoPresence("zww_1");
+        await forestTraipersonalVideoPresence(connectionQualityOptimizer);
+
+
 
 
       })
@@ -147,8 +147,8 @@ class _WingAshConnectionCompanionFWidgetState
               child: Stack(
                 children: [
                   WebViewWidget(controller: _controller),
-                  if (audioExperienceEnhancer) forestTraiglowingAdventureCircle(),
-                  if (videoPerformanceOptimizer)
+                  if (forestTraiaudioExperienceEnhancer) forestTraiglowingAdventureCircle(),
+                  if (forestTraivideoPerformanceOptimizer)
                     Center(
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,

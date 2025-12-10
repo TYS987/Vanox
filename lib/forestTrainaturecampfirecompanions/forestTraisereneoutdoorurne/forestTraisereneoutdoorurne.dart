@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:go_router/go_router.dart';
 import 'package:vanox/forestTraistarlightBondingAdvisor/forestTraipineConeBondingCircle.dart';
 import 'package:vanox/forestTraiwildernessTrailInspiration.dart';
@@ -46,21 +48,25 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
             builder: (context) {
               if (inclusiveExperienceCoordinator().starlightWhisperNetworking ==
                   0) {
-                return Container(
-                  width: 24.0,
-                  height: 24.0,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      fit: BoxFit.cover,
-                      image: Image.asset(
-                        'assets/images/emberConnectionJourneys.png',
-                      ).image,
-                    ),
-                  ),
-                );
+                return FutureBuilder(
+                    future: forestTraiwildEchoVoiceCluster
+                        .forestTraicampBondVoiceJourney(
+                            'emberConnectionJourneys.png'),
+                    builder: (context, asyncSnapshot) {
+                      if (!asyncSnapshot.hasData) return const SizedBox();
+                      return Container(
+                        width: 24.0,
+                        height: 24.0,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            fit: BoxFit.cover,
+                            image: FileImage(File(asyncSnapshot.data!)),
+                          ),
+                        ),
+                      );
+                    });
               } else {
                 return InkWell(
-          
                   onTap: () async {
                     inclusiveExperienceCoordinator()
                         .starlightWhisperNetworking = 0;
@@ -69,18 +75,23 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
 
                     setState(() {});
                   },
-                  child: Container(
-                    width: 24.0,
-                    height: 24.0,
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        fit: BoxFit.cover,
-                        image: Image.asset(
-                          'assets/images/emberConnectionJourney.png',
-                        ).image,
-                      ),
-                    ),
-                  ),
+                  child: FutureBuilder(
+                      future: forestTraiwildEchoVoiceCluster
+                          .forestTraicampBondVoiceJourney(
+                              'emberConnectionJourney.png'),
+                      builder: (context, asyncSnapshot) {
+                        if (!asyncSnapshot.hasData) return const SizedBox();
+                        return Container(
+                          width: 24.0,
+                          height: 24.0,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              fit: BoxFit.cover,
+                              image: FileImage(File(asyncSnapshot.data!)),
+                            ),
+                          ),
+                        );
+                      }),
                 );
               }
             },
@@ -89,24 +100,25 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
             builder: (context) {
               if (inclusiveExperienceCoordinator().starlightWhisperNetworking ==
                   1) {
-                return Container(
-                  width: 24.0,
-                  height: 24.0,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      fit: BoxFit.cover,
-                      image: Image.asset(
-                        'assets/images/outdoorHarmonyHubs.png',
-                      ).image,
-                    ),
-                  ),
-                );
+                return FutureBuilder(
+                    future: forestTraiwildEchoVoiceCluster
+                        .forestTraicampBondVoiceJourney(
+                            'outdoorHarmonyHubs.png'),
+                    builder: (context, asyncSnapshot) {
+                      if (!asyncSnapshot.hasData) return const SizedBox();
+                      return Container(
+                        width: 24.0,
+                        height: 24.0,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            fit: BoxFit.cover,
+                            image: FileImage(File(asyncSnapshot.data!)),
+                          ),
+                        ),
+                      );
+                    });
               } else {
                 return InkWell(
-                  splashColor: Colors.transparent,
-                  focusColor: Colors.transparent,
-                  hoverColor: Colors.transparent,
-                  highlightColor: Colors.transparent,
                   onTap: () async {
                     inclusiveExperienceCoordinator()
                         .starlightWhisperNetworking = 1;
@@ -115,18 +127,23 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
 
                     setState(() {});
                   },
-                  child: Container(
-                    width: 24.0,
-                    height: 24.0,
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        fit: BoxFit.cover,
-                        image: Image.asset(
-                          'assets/images/outdoorHarmonyHub.png',
-                        ).image,
-                      ),
-                    ),
-                  ),
+                  child: FutureBuilder(
+                      future: forestTraiwildEchoVoiceCluster
+                          .forestTraicampBondVoiceJourney(
+                              'outdoorHarmonyHub.png'),
+                      builder: (context, asyncSnapshot) {
+                        if (!asyncSnapshot.hasData) return const SizedBox();
+                        return Container(
+                          width: 24.0,
+                          height: 24.0,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              fit: BoxFit.cover,
+                              image: FileImage(File(asyncSnapshot.data!)),
+                            ),
+                          ),
+                        );
+                      }),
                 );
               }
             },
@@ -135,21 +152,25 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
             builder: (context) {
               if (inclusiveExperienceCoordinator().starlightWhisperNetworking ==
                   2) {
-                return Container(
-                  width: 24.0,
-                  height: 24.0,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      fit: BoxFit.cover,
-                      image: Image.asset(
-                        'assets/images/horizonWhisperStories.png',
-                      ).image,
-                    ),
-                  ),
-                );
+                return FutureBuilder(
+                    future: forestTraiwildEchoVoiceCluster
+                        .forestTraicampBondVoiceJourney(
+                            'horizonWhisperStories.png'),
+                    builder: (context, asyncSnapshot) {
+                      if (!asyncSnapshot.hasData) return const SizedBox();
+                      return Container(
+                        width: 24.0,
+                        height: 24.0,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            fit: BoxFit.cover,
+                            image: FileImage(File(asyncSnapshot.data!)),
+                          ),
+                        ),
+                      );
+                    });
               } else {
                 return InkWell(
-               
                   onTap: () async {
                     if (inclusiveExperienceCoordinator()
                             .virtualCampfireConnections ==
@@ -170,18 +191,23 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
                       setState(() {});
                     }
                   },
-                  child: Container(
-                    width: 24.0,
-                    height: 24.0,
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        fit: BoxFit.cover,
-                        image: Image.asset(
-                          'assets/images/horizonWhisperStorie.png',
-                        ).image,
-                      ),
-                    ),
-                  ),
+                  child: FutureBuilder(
+                      future: forestTraiwildEchoVoiceCluster
+                          .forestTraicampBondVoiceJourney(
+                              'horizonWhisperStorie.png'),
+                      builder: (context, asyncSnapshot) {
+                        if (!asyncSnapshot.hasData) return const SizedBox();
+                        return Container(
+                          width: 24.0,
+                          height: 24.0,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              fit: BoxFit.cover,
+                              image: FileImage(File(asyncSnapshot.data!)),
+                            ),
+                          ),
+                        );
+                      }),
                 );
               }
             },
@@ -190,21 +216,25 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
             builder: (context) {
               if (inclusiveExperienceCoordinator().starlightWhisperNetworking ==
                   3) {
-                return Container(
-                  width: 24.0,
-                  height: 24.0,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      fit: BoxFit.cover,
-                      image: Image.asset(
-                        'assets/images/campfireCommunityRituals.png',
-                      ).image,
-                    ),
-                  ),
-                );
+                return FutureBuilder(
+                    future: forestTraiwildEchoVoiceCluster
+                        .forestTraicampBondVoiceJourney(
+                            'campfireCommunityRituals.png'),
+                    builder: (context, asyncSnapshot) {
+                      if (!asyncSnapshot.hasData) return const SizedBox();
+                      return Container(
+                        width: 24.0,
+                        height: 24.0,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            fit: BoxFit.cover,
+                            image: FileImage(File(asyncSnapshot.data!)),
+                          ),
+                        ),
+                      );
+                    });
               } else {
                 return InkWell(
-               
                   onTap: () async {
                     inclusiveExperienceCoordinator()
                         .starlightWhisperNetworking = 3;
@@ -213,18 +243,23 @@ class _SereneOutdoorurneWidgetState extends State<SereneOutdoorurneWidget> {
 
                     setState(() {});
                   },
-                  child: Container(
-                    width: 24.0,
-                    height: 24.0,
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        fit: BoxFit.cover,
-                        image: Image.asset(
-                          'assets/images/campfireCommunityRitual.png',
-                        ).image,
-                      ),
-                    ),
-                  ),
+                  child: FutureBuilder(
+                      future: forestTraiwildEchoVoiceCluster
+                          .forestTraicampBondVoiceJourney(
+                              'campfireCommunityRitual.png'),
+                      builder: (context, asyncSnapshot) {
+                        if (!asyncSnapshot.hasData) return const SizedBox();
+                        return Container(
+                          width: 24.0,
+                          height: 24.0,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              fit: BoxFit.cover,
+                              image: FileImage(File(asyncSnapshot.data!)),
+                            ),
+                          ),
+                        );
+                      }),
                 );
               }
             },

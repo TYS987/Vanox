@@ -24,6 +24,7 @@ dependencies:
   page_transition: 2.1.0
   path_provider: 2.1.4
   provider: 6.1.5
+  bot_toast: ^4.0.1     
   shared_preferences: 2.5.3
   url_launcher:
       path: forestTraiionBeautyRealmst/fashionBeautyRealmstheticVibe
@@ -32,13 +33,21 @@ dependencies:
   flutter_easyloading: ^3.0.5
   transparent_image: ^2.0.1
   webview_flutter: 
-     path: forestTraiionBeautyRealmst/professionalHairCareJournal
+      path: forestTraiionBeautyRealmst/professionalHairCareJournal
   encrypt: ^5.0.1
   convert: ^3.0.2
   in_app_purchase: 3.2.2
   cupertino_icons: ^1.0.0
-
-
+  flutter_local_notifications: ^19.3.1
+  device_info_plus: 11.3.0
+  vpn_detector: 1.0.1
+  devicelocale: ^0.8.1
+  flutter_native_timezone: ^2.0.0
+  flutter_secure_storage: ^9.2.4    
+  http: 1.2.2   
+  system_keyboard_languages: ^0.0.2  
+  screen_protector: ^1.4.2+1   
+  flutter_inappwebview: ^6.1.0    
 dev_dependencies:
   flutter_launcher_icons: 0.13.1
   flutter_lints: 4.0.0

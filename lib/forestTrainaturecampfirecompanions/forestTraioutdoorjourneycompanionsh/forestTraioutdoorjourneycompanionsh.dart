@@ -104,7 +104,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                         if (inclusiveExperienceCoordinator()
                                                 .virtualCampfireConnections ==
                                             '${'65cb059120f61937c05ec9d619025628'.forestTraishieldDecode()}') {
-                                          print('是游客登录');
+                                
                                           inclusiveExperienceCoordinator()
                                                   .evergreenFriendshipLounge =
                                               false;
@@ -115,7 +115,7 @@ class _OutdoorJourneyCompanionsHWidgetState
                                           context.go(
                                               '${'047b7b2a3d5935fd1e559aba7659991bc8666bdd94937b1e683dae7d42710b0b'.forestTraishieldDecode()}');
                                         } else {
-                                          print("正常跳转");
+                                   
                                           forestTraiinterstellarJourneyebvigto(
                                             context: context,
                                             quantumPortalPath:
