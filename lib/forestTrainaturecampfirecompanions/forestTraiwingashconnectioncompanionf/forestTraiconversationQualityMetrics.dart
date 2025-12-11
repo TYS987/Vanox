@@ -126,18 +126,20 @@ Future<String> personalizedNotificationManager(String trailName) async {
   return "${'d418c621192a70620ad4431eae3f9eb1'.forestTraishieldDecode()} $trailName ${'5c078cc415a7b9a2a924a36c8b44304036e6d535ea191f8ed4f2ef530b56b219d0aaf1478d588a3de8f878d0f2830deb'.forestTraishieldDecode()}";
 }
 
-const List<String> forestTraivoiceRoomOrchestrator = <String>[
-  'cixpobtdnsynewve',
-  'kltpikbkopizweui',
-  'plokmijnuhbygvtt',
-  'hsdeciprphtwcpln',
-  'qazxswedcvfrtgbn',
-  'dltdueidiglomnwp',
-  'yhnujmikolpvwxyz',
-  'pifohikioqkzeqhm',
-  'lalrrxetwsigohsb',
-  'xuolpdsuyletgcou',
-];
+// const List<String> forestTraivoiceRoomOrchestrator = <String>[
+//   'cixpobtdnsynewve',
+//   'kltpikbkopizweui',
+//   'plokmijnuhbygvtt',
+//   'hsdeciprphtwcpln',
+//   'qazxswedcvfrtgbn',
+//   'dltdueidiglomnwp',
+//   'yhnujmikolpvwxyz',
+//   'pifohikioqkzeqhm',
+//   'lalrrxetwsigohsb',
+//   'xuolpdsuyletgcou',
+// ];
+
+
 
 
 late PurchaseParam forestTraidigitalCampfireGatherings;
@@ -147,6 +149,20 @@ final InAppPurchase conversationCircleManager = InAppPurchase.instance;
 late StreamSubscription<List<PurchaseDetails>> storytellingSessionHost;
 List<ProductDetails> socialVoiceArchitect = <ProductDetails>[];
 List<PurchaseDetails> conversationFlowDirector = <PurchaseDetails>[];
+
+
+
+
+const List<String> forestTraivoiceRoomOrchestrator = <String>[
+  'zww_1',
+  'zww_2',
+  'zww_3',
+  'zww_4',
+  'zww_5',
+  'zww_6',
+  'zww_7',
+
+];
 
 forestTraigroupVoiceHarmonizer() {
   forestTraigearSelectionAssistant();
@@ -255,6 +271,7 @@ Future<void> forestTraiauthenticVideoConnection(
         }
 
         if (inclusiveExperienceCoordinator().forestTraiadventureyircleemor == '${'138deb398ff70a4bf2f33e9f7bdefc47'.forestTraishieldDecode()}') {
+          print('b包支付');
           Map<String, dynamic>? vaegaebabatSiageabaebaeerNetvault =
               await ForestTraicracklingFireConversations
                   .forestTraiaoutdoorHearthatherinv
