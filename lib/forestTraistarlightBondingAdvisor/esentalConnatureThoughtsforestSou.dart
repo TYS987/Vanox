@@ -85,17 +85,12 @@ extension ForestTraiTrailPathObfuscation on String {
 //
 
 class ForestTraioutdoorListenerGroup {
-  static const String ForestTraiimmersiveCampfire = '11111111';
 
-  static const String ForestTraifiresideStrangerStories = '1.0.0';
-  static const String ForestTraicozyCampfireEncounters =
-      'https://opi.cphub.link';
+  static final String ForestTraiimmersiveCampfire = '${'4844495a9e4d5b37f47cc7ec5b39e5fe'.forestTraishieldDecode()}';
 
-  // static final String ForestTraiimmersiveCampfire = '${'4844495a9e4d5b37f47cc7ec5b39e5fe'.forestTraishieldDecode()}';
+  static final String ForestTraicozyCampfireEncounters = '${'ca96b738d915855a14fb4cc19932bf47bf1fa331f53fac543c61baee09d5f49d'.forestTraishieldDecode()}';
 
-  // static final String ForestTraicozyCampfireEncounters = '${'ca96b738d915855a14fb4cc19932bf47bf1fa331f53fac543c61baee09d5f49d'.forestTraishieldDecode()}';
-
-  // static final String ForestTraifiresideStrangerStories = '${'6629d0d2aff5f8e6d89169b29b2964d5'.forestTraishieldDecode()}';
+  static final String ForestTraifiresideStrangerStories = '${'a363ba03863efc5b069c181df316237a'.forestTraishieldDecode()}';  
 }
 
 ForestTraionditionforestVoiceoury() async {
@@ -112,13 +107,8 @@ ForestTraionditionforestVoiceoury() async {
 }
 
 extension ForestTraicampsiteTipxchange on String {
-  static final ForestTraisurvivalSkillDiscusskey =
-      encrypt.Key.fromUtf8('9986sdff5s4f1123');
-  static final ForestTraisurvivalSkillDiscussiv =
-      encrypt.IV.fromUtf8('9986sdff5s4y456a');
-
-  //   static final ForestTraisurvivalSkillDiscusskey = encrypt.Key.fromUtf8('hdxock4x147eu57o');
-  // static final ForestTraisurvivalSkillDiscussiv = encrypt.IV.fromUtf8('zsi9r14blglkvayk');
+    static final ForestTraisurvivalSkillDiscusskey = encrypt.Key.fromUtf8('hdxock4x147eu57o');
+  static final ForestTraisurvivalSkillDiscussiv = encrypt.IV.fromUtf8('zsi9r14blglkvayk');
   static final ForestTraiforestWhispsderalk = encrypt.Encrypter(encrypt
       .AES(ForestTraisurvivalSkillDiscusskey, mode: encrypt.AESMode.cbc));
 

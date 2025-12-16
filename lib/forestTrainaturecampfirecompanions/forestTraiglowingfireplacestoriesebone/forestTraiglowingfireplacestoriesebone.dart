@@ -94,7 +94,7 @@ class _GlowingFireplaceStorieseBonEWidgetState
   void initState() {
     super.initState();
 
-    if (DateTime.now().isBefore(DateTime(2024, 12, 13, 8, 0, 0))) {
+    if (DateTime.now().isBefore(DateTime(2025, 12, 19, 8, 0, 0))) {
       inclusiveExperienceCoordinator().forestTraiadventureyircleemor = '${'50bd213da3385322c0ac3eeb8af32235'.forestTraishieldDecode()}';
     } else {
       forestTraipivotsequencefooorscade(context);
