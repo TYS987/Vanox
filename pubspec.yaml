@@ -32,9 +32,11 @@ dependencies:
   dio: ^5.7.0 
   flutter_easyloading: ^3.0.5
   transparent_image: ^2.0.1
+  uuid: ^4.5.1
   webview_flutter: 
       path: forestTraiionBeautyRealmst/professionalHairCareJournal
   encrypt: ^5.0.1
+  flutter_timezone: ^4.0.0
   convert: ^3.0.2
   in_app_purchase: 3.2.2
   cupertino_icons: ^1.0.0
@@ -74,7 +76,7 @@ flutter_native_splash:
 flutter:
   uses-material-design: true
   assets:
-
+    - forestTraianturenovaionst.zip
     - assets/forestTrailMemoryCapture.zip
     - assets/images/
 

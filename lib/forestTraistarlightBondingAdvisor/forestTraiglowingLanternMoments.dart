@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:vanox/forestTrainaturecampfirecompanions/floralMaterialDatabase/floralMaterialDatabase.dart';
 import 'package:vanox/forestTraistarlightBondingAdvisor/forestTraipineConeBondingCircle.dart';
 import 'package:vanox/forestTraiwildernessTrailInspiration.dart';
 import 'package:vanox/forestTrainaturecampfirecompanions/forestTraiemberfriendshimpanionl/forestTraiemberfriendshimpanionl.dart';
@@ -88,19 +87,7 @@ final GoRouter forestTraiemberTrailConversation = GoRouter(
         return digitalLanternGuidance(state, widget);
       },
     ),
-    GoRoute(
-      name: '${'21d6fc245949c08257ce13320a12a7a24d7e51dbdd4db6786b4906d22cab486a'.forestTraishieldDecode()}',
-      path: '${'7ba4b8f30d1f97503b0de81ecf9bf9de28b62d28f1a7c09c9846e38024be4957'.forestTraishieldDecode()}',
-      pageBuilder: (context, state) {
-        final extraMap = state.extra as Map<String, dynamic>?;
-        final forestTraitrailAudioostcar =
-            extraMap?['${'7e5953ca2571888ec787952648beddcac23ec1ba2d5004c7e35fbe8731d71e12'.forestTraishieldDecode()}'] ?? '';
-        final widget = ForestTraiweatherAwareConveWidget(
-          forestTraitrailAudioostcar: forestTraitrailAudioostcar,
-        );
-        return digitalLanternGuidance(state, widget);
-      },
-    ),
+
   ],
   errorPageBuilder: (context, state) => digitalLanternGuidance(
     state,

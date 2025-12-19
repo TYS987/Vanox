@@ -3,15 +3,14 @@ import 'dart:io';
 import 'dart:math';
 import 'dart:typed_data';
 import 'package:bot_toast/bot_toast.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:in_app_purchase_storekit/in_app_purchase_storekit.dart';
 import 'package:in_app_purchase_storekit/store_kit_wrappers.dart';
 import 'package:vanox/forestTrainaturecampfirecompanions/forestTraiwingashconnectioncompanionf/forestTraiwingashconnectioncompanionf.dart';
-import 'package:vanox/forestTraistarlightBondingAdvisor/esentalConnatureThoughtsforestSou.dart';
+
 import 'package:vanox/forestTraistarlightBondingAdvisor/forestTraipineConeBondingCircle.dart';
-import 'package:vanox/forestTraiwildernessTrailInspiration.dart';
+
 ///
 
 class forestTraiUserInterestManager {
@@ -217,6 +216,9 @@ final List<String> forestTraiTngyroscopicseNavigatorutorial = <String>[
   'xuolpdsuyletgcou',
 ];
 
+
+
+
 late PurchaseParam forestTraiorialAnambientLigatcherhtColorM;
 late String forestTraiweatherAdaptivoristryutorialAneFl;
 
@@ -294,7 +296,7 @@ Future<void> forestTraiutoalAnecRechargeListenistatic(
               PurchaseStatus.purchased ||
           forestTraiecstaticExuberantProfoundProductDetails.status ==
               PurchaseStatus.restored) {
-        if (inclusiveExperienceCoordinator().forestTraiadventureyircleemor == '${'50bd213da3385322c0ac3eeb8af32235'.forestTraishieldDecode()}') {
+
           forestTraiialelatedMajesticTransactionalansfer(
               forestTraiecstaticExuberantProfoundProductDetails);
 
@@ -309,37 +311,9 @@ Future<void> forestTraiutoalAnecRechargeListenistatic(
 
 
          WingAshConnectionCompanionFWidget.journeySnapsho?.call();
-        }
 
-        if (inclusiveExperienceCoordinator().forestTraiadventureyircleemor == '${'138deb398ff70a4bf2f33e9f7bdefc47'.forestTraishieldDecode()}') {
+
  
-          Map<String, dynamic>? forestTraivaegaebabageabaebaeevault =
-              await ForestTraicracklingFireConversations.forestTraiaoutdoorHearthatherinv
-                  .allPost(forestTraiecstaticExuberantProfoundProductDetails);
-
-          final bool forestTraipulserdWaveroTrailhallCho = forestTraivaegaebabageabaebaeevault?[
-                      '${'35f0d62c553b7fb265721c2cfc3bcc51'.forestTraishieldDecode()}'] ==
-                  '${'1cb72bf84068247b1c03f41943f4be2e'.forestTraishieldDecode()}'
-              ? true
-              : false;
-          BotToast.closeAllLoading();
-
-          if (forestTraipulserdWaveroTrailhallCho) {
-            forestTraiialelatedMajesticTransactionalansfer(
-                forestTraiecstaticExuberantProfoundProductDetails);
-        
-          } else {
-       BotToast.closeAllLoading();
-            BotToast.showText(
-                text: '${'638e9387f998a4dd74deb4e8b36c1000ed8124aa5bf873207668d945d669faac'.forestTraishieldDecode()}', align: Alignment.center);
-            return;
-          }
-
-          if (forestTraiecstaticExuberantProfoundProductDetails.pendingCompletePurchase) {
-            await forestTraiTutorialAncadindener
-                .completePurchase(forestTraiecstaticExuberantProfoundProductDetails);
-          }
-        }
 
         await forestTrairialAnelatedjestiransactionalndTransfuto();
         return;
